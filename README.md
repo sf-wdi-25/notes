@@ -486,7 +486,7 @@
   </tr>
 </table>-->
 
-##Week 1  - Broad Topic
+##Week 1  - Topic
 <table>
 	<tr>
   	<th></th>
