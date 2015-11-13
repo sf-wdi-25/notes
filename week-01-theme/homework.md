@@ -31,7 +31,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 1. Reading
 2. Friday Review Prep
-    - Brainstorm 3 topics you'd like to review tomorrow
+    - Complete the [Week 1 Self-Assessment](#PENDING) and identify 2 topics you want to review tomorrow
     - Ask and/or upvote 3 questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w1-review
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
