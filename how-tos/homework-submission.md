@@ -2,18 +2,19 @@
 
 ### Dawn/Dusk Exercise Submission
 
-Please submit your solutions to **dawn/dusk exercises** using your homework repo.
+Please submit your solutions to **individual exercises / problem sets** (from dawn/dusk) using your homework repo.
 
 - Copy/paste your solutions into your homework repo (e.g. john-doe/week-01/day-01/solutions.md)
 - Follow the instructions below for *Creating Pull Requests*.
 
 ### Lab Work Submission
-Unlike dawn/dusk exercises, *labs* are projects you started in class that you had to fork and clone. These require a slightly different submission flow:
+Unlike dawn/dusk exercises, *labs* are projects you started in class that you had to fork and clone. Because labs live in a separate repo, they require a slightly different submission flow:
 
 - When you begin a lab, you must remember to first `fork` the lab! (Just click the `fork` button).
 - Next, `git clone` your fork of the lab so that you can work on it locally (on your computer).
-- Congrats! You're ready to tackle the lab!
 - When it's time to submit your homework, follow the instructions below for *Creating Pull Requests*.
+
+For detailed instructions, see the [Fork, Clone & Pull Request](fork-clone-pull-request-flow.md) guide.
 
 
 ## Creating Pull Requests
