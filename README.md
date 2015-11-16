@@ -500,34 +500,34 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
+    <td>Welcome!</td>
+    <td>Kyrel</td>
+    <td>Kyrel</td>
+    <td>Kyrel Advanced</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
+    <td>Orientation</td>
+    <td>Control Flow (Nathan)</td>
+    <td>Arrays (Travis)</td>
+    <td>Intro jQuery and the DOM (Justin)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>Assessment and Homework Setup (Nathan & Travis)</td>
+    <td>Bootstrap (Nathan)</td>
+    <td>Functions & Arguments (Justin)</td>
+    <td>DOM Context & Events (Nathan)</td>
+    <td>Assessment and Weekend Lab (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
 </table>
