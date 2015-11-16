@@ -12,7 +12,7 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 2. Follow the instructions on [github.com/sf-wdi-25/command-line-mystery](https://github.com/sf-wdi-25/command-line-mystery) to solve the command-line mysteries and submit your solution.md as a pull-request to the **command line mystery** repository.  (not the homework repository)
 
-
+<!--
 ## Day 2
 
 1. Reading
@@ -42,3 +42,4 @@ Please use any remaining time to complete and review the exercises from dawn & d
 2. Weekend Lab
 
 Please use any remaining time to review exercises/drills from the week! And don't forget to sleep!
+-->
