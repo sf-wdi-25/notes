@@ -524,7 +524,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>HW</td>
-    <td></td>
+    <td><a href="/week-01-controlling-the-dom/homework/README.md">command line mystery</a></td>
     <td></td>
     <td></td>
     <td></td>
