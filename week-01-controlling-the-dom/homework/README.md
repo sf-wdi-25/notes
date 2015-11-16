@@ -8,10 +8,10 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 ## Day 1
 
-1. Reading
-2. Bonus/Stretch
+1. Make sure you've made a Pull Request on the [homework repo](https://github.com/sf-wdi-25/homework).  You should have created a new directory with your github username and submitted this *change* as a pull-request during class this afternoon.  You may want to review those instructions.
 
-Please use any remaining time to complete and review the exercises from dawn & dusk.
+2. Follow the instructions on [github.com/sf-wdi-25/command-line-mystery](https://github.com/sf-wdi-25/command-line-mystery) to solve the command-line mysteries and submit your solution.md as a pull-request to the **command line mystery** repository.  (not the homework repository)
+
 
 ## Day 2
 
