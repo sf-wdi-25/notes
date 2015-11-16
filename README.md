@@ -488,7 +488,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-##Week 1  - Topic
+##Week 1  - Controlling the DOM
 <table>
 	<tr>
   	<th></th>
