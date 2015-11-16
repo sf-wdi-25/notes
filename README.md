@@ -501,9 +501,9 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Drills</td>
     <td>Welcome!</td>
-    <td>[Kyrel](https://github.com/sf-wdi-25/kyrel)</td>
-    <td>[More Kyrel](https://github.com/sf-wdi-25/kyrel)</td>
-    <td>[Kyrel Advanced](https://github.com/sf-wdi-25/kyrel)</td>
+    <td><a href="https://github.com/sf-wdi-25/kyrel">Kyrel</a></td>
+    <td><a href="https://github.com/sf-wdi-25/kyrel">More Kyrel</a></td>
+    <td><a href="More Kyrel">Kyrel Advanced</a></td>
     <td>Review (Team)</td>
   </tr>
   <tr>
