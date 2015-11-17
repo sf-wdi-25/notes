@@ -1,7 +1,78 @@
+/* Challenge Set A */
+
+/* Challenge 1
+Use your chrome console `ctrl+opt+j` to perform the following activities.
+Each of the following tasks can be accomplished using a single Array method in 1 line of code.
+*/
+var cacti = ['barrel', 'columnar', 'hedgehog', 'cluster', 'prickly pear'];
+console.log(cacti[2]);  // => hedgehog
+console.log(cacti.length);  // => 5
+console.log(cacti.length - 1); // => prickly pear
+cacti.push('epiphytic');
+cacti.indexOf('columnar'); // => 1
+cacti.shift();  // => barrel
+cacti.unshift('barrel');
+cacti.splice(3,1)   // => ["cluster"]
+
+
+/* Challenge 2 */
+
+var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
+"Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
+
+for (var i=0; i<fruits.length; i++) {
+	console.log(fruits[i]);
+}
+/*
+ Apple
+ Banana
+ Cherry
+ Durian
+ Elderberry
+ Fig
+ Guava
+ Huckleberry
+ Ice plant
+ Jackfruit
+*/
+
+/* Challenge 3 */
+
+
+for (var i=0; i<fruits.length; i++) {
+	 var index = fruits.length - 1 - i;
+	 console.log(fruits[index])
+}
+
+/* prints:
+  Jackfruit
+  Ice plant
+  Huckleberry
+  Guava
+  Fig
+  Elderberry
+  Durian
+  Cherry
+  Banana
+  Apple
+*/
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////
+/* Challenge Set B
+*/ ////////////////////////////////////////////////////////
+
 /* Challenge 1 (forEach)
 
-Curry up now has a line wrapped around the truck! 
-It takes about two minutes per delicious curry burrito. 
+Curry up now has a line wrapped around the truck!
+It takes about two minutes per delicious curry burrito.
 Output the customer's name & their expected wait time.
 */
 
@@ -20,7 +91,7 @@ console.log("\n\nChallenge 2.0");
 /*
 Challenge 2 (maps)
 
-Elaine the Etsy Merchant thinks her prices are scaring off customers. 
+Elaine the Etsy Merchant thinks her prices are scaring off customers.
 Subtracting one penny might help:
 */
 
@@ -32,17 +103,17 @@ var reducedPrices = prices.map(function(element) {
 console.log("Reduced Prices: " + reducedPrices);
 
 console.log("\n\nChallenge 2.1");
-/* Challenge 2.1 
+/* Challenge 2.1
 On second thought, Elaine only wants to subtract a penny if it changes
 the dollars place, e.g.: 10.00 --> 9.99*/
 
 var prices = [3.00,4.00,10.00,2.25,3.01];
 console.log("Original Prices: " + prices);
 var reducedPrices = prices.map(function(element) {
-	// establish the length of the initial value, 
+	// establish the length of the initial value,
 	// preserving the two digit spaces after the decimal
 	var initialLength = ((element).toFixed(2)+"").length;
-	
+
 	// establish the length of the original value MINUS .01
 	var alteredLength = ((element - .01)+"").length;
 
@@ -79,13 +150,13 @@ var birthDateEvens = birthDates.filter(function(element) {
 	}
 })
 
-console.log(birthDateEvens.length + " out of " +  birthDates.length + 
+console.log(birthDateEvens.length + " out of " +  birthDates.length +
 	" students were born on an even date number.  Interesting!");
 
 
 console.log("\n\nChallenge 4.0");
 /* Challenge 4.0 */
-/* Goyle has a lucrative dog walking business. He's made mucho 
+/* Goyle has a lucrative dog walking business. He's made mucho
 moolah this summer. How much did he make?
 */
 var earnings = [20, 25, 60, 20, 85, 20];
@@ -97,11 +168,11 @@ console.log("Total earnings: " + total);
 
 console.log("\n\nChallenge 4.1");
 /* Challenge 4.1 */
-/* Goyle already has $500 in the bank. How would you incorporate 
+/* Goyle already has $500 in the bank. How would you incorporate
 this into your method call? (YOU ARE NOT ALLOWED TO USE output + 500)
 */
 
-/* In the array.reduce() documentation, we can see that there is an optional argument AFTER the callback function 
+/* In the array.reduce() documentation, we can see that there is an optional argument AFTER the callback function
 that allows you to set an initial value that the previous callback function will use as the first previous value,
 since at the beginning of the iteration there is usually no previous value. */
 

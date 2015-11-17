@@ -1,4 +1,39 @@
-##Array Challenges##
+#Array Challenges#
+
+## Challenge Set A ##
+
+### Challenge 1 ###
+
+Use your chrome console `ctrl+opt+j` to perform the following activities.
+Each of the following tasks can be accomplished using a single Array method in 1 line of code.
+
+* create an array: `var cacti = ['barrel', 'columnar', 'hedgehog', 'cluster', 'prickly pear'];`
+* print out the 3rd element (hedgehog)
+* print out the length of the array
+* print out (console.log) the last element (prickly pear).  Use a built-in array method.  (Do not use `cacti[4]`)
+* put `epiphytic` on the end of the array
+* Use indexOf to find the index of 'columnar' and print it out.
+* remove 'barrel' (the first element) from the list
+* add 'barrel' back to the **front** of the list
+* remove the 4th element of the list (hint use splice)
+
+### Challenge 2 ###
+
+Use `for` to print out each fruit from the list.
+```js
+var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
+"Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
+```
+
+### Challenge 3 ###
+
+Print the same list as above, in reverse order.
+
+
+
+**stop here until we reach the next exercise**
+
+## Challenge Set B ##
 
 ###Challenge 1 (forEach)###
 
