@@ -12,14 +12,14 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 2. Follow the instructions on [github.com/sf-wdi-25/command-line-mystery](https://github.com/sf-wdi-25/command-line-mystery) to solve the command-line mysteries and submit your solution.md as a pull-request to the **command line mystery** repository.  (not the homework repository)  Don't worry if you can't complete everything.  If you need help, work together and make use of the TAs.
 
-<!--
+
 ## Day 2
 
-1. Reading
-2. Bonus/Stretch
+1. Read <a href="javascript-primitives-and-objects.md">Javascript Primitives and Objects</a>.  Record your responses to the challenges in a file (`solutions.md`), and [follow the directions](https://github.com/sf-wdi-25/notes/blob/master/how-tos/homework-submission.md) to submit your `solutions.md` file to the [homework repository](https://github.com/sf-wdi-25/homework). Remember, when you push to github your code will go to your **FORK**, like `http://github.com/your-github-name/homework`.  Go there to make your Pull Request.
+
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
-
+<!--
 ## Day 3
 
 1. Reading
