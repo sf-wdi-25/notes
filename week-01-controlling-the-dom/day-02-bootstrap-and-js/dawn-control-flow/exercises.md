@@ -34,6 +34,7 @@
   *  ["a","b","c"] || "123"
   *  {"key":"value"} || false
 
+1. List all the falsy values in Javscript.
 
 #### Login
 When a user trys to login to our website we want to check that they actually input a value for username and a value for password. If they typed both in, give them an "All Good". But if either the username or the password are missing, give them an error: "Missing Username" / "Missing Password".
@@ -47,17 +48,6 @@ We need a quick way to determine if that blip on the radar is superman or not. S
 * isPlanelike // boolean
 * hasFeathers // boolean
 * isMadeOfMetal // boolean
-
-
-#### Alert the Guards!
-Alert the guards! Can you modify this code to only alert when a Bad Thing (TM) is happening?
-```
-var badThingHappening = true;
-alert("Guards!") // this always alerts!
-```
-
-Bonus: Can you trigger the alert without using "if"?
-
 
 
 #### Make it a SloppyBurger.
@@ -108,6 +98,30 @@ Edit the code above to check the following additional Requirements:
 3. Replace the previous rule: now riders under 12 must be accompanied by an adult.
 4. If the boss isn't looking, you can sneak in!
 5. Riders with a park pass get in free.
+
+
+#### Loopy
+* Create a loop which prints out:
+
+    ```
+    0
+    1
+    2
+    3
+    4
+    5
+    ```
+* Create a loop which prints out:
+
+    ```
+    5
+    4
+    3
+    2
+    1
+    0
+    ```
+
 
 
 #### Bottles Of Beer

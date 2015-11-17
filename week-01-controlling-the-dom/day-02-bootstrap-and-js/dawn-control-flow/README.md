@@ -6,32 +6,28 @@
 |   Apply logical operators and comparators to structure control flow |
 |   Discuss and apply iterating and looping patterns |
 
-`true` and `false` are important keywords in both Ruby and Javascript.
+"Control flow" refers to the way our computers move through a program's code. Understanding control flow allows us to trace the flow of a program based on its code. This skill is essential for programming in every language and paradigm. In particular, **conditionals** and **loops** are fundamental to understanding modern programming languages.
 
 ##Boolean Logic
 
-In boolean logic, everything is either `true` or `false`.
+At the very lowest level, computers understand our instructions as sequences of 1s and 0s. This "binary code" drives everything a computer does, from outputting text in the terminal, to displaying complex video game graphics, to communicating with other computers across the Internet.
+
+Boolean logic is the closest web developers need to get to thinking about binary code. In boolean logic, every value is either true or false.
 
 ``` javascript
 typeof(true); // "boolean"
 typeof(false); // "boolean"
 ```
 
-Here are some related ideas: 
-
-| true | false |
-| ------------- |:-------------|
-| on | off |
-| 1 | 0 |
-
 We can combine true and false statements to make larger assertions.
 
 To do so, we need to use some "logical operators":
 
-| English | "and" | "or" | "not" |
-| ------------- |:-------------|:-------------|:-------------|
-| Javascript | `&&` | &#124;&#124; | `!` |
-| e.g. | `a && b` | a  &#124;&#124; b | `!b` |
+| English | "and" | "or" | "not" (aka "bang") | "not not" (aka "double bang") |
+| ------------- |:-------------|:-------------|:-------------| :------- |
+| Javascript | `&&` | &#124;&#124; | `!` | `!!` | |
+| e.g. | `a && b` | a  &#124;&#124; b | `!b` | `!!b` |
+| English | A and B | A or B | not B | not NOT B |
 
 Each example above will evaluate to either `true` or `false`.
 
@@ -107,176 +103,213 @@ With a basic understanding of boolean logic and mathematical comparators we can 
 
 ![](http://cdn.thebolditalic.com/paperclip/html_images/35108/images/original/will-you-be-late_final.png) [source](http://www.thebolditalic.com/articles/5398-your-sf-transportation-problems-in-one-flowchart)
 
-####If Statements
-Conditionals are a way of essentially skipping over a block of code if it does not pass boolean expression.
+#### `if/else`
 
+The boolean expression inside an `if`'s parentheses will always be evaluated as truthy or falsy to determine what will happen next. 
 
-``` javascript
-var num = 22;
+A die hard Giants fan might have the following rules for baseball games.
 
-if (num % 2  === 0) {
-  console.log("is even");
+```js
+if (giantsPlaying) {
+  getTickets();
 }
 
-```
-
-Here's another example:
-
-``` javascript
-if ( badWeather ) {
-    // take the bus
+if (!giantsPlaying) {
+  watchOnTV();
 }
 ```
 
-We can tack on an "else" at the end of any if-statement. You can think of this as the "default" behavior. If the first condition isn't met, we automatically do the "else":
+We can rephrase this more succinctly using `if` and `else`.
 
-``` javascript
-if ( badWeather ) {
-    // take the bus
+```js
+if (giantsPlaying) {
+  getTickets();
 } else {
-    // walk!
+  watchOnTV();
 }
 ```
 
-In practice, `else` isn't super helpful. But `else if` can be very useful if we need to chain together multiple, mutually exclusive statements. Only one of these conditions will be met!
+A slightly more complex boolean expression will help our Giants fan save some money.
 
-``` javascript
-if ( hasCar ) {
-    // drive it!
-} else if ( hasBike ) {
-    // ride it!
+```js 
+if (giantsPlaying && gameInSF){
+  getTickets();
+} else {
+  watchOnTV();
+}
+```
+
+Some languages allow us to write if/else expressions in even fewer lines with a "ternary operator". Which is generally frowned upon because it is as easy to read as a James Joyce novel.
+
+```js
+giantsPlaying && gameInSF ? getTickets() : watchOnTV;
+```
+
+#### `else if`
+
+Here's a sample rule set for commuters:
+
+```js
+var destination = "GA";
+if ( hasBike ) {
+  rideToGA();
 } else if ( hasTransitPass ) {
-    // take the bus!
+  busToGA();
 } else {
-    // better start walking!
+  walkToGA();
 }
 ```
 
-You can also nest if statements (but the best practice is to keep things as "flat" as possible).
+
+#### Nested `if`s
+
+A strategy for choosing what to drink:
+
+```js
+var drink;
+
+if (tooSleepy) {
+  if (before5pm) {
+    drink = "coffee";
+  } else {
+    drink = "black tea";
+  }
+} else {
+  if (isHungry){
+    drink = "smoothie";
+  } else {  
+    drink = "water";
+  }
+}
+```
 
 **Best Practices:**
 
 * Indentation: Every time you open a curly brace, start a new line, and tab in one level of indentation.
 * Nesting: Keep it flat! Avoid deeply nested conditionals.
 
-###Conditionals Exercise: Can I ride?
 
-Jimmy loves roller coasters, but there are a bunch of rules (ugh!) for riding:
+## Conditional Control Flow Tricks
 
-For starters, it costs 5 tokens. Here's how we might code that:
+**Loose Control Flow** (watch out for edge cases!)
 
-``` javascript
-var tokens = 3; // Jimmy's tokens
+```js
+if ( username ) {
+  // submit signup form
+}
 
-// Can he ride?
-if ( tokens >= 5 ) {
-    console.log("Step right up!");
-} else {
-    console.log("Sorry, you can't ride")
+// same as
+
+if ( username.length > 0) {
+  // submit signup form
 }
 ```
 
-Additional Requirements:
+**Ternary operator**
 
-  - Must have 5 tokens
-  - Must be at least 4ft tall
-  - Must be at least 12 years old
-  - Riders under 12 must be accompanied by an adult
-  - (If the boss isn't looking, you can sneak in!)
-  - Riders with a reservation get in free.
+Fancy and compact, but not always the easiest to read.
 
+```js
+var username = ( last_name ? first_name + last_name : first_name );
 
-## Iterating
+// same as
 
-It is a way of incrementally repeating a task. Iterating is a way of describing procedures like:
+var username = first_name;
+if ( last_name ) {
+  username = first_name + last_name;
+}
+```
 
-* print "hello world" 50 times
-* print each item in a shopping list
+Best Practice: surround ternary expressions in parantheses.
 
-Typically iteration has three or four main parts 
+**Conditional assignment: `||` as Default Operator**
 
-* an initial state
-* a condition for repeating
-* process to be run for each repetition 
-* a state change for proceeding to the next step
+```js
+var bestCity = yourCity || "San Francisco";
 
-It isn't surprising that the primary means of iterating in most languages is called a `for` loop, which has the following structure:
+// same as
 
-``` javascript
-
-for ( intial state; check condition; change state) {
-  run this code for before changing state
+var bestCity = "San Francisco";
+if ( yourCity ) {
+  bestCity = yourCity;
 }
 
 ```
 
-Or a  more concrete example:
+**Conditional Execution: `&&` as Guard Operator**
 
+```js
+badThing && alert("Uh oh!")
 
-``` javascript
+// same as
 
-var friends = ["larry", "moe", "curly"];
-
-for (var index = 0; index < friends.length; index = index + 1) {
-  console.log(friends[index]))
+if ( badThing ) {
+  alert("Uh oh!");
 }
 
 ```
 
-In teenage English, *"so start at zero and like add one every loop until you hit 3"*.
+## Loops
+
+Whenever we want to repeat something in code, we use a loop.  We can think of every loop as three parts: initial setup, continue condition, and update expression(s).
 
 
-### For-Loop Exercises
+#### `while` loops
 
-* Create a loop which prints out:
+![Endless Doughnuts](http://img.pandawhale.com/78624-Homer-Simpson-infinite-donuts-P3EQ.gif)
 
-    ```
-    0
-    1
-    2
-    3
-    4
-    5
-    ```
-* Create a loop which prints out:
+__While doughnut, eat doughnut!__
 
-    ```
-    5
-    4
-    3
-    2
-    1
-    0
-    ``` 
+In while loops, the initial setup happens before the loop. The continue condition goes inside the parentheses. The update expressions happen inside the loop. 
+
+```js
+var minutesBeforeWork = 80;                    // setup:  plan to wake up early
+while (minutesBeforeWork > 30) {               // continue condition: leave enough time to get day clothes on
+  minutesBeforeWork = minutesBeforeWork - 5;   // update: hit snooze!
+}
+```
+
+#### `for` loops
+
+For loops allow the setup, continue condition, and update expression inside the for loop parentheses. 
+
+```js
+for (var count = 1; count <= 3; count++){
+  console.log(count);
+}
+console.log("Go Team!");
+```
+
+For loops for arrays usually use a counter variable to move through the indices of the array.
+
+```js
+var friends = ["Bill", "Nicki", "Kelly"]
+for (var i = 0; i < m.length; i++) {
+  console.log(m[i] + " is a nice person");
+}
+
+```
 
 
-* Create the "Bottles of beer on the wall" song:
+#### `break`
 
-        5 bottles of beer on the wall,
-        5 bottles of beer!
-        Take one down and pass it around,
-        4 bottles of beer on the wall
-    * How would you fix "1 bottles of beer"?
-    * How would you change "0" to "No more"?
-    * Use a prompt to ask the user how many verses they want to hear
+The key word `break` will break us out of a loop immediately.  When you experiment more with loops inside functions, you'll see that `return`ing from inside a loop (inside a function) also immediately breaks the loop.
 
-* Given `var shopping = ["bread", "oranges", "milk", "eggs"]` print out:
+```js
+for (var i = 0; i < 10; i+=2) {
+  console.log(i);
+  break;
+}
 
-    ```
-    "bread"
-    "oranges"
-    "milk"
-    "eggs"
-    ``` 
-    
-    * Then try to print:
-    
-        ```
-        "1 Bread"
-        "2 Oranges"
-        "3 Milk"
-        "4 Eggs"
-        ``` 
+var j=0;
+while (j < 10) {
+  console.log(j);
+  break;
+  j += 2;
+}
+```
+
+
 
 ##Truthiness and Bool*ish* Values
 
@@ -322,15 +355,13 @@ if ( test_case ) {
 
 Wowa! What's going on here?
 
-Our condition succeeds or fails if it considers the test input to be `true` or `false`. But how is `"abc"` possibly `true`? Is this a bug?
-
-What happens if we equivalate... I mean equate them:
+Is "abc" true?
 
 ``` javascript
 "abc" === true; // ?
 ```
 
-Suppose we *negate* our value (with a "bang", `!`):
+Can we coerce "abc" (a String) into becoming a Boolean somehow? Suppose we *negate* our value (with a "bang", `!`):
 
 ``` javascript
 !"abc"; // ?
@@ -357,92 +388,12 @@ In your own words, describe what's going on here:
 
 More info on truthy / falsy / equality: [Javascript Equality Table](https://dorey.github.io/)
 
+## Exercises
 
-## While Loop Exercises
+[YAY! Exercises to practice](exercises.md)
 
-Here's an example of a `while` loop:
+## Resources
 
-``` javascript
-var chars = "A";
-while( chars !== "Aaaaa" ){
-    chars += "a"
-}
-```
-
-* Create a prompt loop using a `while` that asks "What is your Quest?" until the user supplies an input.
-    * What if I hit "cancel"?
-    * What if I don't type anything in?
-* Create a `while` loop that asks "How old are you?" until the user supplies a valid numeric input.
-* Let's play the Number Guessing Game using a while loop / prompt.
-    * The computer picks the number (let's start with `3`)
-    * Ask the user for their guess: "What's your guess?"
-        * If they guess too high, tell me "too high"
-        * If they guess too low, tell me "too low"
-        * If they guess the number, the game is done!
-    * Bonus: Keep track of how many guesses it takes! "Attempt #2: What's your guess?"
-
-
-##Control Flow Tricks
-
-**Loose Control Flow** (watch out for edge cases!)
-
-``` javascript
-if ( username ) {
-    // submit signup form
-}
-
-// same as
-
-if ( username.length > 0) {
-    // submit signup form
-}
-```
-
-**Ternary operator**
-
-``` javascript
-var username = last_name ? first_name + last_name : first_name;
-
-// same as
-
-var username = first_name;
-if ( last_name ) {
-    username = first_name + last_name;
-}
-```
-
-**Conditional assignment: `||` as Default Operator**
-
-``` javascript
-var bestCity = yourCity || "San Francisco";
-
-// same as
-
-var bestCity = "San Francisco";
-if ( yourCity ) {
-    bestCity = yourCity;
-}
-
-```
-
-**Conditional Execution: `&&` as Guard Operator**
-
-``` javascript
-badThing && alert("Uh oh!")
-
-// same as
-
-if ( badThing ) {
-    alert("Stop that")
-}
-
-```
-
-## What's Falsy? -- Answers
-
-* `false`
-* `undefined`
-* `null`
-* `0`
-* `NaN` ("Not a Number")
-* `""` (empty string)
+* [Loops - JSforcats](http://jsforcats.com/#loops)
+* [Conditionals - Codeacademy](http://www.codecademy.com/glossary/javascript/if-statement)
+* [Loops - CodeAcademy](http://www.codecademy.com/glossary/javascript/loops)

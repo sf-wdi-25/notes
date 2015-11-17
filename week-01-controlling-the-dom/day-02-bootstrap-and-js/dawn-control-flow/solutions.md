@@ -1,4 +1,4 @@
-#Solutions
+#Solutions - Control Flow
 
 ### Boolean Expressions and Truthy Values
 
@@ -17,6 +17,15 @@
   truthy: `1, "abc", [], {}, 3.14159, Array, Object`
   falsy: `"", 0`
 
+1. List all the falsy values in Javascript
+
+* `false`
+* `undefined`
+* `null`
+* `0`
+* `NaN` ("Not a Number")
+* `""` (empty string)
+* Everything else is truthy!
 
 
 ### Login
@@ -47,21 +56,6 @@ if (password & username) {
 if (isBirdlike && !hasFeathers || isPlanelike && !isMadeOfMetal) {
     console.log("It's Superman!");
 }
-```
-
-
-
-### Alert the Guards!
-Good:
-``` javascript
-if (badThingHappening) {
-    alert("Guards!");
-}
-```
-
-Good:
-``` javascript
-badThingHappening && alert("Guards!");
 ```
 
 
