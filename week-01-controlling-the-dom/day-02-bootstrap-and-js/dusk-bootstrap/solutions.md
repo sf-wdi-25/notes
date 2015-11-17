@@ -33,13 +33,4 @@ Play with the following codepen: [bootstrap-grid-demo](http://codepen.io/nathana
 
 
 #### Modular, class-based CSS styles
-Play with the following codepen: [class-based css](http://codepen.io/nathanallen/pen/qOvBzr?editors=110)
-
-1. pending
-2. pending
-3. pending
-4. pending
-5. pending
-6. pending
-7. pending
-8. pending
+Solution: http://codepen.io/nathanallen/pen/LpaEvB?editors=110
