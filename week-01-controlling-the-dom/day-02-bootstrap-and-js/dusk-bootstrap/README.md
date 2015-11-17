@@ -247,3 +247,14 @@ Some examples:
 - [Carousels](http://getbootstrap.com/javascript/#carousel)
 
 Always make sure you understand what the code is doing before copying and pasting it. Fortunately, this is not too challenging and Bootstrap has excellent documentation. As always, if you're confused or things are breaking - google around. Bootstrap is pretty much ubiquitous and it is likely that others have encountered and (hopefully) solved the issues you're dealing with.
+
+
+## Practice
+
+- Please fork & clone the [Bootstrap Mockups](https://github.com/sf-wdi-25/bootstrap_mockups) Lab, and follow the instructions there.
+
+**More practice**:
+
+- Bootstrap Grid [Exercises](exercises.md)
+- Modular, Class-based CSS [Exercises](exercises.md)
+

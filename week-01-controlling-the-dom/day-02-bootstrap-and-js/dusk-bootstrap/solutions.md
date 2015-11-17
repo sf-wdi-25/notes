@@ -1,5 +1,8 @@
 ## Solutions - Bootstrap & Grid
 
+#### Bootstrap Mockups Lab
+See the [solutions branch](https://github.com/sf-wdi-25/bootstrap_mockups/tree/solutions)
+
 #### Fiddling with the Grid
 Play with the following codepen: [bootstrap-grid-demo](http://codepen.io/nathanallen/pen/XmOBdL?editors=110)
 
