@@ -12,13 +12,13 @@
 * The framework consists of one main CSS file, an optional theme CSS file, and a main JS file.
 * Bootstrap requires [jQuery](https://code.jquery.com/) to work, which is a JavaScript library.
 
-Bootstrap is extremely popular and knowledge of at least one CSS framework is a very valuable skill to have (and totally worth putting on your resume). 
+Bootstrap is extremely popular and knowledge of at least one CSS framework is a very valuable skill to have (and totally worth putting on your resume).
 
 Bootstrap comes with a ton of features, including:
 
 - Reponsive Grid System
 - CSS library for quick and easy styling
-- UI components - HTML + CSS 
+- UI components - HTML + CSS
   - navigation
   - buttons
   - forms
@@ -95,13 +95,13 @@ To ensure all your Bootstrap styles behave properly, always put your content ins
 
 Bootstrap's grid system is based on the idea that a page layout for any given screen size is represented with 12 fluid **columns**.  Columns are always horizontally contained in **rows**, which in turn are contained inside of the previously mentioned `container` (container > row > column):
 
-1. Create a row: 
+1. Create a row:
 
   ``` html
    <div class="row"> ... </div>
   ```
-  
-2. Inside your row, create a column for the targeted screen size: 
+
+2. Inside your row, create a column for the targeted screen size:
   - col-xs < 768px (e.g. smartphones)
   - col-sm ≥ 992px (e.g. tablets)
   - col-md ≥ 1200px (e.g. laptops, desktops)
@@ -160,7 +160,7 @@ You can also offset and nest your columns. When you offset a column, you add a c
 ``` html
  <div class="row">
    <div class="col-md-3 col-md-offset-3">
-     <p>This column occupies 1/4 of the page width and is moved to the right 
+     <p>This column occupies 1/4 of the page width and is moved to the right
      by 1/4 of the page width</p>
    </div>
  </div>
@@ -207,7 +207,7 @@ More useful typography classes...
 
 
 ####Icons
-Bootstrap comes with a set of icons that can be included in your page using the `<i></i>` tag. Check out these icons [here](http://getbootstrap.com/components/#glyphicons)
+Bootstrap comes with a set of icons that can be included in your page using `<span class="glyphicon" aria-hidden="true"></span>` tags. Check out these icons [here](http://getbootstrap.com/components/#glyphicons)
 
 ####Buttons
 Bootstrap provides a wide selection of button sizes and colors.  Button classes can be applied not just to `<button>` elements, but also `<a>` and `<input>` elements
@@ -217,10 +217,10 @@ Sometimes you need to provide multiple classes to an element in order for Bootst
 ``` html
  <!-- Standard button -->
  <button type="button" class="btn btn-default">Default</button>
- 
+
  <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
  <button type="button" class="btn btn-primary">Primary</button>
- 
+
  <!-- Contextual button for informational alert messages -->
  <button type="button" class="btn btn-info">Info</button>
 
@@ -230,12 +230,12 @@ Sometimes you need to provide multiple classes to an element in order for Bootst
 ... and so on.  See the [docs](http://getbootstrap.com/css/#buttons) for a comprehensive list of options.  Note you can add a third class denoting size to any of the above: `.btn-lg`, `.btn-sm`, `.btn-xs`
 
 
-####Images 
+####Images
 Bootstrap helps you format images using `class="img-rounded"` (rounds the corners), `class="img-circle"` (makes the image a circle) and `class="img-thumbnail"` (adds a border). You can also add a `class="img-responsive"` to your image to make it scale well when the screen size changes (this sets its max-width to 100% of its parent element and the height to auto for maintaining aspect)
 
 ####Forms
-Bootstrap is also very helpful when you need to style your forms. All textual `<input>`, `<textarea>`, and `<select>` elements with `class="form-control"` are set to width: 100% by default. Wrap labels and their associated controls (inputs) in `class="form-group"` for optimum spacing. 
- 
+Bootstrap is also very helpful when you need to style your forms. All textual `<input>`, `<textarea>`, and `<select>` elements with `class="form-control"` are set to width: 100% by default. Wrap labels and their associated controls (inputs) in `class="form-group"` for optimum spacing.
+
 
 ####Javascript plug-ins
 Bootstrap allows you to incorporate interactive behavior into your page with Javascript plug-ins.  While you would ultimately have to write some JS in order for these components to provide actual functionality within the application, you don't have to write JS if you're simply mocking up a UI.
