@@ -2,8 +2,9 @@
 
 ###Learning Objectives
 
-* Understand and implement a grid system
-* Design html pages with the aid of bootstrap & mockups
+* Write modular, class-based CSS styles
+* Discover the Bootstrap Grid
+* Construct HTML pages with the aid of Bootstrap & mockups
 * Use a CDN to require Bootstrap in your project
 
 ##Intro to Bootstrap
@@ -43,7 +44,7 @@ Source: [Wikipedia](https://en.wikipedia.org/wiki/Responsive_web_design)
 2. Download the actual CSS and JS files and link to them on your local computer - great for offline/local development
 3. Bower - a package manager for front-end dependencies.  This is the approach a developer would likely take in order to create a production-ready web app.
 
-#### Boostrap Boilerplate
+#### Bootstrap Boilerplate
 
 Here is a boilerplate bootstrap html document. **NOTICE** that bootstrap is being loaded through the web from a CDN `https://maxcdn.bootstrapcdn.com`.
 
