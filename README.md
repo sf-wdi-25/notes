@@ -510,7 +510,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module1</td>
     <td>Orientation</td>
     <td><a href="/week-01-controlling-the-dom/day-02-bootstrap-and-js/dawn-control-flow">Control Flow</a> (Nathan)</td>
-    <td>Arrays (Travis)</td>
+    <td>Functions & Arguments (Justin)</td>
     <td>Intro jQuery and the DOM (Justin)</td>
     <td>Review (Team)</td>
   </tr>
@@ -518,7 +518,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module2</td>
     <td>Assessment and Homework Setup (Nathan & Travis)</td>
     <td><a href="/week-01-controlling-the-dom/day-02-bootstrap-and-js/dusk-bootstrap">Bootstrap</a> (Nathan)</td>
-    <td>Functions & Arguments (Justin)</td>
+    <td>Arrays (Travis)</td>
     <td>DOM Context & Events (Nathan)</td>
     <td>Assessment and Weekend Lab (Team)</td>
   </tr>
