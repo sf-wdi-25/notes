@@ -27,6 +27,10 @@
 * undefined
 * "not defined"
 * boolean
+* Type coercion
+* Truthy
+* Falsy
+* Conditionals
 * * Git
   * `git clone`
   * `git push`
