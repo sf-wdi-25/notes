@@ -1,4 +1,7 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> Function Challenges
+
+These challenges are designed to go from relatively simple to coding interview level intensity.  There are many different ways of reaching the correct result, so feel free to experiment!  
+
 Fill out these empty function definitions.  Unless specified, simply have the function return the desired result to the console.
 
 You will have to use specific functions supplied by the javascript Math library.  [Here is the documentation on using the Math library](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
