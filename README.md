@@ -503,8 +503,8 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Welcome!</td>
     <td><a href="https://github.com/sf-wdi-25/kyrel">Kyrel</a></td>
     <td><a href="https://github.com/sf-wdi-25/kyrel">More Kyrel</a></td>
+    <td>Outcomes (Neda)</td>
     <td><a href="More Kyrel">Kyrel Advanced</a></td>
-    <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module1</td>
