@@ -1,10 +1,10 @@
-#Bootstrap & Bower
+#Bootstrap
 
 ###Learning Objectives
 
 * Understand and implement a grid system
 * Design html pages with the aid of bootstrap & mockups
-* Use Bower to require Bootstrap in your project
+* Use a CDN to require Bootstrap in your project
 
 ##Intro to Bootstrap
 
