@@ -4,6 +4,24 @@
 ####Week 1
 * Shell (Computing)
 * command line interface
+  * pwd
+  * cd
+  * ls
+  * rm
+  * cp
+  * mv
+  * head
+  * tail
+  * |
+  * grep
+  * -B
+  * -A
+  * -C
+  * cat
+  * less
+  * mkdir
+  * rmdir
+  * touch
 * G.U.I.
 * bash
 * directory
