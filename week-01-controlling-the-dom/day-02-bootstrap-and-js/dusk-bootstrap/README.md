@@ -7,6 +7,8 @@
 * Construct HTML pages with the aid of Bootstrap & mockups
 * Use a CDN to require Bootstrap in your project
 
+For a quick CSS refresher, please read this [Introduction to CSS](intro-css.md).
+
 ##Intro to Bootstrap
 
 * [Bootstrap](http://getbootstrap.com/) is a **front-end framework** created by a small team of developers at Twitter and maintained by a much larger community of contributors.
