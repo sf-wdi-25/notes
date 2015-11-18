@@ -102,8 +102,8 @@ Bootstrap's grid system is based on the idea that a page layout for any given sc
 
 2. Inside your row, create a column for the targeted screen size:
   - col-xs < 768px (e.g. smartphones)
-  - col-sm ≥ 992px (e.g. tablets)
-  - col-md ≥ 1200px (e.g. laptops, desktops)
+  - col-sm ≥ 768px (e.g. tablets)
+  - col-md ≥ 992px (e.g. laptops, desktops)
   - col-lg ≥ 1200px (e.g. large desktops, smart TVs)
 
 Here's an example of a two-column layout that spans the width of the page.  Notice that the widths of the two columns add up to 12.  The column content of any row must always be ≤12.
