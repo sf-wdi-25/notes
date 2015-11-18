@@ -236,16 +236,16 @@ Fruity Example - Make a numbered list
 fruits.forEach(function(element, index) {
   console.log(index + ". " + element);
 });
-/*	0. Apple
-	1. Banana
-	2. Cherry
-	3. Durian
-	4. Elderberry
-	5. Fig
-	6. Guava
-	7. Huckleberry
-	8. Ice plant
-	9. Jackfruit
+/*  0. Apple
+  1. Banana
+  2. Cherry
+  3. Durian
+  4. Elderberry
+  5. Fig
+  6. Guava
+  7. Huckleberry
+  8. Ice plant
+  9. Jackfruit
 */
 ```
 
@@ -258,13 +258,13 @@ Fruity Example - pluralize all of our fruits
 ```javascript
 fruits = fruits.map(function(element) {
 
-	// if word ends in 'y', remove 'y' and add 'ies' to the end
-  	var lastLetter = element[element.length -1];
-   	if (lastLetter === 'y') {
-  		element = element.slice(0,element.length-1) + 'ie';
-	}
+  // if word ends in 'y', remove 'y' and add 'ies' to the end
+    var lastLetter = element[element.length -1];
+     if (lastLetter === 'y') {
+      element = element.slice(0,element.length-1) + 'ie';
+  }
 
-  	return element + 's';
+    return element + 's';
 });
 // [ "Apples", "Bananas", "Cherries", "Durians", "Elderberries",
 //   "Figs", "Guavas", "Huckleberries", "Ice plants", "Jackfruits"  ]
@@ -276,7 +276,7 @@ Numbers Example - Square each number in an array
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 numbers.map(function(element) {
-	return Math.pow(element, 2);
+  return Math.pow(element, 2);
 });
 // [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
@@ -303,7 +303,7 @@ Numbers Example - Find all even numbers within an array greater than 5:
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 even = numbers.filter(function(num) {
-	var isEven = num%2==0;
+  var isEven = num%2==0;
     var greaterThanFive = num > 5;
     return isEven && greaterThanFive;
 });
@@ -319,9 +319,9 @@ Fruity Example - Return the first letter of every word in fruits concatentated i
 ```javascript
 avgLen = fruits.reduce(function(current, next, index) {
     if (index == 1) {
-    	current = current[0];
+      current = current[0];
     }
-	return current + next[0];
+  return current + next[0];
 });
 // "ABCDEFGHIJ"
 
@@ -332,7 +332,7 @@ Numbers Example - Find the sum of all of the numbers in an array:
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 sum = numbers.reduce(function(current, next) {
-	return current + next;
+  return current + next;
 });
 // sum is 55
 
