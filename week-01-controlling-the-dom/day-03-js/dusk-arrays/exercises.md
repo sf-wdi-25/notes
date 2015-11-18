@@ -82,9 +82,9 @@ prices.map(callbackfn);
 
 Challenge:
 
--  On second thought, Juniper only wants to subtract a penny if it changes the dollars place, e.g.: 10.00 --> 9.99
+-  On second thought, Elaine only wants to subtract a penny if it changes the dollars place, e.g.: 10.00 --> 9.99
 
--  Prices are going up! Juniper needs to raise her prices by 5%.
+-  Prices are going up! Elaine needs to raise her prices by 5%.
 
 
 ###Challenge 3 (filter)###
