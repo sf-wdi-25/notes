@@ -155,7 +155,7 @@ Functions may perform actions upon Strings as well.
     }
     
     var phrase = "Dash is also a great API lookup tool!";
-    exclaim( phrase ); // Dash-is-also-a-great-API-lookup-tool!
+    spacesToDashes( phrase ); // Dash-is-also-a-great-API-lookup-tool!
 ```
 
 In the case of the function spacesToDashes, the function description 'spaces to dashes' the first letters were capitalized and the phrase was concatenated to 'spacesToDashes'
