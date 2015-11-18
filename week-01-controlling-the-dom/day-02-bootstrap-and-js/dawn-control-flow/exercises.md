@@ -7,7 +7,7 @@
 - See [solutions.md](solutions.md) for solutions. No Peeking!
 
 
-#### Boolean Expressions and Truthy Values
+#### Boolean Expressions and Truthy Values - [solutions](solutions.md)
 
 1. What is the outcome of the following expressions?
 
@@ -36,13 +36,13 @@
 
 1. List all the falsy values in Javscript.
 
-#### Login
+#### Login - [solution](solutions.md)
 When a user trys to login to our website we want to check that they actually input a value for username and a value for password. If they typed both in, give them an "All Good". But if either the username or the password are missing, give them an error: "Missing Username" / "Missing Password".
 * username // string
 * password // string
 
 
-#### Superman?
+#### Superman? - [solution](solutions.md)
 We need a quick way to determine if that blip on the radar is superman or not. Sometimes it's just a bird. Sometimes it's just a plane. But we definitely want to know if its superman. Write some code which will alert: "It's superman!" when the following are true (it's up to you to decide what makes the most sense):
 * isBirdlike // boolean
 * isPlanelike // boolean
@@ -50,7 +50,7 @@ We need a quick way to determine if that blip on the radar is superman or not. S
 * isMadeOfMetal // boolean
 
 
-#### Make it a SloppyBurger.
+#### Make it a SloppyBurger - [solution](solutions.md)
 The lovely cashier at SloppyBurger will assume you want a SloppyBurger unless you say otherwise. Better speak up!
 
 On the left is what you said when you ordered. The output, on the right, is what you actually got. Can you transform the input (the order) into the output?
@@ -67,7 +67,7 @@ Bonus: Can you do it without using "if"?
 
 
 
-#### For Here
+#### For Here - [solution](solutions.md)
 Sales tax can be tricky for restaurants to calculate. For example, sales tax is not charged on hot beverages, hot bakery goods, and cold prepared foods when ordered "to go." Otherwise the sale is taxed 7.75%. Use the following variables, and write some tests to check for the correct total:
 * isHotBeverage // boolean
 * isHotBakedGood // boolean
@@ -76,7 +76,7 @@ Sales tax can be tricky for restaurants to calculate. For example, sales tax is 
 * total // floating point number
 
 
-#### Can I ride?
+#### Can I ride? - [solution](solutions.md)
 Jimmy loves roller coasters, but there are a bunch of rules (ugh!) for riding:
 
 For starters, it costs 5 tokens. Here's how we might code that:
@@ -100,7 +100,7 @@ Edit the code above to check the following additional Requirements:
 5. Riders with a park pass get in free.
 
 
-#### Loopy
+#### Loopy - [solution](solutions.md)
 * Create a loop which prints out:
 
     ```
@@ -124,7 +124,7 @@ Edit the code above to check the following additional Requirements:
 
 
 
-#### Bottles Of Beer
+#### Bottles Of Beer - [solution](solutions.md)
 Create the "Bottles of beer on the wall" song (watch out for infinite loops!):
 ```
     5 bottles of beer on the wall,

@@ -1,6 +1,6 @@
 ## Exercises - Bootstrap & Grid
 
-#### Modular, class-based CSS styles
+#### Modular, class-based CSS styles - [solutions](solutions.md)
 Play with the following codepen: [class-based css](http://codepen.io/nathanallen/pen/qOvBzr?editors=110)
 
 1. All `p` tags should have a font size of 14px.
@@ -15,7 +15,7 @@ Play with the following codepen: [class-based css](http://codepen.io/nathanallen
     - Can you get `.half` elements to line up side-by-side?
     - Bonus: does it still work if you nest a `.half` elment inside of a `.half` element?
 
-#### Fiddling with the Grid
+#### Fiddling with the Grid - [solutions](solutions.md)
 Play with the following codepen: [bootstrap-grid-demo](http://codepen.io/nathanallen/pen/XmOBdL?editors=110)
 
 1. What happens when you grab the corner of your browser and resize/reflow the browser window?
@@ -28,5 +28,5 @@ Play with the following codepen: [bootstrap-grid-demo](http://codepen.io/nathana
     - roughly 1/3rd width for the sidebar
     - a tiny 1/12th offset between the main content and the sidebar
 
-#### Bootstrap Mockups Lab
+#### Bootstrap Mockups Lab - [solutions](https://github.com/sf-wdi-25/bootstrap_mockups/tree/solutions)
 Fork & Clone: https://github.com/sf-wdi-25/bootstrap_mockups
