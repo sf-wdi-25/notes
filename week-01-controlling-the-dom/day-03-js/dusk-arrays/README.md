@@ -7,11 +7,6 @@
 | Compare and contrast JavaScript's iterators |
 
 
-We can traverse an array of elements with a simple for-loop, but this *really* isn't the best approach to accessing and changing a list in Javascript.
-
-As per usual, Javascript has provided us with quite a few powerful built-in methods that make accessing elements in an array a relative breeze.
-
-*We will no longer be using the traditional for-loop structure to access and work with the elements within an array.  Adios!*
 
 ##Array Method Basics##
 
@@ -90,7 +85,9 @@ for (var i=0; i<fruits.length; i++) {
 }
 
 ```
-Exercise:
+Quick Exercise:
+
+**head over to the exercises**
 
 
 
@@ -221,6 +218,12 @@ function compute
 ## Array Traversals and Actions ##
 
 Let's get back to arrays.
+
+As we've seen we can traverse an array of elements with a simple for-loop, but this *really* isn't the best approach to accessing and changing a list in Javascript.
+
+As per usual, Javascript has provided us with quite a few powerful built-in methods that make accessing elements in an array a relative breeze.
+
+*We will no longer be using the traditional for-loop structure to access and work with the elements within an array.  Adios!*
 
 
 ### array.forEach() ###
