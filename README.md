@@ -510,7 +510,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module1</td>
     <td>Orientation</td>
     <td><a href="/week-01-controlling-the-dom/day-02-bootstrap-and-js/dawn-control-flow">Control Flow</a> (Nathan)</td>
-    <td><a href="/week-01-controlling-the-dom/day-03-js/dusk-arrays">Arrays</a> (Travis)</td>
+    <td>Functions & Arguments (Justin)</td>
     <td>Intro jQuery and the DOM (Justin)</td>
     <td>Review (Team)</td>
   </tr>
@@ -518,14 +518,14 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module2</td>
     <td>Assessment and Homework Setup (Nathan & Travis)</td>
     <td><a href="/week-01-controlling-the-dom/day-02-bootstrap-and-js/dusk-bootstrap">Bootstrap</a> (Nathan)</td>
-    <td>Functions & Arguments (Justin)</td>
+    <td><a href="/week-01-controlling-the-dom/day-03-js/dusk-arrays">Arrays</a> (Travis)</td>
     <td>DOM Context & Events (Nathan)</td>
     <td>Assessment and Weekend Lab (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href="/week-01-controlling-the-dom/homework/README.md">command line mystery</a></td>
-    <td></td>
+    <td><a href="/week-01-controlling-the-dom/homework/README.md#day-1">Command Line Mystery</a></td>
+    <td><a href="/week-01-controlling-the-dom/homework/README.md#day-2">JS Primitives & Objects</a></td>
     <td></td>
     <td></td>
     <td></td>
