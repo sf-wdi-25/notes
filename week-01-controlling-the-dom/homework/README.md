@@ -15,10 +15,15 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 ## Day 2
 
-1. Read <a href="javascript-primitives-and-objects.md">Javascript Primitives and Objects</a>.  Record your responses to the challenges in a file (`solutions.md`), and [follow the directions](https://github.com/sf-wdi-25/notes/blob/master/how-tos/homework-submission.md) to submit your `solutions.md` file to the [homework repository](https://github.com/sf-wdi-25/homework). Remember, when you push to github your code will go to your **FORK**, like `http://github.com/your-github-name/homework`.  Go there to make your Pull Request.
+1. Read <a href="javascript-primitives-and-objects.md">Javascript Primitives and Objects</a>.
+2. DUE TONIGHT: Record your responses to the Javascript Primitives and Objects challenges in a file (`solutions.md`), and [follow the directions](https://github.com/sf-wdi-25/notes/blob/master/how-tos/homework-submission.md) to submit your `solutions.md` file to the [homework repository](https://github.com/sf-wdi-25/homework). Remember, when you push to github your code will go to your **FORK**, like `http://github.com/your-github-name/homework`.  Go there to make your Pull Request.
 
+Please use any remaining time to complete and review the exercises from dawn & dusk:
 
-Please use any remaining time to complete and review the exercises from dawn & dusk.
+- [Control Flow Exercises](/day-02-boostrap-and-js/dawn-control-flow/exercises.md)
+- [Bootstrap / CSS Exercises](/day-02-boostrap-and-js/dusk-bootstrap/exercises.md)
+- [Bootstrap Mockup Lab](https://github.com/sf-wdi-25/bootstrap_mockups)
+
 <!--
 ## Day 3
 
