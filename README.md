@@ -518,7 +518,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module2</td>
     <td>Assessment and Homework Setup (Nathan & Travis)</td>
     <td><a href="/week-01-controlling-the-dom/day-02-bootstrap-and-js/dusk-bootstrap">Bootstrap</a> (Nathan)</td>
-    <td>Arrays (Travis)</td>
+    <td><a href="/week-01-controlling-the-dom/day-03-js/dusk-arrays">Arrays</a> (Travis)</td>
     <td>DOM Context & Events (Nathan)</td>
     <td>Assessment and Weekend Lab (Team)</td>
   </tr>
