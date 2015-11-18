@@ -72,17 +72,18 @@ for (var i=0; i<fruits.length; i++) {
 
 /* Challenge 1a (forEach) */
 
-dogs.forEach(function print(element, index) { console.log(element) });
+var dogs = ['Snoopy', 'Scooby', 'Pluto', 'Goofy', 'Astro', 'Mr. Peabody', 'Odie', "Santa's Little Helper", 'Brian'];
+dogs.forEach(function print(element, index) {
+	console.log(element)
+});
 
 /* Challenge 1b (forEach) */
 
-var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
-"Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
+var dogs = ['Snoopy', 'Scooby', 'Pluto', 'Goofy', 'Astro', 'Mr. Peabody', 'Odie', "Santa's Little Helper", 'Brian'];
 
-fruits.forEach(function(element, index) {
-  fruits[index] = element.toUpperCase();
+dogs.forEach(function(element, index) {
+		dogs[index] = element.toUpperCase();
 });
-
 
 
 

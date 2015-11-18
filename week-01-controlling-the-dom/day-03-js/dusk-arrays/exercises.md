@@ -45,7 +45,10 @@ Use `forEach` to print each character in the list of famous cartoon dogs.
 
 
 ###Challenge 1b (forEach)###
-Use `forEach` and `String.toUpperCase` method to convert the list of fruits into all capitals.
+
+Use `forEach` and `String.toUpperCase` method to convert the list of characters into all capitals.  That is, you should replace each character in the array with an all UPPERCASE version of that character's name.
+
+Use `console.log(dogs)` to verify your solution has changed the `dogs` array.
 
 
 ###Challenge 1c (forEach)###
@@ -54,7 +57,7 @@ Use `forEach` and `String.toUpperCase` method to convert the list of fruits into
 
 ```javascript
 var customers:   Justin, Ilias, Nathan, Camilo, Vikash, Adam, Brianna, Sarah, Ali, Jessie, Cameron
-customers.forEach(callbackfn);
+customers.forEach(fn);
 /* Justin: 2 minutes
    Ilias: 4 minutes
    Nathan: 6 minutes
