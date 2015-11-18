@@ -1,9 +1,12 @@
 /* Challenge Set A */
+console.log("\nChallenge Set A");
 
 /* Challenge 1
 Use your chrome console `ctrl+opt+j` to perform the following activities.
 Each of the following tasks can be accomplished using a single Array method in 1 line of code.
 */
+console.log("\nChallenge 1.0");
+
 var cacti = ['barrel', 'columnar', 'hedgehog', 'cluster', 'prickly pear'];
 console.log(cacti[2]);  // => hedgehog
 console.log(cacti.length);  // => 5
@@ -16,12 +19,13 @@ cacti.splice(3,1)   // => ["cluster"]
 
 
 /* Challenge 2 */
+console.log("\nChallenge 2.0");
 
 var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
 "Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
 
 for (var i=0; i<fruits.length; i++) {
-	console.log(fruits[i]);
+  console.log(fruits[i]);
 }
 /*
  Apple
@@ -38,11 +42,12 @@ for (var i=0; i<fruits.length; i++) {
 
 
 /* Challenge 3 */
+console.log("\nChallenge 3.0");
 
 
 for (var i=0; i<fruits.length; i++) {
-	 var index = fruits.length - 1 - i;
-	 console.log(fruits[index])
+   var index = fruits.length - 1 - i;
+   console.log(fruits[index])
 }
 
 /* prints:
@@ -66,23 +71,29 @@ for (var i=0; i<fruits.length; i++) {
 
 
 
+
 /* ////////////////////////////////////////////////////////
 /* Challenge Set B
 */ ////////////////////////////////////////////////////////
+console.log("\nChallenge Set B");
+
+console.log("\nChallenge 1a");
 
 /* Challenge 1a (forEach) */
 
 var dogs = ['Snoopy', 'Scooby', 'Pluto', 'Goofy', 'Astro', 'Mr. Peabody', 'Odie', "Santa's Little Helper", 'Brian'];
 dogs.forEach(function print(element, index) {
-	console.log(element)
+  console.log(element)
 });
 
 /* Challenge 1b (forEach) */
 
+console.log("\nChallenge 1b");
+
 var dogs = ['Snoopy', 'Scooby', 'Pluto', 'Goofy', 'Astro', 'Mr. Peabody', 'Odie', "Santa's Little Helper", 'Brian'];
 
 dogs.forEach(function(element, index) {
-		dogs[index] = element.toUpperCase();
+    dogs[index] = element.toUpperCase();
 });
 
 
@@ -93,16 +104,16 @@ Curry up now has a line wrapped around the truck!
 It takes about two minutes per delicious curry burrito.
 Output the customer's name & their expected wait time.
 */
+console.log("\nChallenge 1c");
 
 
-console.log("\nChallenge 1.0");
 var customers = ["Justin", "Ilias", "Nathan", "Camilo", "Vikash", "Adam",
 "Brianna", "Sarah", "Ali", "Jessie", "Cameron"];
 
 var waitTime = 2;
 customers.forEach(function(element) {
-	console.log(element + ": " + waitTime + " minutes");
-	waitTime +=2;
+  console.log(element + ": " + waitTime + " minutes");
+  waitTime +=2;
 });
 
 console.log("\n\nChallenge 2.0");
@@ -115,7 +126,7 @@ Subtracting one penny might help:
 
 var prices = [3.00,4.00,10.00,2.25,3.01];
 var reducedPrices = prices.map(function(element) {
-	return element - .01;
+  return element - .01;
 });
 
 console.log("Reduced Prices: " + reducedPrices);
@@ -128,19 +139,19 @@ the dollars place, e.g.: 10.00 --> 9.99*/
 var prices = [3.00,4.00,10.00,2.25,3.01];
 console.log("Original Prices: " + prices);
 var reducedPrices = prices.map(function(element) {
-	// establish the length of the initial value,
-	// preserving the two digit spaces after the decimal
-	var initialLength = ((element).toFixed(2)+"").length;
+  // establish the length of the initial value,
+  // preserving the two digit spaces after the decimal
+  var initialLength = ((element).toFixed(2)+"").length;
 
-	// establish the length of the original value MINUS .01
-	var alteredLength = ((element - .01)+"").length;
+  // establish the length of the original value MINUS .01
+  var alteredLength = ((element - .01)+"").length;
 
-	// If the price reduction would result in a change in the dollars place
-	if( initialLength - alteredLength === 1) {
-		// reduce the original value by a penny
-		element -= .01;
-	}
-		return element.toFixed(2);
+  // If the price reduction would result in a change in the dollars place
+  if( initialLength - alteredLength === 1) {
+    // reduce the original value by a penny
+    element -= .01;
+  }
+    return element.toFixed(2);
 });
 
 console.log("Reduced Prices: " + reducedPrices);
@@ -152,7 +163,7 @@ console.log("\n\nChallenge 2.2");
 var prices = [3.00,4.00,10.00,2.25,3.01];
 console.log("Prices: " + prices);
 var increasedPrices = prices.map(function(element) {
-	return (element + (.05*element)).toFixed(2);
+  return (element + (.05*element)).toFixed(2);
 });
 console.log("Increased Prices: " + increasedPrices);
 
@@ -163,13 +174,13 @@ console.log("\n\nChallenge 3.0");
 
 var birthDates = [1, 1, 2, 3, 3, 3, 5, 5, 6, 6, 8, 8, 10, 10, 12, 12, 13, 13, 15, 17, 17, 18, 20, 20, 26, 31];
 var birthDateEvens = birthDates.filter(function(element) {
-	if(element %2 === 0){
-		return element;
-	}
+  if(element %2 === 0){
+    return element;
+  }
 })
 
 console.log(birthDateEvens.length + " out of " +  birthDates.length +
-	" students were born on an even date number.  Interesting!");
+  " students were born on an even date number.  Interesting!");
 
 
 console.log("\n\nChallenge 4.0");
@@ -179,7 +190,7 @@ moolah this summer. How much did he make?
 */
 var earnings = [20, 25, 60, 20, 85, 20];
 var total=Earnings = earnings.reduce(function(previous, current) {
-	return previous + current;
+  return previous + current;
 });
 
 console.log("Total earnings: " + total);
@@ -196,7 +207,7 @@ since at the beginning of the iteration there is usually no previous value. */
 
 var earnings = [20, 25, 60, 20, 85, 20];
 var total=Earnings = earnings.reduce(function(previous, current) {
-	return previous + current;
+  return previous + current;
 }, 500);
 
 console.log("Total earnings: " + total);
