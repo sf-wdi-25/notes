@@ -4,7 +4,7 @@
 Play with the following codepen: [class-based css](http://codepen.io/nathanallen/pen/qOvBzr?editors=110)
 
 1. All `p` tags should have a font size of 14px.
-2. Instructions should have a light-grey background and 10px of padding.
+2. `.instructions` should have a light-grey background and 10px of padding.
 3. `.typewriter` should be a monospace font.
 4. `.angry` should have red font, underlined words, and be in all caps.
 5. `.box` should have a thin border all around it.
