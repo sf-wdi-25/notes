@@ -1,7 +1,7 @@
 ## Solutions - Bootstrap & Grid
 
-#### Bootstrap Mockups Lab
-See the [solutions branch](https://github.com/sf-wdi-25/bootstrap_mockups/tree/solutions)
+#### Modular, class-based CSS styles
+Solution: http://codepen.io/nathanallen/pen/LpaEvB?editors=110
 
 #### Fiddling with the Grid
 Play with the following codepen: [bootstrap-grid-demo](http://codepen.io/nathanallen/pen/XmOBdL?editors=110)
@@ -31,6 +31,5 @@ Play with the following codepen: [bootstrap-grid-demo](http://codepen.io/nathana
     </div>
     ```
 
-
-#### Modular, class-based CSS styles
-Solution: http://codepen.io/nathanallen/pen/LpaEvB?editors=110
+#### Bootstrap Mockups Lab
+See the [solutions branch](https://github.com/sf-wdi-25/bootstrap_mockups/tree/solutions)
