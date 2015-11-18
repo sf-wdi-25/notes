@@ -259,6 +259,13 @@ fruits.forEach(function(element, index) {
 ###array.map()###
 Similar to `forEach()`, `map()` traverses an array; this method, however, performs whatever callback function you pass into it as an argument on each element.
 
+```JavaScript
+var numbers = [1, 4, 9];
+var doubles = numbers.map(function(num) {
+  return num * 2;
+});
+// doubles is now [2, 8, 18]. numbers is still [1, 4, 9]
+```
 
 Fruity Example - pluralize all of our fruits  
 
