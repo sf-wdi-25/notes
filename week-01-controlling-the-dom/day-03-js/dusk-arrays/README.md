@@ -74,7 +74,7 @@ var removedItem = fruits.splice(huckleBerryPos, 1);
 
 ## Basic array traversal with for ##
 
-By now you've all used a `for` to iterate over your arrays.  
+By now you've all used `for` to iterate over your arrays.  
 
 ```js
 var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
@@ -105,7 +105,8 @@ function makeSandwich(meat, cheese) {
   return "bread, " + meat + ", " + cheese + ", bread"
 }
 
-makeSandwich("turkey", "provolone");  // call makeSandwich and pass arguments to it
+// call makeSandwich and pass arguments to it
+makeSandwich("turkey", "provolone");  // => bread, turkey, provolone, bread
 ```
 
 
@@ -123,7 +124,7 @@ function makeBigSandwich(toppingsArray) {
   return "bread," + toppingsArray.toString() + "&bread";
 }
 
-makeBigSandwich(['ham', 'salami', 'provolone');
+makeBigSandwich(['ham', 'salami', 'provolone']);
 // "bread,ham,salami,provolone,bread"
 ```
 
@@ -145,17 +146,12 @@ add(2, 2, toConsole); // => console logs 4
 We can also use a different function as the **printer**.  This gives us a lot of flexibility.
 
 ```javascript
-function add(a, b, printer) {
-  var result = a + b;
-  printer(result);  // use the printer function to print out the result
-}
-
 function toAlert(input) {
   alert(input);
 }
 
 // then calling it:
-add(8, 9, toAlert); // => alerts logs 17
+add(8, 9, toAlert); // => alerts 17
 ```
 
 Finally a common way to write this is to define the **printer** function **in-line** with the function call.
@@ -166,7 +162,7 @@ function add(a, b, printer) {
   printer(result);  // use the printer function to print out the result
 }
 
-// then calling it:
+// then calling it (in-line):
 add(8, 9, function toAlert(input) {
   alert(input);
 }); // => still alerts logs 17
@@ -193,10 +189,11 @@ eatSandwich('bacon', 'lettuce', 'tomato', makeBigSandwich);
 
 We passed the `makeBigSandwich` function to the `eatSandwich` function as an argument.  `eatSandwich` calls `makeBigSandwich`.
 
-And now we'll re-write this with the function definition in-line.
+And now we'll re-write this with the function definition in-line with the function call.
 
 ```javascript
 
+// eatSandwich stays the same
 var eatSandwich = function(topping1, topping2, topping3, sandwichMaker) {
     console.log("I'm going to make and eat a sandwich with: " + topping1 + ', ' + topping2 + ' and ' + topping3);
     var layers = [topping1, topping2, topping3];
@@ -208,11 +205,6 @@ var eatSandwich = function(topping1, topping2, topping3, sandwichMaker) {
 eatSandwich('bacon', 'lettuce', 'tomato', function makeBigSandwich(toppingsArray) {
   return "bread," + toppingsArray.toString() + "&bread";
 });
-```
-
-```javascript
-function compute
-
 ```
 
 ## Array Traversals and Actions ##
