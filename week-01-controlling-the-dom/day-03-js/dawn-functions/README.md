@@ -119,7 +119,7 @@ Functions may perform actions upon Strings as well.
         console.log( phrase.toLowerCase() );
     }
     
-    shout( "I AM SMALL"); // i am small
+    whisper( "I AM SMALL"); // i am small
 ``` 
 ```javascript
     // append an exclamation point to the end of a phrase
