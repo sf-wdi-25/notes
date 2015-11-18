@@ -20,8 +20,8 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 Please use any remaining time to complete and review the exercises from dawn & dusk:
 
-- [Control Flow Exercises](/week-01/day-02-boostrap-and-js/dawn-control-flow/exercises.md)
-- [Bootstrap / CSS Exercises](/week-01/day-02-boostrap-and-js/dusk-bootstrap/exercises.md)
+- [Control Flow Exercises](/week-01-controlling-the-dom/day-02-bootstrap-and-js/dawn-control-flow/exercises.md)
+- [Bootstrap / CSS Exercises](/week-01-controlling-the-dom/day-02-bootstrap-and-js/dusk-bootstrap/exercises.md)
 - [Bootstrap Mockup Lab](https://github.com/sf-wdi-25/bootstrap_mockups)
 
 <!--
