@@ -35,7 +35,20 @@ Print the same list as above, in reverse order.
 
 ## Challenge Set B ##
 
-###Challenge 1 (forEach)###
+### Challenge 1a (forEach)###
+
+```js
+var dogs = ['Snoopy', 'Scooby', 'Pluto', 'Goofy', 'Astro', 'Mr. Peabody', 'Odie', "Santa's Little Helper", 'Brian'];
+```
+
+Use `forEach` to print each character in the list of famous cartoon dogs.
+
+
+###Challenge 1b (forEach)###
+Use `forEach` and `String.toUpperCase` method to convert the list of fruits into all capitals.
+
+
+###Challenge 1c (forEach)###
 
 *Curry up now* has a line wrapped around the truck! It takes about two minutes per delicious curry burrito. Output the customer's name & their expected wait time.
 
@@ -51,6 +64,8 @@ customers.forEach(callbackfn);
    Cameron: 22 minutes
 */
 ```
+
+
 
 ###Challenge 2 (maps)###
 

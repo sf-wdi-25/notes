@@ -36,6 +36,7 @@ for (var i=0; i<fruits.length; i++) {
  Jackfruit
 */
 
+
 /* Challenge 3 */
 
 
@@ -69,7 +70,23 @@ for (var i=0; i<fruits.length; i++) {
 /* Challenge Set B
 */ ////////////////////////////////////////////////////////
 
-/* Challenge 1 (forEach)
+/* Challenge 1a (forEach) */
+
+dogs.forEach(function print(element, index) { console.log(element) });
+
+/* Challenge 1b (forEach) */
+
+var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
+"Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
+
+fruits.forEach(function(element, index) {
+  fruits[index] = element.toUpperCase();
+});
+
+
+
+
+/* Challenge 1c (forEach)
 
 Curry up now has a line wrapped around the truck!
 It takes about two minutes per delicious curry burrito.
