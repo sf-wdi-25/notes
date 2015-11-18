@@ -14,12 +14,9 @@ A **function** is similar to a machine in that it receives an input (ice cream a
 
 #Setup
 
-* Create a new javascript `myFunctions.js` and run it with node.
-* Arguments will be passed into `myFunctions.js` for use  by the functions.
-* REMEMBER:  by default the first two arguments will be `node` and the path to the file, i.e. `~/dev/someFolder/app.js`.
-* [Help with passing arguments to a file](https://github.com/sf-wdi-19-20/WDI21staging/tree/master/modules/week-01/day-2-control-flow/dusk-modular-programs#setup)
+Create a new javascript `myFunctions.js` and run it with the command:  
 
-
+`node myFunctions.js`
 
 #Defining a Function
 A function can be thought of as a program within a larger program.  They often perform small or repetitious tasks.  When a function is *called*, the code within the curly braces will be executed.  It will only be executed when the function is called.
