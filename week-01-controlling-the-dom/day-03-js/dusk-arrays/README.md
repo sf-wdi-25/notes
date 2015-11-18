@@ -130,6 +130,17 @@ makeBigSandwich(['ham', 'salami', 'provolone']);
 
 Finally we can also pass functions as arguments.  When they are passed in as an argument, they can be called within the function at whim.  
 
+First let's look at a function that uses another function.
+
+```javascript
+function add(a, b) {
+  var result = a + b;
+  console.log(result);
+}
+```
+
+Now let's make this function a little more flexible.  We'll remove `console.log` and pass in a function to call instead.
+
 ```javascript
 function add(a, b, printer) {
   var result = a + b;
@@ -157,10 +168,6 @@ add(8, 9, toAlert); // => alerts 17
 Finally a common way to write this is to define the **printer** function **in-line** with the function call.
 
 ```javascript
-function add(a, b, printer) {
-  var result = a + b;
-  printer(result);  // use the printer function to print out the result
-}
 
 // then calling it (in-line):
 add(8, 9, function toAlert(input) {
