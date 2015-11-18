@@ -70,7 +70,7 @@ Functions can take multiple paramters.  Each parameter must be separated from an
 
 ```javascript
    	// Add two intergers
-    function add( a, b ) {
+    function sum( a, b ) {
         console.log( a + b );
     }
     
