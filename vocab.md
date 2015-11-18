@@ -56,6 +56,19 @@
   * `git add` 
   * `git commit`
 * GitHub
+* Primitive
+  * String
+  * Boolean
+  * Null
+  * Number
+  * Undefined
+  * Symbol
+* Expression
+* Object Literals
+* Arrays
+* typeof
+* Bootstrap
+* CDN
 
 <!-- 
 ####Week 2
