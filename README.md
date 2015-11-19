@@ -511,7 +511,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Orientation</td>
     <td><a href="/week-01-controlling-the-dom/day-02-bootstrap-and-js/dawn-control-flow">Control Flow</a> (Nathan)</td>
     <td><a href="/week-01-controlling-the-dom/day-03-js/dawn-functions">Functions & Arguments</a> (Justin)</td>
-    <td>Intro jQuery and the DOM (Justin)</td>
+    <td><a href="/week-01-controlling-the-dom/day-04-dom/dawn-jquery">Intro jQuery and the DOM</a> (Justin)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
