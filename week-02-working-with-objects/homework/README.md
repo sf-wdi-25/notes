@@ -5,7 +5,7 @@ The homeworks and readings below are intended to prepare you for the next day's 
 If you have any remaining time, please complete/review the exercises from dawn and dusk lectures. You can also review the morning drills.
 
 Please refer to the [Instructions for Submitting Homework](/how-tos/homework-submission.md).
-
+<!--
 ## Day 1
 
 1. Reading
@@ -42,3 +42,5 @@ Please use any remaining time to complete and review the exercises from dawn & d
 2. Weekend Lab
 
 Please use any remaining time to review exercises/drills from the week! And don't forget to sleep!
+
+-->
