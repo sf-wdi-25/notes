@@ -527,7 +527,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-1">Command Line Mystery</a></td>
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-2">JS Primitives & Objects</a></td>
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-3">JS Functions</a></td>
-    <td></td>
+    <td><a href="/week-01-controlling-the-dom/homework/README.md#day-4">jQuery & Events</a></td>
     <td></td>
   </tr>
 </table>

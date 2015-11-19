@@ -1,4 +1,4 @@
-#Array Challenges#
+#Exercises - Array Manipulation
 
 ## Challenge Set A ##
 

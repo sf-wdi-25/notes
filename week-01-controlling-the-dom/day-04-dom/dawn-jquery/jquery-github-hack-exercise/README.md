@@ -1,4 +1,4 @@
-##jQuery Hacking Challenges!
+# Exercise - Hack Github with jQuery!
 Each exercise will require you to use your ninja jQuery skills to alter the the wdi-25 notes repository page.  In your `solutions.md` file, include your jQuery code snippet with the associated challenge number.
 
 We highly suggest that you complete all of the challenges using the following jQuery methods:

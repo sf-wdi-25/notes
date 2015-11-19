@@ -1,3 +1,5 @@
+// Solutions - Javascript Functions
+
 console.log(process.argv);
 
 // Pythagorean Theorem = a^2 + b^2 = c^2 (solve for c)
@@ -82,7 +84,7 @@ function combineWords( word1, word2 ) {
 
 // print a simple triangle with asterisks (ASCII Art!!!)
 // Example: printTriangle(5)
-// Result: 
+// Result:
 // *
 // **
 // ***
@@ -91,13 +93,13 @@ function combineWords( word1, word2 ) {
 
 function printTriangle(length) {
 	for(var i = 1; i <= length; i++) {
-		
+
 		var tier = '';
-		
+
 		for(var j = 0; j < i; j++) {
 			tier += '*';
 		}
-		
+
 		console.log(tier);
 	}
 }
@@ -105,7 +107,7 @@ function printTriangle(length) {
 //printTriangle(3);
 
 
-// Stretch Challenge: Can you alter the printTriangle function to crate a Pyramid? 
+// Stretch Challenge: Can you alter the printTriangle function to crate a Pyramid?
 // Example:
 // printPyramid(10)
 //           *
@@ -115,7 +117,7 @@ function printTriangle(length) {
 //       * * * * *
 //      * * * * * *
 //     * * * * * * *
-//    * * * * * * * * 
+//    * * * * * * * *
 //   * * * * * * * * *
 //  * * * * * * * * * *
 // Warning: This is a surprisingly tricky interview-level exercise.  Don't even try this.

@@ -1,4 +1,4 @@
-#Intro to jQuery and the DOM
+# <img src="https://cloud.githubusercontent.com/assets/7833470/10423298/ea833a68-7079-11e5-84f8-0a925ab96893.png" width="60"> Intro to jQuery and the DOM
 
 | Objectives |
 | :---- |
@@ -77,3 +77,9 @@ For more cool DOM manipulation tricks, you'll need to hit the docs:
     - [Tree Traversal Methods](http://api.jquery.com/category/traversing/)
 
 The more you struggle with this kind of documentation, the stronger your coding-chops will become!
+
+
+## Practice
+- [CSS Selector Challenge](exercises.md) - [solutions](solutions.md)
+- [Indiana Jones and the Temple of DOM](exercises.md) - [solutions](solutions.md)
+- [Hack Github with jQuery](jquery-github-hack-exercise) - [solutions](jquery-github-hack-exercise/solutions.md)
