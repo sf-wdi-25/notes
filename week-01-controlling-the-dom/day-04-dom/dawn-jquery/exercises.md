@@ -1,6 +1,6 @@
 # jQuery & DOM Exercises
 
-#### Nature Drawing 101: Draw a Tree!
+#### Nature Drawing 101: Draw a Tree! - [solutions](solutions.md)
 1. Draw the structure of the sf-wdi-25 github repository
 2. Draw the struture of the following HTML document:
 
@@ -37,12 +37,12 @@
 * Name a direct parent of the `p` element
 * What is the parent of the `html` element?
 
-#### CSS Selector Challenge
+#### CSS Selector Challenge - [solutions](solutions.md)
 Please refer to [this google doc](https://docs.google.com/document/d/1sKbuZaSio1o65iRdkNpB03pwJfJj98GPHUJQsoKJmE4/edit?usp=sharing).
 
 For each page, come up with as many CSS Selectors as you can think of to select the html elments in **red**, and *only* the elements in red.
 
-#### jQuery Selector Challenge
+#### jQuery Selector Challenge - [solutions](solutions.md)
 
 Use jquery to select the element containing the words "Hello There" with as many different selectors as you can think of:
 
@@ -65,7 +65,7 @@ Use jquery to select the element containing the words "Hello There" with as many
 4. How would you add a second greeting ("Que tal?"), below the first?
 5. How would you add the class "blue" to both greetings?
 
-#### Indiana Jones And the Temple of DOM
+#### Indiana Jones And the Temple of DOM - [solutions](solutions.md)
 
 Go to the [General Assembly homepage](https://generalassemb.ly/) and open your Chrome Developer Console.
 
@@ -85,6 +85,6 @@ Go to the [General Assembly homepage](https://generalassemb.ly/) and open your C
 1. Bonus: Combine all your code into a single function called `changeAllTheThings`. When you call the function, it should make all your changes to the page.
 
 
-#### Hack Github with jQuery!
+#### Hack Github with jQuery! - [solutions](jquery-github-hack-exercise/solutions.md)
 Use jQuery to vandalize the WDI class notes repo!
 Follow the challenge instructions [here](jquery-github-hack-exercise/README.md).
