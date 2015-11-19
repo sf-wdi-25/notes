@@ -15,47 +15,47 @@ We highly suggest that you complete all of the challenges using the following jQ
 ###Challenge 1 - Name Changer
 Change the name of the repository author (in this current case, nathanallen - it might be Justin or Travis when you start this exercise) to `anonymous`
 
-**Before**:  
+**Before**:    
     <img src = "img/1.png" width = 400px style="border: solid grey 3px">
 
-**After**:
+**After**:  
     <img src = "img/1b.png" width = 400px style="border: solid grey 3px">
 
 
 ###Challenge 2 - Add some class
 Add the `btn-primary` class to all of the buttons on the screen.  This should make them all green.
  
-**Before**:
+**Before**:  
     <img src = "img/2.png" width = 400px style="border: solid grey 3px">
 
-**After**:
+**After**:  
     <img src = "img/2b.png" width = 400px style="border: solid grey 3px">
 
 ###Challenge 3 - It's Shruggy!
 Change all of the commit messages to shruggy ¯\\_(ツ)_/¯
  
-**Before**:
+**Before**:  
     <img src = "img/3a.png" width = 400px style="border: solid grey 3px">
 
-**After**:
+**After**:  
     <img src = "img/3b.png" width = 400px style="border: solid grey 3px">
 
 ###Challenge 4 - I'm the captain now.
 Remove the user links on the top right of the screen. 
  
-**Before**:
+**Before**:  
     <img src = "img/4a.png" width = 400px style="border: solid grey 3px">
 
-**After**:
+**After**:  
     <img src = "img/4b.png" width = 400px style="border: solid grey 3px">
 
 ###Challenge 5 - One big family
 Change the values of the Watch, Star, and Fork social count all to ∞ (infinity). 
  
-**Before**:
+**Before**:  
     <img src = "img/5a.png" width = 400px style="border: solid grey 3px">
 
-**After**:
+**After**:  
     <img src = "img/5b.png" width = 400px style="border: solid grey 3px">
 
 
@@ -65,10 +65,10 @@ Change the Octocat logo/link at the top right of the page to a picture of Justin
  
 *Stretch: If you want to get real fancy, try to change the octocat to YOUR github profile photo!*  
   
-**Before**:
+**Before**:  
     <img src = "img/6a.png" width = 400px style="border: solid grey 3px">
 
-**After**:
+**After**:  
     <img src = "img/6b.png" width = 400px style="border: solid grey 3px">
 
 
@@ -77,17 +77,17 @@ Add a completely useless button that says `Delete Repository` to the right of th
  
 *Stretch: Add your own glyphicon to your custom-made button!*
  
-**Before**:
+**Before**:  
     <img src = "img/7a.png" width = 400px style="border: solid grey 3px">
 
-**After**:
+**After**:  
     <img src = "img/7b.png" width = 400px style="border: solid grey 3px">
 
 ###Challenge 8 - Ugh, script kiddies
 Add a folder to the notes file system display named "H4X0R3d!"
 
-**Before**:
+**Before**:  
     <img src = "img/8a.png" width = 400px style="border: solid grey 3px">
 
-**After**:
+**After**:  
     <img src = "img/8b.png" width = 400px style="border: solid grey 3px">
