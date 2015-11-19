@@ -349,3 +349,6 @@ countDown(10);
 
 
 **Code Challenge:** Modify the above program to count down to zero, *then* count back up to the original value.
+
+## Practice
+[jQuery Function Exercises](exercises.md) - [solutions](solutions.md)

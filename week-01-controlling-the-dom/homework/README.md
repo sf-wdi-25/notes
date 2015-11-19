@@ -28,7 +28,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 ## Day 3
 
 1. Read and complete the exercises in <a href="/week-01-controlling-the-dom/day-02-bootstrap-and-js/dusk-bootstrap/intro-css.md">this awesome CSS writeup</a>.
-2. Complete the [functions exercises](https://github.com/sf-wdi-25/notes/blob/master/week-01-controlling-the-dom/homework/javascript-function-challenges.md) to the best of your ability.  Record your solutions to the challenges in a javascript file (`solutions.js`), and [follow the directions](https://github.com/sf-wdi-25/notes/blob/master/how-tos/homework-submission.md) to submit your `solutions.js` file to the [homework repository](https://github.com/sf-wdi-25/homework). Remember, when you push to github your code will go to your **FORK**, like `http://github.com/your-github-name/homework`.  Go there to make your Pull Request.
+2. Complete the [functions exercises](/week-01-controlling-the-dom/day-03-js/dawn-functions/exercises.md) to the best of your ability.  Record your solutions to the challenges in a javascript file (`solutions.js`), and [follow the directions](https://github.com/sf-wdi-25/notes/blob/master/how-tos/homework-submission.md) to submit your `solutions.js` file to the [homework repository](https://github.com/sf-wdi-25/homework). Remember, when you push to github your code will go to your **FORK**, like `http://github.com/your-github-name/homework`.  Go there to make your Pull Request.
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 <!--
