@@ -83,3 +83,8 @@ Go to the [General Assembly homepage](https://generalassemb.ly/) and open your C
     * Now, change the text of *every* paragraph to the same quote.
 
 1. Bonus: Combine all your code into a single function called `changeAllTheThings`. When you call the function, it should make all your changes to the page.
+
+
+#### Hack Github with jQuery!
+Use jQuery to vandalize the WDI class notes repo!
+Follow the challenge instructions [here](jquery-github-hack-exercise/README.md).
