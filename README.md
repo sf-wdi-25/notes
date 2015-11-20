@@ -520,7 +520,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-01-controlling-the-dom/day-02-bootstrap-and-js/dusk-bootstrap">Bootstrap</a> (Nathan)</td>
     <td><a href="/week-01-controlling-the-dom/day-03-js/dusk-arrays">Arrays</a> (Travis)</td>
     <td><a href="/week-01-controlling-the-dom/day-04-dom/dusk-events">DOM Context & Events</a> (Nathan)</td>
-    <td>Assessment and Weekend Lab (Team)</td>
+    <td>Assessment & Weekend Lab Intro</td>
   </tr>
   <tr>
     <td>HW</td>
@@ -528,6 +528,6 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-2">JS Primitives & Objects</a></td>
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-3">JS Functions</a></td>
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-4">jQuery & Events</a></td>
-    <td></td>
+    <td>[Tic Tac Toe](https://github.com/sf-wdi-25/tic-tac-toe) \(Weekend Lab)</td>
   </tr>
 </table>

@@ -50,11 +50,11 @@ Please use any remaining time to complete and review the exercises from dawn & d
 - [jQuery Events on Github](/week-01-controlling-the-dom/day-04-dom/dusk-events/exercises.md)
 - [jQuery Events Lab](https://github.com/sf-wdi-25/events_lab)
 
-<!--
+
 ## Day 5 - Weekend Homework
 
-1. Reading
-2. Weekend Lab
+1. [Tic Tac Toe](https://github.com/sf-wdi-25/tic-tac-toe)
+    - Due Monday @ 9:17am!
 
 Please use any remaining time to review exercises/drills from the week! And don't forget to sleep!
--->
+
