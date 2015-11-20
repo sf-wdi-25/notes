@@ -159,4 +159,4 @@ When you click the button...
 3. Display the number of times the link has been clicked. If I click it again it should say "2".
 
 #### Events Lab - [solution](https://github.com/sf-wdi-25/events_lab/tree/solutions)
-Please Fork & Clone the [Events Lab](https://github.com/sf-wdi-24/events_lab)
+Please Fork & Clone the [Events Lab](https://github.com/sf-wdi-25/events_lab)
