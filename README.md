@@ -450,26 +450,41 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   	<th></th>
     <th>Monday</th>
     <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
   </tr>
   <tr>
     <td>Drills</td>
     <td>Science Fair</td>
     <td>JSON & HTML strings (TG)</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Module1</td>
     <td>Refactor & Debug (NA)</td>
     <td>Intro OOP & Constructors (JC)</td>
+    <td>No Class</td>
+    <td>No Class</td>
+    <td>No Class</td>
   </tr>
   <tr>
     <td>Module2</td>
     <td>Iterators (TG)</td>
     <td>Prototype Methods (JC)</td>
+    <td>No Class</td>
+    <td>No Class</td>
+    <td>No Class</td>
   </tr>
   <tr>
     <td>HW</td>
     <td>Array/Iterators (TG)</td>
     <td>TBD</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 
