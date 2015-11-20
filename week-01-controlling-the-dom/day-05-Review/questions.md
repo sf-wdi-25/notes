@@ -1,3 +1,14 @@
+### jQuery review:
+  * jQuery is JavaScript! It's a library that saves developer time and brainpower. 
+  * You can take advantage of jQuery's built-in methods and utilities. What is $? It's a function!
+  * If you use .append, it's going to append inside of the parent element instead of after it, which is a little counterintuitive! 
+  * You can't select an element that doesn't exist yet. 
+  * Every manipulation method has an option for _getting_ and an option for _setting_
+  * Selectors grab all matching elements.
+  ** Always use the simplest possible selector.
+  * If you're storing an element as a variable, preface the variable name with a $ (ex. $total). This is a common convention for indicating that this is a jQuery element.
+  * Practice "hanging a dot" after entering an element or variable  - this will show you what methods are available to you. 
+
 ##### _Q._ I would like to go over the concept of "$this" again. In what situation is it appropriate to use? In what situations should we avoid it? Is it possible to show what the Javascript is behind it, not sure if that makes it easier to follow or not.
 *AND*
 ##### _Q._ Can you give some more examples of "This" and how to use it and best practices?
