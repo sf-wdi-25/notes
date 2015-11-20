@@ -85,25 +85,39 @@ numbers.map(function(element) {
 
 ###array.filter()###
 With the `filter()` method you can create a *second* array filled with elements that pass certain criteria that you designate.  This is great for creating a sub array of fruits that start with vowels, a list of even numbers from a bigger list, and so on.  
-  *It's important to remember that a filter method on an array needs a `boolean` return value for the callback function you pass as an argument.*  
+  *It's important to remember that a filter method on an array requires a `boolean` return value for the callback function you pass as an argument.*
 
 Fruity Example - Return a list of fruit that start with vowels:  
 
 ```javascript
 var vowels = ["A", "E", "I", "O", "U"];
 function vowelFruit(fruit) {
-  return vowels.indexOf(fruit[0]) >= 0; // indexOf returns -1 if not found
+  var result = vowels.indexOf(fruit[0]) >= 0; // indexOf returns -1 if not found
+  console.log("result for " + fruit + " is " + result);
+  return result;
 }
 var vowelFruits = fruits.filter(vowelFruit);
 // ["Apple", "Elderberry", "Ice plant"]
+```
+
+Or alternatively:
+
+```javascript
+var vowels = ["A", "E", "I", "O", "U"];
+
+var vowelFruits = fruits.filter(function vowelFruit(fruit) {
+  return vowels.indexOf(fruit[0]) >= 0; // indexOf returns -1 if not found
+});
+// ["Apple", "Elderberry", "Ice plant"]
 
 ```
-Numbers Example - Find all even numbers within an array greater than 5:  
+
+Numbers Example - Find all even numbers within an array that are greater than 5:  
 
 ```javascript
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-even = numbers.filter(function(num) {
+even = numbers.filter(function filterEvens(num) {
   var isEven = num%2==0;
     var greaterThanFive = num > 5;
     return isEven && greaterThanFive;
@@ -118,7 +132,7 @@ The `reduce()` method is designed to create one single object that is the result
 Fruity Example - Return the first letter of every word in fruits concatentated into one single string:  
 
 ```javascript
-avgLen = fruits.reduce(function(current, next, index) {
+avgLen = fruits.reduce(function concatFirstLetter(current, next, index) {
     if (index == 1) {
       current = current[0];
     }
@@ -133,7 +147,7 @@ Numbers Example - Find the sum of all of the numbers in an array:
 ```javascript
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-sum = numbers.reduce(function(current, next) {
+sum = numbers.reduce(function add(current, next) {
   return current + next;
 });
 // sum is 55

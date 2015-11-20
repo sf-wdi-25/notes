@@ -29,7 +29,7 @@ evenBirthdates = [2, 4, 4, 12, 30];
 
 -  Independently write a filter array function that creates an array for either odd or even birth dates.
 
--  Compare the results for even numbers with those for odd numbers.  Write some code that reports the percentage.  For example `6 out of 10 students were born on an even day.  Evens are more common. 60% of the class was born on an even-numbered day.`
+-  Compare the results for even numbers with those for odd numbers.  Write some code that reports the results.  For example `6 out of 10 students were born on an even day.  Evens are more common.`  Or `60% of the class was born on an even-numbered day.`
 
 -  Share your results with the class and bask in your great science!
 
