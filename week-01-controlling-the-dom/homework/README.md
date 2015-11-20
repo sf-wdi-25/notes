@@ -33,7 +33,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 Please use any remaining time to complete and review the exercises from dawn & dusk:
 
 - [Javascript Function Exercises](/week-01-controlling-the-dom/day-03-js/dawn-functions/exercises.md)
-- [Array Manipulation Exercises](/week-01-controlling-the-dom/day-03-js/dawn-arrays/exercises.md)
+- [Array Manipulation Exercises](/week-01-controlling-the-dom/day-03-js/dusk-arrays/exercises.md)
 
 
 ## Day 4
