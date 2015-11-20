@@ -481,7 +481,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>HW</td>
     <td>Array/Iterators (TG)</td>
-    <td>TBD</td>
+    <td>Weekend Lab</td>
     <td></td>
     <td></td>
     <td></td>
