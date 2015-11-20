@@ -38,10 +38,10 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 ## Day 4
 
-1. Friday Review Prep
+1. DUE TONIGHT: Solve what you can of the Events Lab tonight (and make sure you attempt all of them!). Use a pull-request from your fork of the <a href="https://github.com/sf-wdi-25/events_lab">events-lab repo</a> to submit your solutions.  Don't worry if you can't complete everything; just submit what you can.  :-)
+2. Friday Review Prep
     - Complete the [Week 1 Self-Assessment](https://docs.google.com/forms/d/1zdN9P_K5ERHMDAg5NiB7t8xvktZylY_2rwCd9aISDj8/viewform) and identify 2 topics you want to review tomorrow
     - Ask and/or upvote 3 questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w1-review
-2. DUE TONIGHT: Solve what you can of the Events Lab tonight (and make sure you attempt all of them!). Use a pull-request from your fork of the <a href="https://github.com/sf-wdi-25/events_lab">events-lab repo</a> to submit your solutions.  Don't worry if you can't complete everything; just submit what you can.  :-)
 
 Please use any remaining time to complete and review the exercises from dawn & dusk:
 
