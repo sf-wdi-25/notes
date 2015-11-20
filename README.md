@@ -528,6 +528,6 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-2">JS Primitives & Objects</a></td>
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-3">JS Functions</a></td>
     <td><a href="/week-01-controlling-the-dom/homework/README.md#day-4">jQuery & Events</a></td>
-    <td>[Tic Tac Toe](https://github.com/sf-wdi-25/tic-tac-toe) \(Weekend Lab)</td>
+    <td><a href="https://github.com/sf-wdi-25/tic-tac-toe">Tic Tac Toe</a> (Weekend Lab)</td>
   </tr>
 </table>
