@@ -7,7 +7,7 @@
   * Selectors grab all matching elements.
   ** Always use the simplest possible selector.
   * If you're storing an element as a variable, preface the variable name with a $ (ex. $total). This is a common convention for indicating that this is a jQuery element.
-  * Practice "hanging a dot" after entering an element or variable  - this will show you what methods are available to you. 
+  * Practice "hanging a dot" after entering an element or variable into the Chrome dev console - this will show you what methods are available to you. 
 
 ##### _Q._ I would like to go over the concept of "$this" again. In what situation is it appropriate to use? In what situations should we avoid it? Is it possible to show what the Javascript is behind it, not sure if that makes it easier to follow or not.
 *AND*
