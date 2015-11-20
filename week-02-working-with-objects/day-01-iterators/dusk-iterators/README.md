@@ -3,12 +3,7 @@
 
 Let's get back to arrays.
 
-As we've seen we can traverse an array of elements with a simple for-loop, but this *really* isn't the best approach to accessing and changing a list in Javascript.
-
-As per usual, Javascript has provided us with quite a few powerful built-in methods that make accessing elements in an array a relative breeze.
-
-*We will no longer be using the traditional for-loop structure to access and work with the elements within an array.  Adios!*
-
+We've already seen that we can traverse an array of elements with a simple for-loop. Then we learned about `forEach` and used that instead to iterate over arrays. Let's quickly review `forEach`.
 
 ### array.forEach() ###
 
@@ -17,6 +12,9 @@ To loop through an array with the ability to alter each element, similar to a fo
 **forEach function skeleton**:
 
 ```javascript
+var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elderberry",
+"Fig", "Guava", "Huckleberry", "Ice plant", "Jackfruit"];
+
 array.forEach(function callBack(element, index) {
     console.log(index + ". " + element);
 });
@@ -44,8 +42,9 @@ fruits.forEach(function(element, index) {
 ###array.map()###
 Similar to `forEach()`, `map()` traverses an array; this method, however, performs whatever callback function you pass into it as an argument on each element.
 
-Often we want to do more than just perform an action, like console.log(), on every loop. When we actually want to modify/manipulate our array, map is our best friend!
+Often we want to do more than just perform an action, like console.log(), on every loop.  When we actually want to modify/manipulate our array, map is our best friend!
 
+Example - double every number in an array
 
 ```JavaScript
 var numbers = [1, 4, 9];
@@ -93,7 +92,7 @@ Fruity Example - Return a list of fruit that start with vowels:
 ```javascript
 var vowels = ["A", "E", "I", "O", "U"];
 function vowelFruit(fruit) {
-  return vowels.indexOf(fruit[0]) >= 0;
+  return vowels.indexOf(fruit[0]) >= 0; // indexOf returns -1 if not found
 }
 var vowelFruits = fruits.filter(vowelFruit);
 // ["Apple", "Elderberry", "Ice plant"]
@@ -128,6 +127,7 @@ avgLen = fruits.reduce(function(current, next, index) {
 // "ABCDEFGHIJ"
 
 ```
+
 Numbers Example - Find the sum of all of the numbers in an array:
 
 ```javascript
@@ -139,7 +139,5 @@ sum = numbers.reduce(function(current, next) {
 // sum is 55
 
 ```
-
-
 
 [Here is a link to the Mozilla Developer Network page on Javascript Arrays and prototype methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
