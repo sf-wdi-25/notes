@@ -70,7 +70,10 @@ describe('myEach', function() {
     })
   });
 
-
+  it("returns undefined", function() {
+    var results = myEach(testArr, function(){});
+    expect(results).to.be.a("undefined");
+  })
 
 
   // edge cases
