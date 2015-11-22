@@ -444,7 +444,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-<!--##Week 2  - Broad Topic
+##Week 2  - Working with Objects
 <table>
 	<tr>
   	<th></th>
@@ -456,37 +456,37 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Science Fair</td>
+    <td>JSON & HTML strings (TG)</td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Refactor & Debug (NA)</td>
+    <td>Intro OOP & Constructors (JC)</td>
+    <td>No Class</td>
+    <td>No Class</td>
+    <td>No Class</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>Iterators (TG)</td>
+    <td>Prototype Methods (JC)</td>
+    <td>No Class</td>
+    <td>No Class</td>
+    <td>No Class</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td>Array/Iterators (TG)</td>
+    <td>Weekend Lab</td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
-</table>-->
+</table>
 
 ##Week 1  - Controlling the DOM
 <table>
