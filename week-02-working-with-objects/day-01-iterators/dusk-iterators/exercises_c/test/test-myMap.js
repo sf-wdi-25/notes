@@ -18,20 +18,20 @@ describe('myMap', function() {
   // sample data
   beforeEach(function() {
     testArr = ['a', 'b', 'c', 'd'];
-  })
+  });
 
   it("takes and calls a callback function", function testCallback() {
-    function spyOnMe() {};
+    function spyOnMe() {}
     var spy = chai.spy(spyOnMe);
     myMap(testArr, spy);
     expect(spy).to.have.been.called();
-  })
+  });
 
   it("passes each item in the array to the callback", function testEachItem(){
     var resultingArray = [];
     myMap(testArr, function(item) {
       resultingArray.push(item);
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', resultingArray);
     expect(resultingArray).to.have.members(['a', 'b', 'c', 'd']);
@@ -42,7 +42,7 @@ describe('myMap', function() {
     var resultingArray = [];
     myMap(testArr, function(_item, index) {
       resultingArray.push(index);
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', resultingArray);
     expect(resultingArray).to.have.members([0, 1, 2, 3]);
@@ -56,13 +56,13 @@ describe('myMap', function() {
       // each time the callback is called verify that the array is as expected
       // Note: until the callback is called though, this test will still pass
       expect(arr).to.have.members(['a', 'b', 'c', 'd']);
-    })
+    });
   });
 
   it("returns an array", function() {
     var results = myMap(testArr, function() {
       // no-op
-    })
+    });
     console.log('       results: ', results);
     expect(results).to.be.an('Array');
   });
@@ -71,7 +71,7 @@ describe('myMap', function() {
     var results = myMap(testArr, function(){});
     console.log('       results: ', results);
     expect(results.length).to.equal(testArr.length);
-  })
+  });
 
   it("returns an array constructed from the return values of the callback", function() {
     var results = myMap(testArr, function(){
@@ -79,7 +79,7 @@ describe('myMap', function() {
     });
     console.log('       results: ', results);
     expect(results).to.have.members([999, 999, 999, 999]);
-  })
+  });
 
 
   // edge cases
@@ -87,7 +87,7 @@ describe('myMap', function() {
     var resultingArray = [];
     myMap(testArr, function(_item, _index, _arr) {
       resultingArray.push('nothing');
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', testArr);
     expect(testArr).to.have.members(['a', 'b', 'c', 'd']);
@@ -98,11 +98,10 @@ describe('myMap', function() {
     var resultingArray = [];
     myMap([], function(item) {
       resultingArray.push(item);
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', resultingArray);
     expect(resultingArray.length).to.equal(0);
-
   });
 
 
@@ -110,10 +109,10 @@ describe('myMap', function() {
     var resultingArray = [];
     myMap([13], function(item) {
       resultingArray.push(item);
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', resultingArray);
     expect(resultingArray.length).to.equal(1);
   });
 
-})
+});

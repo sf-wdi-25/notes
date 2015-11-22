@@ -18,20 +18,20 @@ describe('myEach', function() {
   // sample data
   beforeEach(function() {
     testArr = [0, 1, 100, 1000];
-  })
+  });
 
   it("takes and calls a callback function", function testCallback() {
-    function spyOnMe() {};
+    function spyOnMe() {}
     var spy = chai.spy(spyOnMe);
     myEach(testArr, spy);
     expect(spy).to.have.been.called();
-  })
+  });
 
   it("passes each item in the array to the callback", function testEachItem(){
     var resultingArray = [];
     myEach(testArr, function(item) {
       resultingArray.push(item);
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', resultingArray);
     expect(resultingArray).to.have.members([0, 1, 100, 1000]);
@@ -42,7 +42,7 @@ describe('myEach', function() {
     var complexTestArr = ['snoopy', 32, {k: 'val'}, [2,3] ];
     myEach(complexTestArr, function(item) {
       resultingArray.push(item);
-    })
+    });
 
     console.log('       results: ', resultingArray);
     expect(resultingArray).to.have.members(complexTestArr);
@@ -53,7 +53,7 @@ describe('myEach', function() {
     var resultingArray = [];
     myEach(testArr, function(_item, index) {
       resultingArray.push(index);
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', resultingArray);
     expect(resultingArray).to.have.members([0, 1, 2, 3]);
@@ -67,13 +67,13 @@ describe('myEach', function() {
       // each time the callback is called verify that the array is as expected
       // until the callback is called though, this test will still pass
       expect(arr).to.have.members([0,1,100,1000]);
-    })
+    });
   });
 
   it("returns undefined", function() {
     var results = myEach(testArr, function(){});
     expect(results).to.be.a("undefined");
-  })
+  });
 
 
   // edge cases
@@ -81,7 +81,7 @@ describe('myEach', function() {
     var resultingArray = [];
     myEach(testArr, function(_item, _index, _arr) {
       resultingArray.push('nothing');
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', testArr);
     expect(testArr).to.have.members([0, 1, 100, 1000]);
@@ -92,7 +92,7 @@ describe('myEach', function() {
     var resultingArray = [];
     myEach([], function(item) {
       resultingArray.push(item);
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', resultingArray);
     expect(resultingArray.length).to.equal(0);
@@ -104,10 +104,10 @@ describe('myEach', function() {
     var resultingArray = [];
     myEach([13], function(item) {
       resultingArray.push(item);
-    })
+    });
     // compare elements in the result to expected array
     console.log('       results: ', resultingArray);
     expect(resultingArray.length).to.equal(1);
   });
 
-})
+});
