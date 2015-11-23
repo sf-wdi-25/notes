@@ -12,36 +12,16 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 2. [Continue with building_iterators](https://github.com/sf-wdi-25/building_iterators).
   Please don't feel like you have to complete all of the challenges.  Do as much as seems reasonable.
 
-Please use any remaining time to complete and review the exercises from dawn & dusk.
+Please use any remaining time to complete and review the exercises from dawn & dusk:
+
+- [Debug my Coffee](http://jsfiddle.net/eerwitt/uxazkv8m) in the console
+- [Debugging Lab](https://github.com/sf-wdi-25/debugging-challenges) using `debugger`
 
 <!--
 ## Day 2
 
-1. Reading
-2. Bonus/Stretch
-
-Please use any remaining time to complete and review the exercises from dawn & dusk.
-
-## Day 3
-
-1. Reading
-2. Bonus/Stretch
-
-Please use any remaining time to complete and review the exercises from dawn & dusk.
-
-## Day 4
-
-1. Reading
-2. Friday Review Prep
-    - Complete the [Week 1 Self-Assessment](#PENDING) and identify 2 topics you want to review tomorrow
-    - Ask and/or upvote 3 questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w1-review
-
-Please use any remaining time to complete and review the exercises from dawn & dusk.
-
-## Day 5 - Weekend Homework
-
-1. Reading
-2. Weekend Lab
+1. Read the [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript/tree/master/es5)
+2. Project 0 - [Racing Game Weekend Lab](https://github.com/sf-wdi-25/project-00)
 
 Please use any remaining time to review exercises/drills from the week! And don't forget to sleep!
 
