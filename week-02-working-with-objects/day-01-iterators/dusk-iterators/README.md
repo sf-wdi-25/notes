@@ -137,7 +137,7 @@ avgLen = fruits.reduce(function concatFirstLetter(previous, current, index) {
     if (index == 1) {
       current = current[0];
     }
-  return current + next[0];
+  return previous + current[0];
 });
 // "ABCDEFGHIJ"
 
@@ -149,7 +149,7 @@ Numbers Example - Find the sum of all of the numbers in an array:
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 sum = numbers.reduce(function add(previous, current) {
-  return current + next;
+  return current + previous;
 });
 // sum is 55
 
@@ -163,7 +163,7 @@ an initial starting point.
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 sum = numbers.reduce(function add(previous, current) {
-  return current + next;
+  return current + previous;
 }, 100);
 // sum is 155
 ```
