@@ -9,7 +9,7 @@ console.log("\n\nChallenge 1");
 
 var prices = [3.00,4.00,10.00,2.25,3.01];
 var reducedPrices = prices.map(function(element) {
-  return element - .01;
+  return element - 0.01;
 });
 
 console.log("Reduced Prices: " + reducedPrices);
@@ -28,12 +28,12 @@ var reducedPrices = prices.map(function(element) {
   var initialLength = ((element).toFixed(2)+"").length;
 
   // establish the length of the original value MINUS .01
-  var alteredLength = ((element - .01)+"").length;
+  var alteredLength = ((element - 0.01)+"").length;
 
   // If the price reduction would result in a change in the dollars place
   if( initialLength - alteredLength === 1) {
     // reduce the original value by a penny
-    element -= .01;
+    element -= 0.01;
   }
     return element.toFixed(2);
 });
@@ -47,7 +47,7 @@ console.log("\n\nChallenge 1.2");
 var prices = [3.00,4.00,10.00,2.25,3.01];
 console.log("Prices: " + prices);
 var increasedPrices = prices.map(function(element) {
-  return (element + (.05*element)).toFixed(2);
+  return (element + (0.05*element)).toFixed(2);
 });
 console.log("Increased Prices: " + increasedPrices);
 
@@ -61,7 +61,7 @@ var birthDateEvens = birthDates.filter(function(element) {
   if(element %2 === 0){
     return element;
   }
-})
+});
 
 console.log(birthDateEvens.length + " out of " +  birthDates.length +
   " students were born on an even date number.  Interesting!");
@@ -73,7 +73,7 @@ console.log("\n\nChallenge 3.0");
 moolah this summer. How much did he make?
 */
 var earnings = [20, 25, 60, 20, 85, 20];
-var total = Earnings = earnings.reduce(function(previous, current) {
+var total = earnings.reduce(function(previous, current) {
   return previous + current;
 });
 
@@ -90,7 +90,7 @@ that allows you to set an initial value that the previous callback function will
 since at the beginning of the iteration there is usually no previous value. */
 
 var earnings = [20, 25, 60, 20, 85, 20];
-var total=Earnings = earnings.reduce(function(previous, current) {
+var total = earnings.reduce(function(previous, current) {
   return previous + current;
 }, 500);
 
@@ -105,6 +105,6 @@ console.log("\n\nChallenge 4.2");
 var earnings = [20, 25, 60, 20, 85, 20];
 var twentyOccurences = earnings.filter(function(element){
     return element === 20;
-}).length
+}).length;
 
 console.log("Amount of occurences that Goyle earned $20 during the summer: " + twentyOccurences);
