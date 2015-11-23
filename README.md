@@ -480,7 +480,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>HW</td>
-    <td>Array/Iterators (TG)</td>
+    <td><a href="/week-02-working-with-objects/homework/README.md">Array/Iterators</a> (TG)</td>
     <td>Weekend Lab</td>
     <td></td>
     <td></td>
