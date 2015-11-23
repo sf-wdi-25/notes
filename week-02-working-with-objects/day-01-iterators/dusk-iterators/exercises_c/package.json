@@ -1,0 +1,16 @@
+{
+  "name": "iterator_builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "tgaff",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.4.1",
+    "chai-spies": "^0.7.1",
+    "mocha": "^2.3.4"
+  }
+}

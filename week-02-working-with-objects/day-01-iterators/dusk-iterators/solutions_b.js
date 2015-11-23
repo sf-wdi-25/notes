@@ -19,7 +19,7 @@ function last(anArr) {
 
 function printEach(anArr) {
   for(var i=0; i<anArr.length; i++) {
-    console.log(anArr[i])
+    console.log(anArr[i]);
   }
 }
 
@@ -32,7 +32,7 @@ function printEachPlus(anArr, callback) {
 }
 // calling
 printEachPlus(["apple", "toast", "cheese"], function(){
-    return "!"
+    return "!";
 });
 
 
@@ -45,5 +45,5 @@ function printEachSuperPlus(anArr, callback) {
 
 // calling
 printEachSuperPlus(["apple", "toast", "cheese"], function(item){
-    return item + "!"
+    return item + "!";
 });
