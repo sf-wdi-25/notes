@@ -1,16 +1,37 @@
-# Building our own iterators
+# Building iterators
 
 
 For the following challenges it is essential that you understand the requirements to fully implement the built-in array method. See [MDN Array Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
+## reading documentation
+
+Let's take a quick look at what MDN says about [Array.prototype.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+```
+arr.forEach(callback[, thisArg])
+```
+
+It says that `forEach` takes a callback as the first argument.  And it says the callback
+will receive 3 arguments when called:
+* currentValue
+* index
+* array
+
+It also mentions `thisArg` which **is not an argument to the callback**, rather it
+is an argument to `forEach` itself.  We can also see that `thisArg` is **optional**.
+That means it's not required.  For today's work, we will not use it.
+
+## building our own
+
+Now we're going to build our own iterators.
+
 Remember to start small and add features later. It's easier to build incrementally than to try to do everything all at once.
 
-* Create a function `myEach` which implements `Array.prototype.each`
+* Create a function `myEach` which implements `Array.prototype.forEach`
 * Create a function `myMap` which implements `Array.prototype.map`
 * Create a function `myReduce` which implements `Array.prototype.reduce`
 
-Note: for `myReduce` it is suggested that you start by coding a solution to solve it without
-`initialValue`.  See the [docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) for more details.
+Note: for `myReduce` it is suggested that you start by coding a solution to solve it without `initialValue` first.  You can add initialValue later on.  See the [docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) for more details.
 
 
 BONUS:
@@ -31,7 +52,9 @@ a way to confirm your solutions.
 
 ### test setup
 
-`cd` into the `exercises_c` directory.  Then run `npm install`.
+`cd` into this repositories directory.  Then run `npm install`.  (You should *not*
+  be in the `test` directory).
+This installs the dependencies and testing framework we need.
 
 ### running tests
 
