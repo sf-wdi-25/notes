@@ -472,7 +472,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Iterators (TG)</td>
+    <td><a href="/week-02-working-with-objects/day-01-iterators/dusk-iterators">Iterators</a> (TG)</td>
     <td>Prototype Methods (JC)</td>
     <td>No Class</td>
     <td>No Class</td>
