@@ -1,45 +1,27 @@
 # Week 1 Homework
 
-The homeworks and readings below are intended to prepare you for the next day's lectures. Please complete them first.
+The homework assignments and readings below are intended to prepare you for the next day's lectures. Please complete them first.
 
 If you have any remaining time, please complete/review the exercises from dawn and dusk lectures. You can also review the morning drills.
 
 Please refer to the [Instructions for Submitting Homework](/how-tos/homework-submission.md).
-<!--
+
 ## Day 1
 
-1. Reading
-2. Bonus/Stretch
+1. Read and do the quick [Objects](day01-working_with_objects.md) exercises.  Submit this as today's homework pull-request on the homework repository.
+2. Continue with the [Building Iterators Lab](https://github.com/sf-wdi-25/building_iterators).
+  Please don't feel like you have to complete all of the challenges.  Do as much as seems reasonable.
 
-Please use any remaining time to complete and review the exercises from dawn & dusk.
+Please use any remaining time to complete and review the exercises from dawn & dusk:
 
+- [Debug my Coffee](http://jsfiddle.net/eerwitt/uxazkv8m) in the console
+- [Debugging Lab](https://github.com/sf-wdi-25/debugging-challenges) using `debugger`
+
+<!--
 ## Day 2
 
-1. Reading
-2. Bonus/Stretch
-
-Please use any remaining time to complete and review the exercises from dawn & dusk.
-
-## Day 3
-
-1. Reading
-2. Bonus/Stretch
-
-Please use any remaining time to complete and review the exercises from dawn & dusk.
-
-## Day 4
-
-1. Reading
-2. Friday Review Prep
-    - Complete the [Week 1 Self-Assessment](#PENDING) and identify 2 topics you want to review tomorrow
-    - Ask and/or upvote 3 questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w1-review
-
-Please use any remaining time to complete and review the exercises from dawn & dusk.
-
-## Day 5 - Weekend Homework
-
-1. Reading
-2. Weekend Lab
+1. Read the [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript/tree/master/es5)
+2. Project 0 - [Racing Game Weekend Lab](https://github.com/sf-wdi-25/project-00)
 
 Please use any remaining time to review exercises/drills from the week! And don't forget to sleep!
 
