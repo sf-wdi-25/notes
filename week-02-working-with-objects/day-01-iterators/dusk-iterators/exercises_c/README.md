@@ -36,9 +36,10 @@ a way to confirm your solutions.
 ### running tests
 
 Run the tests individually as you work on each challenge.  For example to run
-the tests for myMap:
+the tests for myMap, in your terminal:
 
 ```bash
+cd exercises_c
 mocha test/test-myMap.js
 ```
 
