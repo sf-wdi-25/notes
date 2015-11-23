@@ -20,14 +20,14 @@ describe('myMap', function() {
     testArr = ['a', 'b', 'c', 'd'];
   });
 
-  it("takes and calls a callback function", function testCallback() {
+  it("takes a function as the second argument and calls that function (callback)", function testCallback() {
     function spyOnMe() {}
     var spy = chai.spy(spyOnMe);
     myMap(testArr, spy);
     expect(spy).to.have.been.called();
   });
 
-  it("passes each item in the array to the callback", function testEachItem(){
+  it("passes each value in the array to the callback", function testEachItem(){
     var resultingArray = [];
     myMap(testArr, function(item) {
       resultingArray.push(item);
@@ -38,7 +38,7 @@ describe('myMap', function() {
   });
 
 
-  it("passes each index in the array to the callback", function testEachIndex() {
+  it("passes each index in the array to the callback as argument 2", function testEachIndex() {
     var resultingArray = [];
     myMap(testArr, function(_item, index) {
       resultingArray.push(index);
@@ -49,7 +49,7 @@ describe('myMap', function() {
   });
 
 
-  it("passes the entire array to the callback", function testArrayPassing() {
+  it("passes the entire array to the callback as the 3rd argument", function testArrayPassing() {
     var resultingArray = [];
     myMap(testArr, function(_item, _index, arr) {
       console.log('       results: ', arr);

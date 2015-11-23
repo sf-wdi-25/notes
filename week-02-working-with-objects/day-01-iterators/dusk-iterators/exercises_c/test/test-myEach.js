@@ -20,14 +20,14 @@ describe('myEach', function() {
     testArr = [0, 1, 100, 1000];
   });
 
-  it("takes and calls a callback function", function testCallback() {
+  it("takes a function as the second argument and calls that function (callback)", function testCallback() {
     function spyOnMe() {}
     var spy = chai.spy(spyOnMe);
     myEach(testArr, spy);
     expect(spy).to.have.been.called();
   });
 
-  it("passes each item in the array to the callback", function testEachItem(){
+  it("passes each value in the array to the callback", function testEachItem(){
     var resultingArray = [];
     myEach(testArr, function(item) {
       resultingArray.push(item);
@@ -37,7 +37,7 @@ describe('myEach', function() {
     expect(resultingArray).to.have.members([0, 1, 100, 1000]);
   });
 
-  it("passes each item in the array to the callback, even non-integers", function testArrayPassing() {
+  it("passes each value in the array to the callback, even non-integers", function testArrayPassing() {
     var resultingArray = [];
     var complexTestArr = ['snoopy', 32, {k: 'val'}, [2,3] ];
     myEach(complexTestArr, function(item) {
@@ -49,7 +49,7 @@ describe('myEach', function() {
   });
 
 
-  it("passes each index in the array to the callback", function testEachIndex() {
+  it("passes each index in the array to the callback as argument 2", function testEachIndex() {
     var resultingArray = [];
     myEach(testArr, function(_item, index) {
       resultingArray.push(index);
@@ -60,7 +60,7 @@ describe('myEach', function() {
   });
 
 
-  it("passes the entire array to the callback", function testArrayPassing() {
+  it("passes the entire array to the callback as the 3rd argument", function testArrayPassing() {
     var resultingArray = [];
     myEach(testArr, function(_item, _index, arr) {
       console.log('       results: ', arr);

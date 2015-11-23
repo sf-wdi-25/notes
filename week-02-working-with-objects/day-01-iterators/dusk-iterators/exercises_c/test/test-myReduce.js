@@ -20,7 +20,7 @@ describe('myReduce', function() {
     testArr = ['a', 'b', 'c', 'd'];
   });
 
-  it("takes and calls a callback function", function testCallback() {
+  it("takes a function as the second argument and calls that function (callback)", function testCallback() {
     function spyOnMe() {}
     var spy = chai.spy(spyOnMe);
     myReduce(testArr, spy);
@@ -61,7 +61,7 @@ describe('myReduce', function() {
   });
 
 
-  it("passes the entire array to the callback as arg 4", function testArrayPassing() {
+  it("passes the entire array to the callback as argument 4", function testArrayPassing() {
     var resultingArray = [];
     myReduce(testArr, function(_prev, _curr, index, arr) {
       console.log('       results: ', arr);
