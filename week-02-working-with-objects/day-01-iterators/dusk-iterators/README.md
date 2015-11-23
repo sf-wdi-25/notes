@@ -7,7 +7,7 @@ We've already seen that we can traverse an array of elements with a simple for-l
 
 ### array.forEach() ###
 
-To loop through an array with the ability to alter each element, similar to a for-loop traversal , JavaScript gives us an Array method `forEach()`
+To loop through an array with the ability to alter each element, similar to a for-loop traversal, JavaScript gives us an Array method `forEach()`
 
 **forEach function skeleton**:
 
@@ -40,7 +40,8 @@ fruits.forEach(function(element, index) {
 ```
 
 ### array.map() ###
-Similar to `forEach()`, `map()` traverses an array; this method, however, performs whatever callback function you pass into it as an argument on each element.
+Similar to `forEach()`, `map()` traverses an array; this method, however, performs whatever callback function you pass into it on each element.  It outputs the results
+of the operation on each element as a new array.
 
 Often we want to do more than just perform an action, like console.log(), on every loop.  When we actually want to modify/manipulate our array, map is our best friend!
 
@@ -87,7 +88,7 @@ numbers.map(function(element) {
 With the `filter()` method you can create a *second* array filled with elements that pass certain criteria that you designate.  This is great for creating a sub array of fruits that start with vowels, a list of even numbers from a bigger list, and so on.  
   *It's important to remember that a filter method on an array requires a `boolean` return value for the callback function you pass as an argument.*
 
-Fruity Example - Return a list of fruit that start with vowels:  
+Fruity Example - Return a list of fruits that start with vowels:  
 
 ```javascript
 var vowels = ["A", "E", "I", "O", "U"];
@@ -119,8 +120,8 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 even = numbers.filter(function filterEvens(num) {
   var isEven = num%2==0;
-    var greaterThanFive = num > 5;
-    return isEven && greaterThanFive;
+  var greaterThanFive = num > 5;
+  return isEven && greaterThanFive;
 });
 // [6, 8, 10]
 
@@ -168,6 +169,7 @@ sum = numbers.reduce(function add(previous, current) {
 ```
 
 In the above example, the first time the callback is called it receives `100` and `1`.
+*(See the 100 we passed as a 2nd argument? That's an optional argument.)
 
 
 [Here is a link to the Mozilla Developer Network page on Javascript Arrays and prototype methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
@@ -203,7 +205,7 @@ Now we're going to build our own.
 
 ###Exercises:
 
-Go take a look at the challenges in [exercise b](/exercises_b.md)
+Go take a look at the challenges in [exercise b](exercises_b.md)
 
 
 
