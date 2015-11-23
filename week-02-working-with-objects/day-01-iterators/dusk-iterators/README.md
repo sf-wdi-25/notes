@@ -39,7 +39,7 @@ fruits.forEach(function(element, index) {
 */
 ```
 
-###array.map()###
+### array.map() ###
 Similar to `forEach()`, `map()` traverses an array; this method, however, performs whatever callback function you pass into it as an argument on each element.
 
 Often we want to do more than just perform an action, like console.log(), on every loop.  When we actually want to modify/manipulate our array, map is our best friend!
@@ -83,7 +83,7 @@ numbers.map(function(element) {
 ```
 
 
-###array.filter()###
+### array.filter() ###
 With the `filter()` method you can create a *second* array filled with elements that pass certain criteria that you designate.  This is great for creating a sub array of fruits that start with vowels, a list of even numbers from a bigger list, and so on.  
   *It's important to remember that a filter method on an array requires a `boolean` return value for the callback function you pass as an argument.*
 
@@ -126,7 +126,7 @@ even = numbers.filter(function filterEvens(num) {
 
 ```
 
-###array.reduce()###
+### array.reduce() ###
 The `reduce()` method is designed to create one single object that is the result of an action performed among all elements in an array.  It essentially 'reduces' the values of an array into one single element.
 
 Fruity Example - Return the first letter of every word in fruits concatentated into one single string:  
@@ -221,9 +221,9 @@ What's happening internally?
   * How do we know what to name it?
 
 
-**The Big Challenge**
+### The Big Challenge ###
 
-We are going to implement our own iterators, from scratch.
+We are going to [implement our own iterators](exercises_c), from scratch.
 
 For the following challenges it is essential that you understand the requirements to fully implement the built-in array method. See [MDN Array Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
@@ -232,6 +232,10 @@ Remember to start small and add features later. It's easier to build incremental
 * Create a function `myEach` which implements `Array.prototype.each`
 * Create a function `myMap` which implements `Array.prototype.map`
 * Create a function `myReduce` which implements `Array.prototype.reduce`
+
+Note: for `myReduce` it is suggested that you start by coding a solution to solve it without
+`initialValue`.  See the [docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) for more details.
+
 
 BONUS:
 
