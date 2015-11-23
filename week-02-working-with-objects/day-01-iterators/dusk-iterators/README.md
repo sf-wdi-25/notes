@@ -132,7 +132,7 @@ The `reduce()` method is designed to create one single object that is the result
 Fruity Example - Return the first letter of every word in fruits concatentated into one single string:  
 
 ```javascript
-avgLen = fruits.reduce(function concatFirstLetter(current, next, index) {
+avgLen = fruits.reduce(function concatFirstLetter(previous, current, index) {
     if (index == 1) {
       current = current[0];
     }
@@ -147,12 +147,28 @@ Numbers Example - Find the sum of all of the numbers in an array:
 ```javascript
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-sum = numbers.reduce(function add(current, next) {
+sum = numbers.reduce(function add(previous, current) {
   return current + next;
 });
 // sum is 55
 
 ```
+
+In the above examples, notice how the first time the callback is called it receives
+element[0] and element[1].  There is another way to call this function and specify
+an initial starting point.  
+
+```javascript
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+sum = numbers.reduce(function add(previous, current) {
+  return current + next;
+}, 100);
+// sum is 155
+```
+
+In the above example, the first time the callback is called it receives `100` and `1`.
+
 
 [Here is a link to the Mozilla Developer Network page on Javascript Arrays and prototype methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
@@ -205,7 +221,7 @@ What's happening internally?
   * How do we know what to name it?
 
 
-**The Challenge**
+**The Big Challenge**
 
 We are going to implement our own iterators, from scratch.
 
