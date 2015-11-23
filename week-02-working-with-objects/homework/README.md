@@ -9,7 +9,7 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 ## Day 1
 
 1. Read and do the quick [Objects](day01-working_with_objects.md) exercises.  Submit this as today's homework pull-request on the homework repository.
-2. [Continue with building_iterators](https://github.com/sf-wdi-25/building_iterators).
+2. Continue with the [Building Iterators Lab](https://github.com/sf-wdi-25/building_iterators).
   Please don't feel like you have to complete all of the challenges.  Do as much as seems reasonable.
 
 Please use any remaining time to complete and review the exercises from dawn & dusk:
