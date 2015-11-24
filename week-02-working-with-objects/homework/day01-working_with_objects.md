@@ -77,6 +77,6 @@ Declaring variables and defining them as portions of a larger object helps us cr
 - Add some properties that logically fit into an object describing our class (address, floor number, and a list of students.
 - Try to access your new data properties from the console to make sure they work.
 
-If everything worked out, you should have a fully functioning data object, only now with even MORE properties with us to play with!
+If everything worked out, you should have a fully functioning data object, only now with even MORE properties for us to play with!
 
 **Submit** the above as today's pull-request to the homework repository.  
