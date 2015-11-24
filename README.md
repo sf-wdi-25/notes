@@ -457,7 +457,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Drills</td>
     <td>Science Fair</td>
-    <td>JSON & HTML strings (TG)</td>
+    <td><a href="https://github.com/sf-wdi-25/html_strings">JSON & HTML strings</a> (TG)</td>
     <td></td>
     <td></td>
     <td></td>
