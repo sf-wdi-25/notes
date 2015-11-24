@@ -17,23 +17,23 @@ var data = {
 	school: "General Assembly",
 	city: "San Francisco",
 	course: "Web Development Immersive",
-	course_id: "WDI21",
-	classrootm: "6",
-	students: [{
+	course_id: "WDI25",
+	classrootm: "8",
+	instructors: [{
 		id: 0,
-		last_name: "Farquhar",
-		first_name: "Bradley",
-		github_username: "farquhar86"
+		last_name: "Gaff",
+		first_name: "Travis",
+		github_username: "tgaff"
 	}, {
 		id: 1,
-		last_name: "Preys",
-		first_name: "Daniel",
-		github_username: "danielpreys"
+		last_name: "Allen",
+		first_name: "Nathan",
+		github_username: "nathanallen"
 	}, {
 		id: 2,
-		last_name: "Monaghan",
-		first_name: "Darragh",
-		github_username: "darraghmonaghan"
+		last_name: "Castilla",
+		first_name: "Justin",
+		github_username: "justincastilla"
 	}]
 }
 
@@ -60,12 +60,12 @@ To access this property, we can use dot-notation or bracket-notation on the key 
  
 `GA` has the value `General Assembly`.  
  
-To access an array within an object,  the method is similar to accessing any other property.  The property `students` is an array of Objects.  To access that array and assign it to a variable, we simply perform the following:
+To access an array within an object,  the method is similar to accessing any other property.  The property `instructors` is an array of Objects.  To access that array and assign it to a variable, we simply perform the following:
  
  ```javascript
- var studentArray = data.students //students
+ var instructorsArray = data.instructors //instructors
  ```
-The `data.students` array is now accessible  by using `studentArray` instead.
+The `data.instructors` array is now accessible  by using `instructorsArray` instead.
 Declaring variables and defining them as portions of a larger object helps us create readable and followable code.  
 
 *We can assume that an Object is a collection of properties (key & value pairs) that all have some sort of relationship and are connected logically to one another.*  
