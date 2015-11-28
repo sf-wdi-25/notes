@@ -37,8 +37,12 @@ A **GUI** exists to make an application more convenient for the user. An **API**
 3. jQuery AJAX
 
   ```js
-  $.get('https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu', function (data) {
-    console.log(data);
+  $.ajax({
+    method: 'GET',
+    url: 'https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu',
+    success: function (data) {
+      console.log(data);
+    }
   });
   ```
 
@@ -77,7 +81,7 @@ The HyperText Transfer Protocol (HTTP) is similar to a written language like Eng
 * A browser will use `GET` to indicate it would like to receive a specific web page or resource from a server.
 * A browser will use `POST` to indicate it would like to send some data to a server.
 
-We can use AJAX to make both `GET` and `POST` requests to servers. jQuery gives us the <a href="https://api.jquery.com/jQuery.ajax" target="_blank">$.ajax()</a> method, which will allow us to perform any AJAX request. It also gives us the helper methods <a href="https://api.jquery.com/jQuery.get" target="_blank">$.get()</a> and <a href="https://api.jquery.com/jQuery.post" target="_blank">$.post()</a>, which, you guessed it, are specifically for `GET` and `POST` requests.
+We can use AJAX to make both `GET` and `POST` requests to servers. jQuery gives us the <a href="https://api.jquery.com/jQuery.ajax" target="_blank">$.ajax()</a> method, which will allow us to perform any AJAX request.
 
 ## AJAX Setup
 
@@ -99,47 +103,6 @@ $.ajax({
 });
 ```
 
-If we're doing a simple `GET` request, we can (and should) avoid the `$.ajax()` method and use the helper method `$.get()` instead. Here, we only need to pass in the request URL and callback function for the same AJAX request as the example above.
-
-```js
-var url = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
-$.get(url, function (data) {
-    console.log(data);
-});
-```
-
-For a `POST` request, we can also use the `$.ajax()` method, but this time, the data type is `"POST"`. Since `POST` requests send data to a server, we also need to send an object of data (the `book`).
-
-```js
-var bookData = {
-  title: "The Giver",
-  author: "Lowis Lowry"
-};
-
-$.ajax({
-  type: "POST",
-  url: "/books", // relative URL
-  data: bookData,
-  dataType: "json",
-  success: function (data) {
-    console.log(data);
-  }
-});
-```
-
-Just like with `GET`, the `POST` request above can be refactored to use the much simpler `$.post()` method. We pass in the request URL, data, and callback function.
-
-```js
-var bookData = {
-  title: "The Giver",
-  author: "Lowis Lowry"
-};
-
-$.post('/books', bookData, function (data) {
-  console.log(data);
-});
-```
-
 #### AJAX & Event-Handlers
 
 We can combine AJAX calls with any jQuery event-handlers. You may want to execute an AJAX call when the user clicks a button or submits a form.
@@ -150,19 +113,36 @@ var url = 'https://api.spotify.com/v1/search?q=goodbye&type=artist'
 // click event on button
 $('button').on('click', function (event) {
   event.preventDefault();
-  $.get(url, function (data) {
-    console.log(data);
+  $.ajax({
+    type: 'GET',
+    url: url,
+    dataType: 'json',
+    success: function (data) {
+      console.log(data);
+    }
   });
 });
 
 // submit event on form
 $('form').on('submit', function (event) {
   event.preventDefault();
-  $.get(url, function (data) {
-    console.log(data);
+  $.ajax({
+    type: 'GET',
+    url: url,
+    success: function (data) {
+      console.log(data);
+    }
   });
 });
 ```
+
+##### preventDefault
+In the above code you see `event.preventDefault();` in each of the event-handlers.  
+What is that for?  
+
+Forms and buttons have default behavior that they always follow.  We can use `preventDefault` to stop that default behavior.  It *prevents the default behavior* from occurring.  
+Without `preventDefault` the form might try to reload the page or browse elsewhere.  Instead, we want to use AJAX and jQuery to update the page.
+
 
 #### Handling Success & Failure
 
@@ -171,25 +151,19 @@ We can't guarantee that our API will respond or that it will respond quickly eno
 ```js
 var url = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
 
-$.get(url, function (data) {
-  // We're all good! (status code in the 200s)
-  console.log(data);
-}, function() {
-  // Timeout or server error (status code in the 400s)
-  console.log(':(');
-});
-
-// or with this alternate style:
-
-$.get(url)
-  .success(function (data) {
+$.ajax({
+  type: 'GET',
+  url: url,
+  success: function (data) {
     // We're all good! (status code in the 200s)
     console.log(data);
-  })
-  .fail(function() {
+  },
+  error: function() {
     // Timeout or server error (status code in the 400s)
     console.log(':(');
-  });
+  }
+});
+
 ```
 
 ## Challenges
@@ -200,7 +174,6 @@ First, download the <a href="https://chrome.google.com/webstore/detail/postman-r
 2. Use Weezer's artist `id` to search for them directly using the <a href="https://developer.spotify.com/web-api/artist-endpoints" target="_blank">artist endpoint</a>.
 3. Find Weezer's top tracks in the US.
 4. Use the search endpoint to find albums or artists with the name "Clouds".
-5. Start <a href="https://github.com/sf-wdi-24/spotify-search" target="_blank">tonight's homework</a>!
 
 ## Resources
 
