@@ -420,7 +420,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module1</td>
-    <td>HTML Forms & Query Params (JC)</td>
+    <td><a href="week-03-ajax-json-express/day-01-intro-ajax/dawn-forms">HTML Forms & Query Params</a> (JC)</td>
     <td>GeoQuakes Lab (JC)</td>
     <td>Intro Express Routing (TG)</td>
     <td>JSON API: Create & Read (NA)</td>
@@ -428,7 +428,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Intro APIs and AJAX: Giphy Lab (TG)</td>
+    <td><a href="week-03-ajax-json-express/day-01-intro-ajax/dusk-intro-ajax">Intro APIs and AJAX: Giphy Lab</a> (TG)</td>
     <td>REST and AJAX: GET & POST (NA)</td>
     <td>Express Params & Queries (TG)</td>
     <td>JSON API: Update & Destroy (NA)</td>
