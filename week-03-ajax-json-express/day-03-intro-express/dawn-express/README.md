@@ -5,7 +5,8 @@
 | Explain the request response cycle |
 | Use npm (node package manager) to initialize a node project |
 | Write a local Node.js web server with Express |
-| Add Handlebars to an Express app |
+| Serve JSON with express |
+| Serve static assets with express |
 
 ### Motivation (Why?)
 
@@ -24,7 +25,7 @@ Express is a cutting-edge, unopinionated, server-side JavaScript framework that 
 - NPM works with package.json, which is a list of project information and dependencies that can be installed on other computers and servers.
 
 ### Express JS
-- Express is an framework built on top of Node.js that makes development of web servers more intuitive and quicker.
+- Express is a framework built on top of Node.js that makes development of web servers more intuitive and quicker.
 - Express allows us to easily set up routes that will trigger actions such as rendering pages or returning JSON.
 
 ### Hello World in Express
@@ -74,13 +75,12 @@ Note that the `app` object has a method called `.get()` which takes two argument
 
 ### Game Plan
 
-Today's <a href="https://github.com/sf-wdi-24/express-practice" target="_blank">exercises</a> are set up a bit like a tutorial to walk you through:
+Today's <a href="https://github.com/sf-wdi-25/express-intro" target="_blank">exercises</a> are set up a bit like a tutorial to walk you through:
 
   * creating a new project with Node and Express
   * creating routes for clients to make requests to your server
-  * using server-side HTML templates to send responses with data and HTML at the same time
   * storing data on the server
-  * responding to GET requests with simple strings (`res.send`), HTML templates (`res.render`), or JSON data (`res.json`)
+  * responding to GET requests with simple strings (`res.send`), or JSON data (`res.json`)
   * serving static files (images, css...)
 
 
