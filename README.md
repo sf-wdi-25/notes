@@ -400,7 +400,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-##Week 3  - Broad Topic
+##Week 3  - REST & CRUD
 <table>
 	<tr>
   	<th></th>
