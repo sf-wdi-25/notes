@@ -284,6 +284,32 @@ app.post('/cities', function (request, response) {
   </html>
   ```
 
+### writing our own middleware
+
+How can we write our own middleware?  Let's say we want to make some alteration to the params so that further down the chain those alterations can be used.  
+
+
+```js
+// call this function on every route with the param of 'name'
+app.param('name', function(request, response, next) {
+  // get name from params
+  var name = request.params.name;
+  // capitalize the name
+  var capitalizedName = name[0].toUpperCase() + name.slice(1).toLowerCase();
+  // set the value of the name to the capitalized version
+  request.params.name = capitalizedName;
+  // pass control to the next middleware function
+  next();
+})
+
+app.get("/greet/:name", function (req, res) {
+  res.send( "Hello, " + req.params.name );
+});
+```
+
+Now every name is capitalized.
+
+
 ## Summary
 
 We learned about:
