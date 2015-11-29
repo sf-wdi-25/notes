@@ -400,7 +400,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-<!--##Week 3  - Broad Topic
+##Week 3  - Broad Topic
 <table>
 	<tr>
   	<th></th>
@@ -412,37 +412,37 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
+    <td>Object Drills (JC)</td>
+    <td>AJAX lab review</td>
+    <td>HTTP Tennis (JC)</td>
+    <td>Outcomes (Neda)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
+    <td><a href="week-03-ajax-json-express/day-01-intro-ajax/dawn-forms">HTML Forms & Query Params</a> (JC)</td>
+    <td>GeoQuakes Lab (JC)</td>
+    <td>Intro Express Routing (TG)</td>
+    <td>JSON API: Create & Read (NA)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td><a href="week-03-ajax-json-express/day-01-intro-ajax/dusk-intro-ajax">Intro APIs and AJAX: Giphy Lab</a> (TG)</td>
+    <td>REST + AJAX: GET & POST (NA)</td>
+    <td>Express: Params & Queries (TG)</td>
+    <td>JSON API: Update & Destroy (NA)</td>
+    <td>Weekend Lab (NA)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
-</table>-->
+</table>
 
 ##Week 2  - Working with Objects
 <table>
