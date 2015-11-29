@@ -465,7 +465,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module1</td>
     <td><a href="/week-02-working-with-objects/day-01-iterators/dawn-debugging/tic-tac-toe-examples">Refactor</a> & <a href="/week-02-working-with-objects/day-01-iterators/dawn-debugging">Debug</a> (NA)</td>
-    <td><a href="/week-02-working-with-objects/day-02-prototypes/dawn-theme">Intro OOP & Constructors</a> (JC)</td>
+    <td><a href="/week-02-working-with-objects/day-02-prototypes/dawn-OOP">Intro OOP & Constructors</a> (JC)</td>
     <td>No Class</td>
     <td>No Class</td>
     <td>No Class</td>
@@ -473,7 +473,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module2</td>
     <td><a href="/week-02-working-with-objects/day-01-iterators/dusk-iterators">Iterators</a> (TG)</td>
-    <td>Prototype Methods (JC)</td>
+    <td><a href="/week-02-working-with-objects/day-02-prototypes/dusk-prototype-methods">Prototype Methods</a> (JC)</td>
     <td>No Class</td>
     <td>No Class</td>
     <td>No Class</td>
