@@ -24,6 +24,11 @@ Express is a cutting-edge, unopinionated, server-side JavaScript framework that 
 - Install NPM packages: `npm install --save express`.
 - NPM works with package.json, which is a list of project information and dependencies that can be installed on other computers and servers.
 
+### What is Node Good For?
+- Node really shines when it comes to heavy input-output type operations.
+- Realtime services like chat applications or conferencing platforms benefit from using Node.
+- APIs are also input/output heavy, and they also tend to work with JavaScript out of the box (think JSON). What better platform than Node?
+
 ### Express JS
 - Express is a framework built on top of Node.js that makes development of web servers more intuitive and quicker.
 - Express allows us to easily set up routes that will trigger actions such as rendering pages or returning JSON.
@@ -41,10 +46,22 @@ app.get('/', function (req, res) {
 var server = app.listen(3000);
 ```
 
-### What is Node Good For?
-- Node really shines when it comes to heavy input-output type operations.
-- Realtime services like chat applications or conferencing platforms benefit from using Node.
-- APIs are also input/output heavy, and they also tend to work with JavaScript out of the box (think JSON). What better platform than Node?
+### Express file tree
+
+```
+├── server.js  // your server config
+├── package.json    // lists dependencies; changed by npm install --save somePackage
+├── public  // i.e. client-side
+│   ├── images  // images to serve to client
+│   ├── javascripts
+│       └── app.js   // client-side javascript file
+│   └── stylesheets
+│       └── style.css
+│   └── vendor // includes jQuery & bootstrap if we choose not to use CDN
+└── views  // html files that we'll serve
+│   ├── index.html
+```
+
 
 ### Request Response Cycle
 
