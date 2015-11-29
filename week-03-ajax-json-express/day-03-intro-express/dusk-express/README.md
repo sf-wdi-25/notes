@@ -29,7 +29,6 @@
   * Request Params
 * Query Params
   * Middleware
-* Calculator App
 
 ## What Can We Do with Express?
 
@@ -245,6 +244,7 @@ var cities = [];
 
 // body parser config for all routes
 app.use(bodyParser.urlencoded({ extended: false }));
+//    ^              middleware            ^
 
 app.get('/cities', function(req, res) {
   res.json({cities: cities});
@@ -265,9 +265,10 @@ app.post('/cities', function (request, response) {
 
 *Is there something missing from this code?
   *We haven't installed the `body-parser` package.
+*What will the client see when it GETs /cities?
 *How can we post to this?
   * postman
-  * html form
+  * HTML form
 
 
   ```html
@@ -284,7 +285,7 @@ app.post('/cities', function (request, response) {
   </html>
   ```
 
-### writing our own middleware
+### Writing our own middleware
 
 How can we write our own middleware?  Let's say we want to make some alteration to the params so that further down the chain those alterations can be used.  
 

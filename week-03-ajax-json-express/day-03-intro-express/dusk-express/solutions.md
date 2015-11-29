@@ -41,13 +41,13 @@ var tacos = [
 app.get("/taco/:index", function(req, res){
   var index = req.params.index;
   var selection = tacos[index] || "Sorry, that's not a taco option";
-  res.send( selection );
+  res.json( selection );
 });
 
 app.get("/burger/:index", function(req, res){
   var index = req.params.index;
   var selection = burgers[index] || "Sorry, that's not a burger option";
-  res.send( selection );
+  res.json( selection );
 });
 ```
 
@@ -86,6 +86,7 @@ app.get("/pick-a-number", function(req, res){
 });
 ```
 
+## Stretch Exercises
 ### Calculator app -- Using Query Parameters
 
 ``` javascript
