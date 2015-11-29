@@ -184,6 +184,29 @@ app.get("/thank", function (req, res) {
 
 Reset your server and go to <a href="localhost:3000/thank?name=jane" target="_blank">localhost:3000/thank?name=jane</a>. Note how we can now define parameters in the url after a `?`.
 
+## Choosing between request params and query params
+
+**request params:** `http://localhost:3000/icecream/flavors/:flavor`
+**query params:** `http://localhost:3000/icecream?flavor=SOMEFLAVOR`
+
+Generally if the parameter is identifying a specific _entity_ or _resource_ on it's own, you most likely want request params.  If it is an optional param for this route, you generally should use query params.
+
+Common cases for Request Params:
+* database/item IDs            -  GET /contacts/348
+* major components of the app  -  GET /posts/33
+  * resources!
+* expressing hierarchies       -  GET /departments/44/employees/2  
+
+> Request Params are not always IDs either; names can be used in some systems: `/departments/accounting/employees/LiuJanice`
+
+Common cases for Query Params:
+* searches             -  GET /?q=kittens
+* optional selections  -  GET /calculator?lang=en
+* pagination           -  GET /posts?start=1&size=10
+* other limits         -  GET /posts?since=2015-11-29
+
+Finally you might use them both together in some cases: `/posts/33/comments?limit=50`
+
 ## Middleware
 
 What is middleware? <a href="http://expressjs.com/guide/using-middleware.html" target="_blank">In terms of Express</a>, middleware is a function with access to the request object (req), the response object (res), and the next middleware in the application’s request-response cycle, commonly denoted by a variable named next.
