@@ -12,7 +12,7 @@
 
 ## Pre-reading
 
-* <a href="http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177" target="_blank">HTTP Intro</a>
+* [HTTP Intro](http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177)
 
 ## Terminology
 
@@ -228,7 +228,7 @@ app.post('/cities', parseUrlencoded, function (request, response) {
   city = { name: name, description: description}
   cities.push(city);
 
-  // passing local variables to be used in your template
+  // sending json
   response.json({ cities: cities});
 });
 ```
@@ -259,7 +259,7 @@ app.post('/cities', function (request, response) {
   city = { name: name, description: description}
   cities.push(city);
 
-  // passing local variables to be used in your template
+  // sending json
   response.json({ cities: cities});
 });
 
@@ -267,7 +267,24 @@ app.post('/cities', function (request, response) {
 
 *Is there something missing from this code?
   *We haven't installed the `body-parser` package.
+*How can we post to this?
+  * postman
+  * html form
 
+
+  ```html
+  <html>
+  <body>
+    <form method="POST" action="http://localhost:3000/cities">
+      <label for"cityName">city</label>
+      <input id="cityName" name="name" type="text" />
+      <label for"cityDesc">description</label>
+      <input id="cityDesc" name="description" type="text" />
+      <input type="submit" />
+    </form>
+  </body>
+  </html>
+  ```
 
 ## Summary
 
