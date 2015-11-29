@@ -59,12 +59,12 @@ Let's start with a simple **Express** application.
 The folder structure will be as follows:
 
 ```
-/quick_example
-    /node_modules
-        /express
-            ...
-    server.js
-    package.json
+quick_example
+  ├── node_modules/
+      └── express/
+  ├── server.js  // let's avoid `app.js`
+  ├── package.json
+  ...
 ```
 
 Now we need to write some code for our simple application.
