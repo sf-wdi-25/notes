@@ -49,7 +49,7 @@ var server = app.listen(3000);
 ### Express file tree
 
 ```
-├── server.js  // your server config
+├── server.js  // your server code
 ├── package.json    // lists dependencies; changed by npm install --save somePackage
 ├── public  // i.e. client-side
 │   ├── images  // images to serve to client
