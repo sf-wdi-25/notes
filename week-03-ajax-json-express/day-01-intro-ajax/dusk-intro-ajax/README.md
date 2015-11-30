@@ -87,14 +87,14 @@ We can use AJAX to make both `GET` and `POST` requests to servers. jQuery gives 
 
 Using jQuery's `$.ajax()` method, we can specify a list of parameters, including:
 
-* type of request
+* method of request
 * request URL
 * data type
 * callback function (which will run on successful completion of the AJAX request)
 
 ```js
 $.ajax({
-  type: 'GET',
+  method: 'GET',
   url: 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT',
   dataType: 'json',
   success: function (data) {
@@ -114,7 +114,7 @@ var url = 'https://api.spotify.com/v1/search?q=goodbye&type=artist'
 $('button').on('click', function (event) {
   event.preventDefault();
   $.ajax({
-    type: 'GET',
+    method: 'GET',
     url: url,
     dataType: 'json',
     success: function (data) {
@@ -127,7 +127,7 @@ $('button').on('click', function (event) {
 $('form').on('submit', function (event) {
   event.preventDefault();
   $.ajax({
-    type: 'GET',
+    method: 'GET',
     url: url,
     success: function (data) {
       console.log(data);
@@ -152,7 +152,7 @@ We can't guarantee that our API will respond or that it will respond quickly eno
 var url = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
 
 $.ajax({
-  type: 'GET',
+  method: 'GET',
   url: url,
   success: function (data) {
     // We're all good! (status code in the 200s)
