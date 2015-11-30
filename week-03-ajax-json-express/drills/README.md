@@ -11,17 +11,20 @@ We will need some practice creating and implementing JavaScript objects after th
  -  Last Initial
  -  GitHub username
  
- Object:  `Instructor`
+ Object:  `Instructor`  
+ 
  -  First Name
  -  Last Initial
  -  GitHub username
  
- Object:  `DIR`
+ Object:  `DIR`  
+ 
  -  First Name
  -  Last Initial
  -  GitHub username
    
- Object: `Cohort`
+ Object: `Cohort`  
+ 
  - An array of Students
  - An array of Instructors
  - An awesome DIR
@@ -35,21 +38,23 @@ We will need some practice creating and implementing JavaScript objects after th
 
  Methods for `Student`:
  - `introduceYourself()` - **Display** to the console a simple greeting
-      - "Hello, I am `<First Name>` and I am a student in Cohort `<Cohort number>`"
+      - "Hello, I am `<First Name>` and I am a student."
  - `studentToHTML()` - **Return** an HTML string with the following format: 
-      - `Student:  <First Name> <Last Initial> @ <Github Username> ( Cohort <Cohort Number>)`
+      - `Student:  <First Name> <Last Initial> @ <Github Username>`
  
- Methods for `Instructor`:
+ Methods for `Instructor`:  
+ 
  - `introduceYourself()` - **Display** to the console a simple greeting
-      - "Hello, I am `<First Name>` and I am an instructor in Cohort `<Cohort number>`"
+      - "Hello, I am `<First Name>` and I am an instructor."
  - `instructorToHTML()` - **Return** an HTML string with the following format: 
-      - `Instructor: <First Name> <Last Initial> @ <Github Username> ( Cohort <Cohort Number>)`
+      - `Instructor: <First Name> <Last Initial> @ <Github Username>`
   
- Methods for `DIR`:
+ Methods for `DIR`:  
+ 
  - `introduceYourself()` - **Display** to the console a simple greeting
-      - "Hello, I am `<First Name>` and I am a DIR in Cohort `<Cohort number>`"
+      - "Hello, I am `<First Name>` and I am a DIR."
  - `DIRToHTML()` - **Return** an HTML string with the following format: 
-      - `DIR: <First Name> <Last Initial> @ <Github Username> ( Cohort <Cohort Number>)`
+      - `DIR: <First Name> <Last Initial> @ <Github Username>`
  
  Methods for `Cohort`:
  
