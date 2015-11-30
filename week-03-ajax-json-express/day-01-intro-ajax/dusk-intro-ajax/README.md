@@ -146,7 +146,7 @@ Without `preventDefault` the form might try to reload the page or browse elsewhe
 
 #### Handling Success & Failure
 
-We can't guarantee that our API will respond or that it will respond quickly enough. In these cases, the AJAX request will fail or throw an error. Using the `jquery.get()` shorthand, we can handle these eventualities by "chaining" additional event-listeners to our initial request:
+We can't guarantee that our API will respond or that it will respond quickly enough. In these cases, the AJAX request will fail or throw an error. We can handle this by providing an `error` function to be executed when an error occurs:
 
 ```js
 var url = 'https://api.spotify.com/v1/artists/1jTAvg7eLZQFonjWIXHiiT';
@@ -165,6 +165,12 @@ $.ajax({
 });
 
 ```
+
+> Note: some APIs return JSON with an error message in it; this will not trigger the `error` callback so you'll have to handle it in `success`.  Read the API documentation (or test it) to see how it works.
+
+> Later you might see ajax event-handlers chained onto the ajax method call instead.  Let's not worry about those yet, but know that they work in a similar way.
+
+
 
 ## Challenges
 
