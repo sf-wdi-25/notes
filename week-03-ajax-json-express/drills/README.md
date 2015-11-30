@@ -64,7 +64,7 @@ We will need some practice creating and implementing JavaScript objects after th
  - `addDIR(DIR)` - Add a DIR to the Cohort object.  
  - `removeDIR(DIR)` - Remove a DIR from the Cohort Object.  **Return** the removed DIR.  
  
- - `buildCohortList()` - Create an HTML string consisting of the full list of the Instructors, the DIR, and the students.  The String should be an unordered list (`<ul>`) and each individual should be a list item (`<li>`). You may include any desired custom HTML to make the list awesome and exciting.
+ - `buildCohortList()` - Create and return an HTML string consisting of the full list of the Instructors, the DIR, and the students.  The String should be an unordered list (`<ul>`) and each individual should be a list item (`<li>`). You may include any desired custom HTML to make the list awesome and exciting.
 
 **Challenges**  
 
