@@ -89,6 +89,9 @@ Practice GET and POST using the Postman Chrome Extension & AJAX
 [Book App / GET & POST Exercises](/exercises.md) - [solutions](/solutions.md)
 
 ## Resources
+* <a href="https://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>
+
+Shorthand jQuery AJAX requests:
 
 * <a href="https://api.jquery.com/jquery.get" target="_blank">jQuery.get()</a>
 * <a href="https://api.jquery.com/jquery.post" target="_blank">jQuery.post()</a>
