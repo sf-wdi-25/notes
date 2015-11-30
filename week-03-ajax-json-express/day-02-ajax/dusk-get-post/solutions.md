@@ -1,4 +1,5 @@
-## Challenges
+## Solutions - AJAX: GET & POST
+
 
 #### Postman
 
@@ -12,4 +13,4 @@
 
 #### AJAX Book App
 
-<a href="https://github.com/sf-wdi-24/ajax-book-app/tree/solution" target="_blank">ajax-book-app (solution branch)</a>
+<a href="https://github.com/sf-wdi-25/ajax-book-app/tree/solution" target="_blank">ajax-book-app (solution branch)</a>
