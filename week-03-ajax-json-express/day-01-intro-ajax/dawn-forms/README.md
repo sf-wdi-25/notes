@@ -102,7 +102,7 @@ Radio buttons or checkboxes:
 
 ## Common Validations
 
-Validations avoids having users submit bad data to our application. Knowing how to use them will save time and make your app a lot more usable.
+Validations help to prevent users from submitting bad data to the server. Knowing how to use them will save time and make your app a lot more usable.
 
 Bad data could be anything from a required field being empty, an email address that was mistyped, or a password confirmation that doesn't match. Thankfully, HTML forms give us simple out-of-the-box validations for these common situations.
 
