@@ -412,7 +412,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Object Drills (JC)</td>
+    <td><a href="week-03-ajax-json-express/drills">Object Drills</a> (JC)</td>
     <td>AJAX lab review</td>
     <td>HTTP Tennis (JC)</td>
     <td>Outcomes (Neda)</td>
