@@ -15,22 +15,22 @@ CRUD describes the **basic operations of a persistent database**. Every database
 * **Create** - adds new data to the database
 * **Read** - retrieves data from the database (can be one record or a collection of records)
 * **Update** - edits existing data in the database
-* **Delete** - removes data from the database
+* **Destroy** - removes data from the database
 
 Our own applications don't have databases yet (we'll get there!), but as you already learned, we can interact with external databases through APIs.
 
 ## The REST of CRUD
 
-REST stands for **Representational State Transfer**. This means that the type of request you make to the server (`GET`, `POST`, `PUT`, or `DELETE`) represents the action you want to take (`CREATE`, `READ`, `UPDATE`, or `DELETE`).
+REST stands for **Representational State Transfer**. This means that the type of request you make to the server (`GET`, `POST`, `PUT`, or `DELETE`) represents the action you want to take (`create`, `read`, `update`, or `destroy`).
 
-Let's look at the different types of server requests and their corresponding CRUD actions:
+Let's look at the different types of HTTP methods and their corresponding CRUD operation:
 
-| Request | CRUD Action |
+| HTTP Method | description |
 | :--- | :--- |
-| POST | CREATE |
-| GET | READ |
-| PUT | UPDATE |
-| DELETE | DELETE |
+| `POST` | create |
+| `GET` | read |
+| `PUT` | update |
+| `DELETE` | destroy |
 
 ## RESTful Routing
 
@@ -38,18 +38,18 @@ REST follows a routing convention, meaning that the type of request you're makin
 
 Here's what RESTful routing looks like for a database of `photos`:
 
-| Request | URL | CRUD Action |
+| HTTP Method | URL | CRUD Action |
 | :--- | :--- | :--- |
-| GET | `/photos` | READS all photos |
-| POST | `/photos` | CREATES new photo |
-| GET | `/photos/:id` | READS one photo |
-| PUT | `/photos/:id` | UPDATES one photo |
-| DELETE | `/photos/:id` | DELETES one photo |
+| `GET` | `/photos` | lists all the photos ("index") |
+| `POST` | `/photos` | creates a new photo |
+| `GET` | `/photos/:id` | e.g. reads photo #3 |
+| `PUT` | `/photos/:id` | e.g. updates photo #77 |
+| `DELETE` | `/photos/:id` | e.g. destroys photo #94 |
 
 ## AJAX Refresher: GET & POST
 
 ```js
-// GET all books
+// GET all books (books index)
 $.ajax({
   method: "GET",
   url: "https://super-crud.herokuapp.com/books",
