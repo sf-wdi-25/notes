@@ -7,7 +7,7 @@ Note that most APIs require an API key if you want to do anything other than rea
 1. Use Postman to `GET` all the `books`. Now get just one book using the `_id`.
 2. Use Postman to send a `POST` request to create a new book.
 
-For the rest of the challenges, fork and clone the <a href="https://github.com/sf-wdi-25/ajax-book-app" target="_blank">ajax-book-app</a> repo.
+For the rest of the challenges, fork and clone the <a href="https://github.com/sf-wdi-25/ajax-crud-book-app" target="_blank">ajax-book-app</a> repo.
 
 1. Use AJAX to `GET` all the `books` from the API. Your first step should be to `console.log` the data from the API.
     - How would you drill down into the books data and retrieve just one book?

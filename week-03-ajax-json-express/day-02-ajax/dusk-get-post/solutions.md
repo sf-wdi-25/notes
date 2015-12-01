@@ -13,4 +13,4 @@
 
 #### AJAX Book App
 
-<a href="https://github.com/sf-wdi-25/ajax-book-app/tree/solution" target="_blank">ajax-book-app (solution branch)</a>
+<a href="https://github.com/sf-wdi-25/ajax-crud-book-app/branches" target="_blank">ajax-book-app (solution branches 1 & 2)</a>
