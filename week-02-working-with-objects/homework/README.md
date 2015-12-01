@@ -16,7 +16,6 @@ Please use any remaining time to complete and review the exercises from dawn & d
 - [Debug my Coffee](http://jsfiddle.net/eerwitt/uxazkv8m) in the console
 - [Debugging Lab](https://github.com/sf-wdi-25/debugging-challenges) using `debugger`
 
-<!--
 ## Day 2
 
 1. Read the [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript/tree/master/es5)
@@ -24,4 +23,3 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 Please use any remaining time to review exercises/drills from the week! And don't forget to sleep!
 
--->
