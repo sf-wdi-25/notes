@@ -436,10 +436,10 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>HW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><a href="week-03-ajax-json-express/homework/README.md">giphy</a></td>
+    <td><a href="week-03-ajax-json-express/homework/README.md">homework</a></td>
+    <td><a href="week-03-ajax-json-express/homework/README.md">homework</a></td>
+    <td><a href="week-03-ajax-json-express/homework/README.md">homework</a></td>
     <td></td>
   </tr>
 </table>
