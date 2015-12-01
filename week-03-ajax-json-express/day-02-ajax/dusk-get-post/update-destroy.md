@@ -86,7 +86,7 @@ $.ajax({
 
 ## Update and show changes
 
-If we need to make some changes we'll `POST` to the same endpoint in order to `UPDATE` the attributes we need to change.
+If we need to make some changes we'll `PUT` to the same endpoint in order to _update_ the attributes we need to change.
 
 ```js
 $.ajax({

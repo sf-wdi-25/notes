@@ -1,16 +1,17 @@
 ## Exercises - AJAX: GET & POST
 
-For these challenges, you'll be using the `books` endpoint of <a href="https://github.com/sf-wdi-25/crud-api" target="_blank">this RESTful API</a>. Your goal is to use AJAX to `READ` all the `books` from the API and `CREATE` new `books`.
+For these challenges, you'll be using the `books` endpoint of <a href="https://github.com/sf-wdi-25/crud-api" target="_blank">this RESTful API</a>. Your goal is to use AJAX to _read_ all the `books` from the API and _create_ new `books`.
 
-Note that most APIs require an API key if you want to do anything other than read data, and a lot of them even require a key just to read. We made this API for you to explore CRUD, no API key required!
+    Note that most APIs require an API key if you want to do anything other than read data, and a lot of them even require a key just to read. We made this API for you to explore CRUD, no API key required!
 
-1. Use Postman to `GET` all the `books`. Now get just one book using the `_id`.
-2. Use Postman to send a `POST` request to create a new book:
+1. Use Postman to `GET` all the `books`. Make a note of their `_id`s.
+2. Now get just one book by `_id`.
+3. Use Postman to send a `POST` request to create a new book:
     - set `author` to YOUR-NAME, and make up values for the other fields.
     - What does your response data look like? What is the "id" of your book?
-3. How would you request your book, using your id?
-4. How would you update your book to change the date to your birthdate?
-5. How would you delete your book?
+4. How would you request your book, using your id?
+5. How would you update your book to change the releaseDeate to your birthdate?
+6. How would you delete your book?
 
 For the rest of the challenges, fork and clone the <a href="https://github.com/sf-wdi-25/ajax-crud-book-app" target="_blank">ajax-book-app</a> repo.
 

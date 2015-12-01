@@ -3,8 +3,8 @@
 | Objectives |
 | :--- |
 | Explain CRUD and RESTful Routing |
-| CREATE and READ data from an RESTful API using AJAX |
-| Display data on the page with Handlebars templating |
+| Create and Read data using a RESTful API |
+| Create data using HTML forms & AJAX |
 
 ![crud-all-the-things](https://cloud.githubusercontent.com/assets/7833470/10917104/d7fdd2ee-8213-11e5-8cf8-466ff1677a6d.jpg)
 
@@ -55,24 +55,43 @@ Wowa, what's with the `:id` thing? That's just a _pattern_ we're looking for. We
 #### Questions
 * Why not just use `GET` everywhere / for everything?
 * Why not just have endpoints like `/get_photo_3` and `/edit-picture-27-plz`?
+* Some endpoints have an `id` and others do not. What's the logic to it?
 
 ## AJAX Refresher: GET & POST
 Great, we've got a handle on our "verbs" (HTTP Methods) and our "addresses" (API endpoints). Now let's put it into practice! It's time for some AJAX:
 
+#### `GET /books` - read all the books
+
 ```js
-// GET all books (books index)
 $.ajax({
   method: "GET",
   url: "https://super-crud.herokuapp.com/books",
   success: function (data) {
-    console.log(data);
+    console.log(data.books); // lots of books in here!
   },
   error: function () {
     console.log("uh oh...")
   }
 });
+```
 
-// POST request to create a new book
+#### `GET /books/1` - read book \#1
+
+```js
+$.ajax({
+  method: "GET",
+  url: "https://super-crud.herokuapp.com/books/1",
+  success: function (book) {
+    console.log(book); // just book #1 in here!
+  },
+  error: function () {
+    console.log("uh oh...")
+  }
+});
+```
+
+#### `POST /books` - create a new book
+```js
 $.ajax({
   method: "POST",
   url: "https://super-crud.herokuapp.com/books",
@@ -82,27 +101,65 @@ $.ajax({
     image: "https://upload.wikimedia.org/wikipedia/en/b/bf/Harry_Potter_and_the_Sorcerer's_Stone.jpg",
     releaseDate: "September 1, 1998"
   },
-  success: function (data) {
-    console.log(data); // better yet, add it to the page!
+  success: function (book) {
+    console.log("your book was successfully created!")
+    console.log("your book has an id of", book._id)
+    // render book to page
   },
   error: function () {
-    console.log("uh oh...")
+    console.error("uh oh... failed to create your book")
   }
 });
 ```
 
-Right now we're just console-logging the response data -- ideally, when we get the response data back from the server, our "success" callback would render the information to the page using jQuery. Can you figure out how you would "drill down" into the `data` object and then use jQuery to add it to the page?
+#### `PUT /books/10` - update (edit) book \#10
+```js
+$.ajax({
+  method: "PUT",
+  url: "https://super-crud.herokuapp.com/books/10",
+  data: {
+    title: "Harry Potter and the Sorcerer's Stone",
+    author: "J.K. Rowling",
+    image: "https://upload.wikimedia.org/wikipedia/en/b/bf/Harry_Potter_and_the_Sorcerer's_Stone.jpg",
+    releaseDate: "September 1, 1998"
+  },
+  success: function (book) {
+    console.log("your book was successfully updated!");
+  },
+  error: function () {
+    console.error("uh oh... failed to update your book.")
+  }
+});
+```
+
+#### `DELETE /books/10` - destroy book \#10
+```js
+$.ajax({
+  method: "DELETE",
+  url: "https://super-crud.herokuapp.com/books/10",
+  success: function () {
+    console.log("your book was successfully deleted!");
+  },
+  error: function () {
+    console.error("uh oh... failed to update your book.")
+  }
+});
+```
+
 
 ## Challenges
 
 1. Practice GET and POST using the Postman Chrome Extension
-2. Then, try it with AJAX, and render the response to the page
+2. Then, try it with AJAX, and render the response to the page.
 
 Head over to the exercises to get started:
 
-[Book App](/exercises.md) - [solutions](/solutions.md)
+[Book App](exercises.md) - [solutions](solutions.md)
 
 ## Resources
+* More lectures notes on [Update & Destroy](update-destroy.md)
+
+#### Documentation
 * <a href="https://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>
 
 Shorthand jQuery AJAX requests:
