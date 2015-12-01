@@ -421,7 +421,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module1</td>
     <td><a href="week-03-ajax-json-express/day-01-intro-ajax/dawn-forms">HTML Forms & Query Params</a> (JC)</td>
-    <td>GeoQuakes Lab (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/geoquakes-lite">GeoQuakes Lab</a> (JC)</td>
     <td>Intro Express Routing (TG)</td>
     <td>JSON API: Create & Read (NA)</td>
     <td>Review (Team)</td>
