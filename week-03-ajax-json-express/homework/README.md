@@ -5,14 +5,13 @@ The homework and reading assignments below are intended to prepare you for the n
 If you have any remaining time, please complete/review the exercises from dawn and dusk lectures. You can also review the morning drills.
 
 Please refer to the [Instructions for Submitting Homework](/how-tos/homework-submission.md).
-<!--
+
 ## Day 1
 
-1. Reading
-2. Bonus/Stretch
+1. Complete the giffaw lab
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
-
+<!--
 ## Day 2
 
 1. Reading
