@@ -1,4 +1,4 @@
-# Week 1 Homework
+# Homework
 
 The homework and reading assignments below are intended to prepare you for the next day's lectures. Please complete them first.
 
