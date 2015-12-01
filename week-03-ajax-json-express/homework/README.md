@@ -9,6 +9,7 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 ## Day 1
 
 1. Complete the giffaw lab
+2. Stretch Challenge:  [spotify-search](https://github.com/sf-wdi-25/spotify-search).  Do this only if you have free time after giffaw.
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 <!--
