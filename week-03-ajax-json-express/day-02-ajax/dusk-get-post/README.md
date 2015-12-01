@@ -21,32 +21,43 @@ Our own applications don't have databases yet (we'll get there!), but as you alr
 
 ## The REST of CRUD
 
-REST stands for **Representational State Transfer**. This means that the type of request you make to the server (`GET`, `POST`, `PUT`, or `DELETE`) represents the action you want to take (`create`, `read`, `update`, or `destroy`).
+CRUD is so common, and so useful, that we'll often describe our web applications as "CRUD apps". But how do we get from the front-end all the way to the database? When I fill out a form to sign-up for a website, how does that data get saved to the database? We're missing a step!
 
-Let's look at the different types of HTTP methods and their corresponding CRUD operation:
+REST stands for **Representational State Transfer**. When we talk about REST we're describing a combination of an HTTP Method + a structured API endpoint. The whole point of REST is to make it easy and convenient for web developers to know _where to send data_ and _where to find data_.
 
-| HTTP Method | description |
-| :--- | :--- |
-| `POST` | create |
-| `GET` | read |
-| `PUT` | update |
-| `DELETE` | destroy |
+Let's start with the "verbs" (HTTP methods), and their corresponding CRUD operations:
+
+| HTTP Method | CRUD operation | Example |
+| :--- | :--- | :--- |
+| `POST` | _create_ | create a new blog post |
+| `GET` | _read_ | retrieve an existing blog post |
+| `PUT` | _update_ | edit an existing blog post |
+| `DELETE` | _destroy_ | delete an existing blog post |
 
 ## RESTful Routing
 
 REST follows a routing convention, meaning that the type of request you're making also determines what the URL (route) will look like. You'll often hear the term "RESTful API", which simply means that the API follows the conventions of REST and RESTful Routing.
 
-Here's what RESTful routing looks like for a database of `photos`:
+REST is a combination of a "verb" (HTTP Method) and an "address" (a URL path / route / or API Endpoint). Here's what RESTful routing looks like for a database of `photos`:
 
-| HTTP Method | URL | CRUD Action |
-| :--- | :--- | :--- |
-| `GET` | `/photos` | lists all the photos ("index") |
-| `POST` | `/photos` | creates a new photo |
-| `GET` | `/photos/:id` | e.g. reads photo #3 |
-| `PUT` | `/photos/:id` | e.g. updates photo #77 |
-| `DELETE` | `/photos/:id` | e.g. destroys photo #94 |
+| HTTP Method | URL | Example | a.k.a. |
+| :--- | :--- | :--- | :--- |
+| `GET` | `/photos` | _read_ all the photos | photos index (list) |
+| `POST` | `/photos` | _create_ a new photo | new photo |
+| `GET` | `/photos/:id` | _read_ photo #3 | show photo |
+| `PUT` | `/photos/:id` | _update_ photo #77 | edit photo |
+| `DELETE` | `/photos/:id` | _destroy_ photo #94 | destroy photo |
+
+Wowa, what's with the `:id` thing? That's just a _pattern_ we're looking for. We want a resource (a photo) with a specific `id` (e.g. #3, #77, #94, etc). In practice we'd see things like:
+
+* `GET http://www.example.com/api/photos/3`
+
+#### Questions
+* Why not just use `GET` everywhere / for everything?
+* Why not just have endpoints like `/get_photo_3` and `/edit-picture-27-plz`?
 
 ## AJAX Refresher: GET & POST
+Great, we've got a handle on our "verbs" (HTTP Methods) and our "addresses" (API endpoints). Now let's put it into practice! It's time for some AJAX:
 
 ```js
 // GET all books (books index)
@@ -84,9 +95,12 @@ Right now we're just console-logging the response data -- ideally, when we get t
 
 ## Challenges
 
-Practice GET and POST using the Postman Chrome Extension & AJAX
+1. Practice GET and POST using the Postman Chrome Extension
+2. Then, try it with AJAX, and render the response to the page
 
-[Book App / GET & POST Exercises](/exercises.md) - [solutions](/solutions.md)
+Head over to the exercises to get started:
+
+[Book App](/exercises.md) - [solutions](/solutions.md)
 
 ## Resources
 * <a href="https://api.jquery.com/jQuery.ajax/" target="_blank">jQuery.ajax()</a>
