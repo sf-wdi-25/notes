@@ -61,7 +61,7 @@ The folder structure will be as follows:
 quick_example
   ├── node_modules/
       └── express/
-  ├── server.js  // let's avoid `app.js`
+  ├── server.js  
   ├── package.json
   ...
 ```
