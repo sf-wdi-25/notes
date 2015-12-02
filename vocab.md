@@ -106,6 +106,7 @@
 * AJAX
 * JSON
 * CRUD
+* .gitignore
 * GET request
 * POST request
 * PUT request
