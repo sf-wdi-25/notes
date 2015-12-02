@@ -186,8 +186,9 @@ Reset your server and go to <a href="localhost:3000/thank?name=jane" target="_bl
 
 ## Choosing between request params and query params
 
-**request params:** `http://localhost:3000/icecream/flavors/:flavor`
-**query params:** `http://localhost:3000/icecream?flavor=SOMEFLAVOR`
+* **request params:** `http://localhost:3000/icecream/flavors/:flavor`
+
+* **query params:** `http://localhost:3000/icecream?flavor=SOMEFLAVOR`
 
 Generally if the parameter is identifying a specific _entity_ or _resource_ on it's own, you most likely want request params.  If it is an optional param for this route, you generally should use query params.
 
