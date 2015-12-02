@@ -5,8 +5,8 @@
 | Explain the request response cycle |
 | Use npm (node package manager) to initialize a node project |
 | Write a local Node.js web server with Express |
-| Serve JSON with express |
-| Serve static assets with express |
+| Serve JSON with Express |
+| Serve static assets with Express |
 
 ### Motivation (Why?)
 
