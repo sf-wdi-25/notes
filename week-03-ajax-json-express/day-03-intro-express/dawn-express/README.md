@@ -46,6 +46,13 @@ app.get('/', function (req, res) {
 var server = app.listen(3000);
 ```
 
+### Request Response Cycle
+
+Remember that the interwebs is many clients querying many servers. We've done a lot with clients and APIs, and now we want to write the server side code that handles the request and then responds with some data.
+
+![request](http://i.imgur.com/YXgj8.png)
+
+
 ### Express file tree
 
 ```
@@ -62,12 +69,6 @@ var server = app.listen(3000);
 │   ├── index.html
 ```
 
-
-### Request Response Cycle
-
-Remember that the interwebs is many clients querying many servers. We've done a lot with clients and APIs, and now we want to write the server side code that handles the request and then responds with some data.
-
-![request](http://i.imgur.com/YXgj8.png)
 
 **In Express**
 
