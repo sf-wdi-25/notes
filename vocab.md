@@ -70,8 +70,8 @@
 * Bootstrap
 * CDN
 
-<!-- 
-####Week 2
+
+####Week 2 & 3
 * constructor
 * prototype
 * O.O.P.
@@ -94,9 +94,7 @@
 * client
 * server
 * input validation
-
-
-####Week 3
+<!-- ####Week 3 --> <!--  week 2 was only 2 days for WDI25 :-/ -->
 * Express
 * HTTP
 * Resource path
@@ -116,6 +114,8 @@
 * string interpolation
 * seperation of concerns
 * RESTful routing
+* static files
+
 
 #### Week 4
 * database
