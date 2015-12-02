@@ -15,7 +15,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 ## Day 2
 
-1. Get as far as you can in the [Book App Lab](https://github.com/sf-wdi-25/ajax-crud-book-app)
+1. Get as far as you can in the [Book App Lab](/week-03-ajax-json-express/day-02-ajax/dusk-get-post/exercises.md#book-app-challenge)
     * Try to complete `create` and `read`
     * Stretch goal: `delete`
     * Make sure to look at the [solution branches](https://github.com/sf-wdi-25/ajax-crud-book-app/branches)

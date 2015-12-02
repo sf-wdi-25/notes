@@ -1,5 +1,6 @@
 ## Exercises - AJAX: GET & POST
 
+#### CRUD + Postman Challenges 
 For these challenges, you'll be using the `books` endpoint of <a href="https://github.com/sf-wdi-25/crud-api" target="_blank">this RESTful API</a>. Your goal is to use AJAX to _read_ all the `books` from the API and _create_ new `books`.
 
     Note that most APIs require an API key if you want to do anything other than read data, and a lot of them even require a key just to read. We made this API for you to explore CRUD, no API key required!
@@ -13,6 +14,7 @@ For these challenges, you'll be using the `books` endpoint of <a href="https://g
 5. How would you update your book to change the releaseDeate to your birthdate?
 6. How would you delete your book?
 
+#### Book App Challenge
 For the rest of the challenges, fork and clone the <a href="https://github.com/sf-wdi-25/ajax-crud-book-app" target="_blank">ajax-book-app</a> repo.
 
 1. Use AJAX to `GET` all the `books` from the API. Your first step should be to `console.log` the data from the API.
