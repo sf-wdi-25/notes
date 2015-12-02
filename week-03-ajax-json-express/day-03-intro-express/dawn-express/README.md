@@ -66,9 +66,12 @@ Remember that the interwebs is many clients querying many servers. We've done a 
 │       └── style.css
 │   └── vendor // includes jQuery & bootstrap if we choose not to use CDN
 └── views  // html files that we'll serve
-│   ├── index.html
+│   └── index.html
+└── node_modules
+    ├── express // etc
 ```
 
+> We should also add `node_modules` to a `.gitignore` file so it is not checked into git.  Future developers can just run `npm install` to get the packages listed in `package.json`
 
 **In Express**
 
