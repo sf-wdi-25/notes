@@ -64,10 +64,10 @@ Remember that the interwebs is many clients querying many servers. We've done a 
 │       └── app.js   // client-side javascript file
 │   └── stylesheets
 │       └── style.css
-│   └── vendor // includes jQuery & bootstrap if we choose not to use CDN
-└── views  // html files that we'll serve
+├── vendor // optional 2nd public dir for jQuery & bootstrap if we choose not to use CDNs
+├── views  // html files that we'll serve
 │   └── index.html
-└── node_modules
+└── node_modules  // don't edit files in here!
     ├── express // etc
 ```
 
