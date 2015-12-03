@@ -113,7 +113,7 @@
 * PATCH request
 * HTML templating
 * string interpolation
-* seperation of concerns
+* separation of concerns
 * RESTful routing
 * static files
 * package.json
