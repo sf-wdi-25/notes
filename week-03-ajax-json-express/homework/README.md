@@ -29,19 +29,18 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 1. <a href="https://github.com/sf-wdi-25/express_setup_drills">for(i=0; i<5; i++) { build an express app }</a>
 
-
-<!--
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
 ## Day 4
 
-1. Reading
-2. Friday Review Prep
-    - Complete the [Week 1 Self-Assessment](#PENDING) and identify 2 topics you want to review tomorrow
-    - Ask and/or upvote 3 questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w1-review
+1. Skim the [Express.js Documentation](expressjs.com/4x/api.html)
+2. Continue working on the Todo App. You can start from scratch, or attempt one of the stretch goals.
+3. Friday Review Prep
+    - Ask and/or upvote 3 technical questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w3-review
 
-Please use any remaining time to complete and review the exercises from dawn & dusk.
+Please use any remaining time to review exercises/drills from the week!
 
+<!--
 ## Day 5 - Weekend Homework
 
 1. Reading
