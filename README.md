@@ -431,7 +431,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="week-03-ajax-json-express/day-01-intro-ajax/dusk-intro-ajax">Intro APIs and AJAX: Giphy Lab</a> (TG)</td>
     <td><a href="week-03-ajax-json-express/day-02-ajax/dusk-get-post">REST + AJAX: GET & POST</a> (NA)</td>
     <td><a href="week-03-ajax-json-express/day-03-intro-express/dusk-express">Express: Params & Queries</a> (TG)</td>
-    <td><a href="week-03-ajax-json-express/day-04-json-api/dawn-create-read">Todo API Lab</a>: Update & Destroy (NA)</td>
+    <td><a href="week-03-ajax-json-express/day-04-json-api/dusk-update-destroy">Todo API Lab</a>: Update & Destroy (NA)</td>
     <td>Weekend Lab (NA)</td>
   </tr>
   <tr>
