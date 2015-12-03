@@ -116,6 +116,10 @@
 * seperation of concerns
 * RESTful routing
 * static files
+* package.json
+* middleware
+* localhost
+* API
 
 
 #### Week 4
