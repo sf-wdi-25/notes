@@ -36,6 +36,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 1. Skim the [Express.js Documentation](expressjs.com/4x/api.html)
 2. Continue working on the Todo App. You can start from scratch, or attempt one of the stretch goals.
 3. Friday Review Prep
+    - Complete the [Week 1 Self-Assessment](https://docs.google.com/forms/d/1rnS9diVRYBEZ1MjV-VMA55M6T3lOh3Fr9vVACZao9CI/viewform) and identify 2 topics you want to review tomorrow
     - Ask and/or upvote 3 technical questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w3-review
 
 Please use any remaining time to review exercises/drills from the week!
