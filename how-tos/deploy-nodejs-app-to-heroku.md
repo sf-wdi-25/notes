@@ -19,10 +19,10 @@ Log in using the email address and password you used when creating your Heroku a
 
 ```
 $ heroku login
-Enter your Heroku credentials.
-Email: zeke@example.com
+//Enter your Heroku credentials.
+//Email: zeke@example.com
 Password:
-...
+//...
 ```
 
 Authenticating is required to allow both the heroku and git commands to operate.
@@ -33,7 +33,7 @@ Execute the following commands to clone the sample application:
 
 ```
 $ git clone https://github.com/sf-wdi-25/express_self_api.git
-$ cd express_self_api=1
+$ cd express_self_api
 ```
 
 You now have a functioning git repository that contains a simple application as well as a package.json file, which is used by Node’s dependency manager.  
@@ -46,9 +46,9 @@ Create an app on Heroku, which prepares Heroku to receive your source code.
 
 ```
 $ heroku create
-Creating sharp-rain-871... done, stack is cedar-14
-http://sharp-rain-871.herokuapp.com/ | https://git.heroku.com/sharp-rain-871.git
-Git remote heroku added
+//Creating sharp-rain-871... done, stack is cedar-14
+//http://sharp-rain-871.herokuapp.com/ | https://git.heroku.com/sharp-rain-871.git
+//Git remote heroku added
 ```
 
 When you create an app, a git remote (called heroku) is also created and associated with your local git repository.
@@ -57,41 +57,41 @@ Now deploy your code:
 
 ```
 $ git push heroku master
-Counting objects: 343, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (224/224), done.
-Writing objects: 100% (250/250), 238.01 KiB, done.
-Total 250 (delta 63), reused 0 (delta 0)
-remote: Compressing source files... done.
-remote: Building source:
-remote:
-remote: -----> Node.js app detected
-remote:
-remote: -----> Creating runtime environment
-remote:
-remote:        NPM_CONFIG_LOGLEVEL=error
-remote:        NPM_CONFIG_PRODUCTION=true
-remote:        NODE_MODULES_CACHE=true
-remote:
-remote: -----> Installing binaries
-remote:        engines.node (package.json):  0.12.2
-remote:        engines.npm (package.json):   unspecified (use default)
-remote:
-remote:        Downloading and installing node 0.12.2...
-remote:        Using default npm version: 2.7.4
-       ....
-remote: -----> Build succeeded!
-remote:        ├── ejs@2.3.1
-remote:        └── express@4.9.8
-remote:
-remote: -----> Discovering process types
-remote:        Procfile declares types -> web
-remote:
-remote: -----> Compressing... done, 9.4MB
-remote: -----> Launching... done, v8
-remote:        http://sharp-rain-871.herokuapp.com deployed to Heroku
-To https://git.heroku.com/nameless-savannah-4829.git
- * [new branch]      master -> master
+// Counting objects: 343, done.
+// Delta compression using up to 4 threads.
+// Compressing objects: 100% (224/224), done.
+// Writing objects: 100% (250/250), 238.01 KiB, done.
+// Total 250 (delta 63), reused 0 (delta 0)
+// remote: Compressing source files... done.
+// remote: Building source:
+// remote:
+// remote: -----> Node.js app detected
+// remote:
+// remote: -----> Creating runtime environment
+// remote:
+// remote:        NPM_CONFIG_LOGLEVEL=error
+// remote:        NPM_CONFIG_PRODUCTION=true
+// remote:        NODE_MODULES_CACHE=true
+// remote:
+// remote: -----> Installing binaries
+// remote:        engines.node (package.json):  0.12.2
+// remote:        engines.npm (package.json):   unspecified (use default)
+// remote:
+// remote:        Downloading and installing node 0.12.2...
+// remote:        Using default npm version: 2.7.4
+//        ....
+// remote: -----> Build succeeded!
+// remote:        ├── ejs@2.3.1
+// remote:        └── express@4.9.8
+// remote:
+// remote: -----> Discovering process types
+// remote:        Procfile declares types -> web
+// remote:
+// remote: -----> Compressing... done, 9.4MB
+// remote: -----> Launching... done, v8
+// remote:        http://sharp-rain-871.herokuapp.com deployed to Heroku
+// To https://git.heroku.com/nameless-savannah-4829.git
+ // * [new branch]      master -> master
 ```
 
 The application is now deployed. Ensure that at least one instance of the app is running:
