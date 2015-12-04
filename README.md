@@ -424,7 +424,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/geoquakes-lite">GeoQuakes Lab</a> (JC)</td>
     <td><a href="week-03-ajax-json-express/day-03-intro-express/dawn-express">Intro Express</a> (TG)</td>
     <td><a href="week-03-ajax-json-express/day-04-json-api/dawn-create-read">Todo API Lab</a>: Create & Read (NA)</td>
-    <td>Review (Team)</td>
+    <td>Heroku Deploy & Review (Team)</td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -432,7 +432,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="week-03-ajax-json-express/day-02-ajax/dusk-get-post">REST + AJAX: GET & POST</a> (NA)</td>
     <td><a href="week-03-ajax-json-express/day-03-intro-express/dusk-express">Express: Params & Queries</a> (TG)</td>
     <td><a href="week-03-ajax-json-express/day-04-json-api/dusk-update-destroy">Todo API Lab</a>: Update & Destroy (NA)</td>
-    <td>Weekend Lab (NA)</td>
+    <td><a href="https://github.com/sf-wdi-25/express_self_api">Personal API</a> (Weekend Lab)</td>
   </tr>
   <tr>
     <td>HW</td>
