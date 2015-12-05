@@ -356,7 +356,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-<!--##Week 4  - Broad Topic
+##Week 4 - REST, CRUD & Mongo DB
 <table>
 	<tr>
   	<th></th>
@@ -368,37 +368,37 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
+    <td>Number Guesser (JC)</td>
+    <td>Bubble Sort (JC)</td>
+    <td>Merge Sort (JC)</td>
+    <td>Outcomes **9:00am** (Neda)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Mongo CRUD Drills & Seeding (NA)</td>
+    <td>Songly Albums/Songs CR (TG)</td>
+    <td>Mongo Reference & Populate (NA)</td>
+    <td>Project Approvals (Team)</td>
+    <td>Review / Projects (Team)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
+    <td>Intro Mongo Schemas & Embedding (JC)</td>
+    <td>Songly Albums/Songs UD (TG)</td>
+    <td>Songly Artists & Albums (TG)</td>
+    <td>Project 1 work time</td>
     <td>Weekend Lab (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td>Mongo Reading</td>
+    <td>Reference & Populate</td>
+    <td>Project 1: proposals</td>
+    <td>Project 1 ^_^</td>
     <td></td>
   </tr>
-</table>-->
+</table>
 
 ##Week 3  - REST & CRUD
 <table>

@@ -1,8 +1,9 @@
 # Week 1 Drills
 
-<!-- 
-### Day 1: Topic
-### Day 2: Topic
-### Day 3: Topic
-### Day 4: Topic
- -->
+### Day 1: Number Guesser
+
+### Day 2: Bubble Sort
+
+### Day 3: Merge Sort
+
+### Day 4: Outcomes
