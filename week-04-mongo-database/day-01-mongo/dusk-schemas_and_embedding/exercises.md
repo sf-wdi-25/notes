@@ -11,7 +11,7 @@ The following challenges are psuedo code. Write a method for each example.
 
 Here's an example where **Monsters have many Broods**:
 
-1. Write a route to create a new Monster.
+Example: Write a route to create a new Monster.
 
   ```js
     app.post('/monsters', function(req, res) {
@@ -22,7 +22,7 @@ Here's an example where **Monsters have many Broods**:
     });
   ```
 
-1. Write a route to create a new Brood that belongs to a Monster.
+Example: Write a route to create a new Brood that belongs to a Monster.
 
   ```js
     app.post('/monsters/:id/broods', function(req, res) {
