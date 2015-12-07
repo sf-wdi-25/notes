@@ -14,10 +14,12 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
     * **DO NOT PUSH TO HEROKU** (it will break all the things)
     * First, we recommend you debug anything that's broken, and commit any pending changes.
     * Next, we recommend you create a new `branch` for version #2 of your app:
+
         ```bash
             git checkout -b mongodb_integration
         ```
     * Make sure that when you push your changes, you push to (and from) the correct branch!
+
         ```bash
             git branch      # mongodb_integration
             git push origin mongodb_integration
