@@ -368,7 +368,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/drills#day-1-binary-search">Binary Search</a> (JC)</td>
+    <td><a href="week-04-mongo-database/drills#day-1-binary-search">Binary Search</a> (JC)</td>
     <td>Bubble Sort (JC)</td>
     <td>Merge Sort (JC)</td>
     <td>Outcomes **9:00am** (Neda)</td>
@@ -376,7 +376,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Mongo CRUD Drills & Seeding (NA)</td>
+    <td><a href="week-04-mongo-database/day-01-mongo/dawn-mongo">Intro Mongo</a>] (NA)</td>
     <td>Songly Albums/Songs CR (TG)</td>
     <td>Mongo Reference & Populate (NA)</td>
     <td>Project Approvals (Team)</td>
