@@ -384,7 +384,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Intro Mongo Schemas & Embedding (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/day-01-mongo/dusk-schemas_and_embedding">Intro Mongo Schemas & Embedding</a> (JC)</td>
     <td>Songly Albums/Songs UD (TG)</td>
     <td>Songly Artists & Albums (TG)</td>
     <td>Project 1 work time</td>
