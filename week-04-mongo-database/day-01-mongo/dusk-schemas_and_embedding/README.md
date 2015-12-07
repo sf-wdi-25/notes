@@ -70,6 +70,21 @@ How would you design the following?
 
 ### Setting Up Relationships with Mongoose
 
+**Here are the major SchemaTypes MongoDB can store:**
+ - String
+ - Number
+ - Date
+ - Buffer
+ - Boolean
+ - Mixed
+ - ObjectId
+ - Array
+
+[Source Documentation](http://mongoosejs.com/docs/guide.html)  
+
+[SchemaType Documentation](http://mongoosejs.com/docs/schematypes.html)
+
+
 **Embedding Data**
 
 ```javascript
