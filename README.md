@@ -392,7 +392,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>HW</td>
-    <td>Mongo Reading</td>
+    <td><a href="week-04-mongo-database/homework">MongoDB Integration</a></td>
     <td>Reference & Populate</td>
     <td>Project 1: proposals</td>
     <td>Project 1 ^_^</td>
@@ -400,7 +400,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>
 
-##Week 3  - REST & CRUD
+##Week 3  - AJAX & REST
 <table>
 	<tr>
   	<th></th>

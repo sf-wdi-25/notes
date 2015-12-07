@@ -6,14 +6,27 @@ If you have any remaining time, please complete/review the exercises from dawn a
 
 Please refer to the [Instructions for Submitting Homework](/how-tos/homework-submission.md).
 
-<!--
+
 ## Day 1
 
-1. Reading
-2. Bonus/Stretch
+1. Browse the Docs: [Mongoose Model](http://mongoosejs.com/docs/api.html#model_Model), [MongoDB CRUD](https://docs.mongodb.org/manual/applications/crud/).
+2. Your goal is to add mongoose to your Personal API (from the weekend lab):
+    * **DO NOT PUSH TO HEROKU** (it will break all the things)
+    * First, we recommend you debug anything that's broken, and commit any pending changes.
+    * Next, we recommend you create a new `branch` for version #2 of your app:
+        ```bash
+            git checkout -b mongodb_integration
+        ```
+    * Make sure that when you push your changes, you push to (and from) the correct branch!
+        ```bash
+            git branch      # mongodb_integration
+            git push origin mongodb_integration
+        ```
+    * Can you modify your CRUD routes to use mongoose? (Take a close look at the morning lab!)
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
+<!--
 ## Day 2
 
 1. Reading
