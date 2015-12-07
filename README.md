@@ -368,7 +368,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Number Guesser (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/drills#day-1-binary-search">Binary Search</a> (JC)</td>
     <td>Bubble Sort (JC)</td>
     <td>Merge Sort (JC)</td>
     <td>Outcomes **9:00am** (Neda)</td>
