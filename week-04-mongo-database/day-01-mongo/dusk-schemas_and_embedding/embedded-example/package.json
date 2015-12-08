@@ -1,0 +1,23 @@
+{
+  "name": "mongo_tv_drills",
+  "version": "1.0.0",
+  "description": "This lab is designed to drill you on CRUDing resources in MongoDB.",
+  "main": "seed.js",
+  "dependencies": {
+    "mongoose": "^4.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sf-wdi-25/mongo_tv_drills.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sf-wdi-25/mongo_tv_drills/issues"
+  },
+  "homepage": "https://github.com/sf-wdi-25/mongo_tv_drills#readme"
+}
