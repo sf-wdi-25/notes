@@ -370,7 +370,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Drills</td>
     <td><a href="week-04-mongo-database/drills#day-1-binary-search">Binary Search</a> (JC)</td>
     <td><a href="week-04-mongo-database/drills/README.md#day-2-bubble-sort">Bubble Sort</a> (JC)</td>
-    <td>Merge Sort (JC)</td>
+    <td><a href="week-04-mongo-database/drills#day-3-merge-sort">Merge Sort</a> (JC)</td>
     <td>Outcomes **9:00am** (Neda)</td>
     <td>Review (Team)</td>
   </tr>
