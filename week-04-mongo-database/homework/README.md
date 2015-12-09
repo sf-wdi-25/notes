@@ -28,14 +28,11 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
-<!--
 ## Day 2
 
-1. Reading
-2. Bonus/Stretch
+1. Your goal is tackle the [Tunely Lab](https://github.com/sf-wdi-25/tunely) _again_ tonight, and try to complete sprints 1-4. That's right _1_ through _4_. As in start over and do it again!
 
-Please use any remaining time to complete and review the exercises from dawn & dusk.
-
+<!-- 
 ## Day 3
 
 1. Reading
