@@ -30,7 +30,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 ## Day 2
 
-1. Your goal is tackle the [Tunely Lab](https://github.com/sf-wdi-25/tunely) _again_ tonight, and try to complete sprints 1-4. That's right _1_ through _4_. As in start over and do it again!
+1. Your goal is to tackle the [Tunely Lab](https://github.com/sf-wdi-25/tunely) _again_ tonight, and try to complete sprints 1-4. That's right _1_ through _4_. As in start over and do it again!
 
 <!-- 
 ## Day 3

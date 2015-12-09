@@ -393,7 +393,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>HW</td>
     <td><a href="week-04-mongo-database/homework">MongoDB Integration</a></td>
-    <td>Reference & Populate</td>
+    <td><a href="week-04-mongo-database/homework">Tunely Sprints 1-4</a></td>
     <td>Project 1: proposals</td>
     <td>Project 1 ^_^</td>
     <td></td>
