@@ -43,6 +43,7 @@ If you want to push yourself and learn something new, optionally consider doing 
     * **User Stories** (divided into Sprints) - we recommend [Trello](https://trello.com/) for project tracking
     * **Database Models** (draw an [Entity Relationship Diagram](https://www.google.com/search?tbm=isch&q=database%20table%20relationships%20drawing))
     * A project-01 **Github Repo** with `tgaff`, `justincastilla` and `nathanallen` added as collaborators.
+* **Weekdays, Dec 14-16th** - Standups @ 10am. Afternoon 1:1s with instructors (optional).
 * **Thursday, Dec 17th** - Feature Freeze! Deploy your code to Heroku, and start polishing existing features. Finalize your README.md and prepare for presentations.
 * **Friday, Dec 18th @ 10am** - Project due and presentations!
 
