@@ -378,7 +378,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module1</td>
     <td><a href="week-04-mongo-database/day-01-mongo/dawn-mongo">Intro Mongo</a> (NA)</td>
     <td><a href="http://github.com/sf-wdi-25/tunely">Tunely Albums/Songs CR</a> (TG)</td>
-    <td><a href="http://github.com/sf-wdi-25/tunely">Tunely Finale (TG)</a></td>
+    <td><a href="http://github.com/sf-wdi-25/tunely">Tunely cntd. (TG)</a></td>
     <td>Project Approvals (Team)</td>
     <td>Review / Projects (Team)</td>
   </tr>
@@ -386,7 +386,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/day-01-mongo/dusk-schemas_and_embedding">Intro Mongo Schemas & Embedding</a> (JC)</td>
     <td><a href="http://github.com/sf-wdi-25/tunely">Tunely Albums/Songs UD</a> (TG)</td>
-    <td>Mongo Reference & Populate (NA)</td>
+    <td>Tunely cntd. (TG)</td>
     <td>Project 1 work time</td>
     <td>Weekend Lab (Team)</td>
   </tr>
@@ -394,7 +394,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>HW</td>
     <td><a href="week-04-mongo-database/homework">MongoDB Integration</a></td>
     <td><a href="week-04-mongo-database/homework">Tunely Sprints 1-4</a></td>
-    <td>Project 1: proposals</td>
+    <td><a href="/how-tos/project-01-requirements.md">Project 1 Specs</a></td>
     <td>Project 1 ^_^</td>
     <td></td>
   </tr>
