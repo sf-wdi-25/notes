@@ -17,7 +17,7 @@ Make sure to do all of the following with your app.
 * **Express API** Build an Express Application that has both HTML and JSON API endpoints.
 * **RESTful Routes** Design your CRUD routes using the [REST](http://restfulrouting.com/mappings/resources) convention.
 * **AJAX** Leverage AJAX to fetch JSON data from the backend.
-* **jQuery** Use jQuery add interactivity and render data on the client-side.
+* **jQuery** Use jQuery to add interactivity and render data on the client-side.
 * **Data Validation** Validate data by handling incorrect form inputs during create/update.
 * **MongoDB** Persist at least three models to a Mongo Database. Use at least one one-to-many or many-to-many relationship between models.
 * **Git** 70+ commits. Commit early, commit often. Tell a story with your commits. (And don't expose any secret keys/tokens on github!)
@@ -81,7 +81,7 @@ We will a schedule for 1:1s throughout the week. We will also do mini lessons on
     - Triumphs
     - Challenges
     - Words of Wisdom
-    - And 3 lines(!) of code you want to share with your classmates, copied into a seperate document.
+    - And 3+ lines(!) of code you want to share with your classmates, copied into a seperate document.
 
 ## Presentation Tips
 * Please zoom your browser window to 150%.
