@@ -10,14 +10,21 @@ Adapted from <a href="http://mherman.org/blog/2015/01/31/local-authentication-wi
 
 ### Install, Require, & Configure Dependencies
 
-1. Change directories into your `express-microblog` app, and make a new branch called `auth`.
+1. Change directories into a new, clean `auth-example` folder for your app.
 
   ```zsh
-  ➜  cd express-microblog
-  ➜  git checkout -b auth
+  ➜  cd  auth-example
+
+  ```
+  
+2. Install our basic libraries `express`, `mongodb`, `mongoose`, and `body-parser`
+
+  ```zsh
+  ➜  npm install --save  express, mongodb, mongoose, body-parser
+  
   ```
 
-2. Install `cookie-parser`, `express-session`, `passport`, `passport-local`, and `passport-local-mongoose`.
+2. Install the new libraries `cookie-parser`, `express-session`, `passport`, `passport-local`, and `passport-local-mongoose`.
 
   ```zsh
   ➜  npm install --save cookie-parser express-session passport passport-local passport-local-mongoose
