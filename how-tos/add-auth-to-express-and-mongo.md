@@ -2,7 +2,7 @@
 
 **Objective:** Today, you'll be implementing user authentication within Express and MongoDB.
 
-<!--If you'd like to work with fresh code, feel free to fetch the <a href="https://github.com/sf-wdi-24/express-microblog/tree/solution" target="_blank">working solution branch of a microblog app</a> before getting started on the tutorial.-->
+If you'd like to work with fresh code, feel free to fetch the <a href="https://github.com/sf-wdi-24/express-microblog/tree/solution" target="_blank">working solution branch of a microblog app</a> before getting started on the tutorial.
 
 ## Tutorial: Microblog with User Auth
 
