@@ -61,7 +61,7 @@ At this point, the command line will probably ask you to enter a credit card num
 ```javascript
     mongoose.connect( process.env.MONGOLAB_URI ||
                       process.env.MONGOHQ_URL || 
-                      "YOUR OWN LOCAL URL HERE" )
+                      "YOUR CURRENT LOCALHOST DB CONNECTION STRING HERE" )
 ```
 
 Congrats! Your application knows what port to run on, and what database to connect to - you're almost all set up to work in "production" on Heroku's servers!
