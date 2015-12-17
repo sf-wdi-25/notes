@@ -81,7 +81,7 @@ We will a schedule for 1:1s throughout the week. We will also do mini lessons on
     - Triumphs
     - Challenges
     - Words of Wisdom
-    - And 3+ lines(!) of code you want to share with your classmates, copied into a seperate document.
+    - And _3_ lines(!) of code you want to share with your classmates, copied into a seperate document.
 
 ## Presentation Tips
 * Please zoom your browser window to 150%.
