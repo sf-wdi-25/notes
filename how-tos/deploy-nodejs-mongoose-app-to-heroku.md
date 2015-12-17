@@ -133,6 +133,13 @@ If you missed a step just ask for help. Otherwise you should be able to visit yo
     heroku open
 ```
 
+13) If you have a seed task, you can run it now (assuming everything else is working):
+
+``` bash
+heroku run bash
+> node seed.js
+```
+
 ## Debugging Tips
 
 Here are some helpful commands for debugging your application on Heroku:
