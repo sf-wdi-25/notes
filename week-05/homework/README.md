@@ -10,5 +10,6 @@
     * Resolve at least [2 Github Issues](https://guides.github.com/features/issues/). Feel free to create & resolve your own issues instead.
     * Refactor existing code & pay down some "technical debt"
     * Build it again from scratch (highly recommended).
+5. Still thirsty for knowledge?  Work through [Ruby Monk: Ruby Primer Ascent](https://rubymonk.com/learning/books/4-ruby-primer-ascent)!  If you've done that, put a little more work into Tunely.
 
 Please use any remaining time to review exercises/drills from the past 5 weeks! And don't forget to eat, sleep, and enjoy the break!
