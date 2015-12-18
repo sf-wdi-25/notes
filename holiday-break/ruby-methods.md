@@ -6,6 +6,9 @@ These are the same functions that we went over for javascript.
 [Here is the original javscript version page] (https://github.com/sf-wdi-25/notes/tree/master/week-01-controlling-the-dom/day-03-js/dawn-functions)
 
 ```ruby
+# Please refer to the Ruby Style Guide for conventions and methodologies:
+# https://github.com/bbatsov/ruby-style-guide
+
 ####################
 #
 #  Hello, World!!
@@ -17,17 +20,16 @@ def helloWorld
   "Hello, World!"
 end
 
+puts helloWorld
+
+
 # output a String and a parameter to the display
 def greetPerson(name)
   "Hello, " + name
 end
 
-
-#### Begin Function Calls
 name = 'Justin'
-puts helloWorld
 puts greetPerson name
-### End Function Calls
 
 
 ####################
@@ -37,32 +39,69 @@ puts greetPerson name
 ####################
 
 # add two integers
+x = 12
+y = 3
+
 def sum(a, b)
   a + b
 end
+
+puts sum(x, y)
+
 
 def subtract(a, b)
   a - b
 end
 
+puts subtract(x, y)
+
+
 def multiply(a, b)
   a * b
 end
+
+puts multiply(x, y)
+
 
 def divide(a, b)
   a /  b
 end
 
+puts divide(x, y)
 
-#### Begin Function Calls
-x = 12
-y = 3
-puts sum x, y
-puts subtract x, y
-puts multiply x, y
-puts divide x, y
-#### End Function Calls
 
+def numbersToStars(num)
+  stars = ''
+  num.times do
+    stars.concat('*')
+  end
+  return stars
+end
+
+puts numbersToStars(x)
+
+
+def print0toNum(num)
+  output = ''
+  num.times do |i|
+    output += i.to_s + ' '
+  end
+  return output
+end
+
+puts print0toNum(x)
+
+
+def printNumToZero(num)
+  output = ''
+  while num >= 0
+    output += num.to_s + ' '
+    num -= 1;
+  end
+  return output
+end
+
+puts printNumToZero(x)
 
 #########################
 #
@@ -70,27 +109,29 @@ puts divide x, y
 #
 #########################
 
+phraseL = 'these pretzels are making me thirsty'
+phraseU = 'I SEE DEAD PEOPLE'
+phraseE = 'Serenity Now'
+
 def shout(phrase)
   phrase.upcase
 end
+
+puts shout phraseL
+
 
 def whisper(phrase)
   phrase.downcase
 end
 
+puts whisper phraseU
+
+
 def exclaim(phrase)
   phrase + "!"
 end
 
-#### Begin Function Calls
-phraseL = 'these pretzels are making me thirsty'
-phraseU = 'I SEE DEAD PEOPLE'
-phraseE = 'Serenity Now'
-
-puts shout phraseL
-puts whisper phraseU
 puts exclaim phraseE
-#### End Function Calls
 
 
 #########################
@@ -103,12 +144,21 @@ def square(a)
   return a**2
 end
 
+squaredFour = square(4)
+puts squaredFour
+
+
 # demonstration of scope differences with Ruby vs. JS
+banana = 1
 def sliceBanana(slices)
   banana = slices
 
   return banana
 end
+
+puts sliceBanana(4)
+puts banana
+
 
 def multiplyBySix(x)
 
@@ -118,15 +168,8 @@ def multiplyBySix(x)
   return x
 end
 
-squaredFour = square(4)
-puts squaredFour
-
-banana = 1
-puts sliceBanana(4)
-puts banana
-
-
 puts multiplyBySix(4)
+
 
 #########################
 #
@@ -142,6 +185,8 @@ def hasCheezburger?(answer)
   end
 end
 
+puts hasCheezburger?(true)
+
 def isGreaterThanFive?(number)
   if(number>5)
     return true
@@ -149,6 +194,9 @@ def isGreaterThanFive?(number)
     return false
   end
 end
+
+puts isGreaterThanFive?(7)
+
 
 def completelyDisagree?(bool)
   if(bool===true)
@@ -158,11 +206,15 @@ def completelyDisagree?(bool)
   end
 end
 
-### Begin Function Calls
-puts hasCheezburger?(true)
-puts isGreaterThanFive?(7)
 puts completelyDisagree?(true)
-### End Function Calls
+
+
+def isThisTruthy?(something)
+  truthiness = (something === true)
+end
+
+puts isThisTruthy?(4)
+
 
 #########################
 #
@@ -185,4 +237,5 @@ def countDown(num)
 end
 
 countDown(10)
+
 ```
