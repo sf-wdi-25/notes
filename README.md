@@ -323,7 +323,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <th>Friday</th>
   </tr>
   <tr>
-    <td></td>
+    <td>All Day</td>
     <td>Project 1</td>
     <td>Project 1</td>
     <td>Project 1</td>
