@@ -328,7 +328,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Project 1</td>
     <td>Project 1</td>
     <td>Project 1</td>
-    <td>Presentations / Break Homework</td>
+    <td>Presentations / <a href="week-05/homework">Break Homework</a></td>
   </tr>
 </table>
 
