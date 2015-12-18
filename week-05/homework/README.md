@@ -7,7 +7,7 @@
 2. [Ruby Method Drills](https://github.com/sf-wdi-25/ruby_method_drills) with tests!
 3. Optional: Nathan's made a fun little [Text Adventure](https://github.com/sf-wdi-25/text_adventure) lab, which we'd like you to experiment with!
 4. Recommended: Project 1 Refactor!
-    * Create and resolve at least 2 Github Issues
+    * Create and resolve at least [2 Github Issues](https://guides.github.com/features/issues/)
     * Refactor existing code & pay down some "technical debt"
     * Build it again from scratch (highly recommended).
 
