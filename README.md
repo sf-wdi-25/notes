@@ -312,7 +312,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-<!--##Week 5  - Broad Topic
+##Week 5  - Project 1
 <table>
 	<tr>
   	<th></th>
@@ -323,40 +323,16 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <th>Friday</th>
   </tr>
   <tr>
-    <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
-  </tr>
-  <tr>
-    <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
     <td></td>
+    <td>Project 1</td>
+    <td>Project 1</td>
+    <td>Project 1</td>
+    <td>Project 1</td>
+    <td>Presentations / Break Homework</td>
   </tr>
-</table>-->
+</table>
 
-##Week 4 - REST, CRUD & Mongo DB
+##Week 4 - MongoDB & CRUD
 <table>
 	<tr>
   	<th></th>
