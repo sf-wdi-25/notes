@@ -146,8 +146,24 @@
 * class
 * method
 * #####String Methods
-* * .empty?
-* 
+  * .empty?
+  * .end_with?
+  * .each_char
+  * .reverse
+  * .prepend
+  * .ord
+  * .chr
+  * .delete
+  * << (also .concat)
+  * .split
+  * .gsub
+  * .strip (also .rstrip and .lstrip)
+  * .count
+  * .capitalize
+  * .slice
+  * .include?
+  * .upto
+  * .next
 * attribute
 * switch statement
 * class-based inheritance
