@@ -138,11 +138,15 @@
 * p 
 * puts
 * print
+* gets
+* block
 * hash
 * key value store
+* symbol
 * class
 * method
 * attribute
+* switch statement
 * class-based inheritance
 * Ruby on Rails
 * model
