@@ -1,4 +1,4 @@
-# Week 1 Drills
+# Week 6 Drills
 
 <!-- 
 ### Day 1: Topic
