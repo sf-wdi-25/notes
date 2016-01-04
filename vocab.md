@@ -135,6 +135,9 @@
 
 #### Week 6
 * Ruby
+* p 
+* puts
+* print
 * hash
 * key value store
 * class
