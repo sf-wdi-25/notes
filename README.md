@@ -268,7 +268,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-<!--##Week 6  - Broad Topic
+##Week 6  - Ruby
 <table>
 	<tr>
   	<th></th>
@@ -280,37 +280,37 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Welcome Back (team)</td>
+    <td>Regex Drills (JC)</td>
+    <td>Ruby Merge (JC)</td>
+    <td>Ruby Bubble Sort (JC)</td>
+    <td>Ruby Binary Search (JC)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Ruby Review (NA)</td>
+    <td>Ciphers (NA)</td>
+    <td>Ruby OOP (JC)</td>
+    <td>Intro Rails Framework (NA)</td>
+    <td>Rails Build (NA)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>Idiomatic Ruby (NA)</td>
+    <td>Username Generator (NA)</td>
+    <td>OOP Lab (JC)</td>
+    <td>Intro Active Record (TG)</td>
+    <td>Weekend Bog App (JC)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
-</table>-->
+</table>
 
 ##Week 5  - Project 1
 <table>
