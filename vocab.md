@@ -145,6 +145,9 @@
 * symbol
 * class
 * method
+* #####String Methods
+* * .empty?
+* 
 * attribute
 * switch statement
 * class-based inheritance
