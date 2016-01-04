@@ -145,7 +145,7 @@
 * symbol
 * class
 * method
-* #####String Methods
+* String Methods
   * .empty?
   * .end_with?
   * .each_char
