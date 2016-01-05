@@ -9,7 +9,7 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 ## Day 1
 
 1. Reading
-2. Bonus/Stretch
+2. It's Regex Time!  Read this [tutorial](day-01-homework.md) and complete the challenges at the end of the document. Solutions are found [here](day-01-solutions.md).
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
