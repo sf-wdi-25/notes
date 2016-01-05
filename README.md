@@ -288,17 +288,17 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module1</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-01/dawn-intro-ruby">Ruby Review</a> (NA)</td>
-    <td>Ciphers (NA)</td>
-    <td>Ruby OOP (JC)</td>
+    <td><a href="/week-06-ruby/day-01/dawn-intro-ruby">Ruby Review</a> (NA)</td>
+    <td>Username Generator (NA)</td>
+    <td>OOP Lab (JC)</td>
     <td>Intro Rails Framework (NA)</td>
     <td>Rails Build (NA)</td>
   </tr>
   <tr>
     <td>Module2</td>
     <td>Idiomatic Ruby (NA)</td>
-    <td>Username Generator (NA)</td>
-    <td>OOP Lab (JC)</td>
+    <td>Ruby OOP (JC)</td>
+    <td>Ciphers (NA)</td>
     <td>Intro Active Record (TG)</td>
     <td>Weekend Bog App (JC)</td>
   </tr>
