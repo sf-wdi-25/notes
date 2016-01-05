@@ -281,14 +281,14 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Drills</td>
     <td>Welcome Back (team)</td>
-    <td>Regex Drills (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/regex-craigslist-app">Regex Drills</a> (JC)</td>
     <td>Ruby Merge (JC)</td>
     <td>Ruby Bubble Sort (JC)</td>
     <td>Ruby Binary Search (JC)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Ruby Review (NA)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-01/dawn-intro-ruby">Ruby Review</a> (NA)</td>
     <td>Ciphers (NA)</td>
     <td>Ruby OOP (JC)</td>
     <td>Intro Rails Framework (NA)</td>
