@@ -304,7 +304,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href="week-06/homework">Regex & Reading</a></td>
+    <td><a href="week-06-ruby/homework">Regex & Reading</a></td>
     <td></td>
     <td></td>
     <td></td>
