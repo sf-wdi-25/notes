@@ -164,6 +164,25 @@
   * .include?
   * .upto
   * .next
+* Array Methods
+  * sort
+  * .first
+  * .last
+  * .delete_if
+  * .combination
+  * .reverse
+  * .keep_if
+  * .count
+  * .uniq
+  * .collect
+  * .drop_while
+  * .sample
+  * .shuffle
+  * .select
+  * .permutation
+  * .map
+  * .join
+  * .any?
 * attribute
 * switch statement
 * class-based inheritance
