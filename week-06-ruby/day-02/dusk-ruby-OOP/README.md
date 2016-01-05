@@ -41,7 +41,7 @@ Let's give each instance of `Car` a color using instance variables.
 
 An instance variable -- which begins with the `@` symbol -- has the capability of storing data for each instance of a class.
 
-JavaScript lets us access variables inside objects with syntax like `obj.var` or `obj["var"]`, similar to javascript. In Ruby, we'll create getter and setter methods by hand instead of accessing instance variables directly. We can then access the getters and setters with dot notation.  Let's look at an example.
+JavaScript lets us access variables inside objects with syntax like `obj.var` or `obj["var"]`. In Ruby, we'll create getter and setter methods by hand instead of accessing instance variables directly. We can then access the getters and setters with dot notation.  Let's look at an example.
 
 ```ruby
 class Car
