@@ -1,9 +1,5 @@
 ## Exercises: The Animal Kingdom
 
-#### Getting Started
-
-* Begin by forking and cloning this repo into your develop folder.  Create a `solutions.rb` file to hold all of the solutions to the following challenges.
-
 ##### Create the following:
 
 1. An `Animal` class, with the following:
