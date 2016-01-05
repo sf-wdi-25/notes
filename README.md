@@ -297,7 +297,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module2</td>
     <td>Idiomatic Ruby (NA)</td>
-    <td>Ruby OOP (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-02/dusk-ruby-OOP">Ruby OOP</a> (JC)</td>
     <td>Ciphers (NA)</td>
     <td>Intro Active Record (TG)</td>
     <td>Weekend Bog App (JC)</td>
