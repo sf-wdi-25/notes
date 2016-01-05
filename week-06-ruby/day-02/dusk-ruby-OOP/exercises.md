@@ -22,7 +22,3 @@
 
 * People can speak, and it's good to be polite. Add an instance method called `greet` that prints out a person's name, age, and gender in the following format: "Hi, I'm Teddy. I'm a person, and I'm 156 years old." (Hint: look up how to interpolate strings in Ruby)
 * Add a `class variable` that keeps track of all the people you create.
-
-#### Submission
-
-* Upon completion of the assignment submit a pull request back to this repo.
