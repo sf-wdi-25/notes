@@ -289,7 +289,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module1</td>
     <td><a href="/week-06-ruby/day-01/dawn-intro-ruby">Ruby Review</a> (NA)</td>
-    <td>Username Generator (NA)</td>
+    <td><a href="https://github.com/sf-wdi-25/username_generator">Username Generator</a> (NA)</td>
     <td>OOP Lab (JC)</td>
     <td>Intro Rails Framework (NA)</td>
     <td>Rails Build (NA)</td>
