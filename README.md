@@ -282,7 +282,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Drills</td>
     <td>Welcome Back (team)</td>
     <td><a href="https://github.com/sf-wdi-25/regex-craigslist-app">Regex Drills</a> (JC)</td>
-    <td>Ruby Merge (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/rubyMerge">Ruby Merge</a> (JC)</td>
     <td>Ruby Bubble Sort (JC)</td>
     <td>Ruby Binary Search (JC)</td>
   </tr>
