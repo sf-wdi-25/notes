@@ -183,6 +183,22 @@
   * .map
   * .join
   * .any?
+* Hash Methods
+  * .keep_if
+  * .each
+  * .select
+  * .merge
+  * .each_key
+  * .default
+  * .empty?
+  * .reject
+  * .fetch
+  * .invert
+  * .values_at
+  * .flatten
+  * .has_key?
+  * .delete
+  * .each_value
 * attribute
 * switch statement
 * class-based inheritance
