@@ -298,7 +298,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module2</td>
     <td>Idiomatic Ruby (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-02/dusk-ruby-OOP">Ruby OOP</a> (JC)</td>
-    <td><a href="https://github.com/sf-wdi-25/wheel_of_fortune">Wheel of Fortune</a> (NA)</td>
+    <td><a href="https://github.com/sf-wdi-25/hacktive_record">Seeding Objects</a> &amp; <a href="https://github.com/sf-wdi-25/wheel_of_fortune">Wheel of Fortune</a> (NA)</td>
     <td>Intro Active Record (TG)</td>
     <td>Weekend Bog App (JC)</td>
   </tr>
