@@ -199,6 +199,24 @@
   * .has_key?
   * .delete
   * .each_value
+* enumerables
+* Enumerable Methods
+  * .chunk
+  * .cycle
+  * .detect
+  * .each_cons
+  * .each_slice
+  * .find_index
+  * .flat_map
+  * .group_by
+  * .inject
+  * .max
+  * .min
+  * .minmax
+  * .partition
+  * .reduce
+  * .sort_by
+  * .zip
 * attribute
 * switch statement
 * class-based inheritance
