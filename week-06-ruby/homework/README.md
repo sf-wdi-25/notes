@@ -27,6 +27,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 1. [Rails Getting Started Guide (up through section 5.7)](http://guides.rubyonrails.org/getting_started.html)
 2. [ActiveRecord Basics (chapters 1, 2, and 5)](http://guides.rubyonrails.org/active_record_basics.html)
+3. Bonus OO Practice: <a href="https://github.com/sf-wdi-25/wheel_of_fortune">Wheel of Fortune Lab</a>
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
