@@ -284,7 +284,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/regex-craigslist-app">Regex Drills</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/rubyMerge">Ruby Merge</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-21/bubble_sort_ruby">Ruby Bubble Sort</a> (JC)</td>
-    <td>Ruby Binary Search (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/binary_search_tester">Ruby Binary Search</a> (JC)</td>
   </tr>
   <tr>
     <td>Module1</td>
@@ -292,7 +292,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/username_generator">Username Generator</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/ruby-oop-lab">OOP Lab</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-04/dawn-intro-to-rails">Intro Rails Framework</a> (JC)</td>
-    <td>Rails Build (NA)</td>
+    <td><a href="https://github.com/sf-wdi-25/rock-n-rails">Rock-n-Rails</a></td>
   </tr>
   <tr>
     <td>Module2</td>
