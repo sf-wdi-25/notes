@@ -33,16 +33,14 @@ Please use any remaining time to complete and review the exercises from dawn & d
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
 
-<!--
 ## Day 4
 
-1. Reading
-2. Friday Review Prep
-    - Complete the [Week 1 Self-Assessment](#PENDING) and identify 2 topics you want to review tomorrow
-    - Ask and/or upvote 3 questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w1-review
+1. <a href="http://railsforzombies.org/levels/1">Rails for Zombies</a> -- A light introduction to Active Record
+2. Ask and/or upvote 3 technical questions on QuestionCookie: http://www.questioncookie.com/wdi-25-w6-review
 
-Please use any remaining time to complete and review the exercises from dawn & dusk.
+Please use any remaining time to complete and review the exercises from the week! Focus on Ruby OO and Rails!
 
+<!--
 ## Day 5 - Weekend Homework
 
 1. Reading

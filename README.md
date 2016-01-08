@@ -307,7 +307,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="week-06-ruby/homework">Regex & Reading</a></td>
     <td><a href="week-06-ruby/homework">Review OOP</a></td>
     <td><a href="week-06-ruby/homework">Rails Guides</a> & <a href="https://github.com/sf-wdi-25/wheel_of_fortune">Wheel of Fortune</a></td>
-    <td></td>
+    <td><a href="week-06-ruby/homework">Rails for Zombies</a></td>
     <td></td>
   </tr>
 </table>
