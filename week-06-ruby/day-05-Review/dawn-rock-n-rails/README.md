@@ -271,4 +271,4 @@ end # end of class
   end
 ```
 
-Congrats! We've complete all the user stories! Reference a version of this app with the user stories complete [here](https://github.com/sf-wdi-21/rock-n-rails).
+Congrats! We've complete all the user stories! Reference a version of this app with the user stories complete [here](https://github.com/sf-wdi-25/rock-n-rails).
