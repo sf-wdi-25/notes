@@ -300,7 +300,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-02/dusk-ruby-OOP">Ruby OOP</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/hacktive_record">Hacktive Record</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/conference_app">Intro Active Record</a> (NA)</td>
-    <td>Weekend Bog App (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/rails_bog_app">Weekend Bog App</a> (JC)</td>
   </tr>
   <tr>
     <td>HW</td>
