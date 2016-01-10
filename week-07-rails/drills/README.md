@@ -1,8 +1,7 @@
-# Week 1 Drills
+# Drills
 
-<!-- 
-### Day 1: Topic
-### Day 2: Topic
-### Day 3: Topic
-### Day 4: Topic
- -->
+### Day 1: CSV Challenge
+### Day 2: CSV Challenge
+### Day 3: Secret Keys
+### Day 4: CSV Challenge Part 2
+### Day 5: CSV Challenge Part 2
