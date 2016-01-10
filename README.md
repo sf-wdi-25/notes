@@ -224,7 +224,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-<!--##Week 7  - Broad Topic
+## Week 7  - Rails
 <table>
 	<tr>
   	<th></th>
@@ -236,37 +236,37 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>CSV Challenge (TG)</td>
+    <td>CSV Challenge (TG)</td>
+    <td>Secret Keys (JC)</td>
+    <td>CSV Challenge II (NA)</td>
+    <td>CSV Challenge II (NA)</td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
+    <td>Intro SQL (JC)</td>
+    <td>SQL Relationships (JC)</td>
+    <td>Rails Auth, Cookies & Sessions (NA)</td>
+    <td>Asset Pipeline (JC)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>Migrations & Associations (TG)</td>
+    <td>Library App - Users (NA)</td>
+    <td>Library App - Auth (NA)</td>
+    <td>View Helpers & Partials (TG)</td>
+    <td>Weekend Lab - Muscle Memory (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td>SQL Join Reading, Migrations, Associations (JC)</td>
+    <td>Cookies / Sessions Reading (NA)</td>
+    <td>Asset Pipeline / Helpers & Partials (JC)</td>
+    <td>TBD</td>
     <td></td>
   </tr>
-</table>-->
+</table>
 
 ##Week 6  - Ruby
 <table>
