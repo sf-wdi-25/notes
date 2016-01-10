@@ -148,10 +148,9 @@ end
 
 ### Practice 2
 
-Now let's say we've decided to add car _color_ and _mileage_ to our model.  How can we do that?
+Now let's say we've decided to add car _color_ to our model.  How can we do that?
 
 * What datatype is color?
-* What datatype is mileage?
 
 <details>
 <summary>What is the terminal command to create the new migration to change the cars table?</summary>
@@ -176,6 +175,34 @@ You can also use the date stamp on the migrations to migrate (up or down) to a s
 
 `rake db:migrate VERSION=20080906120000`
 
+### Practice 3
+
+<details>
+<summary>How can we reverse the last migration we ran? (the one to add color)</summary>
+`rake db:rollback`
+</details>
+
+Once we've reversed that migration, let's delete it so we can make a new one.  `rm db/migrate/*add_color_to_cars.rb`
+
+Now let's create a new migration that adds color and mileage as columns.
+
+* What datatype is mileage?
+
+<details><summary>What's the command to create a migration to add color and mileage to the Cars table?</summary>
+`rails g migration AddDetailsToCars color:string mileage:decimal`
+
+This generates:
+
+```ruby
+class AddDetailsToCars < ActiveRecord::Migration
+  def change
+    add_column :cars, :color, :string
+    add_column :cars, :mileage, :decimal
+  end
+end
+```
+
+</details>
 
 ## Rules:
 
@@ -210,8 +237,11 @@ See http://stackoverflow.com/questions/17918117/rails-4-datatypes
 > Note: prefer datetime unless you have a specific reason to use one of the others.  ActiveRecord has extra tools for datetime
 
 
+## Other commands
 
-
+* `rake db:schema:load` - setup the database structure using schema.rb (may be faster when you have hundreds of migrations)
+* `rake db:setup` - similar to `rake db:create db:migrate db:seed`
+* rake db:drop - destroy the database (if you run this in production you're FIRED!)
 
 
 # Relationships
