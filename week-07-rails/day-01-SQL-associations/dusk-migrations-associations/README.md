@@ -33,9 +33,8 @@ rails g model talk topic:string duration:integer
 
 The above command, you'll recall, creates 2 new files.  
 
-1) app/models/talk.rb - a new Rails Model
-
-1) db/migrate/1234566789_create_talks.rb - a database migration.
+1. app/models/talk.rb - a new Rails Model
+1. db/migrate/1234566789_create_talks.rb - a database migration.
 
 Typically we'll edit both of these files as needed to get the database structure we want and set any validations we want to run in the model.
 
