@@ -6,14 +6,16 @@ If you have any remaining time, please complete/review the exercises from dawn a
 
 Please refer to the [Instructions for Submitting Homework](/how-tos/homework-submission.md).
 
-<!--
+
 ## Day 1
 
-1. Reading
-2. Bonus/Stretch
+1. http://guides.rubyonrails.org/association_basics.html#why-associations-questionmark
+1. Do at least some of the [section labeled 'more' on today's migrations lab](https://github.com/sf-wdi-25/breweries_models_and_migrations#more)
+1. If you have time read [another student's post on the topic.](https://chryus.wordpress.com/2014/02/17/associations-in-rails/)
+
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
-
+<!--
 ## Day 2
 
 1. Reading
@@ -31,7 +33,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 ## Day 4
 
 1. Reading
-2. Bonus/Stretch 
+2. Bonus/Stretch
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
