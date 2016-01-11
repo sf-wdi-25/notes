@@ -100,7 +100,7 @@ If other developers are already working with your migration (perhaps it was merg
 That being said, if your changes haven't reached anywhere else yet, you could still re-write your migration.
 </details>
 
-!(http://i.giphy.com/6KEr8zBleOFwI.gif)
+![](http://i.giphy.com/6KEr8zBleOFwI.gif)
 
 After your change have left your machine the only way to undo or redo is to _write a new migration_ to make the required changes.  Why?  
 
@@ -257,7 +257,7 @@ Objectives
 1. Modify migrations to add foreign keys to tables
 1. Create model instances with associations
 
-## Associations: Relationships Between Models
+### Associations: Relationships Between Models
 
 | Relationship Type | Abbreviation | Description | Example |
 | :--- | :--- | :--- | :--- |
@@ -273,11 +273,9 @@ Objectives
 
 **Always remember!** Whenever there is a `belongs_to` in the model, there should be a *FK in the matching migration!*
 
-!(https://chryus.files.wordpress.com/2014/02/img_1839.jpg)
+![](https://chryus.files.wordpress.com/2014/02/img_1839.jpg)
 
 #### 2-steps to setting up relationships in rails
-
-
 
 Rails requires us to do two things to establish a relationship.  
 
@@ -288,18 +286,27 @@ Rails requires us to do two things to establish a relationship.
 
 This column belongs on the model that **belongs_to** the parent model.  When populated this will contain the id of the parent model.
 
-Now, as mentioned, we have to add a foreign key in our migration, so in our `pets` migration file we should add:
+This is a database change so it means we're going to write a migration (or edit one we're already writing).  We'll add something like the following to our migration:
 
-`t.integer :owner_id`
+```ruby
+# we're editing an existing create_table migration to add this field - it HAS NOT BEEN committed to master yet
+create_table :pets do |t|
+  # You ONLY need to add ONE OF THESE THREE to your new migration
+  t.integer :owner_id
+  # OR...
+  t.references :owner
+  # OR...
+  t.belongs_to :owner
+end
+```
 
-But wait, we could also do something more _rail-sy_ and say  
+<details><summary>What's the difference between `t.integer`, `t.references`, and `t.belongs_to`?</summary>
 
-`t.references :owner`
-
-This makes the association a bit more semantic and readable and has a few bonuses:
+* `t.integer :owner_id` is technically accurate since the column name should be `owner_id` and database IDs are integers.
+* `t.references :owner` is a bit more semantic and readable and has a few bonuses:
 
   1. It defines the name of the foreign key column (in this case, `owner_id`) for us.
-  2. It adds a **foreign key constraint** which ensures **referential data integrity**  in our Postgresql database.
+  2. It adds a **foreign key constraint** which ensures **referential data integrity**[4][4]  in our Postgresql database.
 
 **But wait, there's more...**
 
@@ -308,7 +315,6 @@ We can actually get even more semantic and _rail-sy_ and say:
 `t.belongs_to :owner`
 
 This will do the same thing as `t.references`, but it has the added benefit of being super semantic for anyone reading your migrations later on.
-
 
 **Second: Ruby** we have to establish the relationship in the rails models themselves.  That means adding code like:
 
@@ -331,8 +337,6 @@ But if you think about it, this is exactly how you'd want to say this in plain E
 
 
 This makes rails aware of the relationship and ActiveRecord will make it easy for us to do things in the console or in our code that make use of this relationship.
-
-
 
 
 
@@ -374,26 +378,30 @@ Remember: We just saw that in Rails, we can associate two model **instances** to
 
 #### Wait!!!! What if I forget to add a foreign key before I first run `rake db:migrate`?
 
-If you were to make the mistake of running `rake db:migrate` before adding a foreign key to the table's migration, it's ok. There's no need to panic. You can always fix this by creating a new migration...
+If you were to make the mistake of running `rake db:migrate` before adding a foreign key to the table's migration, it's ok. There's no need to panic. You can always fix this by creating a new migration.  This will be a change migration rather than creating a new table.
 
 ```console
-rails generate migration NameOfMigrationHere
+rails generate migration AddOwnerReferenceToPets owner:references
+```
+OR
+```console
+rails generate migration AddOwnerReferenceToPets owner:belongs_to
 ```
 
-...and then modifying it to include the following:
+...and then verify that the migration looks something like the following:
 
 ```ruby
-change_table :pets do |t|
-  # You ONLY need to add ONE OF THESE THREE to your new migration
-  t.integer :owner_id
-  # OR...
-  t.references :owner
-  # OR...
-  t.belongs_to :owner
+class AddOwnerReferenceToPets < ActiveRecord::Migration
+  def change
+    add_reference :pets, :owner, index: true, foreign_key: true
+  end
 end
 ```
+
+Make sure you then update the models with the appropriate `has_many` and `belongs_to` relationships.  
 
 
 [1]: https://en.wikipedia.org/wiki/Schema_migration
 [2]: http://stackoverflow.com/questions/8514167/float-vs-decimal-in-activerecord
 [3]: http://stackoverflow.com/questions/3354330/difference-between-string-and-text-in-rails
+[4]: https://en.wikipedia.org/wiki/Referential_integrity
