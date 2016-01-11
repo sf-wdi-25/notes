@@ -260,7 +260,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>HW</td>
-    <td>SQL Join Reading, Migrations, Associations (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL/joins.md">SQL Join Reading</a>, Migrations, Associations, & <a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/README.md">Relationships</a> (JC)</td>
     <td>Cookies / Sessions Reading (NA)</td>
     <td>Asset Pipeline / Helpers & Partials (JC)</td>
     <td>TBD</td>
