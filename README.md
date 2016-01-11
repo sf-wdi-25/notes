@@ -244,7 +244,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module1</td>
-    <td>[Intro SQL](https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL) (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL">Intro SQL</a> (JC)</td>
     <td>SQL Relationships (JC)</td>
     <td>Rails Auth, Cookies & Sessions (NA)</td>
     <td>Asset Pipeline (JC)</td>
