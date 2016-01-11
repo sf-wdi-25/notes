@@ -102,7 +102,7 @@ That being said, if your changes haven't reached anywhere else yet, you could st
 
 ![](http://i.giphy.com/6KEr8zBleOFwI.gif)
 
-After your change have left your machine the only way to undo or redo is to _write a new migration_ to make the required changes.  Why?  
+After your changes have left your machine the only way to undo or redo is to _write a new migration_ to make the required changes.  Why?  
 
 ### Changing existing tables
 
@@ -116,7 +116,16 @@ Example:
 
 This generates an empty migration with the name `AddPartNumberToProducts`.  After running this you can edit the new migration to properly set the "PartNumber" datatype (likely String or Integer).
 
-**Better:** We can also tell rails on the command-line which data-types to use.
+```ruby
+# generated empty migration
+class AddPartNumberToProducts < ActiveRecord::Migration
+  def change
+  end
+end
+```
+^ Not much there right? ^
+
+**A Better way:** We can also tell rails on the command-line which data-types to use and it'll generate appropriate code.
 
 Example:
 
@@ -315,16 +324,18 @@ We can actually get even more semantic and _rail-sy_ and say:
 `t.belongs_to :owner`
 
 This will do the same thing as `t.references`, but it has the added benefit of being super semantic for anyone reading your migrations later on.
+</details>
+
 
 **Second: Ruby** we have to establish the relationship in the rails models themselves.  That means adding code like:
 
 ```ruby
 class Owner < ActiveRecord::Base
-    has_many :pets  # note has_many uses plural form
+  has_many :pets  # note has_many uses plural form
 end
 
 class Pet < ActiveRecord::Base
-    belongs_to :owner
+  belongs_to :owner
 end
 ```
 
@@ -344,7 +355,7 @@ This makes rails aware of the relationship and ActiveRecord will make it easy fo
 
 First things first, we need to create our models, run our migrations, do all things necessary to [setup our database](https://github.com/sf-wdi-21/notes/tree/master/week-07/day-01-models-auth/dawn-models#the-database-dance).
 
-Let's all run:
+Let's run:
 
 ```console
 rake db:create
