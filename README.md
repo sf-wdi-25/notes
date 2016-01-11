@@ -252,7 +252,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Migrations & Associations (TG)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/day-01-SQL-associations/dusk-migrations-associations">Migrations & Associations</a> (TG)</td>
     <td>Library App - Users (NA)</td>
     <td>Library App - Auth (NA)</td>
     <td>View Helpers & Partials (TG)</td>
