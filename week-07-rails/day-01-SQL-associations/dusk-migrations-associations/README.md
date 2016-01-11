@@ -1,4 +1,9 @@
-# Objectives
+# Migrations and Associations
+
+In this lesson we'll talk about changing the structure of the tables in the database; how tables relate to each other and how to manipulate and use table columns.
+
+
+## Objectives
 
 1. Be able to add/remove columns from the database.
 1. Be able to explain when it is OK to edit a migration.
@@ -7,7 +12,7 @@
 
 
 
-# Migrations
+## Migrations
 
 > Definition: In software engineering, schema migration (also database migration, database change management) refers to the management of incremental, reversible changes to relational database schemas. A schema migration is performed on a database whenever it is necessary to update or revert that database's schema to some newer or older version. [1][1]
 
@@ -20,7 +25,7 @@
 Migrations give us the ability to make small and incremental changes to our database and to make those same changes to one or more production datasets.  
 
 
-## Creating tables OR Rails Model review
+### Creating tables OR Rails Model review
 
 ```
 rails g model talk topic:string duration:integer
@@ -38,7 +43,7 @@ Finally you of course must run `rake db:migrate`.  Then you commit the above fil
 
 >Note: Never directly edit schema.rb
 
-### Practice 1
+#### Practice 1
 
 Let's say we're building a website to sell used cars.  We know we need a few basic things to keep track of our cars; things like:
 * make
@@ -78,7 +83,7 @@ This will also change the file `db/schema.rb` updating it to include the new tab
 
 Afterwards you should commit your changes before moving on to work with this table.
 
-## Migrations are forever
+### Migrations are forever
 
 Once a migration has been merged into the master branch; it is **forever**.
 <details>
@@ -99,7 +104,7 @@ That being said, if your changes haven't reached anywhere else yet, you could st
 
 After your change have left your machine the only way to undo or redo is to _write a new migration_ to make the required changes.  Why?  
 
-## Changing existing tables
+### Changing existing tables
 
 In some cases we may already have a table but need to add a new column to it.  Alternatively we may want to remove an existing column.  How can we do this?
 
@@ -146,7 +151,7 @@ end
 
 
 
-### Practice 2
+#### Practice 2
 
 Now let's say we've decided to add car _color_ to our model.  How can we do that?
 
@@ -158,7 +163,7 @@ Now let's say we've decided to add car _color_ to our model.  How can we do that
 </details>
 
 
-## Reversing Migrations
+### Undo
 
 Previously we said that migrations are forever, but that really only applies once the change leaves our local machine.  We may make changes to the last migration if it hasn't left our local development environment yet, and that may require us to re-run the same migration.  How else could we test it?
 
@@ -175,7 +180,7 @@ You can also use the date stamp on the migrations to migrate (up or down) to a s
 
 `rake db:migrate VERSION=20080906120000`
 
-### Practice 3
+#### Practice 3
 
 <details>
 <summary>How can we reverse the last migration we ran? (the one to add color)</summary>
@@ -204,14 +209,14 @@ end
 
 </details>
 
-## Rules:
+### Migration Rules:
 
 * Never edit a migration once it is merged.
 * Never edit the `schema.rb` file.  - This file should only change when you run `rake db:migrate`.
 * Never alter the database structure without a migration.
 * Always run all migrations before submitting code for merge.  You want `schema.rb` to be up to date.
 
-## List of data-types
+### List of data-types
 
 Basic list:
 
@@ -237,17 +242,156 @@ See http://stackoverflow.com/questions/17918117/rails-4-datatypes
 > Note: prefer datetime unless you have a specific reason to use one of the others.  ActiveRecord has extra tools for datetime
 
 
-## Other commands
+### Other commands
 
 * `rake db:schema:load` - setup the database structure using schema.rb (may be faster when you have hundreds of migrations)
 * `rake db:setup` - similar to `rake db:create db:migrate db:seed`
 * rake db:drop - destroy the database (if you run this in production you're FIRED!)
 
 
-# Relationships
+## ActiveRecord Associations
+
+Objectives
+
+1. Create one-to-many relationships in Rails
+1. Modify migrations to add foreign keys to tables
+1. Create model instances with associations
+
+## Associations: Relationships Between Models
+
+| Relationship Type | Abbreviation | Description | Example |
+| :--- | :--- | :--- | :--- |
+| One-to-One | 1:1 | An instance of one model is associated with one (and only one) instance of another model | One author can have one mailing address. |
+| One-to-Many | 1:N | Parent model is associated with many children from another model | One author can have many books. |
+| Many-to-Many | N:N | Two models that can both be associated with many of the other. | Libraries and books. One library can have many books, while one book can be in many libraries. |
+
+### One-To-Many (1:N) Relationship
+
+**Example:** One owner `has_many` pets and a pet `belongs_to` one owner (our `Pet` model will have a foreign key (FK) `owner_id`). The foreign key always goes on the table with the data that belongs to data from another table. In this example, a person **has_many** pets, and a pet **belongs_to** a person. The foreign key `person_id` goes on the `pets` table to indicate which person the pet belongs to.
+
+![](https://raw.githubusercontent.com/sf-wdi-18/notes/master/lectures/week-07/day-1-intro-sql/dawn-simple-queries/images/primary_foreign_key.png)
+
+**Always remember!** Whenever there is a `belongs_to` in the model, there should be a *FK in the matching migration!*
+
+!(https://chryus.files.wordpress.com/2014/02/img_1839.jpg)
+
+#### 2-steps to setting up relationships in rails
 
 
 
+Rails requires us to do two things to establish a relationship.  
+
+1. database - create the foreign key
+2. rails models - tell rails about the relationship
+
+**First: Database** we need to add an `other_id` column in the database.  
+
+This column belongs on the model that **belongs_to** the parent model.  When populated this will contain the id of the parent model.
+
+Now, as mentioned, we have to add a foreign key in our migration, so in our `pets` migration file we should add:
+
+`t.integer :owner_id`
+
+But wait, we could also do something more _rail-sy_ and say  
+
+`t.references :owner`
+
+This makes the association a bit more semantic and readable and has a few bonuses:
+
+  1. It defines the name of the foreign key column (in this case, `owner_id`) for us.
+  2. It adds a **foreign key constraint** which ensures **referential data integrity**  in our Postgresql database.
+
+**But wait, there's more...**
+
+We can actually get even more semantic and _rail-sy_ and say:
+
+`t.belongs_to :owner`
+
+This will do the same thing as `t.references`, but it has the added benefit of being super semantic for anyone reading your migrations later on.
+
+
+**Second: Ruby** we have to establish the relationship in the rails models themselves.  That means adding code like:
+
+```ruby
+class Owner < ActiveRecord::Base
+    has_many :pets  # note has_many uses plural form
+end
+
+class Pet < ActiveRecord::Base
+    belongs_to :owner
+end
+```
+
+Note: `belongs_to` uses the singular form of the class name (`:owner`), while `has_many` uses the pluralized form (`:pets`).
+
+But if you think about it, this is exactly how you'd want to say this in plain English. For example, if we were just discussing the relationship between pets and owners, we'd say:
+
+  - "One owner has many pets"
+  - "A pet belongs to an owner"
+
+
+This makes rails aware of the relationship and ActiveRecord will make it easy for us to do things in the console or in our code that make use of this relationship.
+
+
+
+
+
+### Wading in Deeper: Using our Associations
+
+First things first, we need to create our models, run our migrations, do all things necessary to [setup our database](https://github.com/sf-wdi-21/notes/tree/master/week-07/day-01-models-auth/dawn-models#the-database-dance).
+
+Let's all run:
+
+```console
+rake db:create
+rake db:migrate
+```
+
+Now, let's jump into our rails console by typing `rails c` at a command prompt, and check out how these new associations can help us define relationships between models:
+
+```ruby
+Pet.count
+Owner.count
+fido = Pet.create(name: "Fido")
+lassie = Pet.create(name: "Lassie")
+nathan = Owner.create(name: "nathan")
+nathan.pets
+fido.owner
+nathan.pets << fido # Makes "fido" one of my pets
+nathan.pets << lassie # Makes "lassie" another one of my pets
+nathan.pets.size
+nathan.pets.map(&:name)
+nathan.pets.each {|x| puts "My pet is named #{x.name}!"}
+fido.owner
+
+# What's going to be returned when we do this?
+fido.owner.name
+```
+
+Remember: We just saw that in Rails, we can associate two model **instances** together using the `<<` operator.
+
+---
+
+#### Wait!!!! What if I forget to add a foreign key before I first run `rake db:migrate`?
+
+If you were to make the mistake of running `rake db:migrate` before adding a foreign key to the table's migration, it's ok. There's no need to panic. You can always fix this by creating a new migration...
+
+```console
+rails generate migration NameOfMigrationHere
+```
+
+...and then modifying it to include the following:
+
+```ruby
+change_table :pets do |t|
+  # You ONLY need to add ONE OF THESE THREE to your new migration
+  t.integer :owner_id
+  # OR...
+  t.references :owner
+  # OR...
+  t.belongs_to :owner
+end
+```
 
 
 [1]: https://en.wikipedia.org/wiki/Schema_migration
