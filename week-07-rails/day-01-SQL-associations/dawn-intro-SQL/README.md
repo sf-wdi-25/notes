@@ -154,7 +154,7 @@ CREATE TABLE products (
   name VARCHAR(255),
   price numeric NOT NULL DEFAULT 'NaN',
   quantity integer NOT NULL DEFAULT 0
-)
+);
 ```
 #Inserting Data into RDB
 
