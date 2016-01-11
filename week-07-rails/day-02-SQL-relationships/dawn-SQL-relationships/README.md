@@ -139,7 +139,7 @@ end
 
 ### Class Exercise 1
 
-Let's jump over to [in-class exercise #1](associations_1toN_exercise.md) where you'll all work in groups on a solution.
+Let's jump over to [in-class exercise #1](https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/associations_1_to_n_exercises.md) where you'll all work in groups on a solution.
 
 ---
 
@@ -301,7 +301,7 @@ justin.courses.map(&:name)
 
 ### Many-to-Many Exercise 
 
-To do this exercise, let's [head over to our many-to-many exercise file](associations_NtoN_exercise.md) and work together in groups of two.
+To do this exercise, let's [head over to our many-to-many exercise file](https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/associations_n_to_n_exercises.md) and work together in groups of two.
 
 ---
 
