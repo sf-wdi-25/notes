@@ -246,7 +246,9 @@ See http://stackoverflow.com/questions/17918117/rails-4-datatypes
 
 
 > Note: 90% of the time prefer *decimal* over *float* [2][2]
+
 > Note: Prefer *text* over *string* if on postgresql (maybe).  Otherwise prefer *string* over *text* when your data is definitely always less than 255.  [3][3]
+
 > Note: prefer datetime unless you have a specific reason to use one of the others.  ActiveRecord has extra tools for datetime
 
 
