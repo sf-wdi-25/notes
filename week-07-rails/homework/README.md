@@ -10,6 +10,7 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 ## Day 1
 
 1. http://guides.rubyonrails.org/association_basics.html#why-associations-questionmark
+1. Do at least some of the [section labeled 'more' on today's migrations lab](https://github.com/sf-wdi-25/breweries_models_and_migrations#more)
 1. If you have time read [another student's post on the topic.](https://chryus.wordpress.com/2014/02/17/associations-in-rails/)
 
 
