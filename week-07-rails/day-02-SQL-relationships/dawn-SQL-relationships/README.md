@@ -249,7 +249,7 @@ At the command prompt, let's create some students:
 
 ```ruby
 nathan = Student.create(name: "Nathan")
-ilias = Student.create(name: "Ilias")
+travis = Student.create(name: "Travis")
 justin = Student.create(name: "Justin")
 ```
 
@@ -271,9 +271,9 @@ Now, because we've used `:through`, we can create our associations in the same w
 nathan.courses << algebra
 nathan.courses << french
 
-ilias.courses << science
-ilias.courses << english
-ilias.courses << french
+travis.courses << science
+travis.courses << english
+travis.courses << french
 
 # Here's a little trick: Use an array to associate multiple courses with a student in just one line of code.
 justin.courses << [english, algebra]
@@ -289,7 +289,7 @@ Once you've done all of this, try the following and see if your output matches t
 nathan.courses.map(&:name)
 # Outputs: => ["Algebra", "French"]
 
-ilias.courses.map(&:name)
+travis.courses.map(&:name)
 # Outputs: => ["Science", "English", "French"]
 
 justin.courses.map(&:name)
