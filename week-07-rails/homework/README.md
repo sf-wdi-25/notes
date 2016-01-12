@@ -20,7 +20,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 <!--
 ## Day 2
 
-1. Reading
+1. [Auth Lab](/week-07-rails/day-03-auth/dawn-auth)
 2. Bonus/Stretch
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
