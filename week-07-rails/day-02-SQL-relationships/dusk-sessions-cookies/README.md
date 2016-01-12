@@ -20,7 +20,7 @@ Our goal today is to harness the power of cookies. First, to track visitors to o
 
 **Reading & Writing Cookies**:
 
-```javascript
+```ruby
 # some_controller.rb
 
 def index
@@ -111,7 +111,7 @@ Now, instead of needing to read, parse, and manipulate all the data in the cooki
 
 Rails makes this super easy for us:
 
-``` javascript
+``` ruby
 # some_controller.rb
 def update
     if wrong_answer
