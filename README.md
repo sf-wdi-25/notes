@@ -253,7 +253,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module2</td>
     <td><a href="/week-07-rails/day-01-SQL-associations/dusk-migrations-associations">Migrations & Associations</a> (TG)</td>
-    <td>Cookies & Sessions (NA)</td>
+    <td><a href="/week-07-rails/day-02-SQL-relationships/dusk-sessions-cookies/README.md">Cookies & Sessions</a> (NA)</td>
     <td>Library App - N:N (NA)</td>
     <td>View Helpers & Partials (TG)</td>
     <td>Weekend Lab - Muscle Memory (Team)</td>
