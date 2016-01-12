@@ -244,24 +244,24 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module1</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL">Intro SQL</a> (JC)</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships">SQL Relationships</a> (JC)</td>
-    <td>Rails Auth, Cookies & Sessions (NA)</td>
+    <td><a href="/week-07-rails/day-01-SQL-associations/dawn-intro-SQL">Intro SQL</a> (JC)</td>
+    <td><a href="/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships">SQL Relationships</a> (JC)</td>
+    <td>Library App - Auth (NA)</td>
     <td>Asset Pipeline (JC)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/day-01-SQL-associations/dusk-migrations-associations">Migrations & Associations</a> (TG)</td>
-    <td>Library App - Users (NA)</td>
-    <td>Library App - Auth (NA)</td>
+    <td><a href="/week-07-rails/day-01-SQL-associations/dusk-migrations-associations">Migrations & Associations</a> (TG)</td>
+    <td>Cookies & Sessions (NA)</td>
+    <td>Library App - N:N (NA)</td>
     <td>View Helpers & Partials (TG)</td>
     <td>Weekend Lab - Muscle Memory (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL/joins.md">SQL Join Reading</a>, <a href="https://github.com/sf-wdi-25/breweries_models_and_migrations#more">More section of Migrations</a>, <a href="http://guides.rubyonrails.org/association_basics.html#why-associations-questionmark">Associations</a>, & <a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/README.md">Relationships</a> (JC)</td>
-    <td>Cookies / Sessions Reading (NA)</td>
+    <td>Auth Lab (NA)</td>
     <td>Asset Pipeline / Helpers & Partials (JC)</td>
     <td>TBD</td>
     <td></td>
@@ -291,13 +291,13 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-06-ruby/day-01/dawn-intro-ruby">Ruby Review</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/username_generator">Username Generator</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/ruby-oop-lab">OOP Lab</a> (JC)</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-04/dawn-intro-to-rails">Intro Rails Framework</a> (JC)</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-05-Review/dawn-rock-n-rails">Rock-n-Rails</a>(JC)</td>
+    <td><a href="/week-06-ruby/day-04/dawn-intro-to-rails">Intro Rails Framework</a> (JC)</td>
+    <td><a href="/week-06-ruby/day-05-Review/dawn-rock-n-rails">Rock-n-Rails</a>(JC)</td>
   </tr>
   <tr>
     <td>Module2</td>
     <td>Idiomatic Ruby (NA)</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-06-ruby/day-02/dusk-ruby-OOP">Ruby OOP</a> (JC)</td>
+    <td><a href="/week-06-ruby/day-02/dusk-ruby-OOP">Ruby OOP</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/hacktive_record">Hacktive Record</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/conference_app">Intro Active Record</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/rails_bog_app">Weekend Bog App</a> (JC)</td>
@@ -360,7 +360,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module2</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/day-01-mongo/dusk-schemas_and_embedding">Intro Mongo Schemas & Embedding</a> (JC)</td>
+    <td><a href="/week-04-mongo-database/day-01-mongo/dusk-schemas_and_embedding">Intro Mongo Schemas & Embedding</a> (JC)</td>
     <td><a href="http://github.com/sf-wdi-25/tunely">Tunely Albums/Songs UD</a> (TG)</td>
     <td>Tunely cntd. (TG)</td>
     <td>Project 1 work time</td>
