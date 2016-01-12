@@ -11,7 +11,8 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 1. http://guides.rubyonrails.org/association_basics.html#why-associations-questionmark
 1. Do at least some of the [section labeled 'more' on today's migrations lab](https://github.com/sf-wdi-25/breweries_models_and_migrations#more)
-2. Read this short intro to join tables in Rails (https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL/joins.md)
+2. SQL associations [reading] (https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/README.md)
+2. Read this short intro to [join tables in Rails] (https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL/joins.md)
 1. If you have time read [another student's post on the topic.](https://chryus.wordpress.com/2014/02/17/associations-in-rails/)
 
 
