@@ -262,7 +262,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL/joins.md">SQL Join Reading</a>, <a href="https://github.com/sf-wdi-25/breweries_models_and_migrations#more">More section of Migrations</a>, <a href="http://guides.rubyonrails.org/association_basics.html#why-associations-questionmark">Associations</a>, & <a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/README.md">Relationships</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-2">Auth Lab</a> (NA)</td>
-    <td>Asset Pipeline / Helpers & Partials (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-3">Asset Pipeline / Helpers & Partials</a> (TG)</td>
     <td>TBD</td>
     <td></td>
   </tr>
