@@ -140,6 +140,42 @@ A best practice is to always keep every template as small as possible. A rule of
 * Partials can be called directly from inside a view file.  `<%= render "menu" %>`
 * You can pass data to a partial: `<%= render partial: "customer", object: @new_customer %>`
 
+### Calling partials
+
+render partial in the current views directory named `_product.html.erb`
+```erb
+<%= render "shared/footer" %>
+```
+
+render a partial in `shared/_footer.html.erb`
+```erb
+<%= render "shared/footer" %>
+```
+
+Pass a variable `product` to a partial to be used within the partial:
+
+```erb
+<% @products.each do |product| %>
+  <%= render partial: "product", locals: {product: product} %>
+<% end %>
+```
+
+Rails will automatically choose a partial that matches the model name if you pass it an instance of a model.  In the following it will look for an `_product.html.erb` file to render.
+
+```erb
+<%= render @products %>
+```
+
+Partials can make use of a layout:
+```erb
+<%= render partial: "link_area", layout: "graybar" %>
+```
+
+When a partial is called with a collection, the individual instances of the partial have access to the member of the collection being rendered via a variable named after the partial. In this case, the partial is _product, and within it you can refer to product to get the collection member that is being rendered.
+
+```erb
+<%= render partial: "product", collection: @products %>
+```
 
 ### Using partials and layouts
 
@@ -274,6 +310,158 @@ Rails will automatically look in the folder `app/views/application/` for a file 
 
 # basic view helpers
 
+Rails provides a huge swath of helpers designed to make generating HTML and especially HTML related to your models more convenient.  They also reinforce the "rails-way" conventions by automatically setting html class and id attributes.  We won't cover all of them here so make sure [you do some reading](http://guides.rubyonrails.org/action_view_overview.html#overview-of-helpers-provided-by-action-view) [and maybe read the docs too](http://api.rubyonrails.org/classes/ActionView/Helpers.html).  Don't forget about [URLHelper](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to).
+
+## div_for
+
+Generates a div that automatically assigns the id attribute to match the passed in object `id`.
+
+```erb
+<%= div_for(@article, class: "frontpage") do %>
+  <td><%= @article.title %></td>
+<% end %>
+```
+Renders:
+```
+<div id="article_1234" class="article frontpage">
+  <td>Hello World!</td>
+</div>
+```
+
+* `content_tag_for` is similar but can be used for other tags.
+
+## Using resources and assets
+
+* image_tag
+
+In many cases production assets are not served from the same paths as assets in dev/test.  Using the helpers allows Rails to handle this _detail_ for you.
+
+```erb
+image_tag("icon.png") # => <img src="/assets/icon.png" alt="Icon" />
+```
+
+* there are also helpers for javascript and stylesheet assets
+
+* [link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to) - generates a link
+
+```rb
+link_to "Profile", profile_path(@profile)
+# => <a href="/profiles/1">Profile</a>
+```
+
+Setting class and id:
+```rb
+link_to "Articles", articles_path, id: "news", class: "article"
+# => <a href="/articles" class="article" id="news">Articles</a>
+```
+
+* [button_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-button_to) - very similar to `link_to` but may generate a form
+
+```rb
+<%= button_to "New", action: "new" %>
+# => "<form method="post" action="/controller/new" class="button_to">
+#      <input value="New" type="submit" />
+#    </form>"
+```
 
 
 # form helpers
+
+Form helpers are one of the largest classes of view helpers that Rails provides.  Get to know these well.
+Rails form helpers help to manage the use of `id`, `name` and HTTP method for your forms.
+
+```rb
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+```
+
+```html
+<form accept-charset="UTF-8" action="/search" method="get">
+  <input name="utf8" type="hidden" value="&#x2713;" />
+  <label for="q">Search for:</label>
+  <input id="q" name="q" type="text" />
+  <input name="commit" type="submit" value="Search" />
+</form>
+```
+
+In the above:
+
+* note how `:q` is sufficient to set which field the label is for and the `id` and `name` of the input.
+  * You can predict this and use it for styling.
+
+
+More useful tags:
+
+```erb
+<%= text_area_tag(:message, "Hi, nice site", size: "24x6") %>
+<%= password_field_tag(:password) %>
+<%= hidden_field_tag(:parent_id, "5") %>
+<%= search_field(:user, :name) %>
+<%= telephone_field(:user, :phone) %>
+<%= date_field(:user, :born_on) %>
+<%= datetime_field(:user, :meeting_time) %>
+<%= datetime_local_field(:user, :graduation_day) %>
+<%= month_field(:user, :birthday_month) %>
+<%= week_field(:user, :birthday_week) %>
+<%= url_field(:user, :homepage) %>
+<%= email_field(:user, :address) %>
+<%= color_field(:user, :favorite_color) %>
+<%= time_field(:task, :started_at) %>
+<%= number_field(:product, :price, in: 1.0..20.0, step: 0.5) %>
+<%= range_field(:product, :discount, in: 1..100) %>
+```
+
+```html
+<textarea id="message" name="message" cols="24" rows="6">Hi, nice site</textarea>
+<input id="password" name="password" type="password" />
+<input id="parent_id" name="parent_id" type="hidden" value="5" />
+<input id="user_name" name="user[name]" type="search" />
+<input id="user_phone" name="user[phone]" type="tel" />
+<input id="user_born_on" name="user[born_on]" type="date" />
+<input id="user_meeting_time" name="user[meeting_time]" type="datetime" />
+<input id="user_graduation_day" name="user[graduation_day]" type="datetime-local" />
+<input id="user_birthday_month" name="user[birthday_month]" type="month" />
+<input id="user_birthday_week" name="user[birthday_week]" type="week" />
+<input id="user_homepage" name="user[homepage]" type="url" />
+<input id="user_address" name="user[address]" type="email" />
+<input id="user_favorite_color" name="user[favorite_color]" type="color" value="#000000" />
+<input id="task_started_at" name="task[started_at]" type="time" />
+<input id="product_price" max="20.0" min="1.0" name="product[price]" step="0.5" type="number" />
+<input id="product_discount" max="100" min="1" name="product[discount]" type="range" />
+```
+
+## Using form tags with model instances
+
+Many of the form tags can be tied to model instances to either set their data OR to be tied to the appropriate form POST.
+
+```erb
+<%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body, size: "60x12" %>
+  <%= f.submit "Create" %>
+<% end %>
+```
+
+
+# using unobtrusive JavaScript
+
+A large number of the helpers available in Rails have an option to use "Unobtrusive JavaScript".  This allows them to take actions using HTTP methods outside of GET and POST and to perform certain actions more quickly by submitting via javascript.  The JS code for doing this is built-in for you.
+
+Most of the time this can be turned on by passing `remote: true` to the method call.
+
+Examples:
+
+```rb
+<%= button_to "Create", { action: "create" }, remote: true, form: { "data-type" => "json" } %>
+# => "<form method="post" action="/images/create" class="button_to" data-remote="true" data-type="json">
+#      <input value="Create" type="submit" />
+#      <input name="authenticity_token" type="hidden" value="10f2163b45388899ad4d5ae948988266befcb6c3d1b2451cf657a0c293d605a6"/>
+#    </form>"
+```
+
+Much of this also depends on [Turbolinks](https://github.com/rails/turbolinks/).
+
+* ACHTUNG: Having turbolinks enabled can at times interfere with custom javascript you may write for your app.  It's *strongly* recommended that you hold off on using this until you've become more familiar with Rails and read all the docs on Turbolinks.
