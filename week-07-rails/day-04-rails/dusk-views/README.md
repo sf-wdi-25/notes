@@ -15,12 +15,12 @@ When the app is created, Rails will automatically add a layout `application.html
 
 ## Using views with Rails
 
-In Rails, the logic for the rendering a view is quite straightforward. Given that every route in Rails will execute a method inside a controller, when the method is executed, Rails will look for:
+In Rails, the logic for rendering a view is quite straightforward. Given that every route in Rails will execute a method inside a controller, when the method is executed, Rails will look for:
 
 1. A folder inside `views` corresponding to the controller's name (folder `posts` for `PostsController`).
 2. A file with the method's name and `.html.erb`.
 
-For example , if we call `http://localhost:3000/posts`, Rails will execute the method `index` in the controller `posts` and then look for a template located in `app/views/posts/index.html.erb`  This works when the method always renders the same template.
+For example , if we call `http://localhost:3000/posts`, Rails will execute the method `index` in the controller `posts` and then look for a template located in `app/views/posts/index.html.erb`.  By default controller methods will render views files that match the controller method name.
 
 In some cases though, you may want to render a template with a different name than the current method. Lets take a look at this action:
 
@@ -42,7 +42,7 @@ end
 
 Based on the result of `@post.save`, the method will execute either the code in the `if` or in the `else`.  The code `format.html` or `format.json` means that Rails will understand the format asked for by the user, whether HTML or JSON.  For the moment, we will only look at the lines starting with `format.html`.
 
-You can see that depending upon whether `@post` correctly saves, the `new` page will be rendered or the response will be a redirect.  
+You can see that depending upon whether `@post` correctly saves, the `new` page will be rendered or the response will be a redirect.  Neither one of these renders a `create.html.erb` file.
 
 Rails will, _by default_, render the template that has the same name as the current controller method. But, **if** there is a `render` statement in the method, Rails will use whatever view is specified by that method.
 
@@ -80,7 +80,7 @@ rake db:migrate
 
 Open the posts controller and look at how each method renders the templates: some of them, like index and show, are abstract because the name of the template is the name of the method, but for some other methods, like create or update, we need to explicitly tell Rails what to do at the end of the method.
 
-#### Different Layouts
+### Different Layouts
 
 By default, Rails will render the layout `application.html.erb`, but sometimes, you want to render a template using a different layout.
 
@@ -132,11 +132,18 @@ render layout: "sidebar"
 
 This line will just tell Rails to use the same logic of template rendering, but instead of using the default `application.html.erb`, it will render the template inside `sidebar.html.erb`.
 
-#### Using partials
+## Partials
 
 A best practice is to always keep every template as small as possible. A rule of thumb would be to keep templates shorter than about 50 lines.  This helps to improve readability.  We can use partials to do this as they allow us to take portions of the template and move them into separate files.  This is particularly useful when you have content that is repeated on more than one page associated with a controller.
 
-So for example, if your website is structured like:
+* Partials are always named starting with an underscore: `_form.html.erb`
+* Partials can be called directly from inside a view file.  `<%= render "menu" %>`
+* You can pass data to a partial: `<%= render partial: "customer", object: @new_customer %>`
+
+
+### Using partials and layouts
+
+If your website is structured like:
 ```
   -----    header with menu      -----
   -----    current page content  -----
