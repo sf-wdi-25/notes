@@ -246,7 +246,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module1</td>
     <td><a href="/week-07-rails/day-01-SQL-associations/dawn-intro-SQL">Intro SQL</a> (JC)</td>
     <td><a href="/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships">SQL Relationships</a> (JC)</td>
-    <td>Library App - Auth (NA)</td>
+    <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - Auth (NA)</td>
     <td>Asset Pipeline (JC)</td>
     <td>Review (Team)</td>
   </tr>
@@ -254,7 +254,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module2</td>
     <td><a href="/week-07-rails/day-01-SQL-associations/dusk-migrations-associations">Migrations & Associations</a> (TG)</td>
     <td><a href="/week-07-rails/day-02-SQL-relationships/dusk-sessions-cookies/README.md">Cookies & Sessions</a> (NA)</td>
-    <td>Library App - N:N (NA)</td>
+    <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - N:N (NA)</td>
     <td>View Helpers & Partials (TG)</td>
     <td>Weekend Lab - Muscle Memory (Team)</td>
   </tr>
