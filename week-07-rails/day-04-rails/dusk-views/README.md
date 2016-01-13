@@ -350,10 +350,13 @@ link_to "Profile", profile_path(@profile)
 ```
 
 Setting class and id:
-```rb
+```ruby
 link_to "Articles", articles_path, id: "news", class: "article"
 # => <a href="/articles" class="article" id="news">Articles</a>
 ```
+
+> Hint: run `rake routes` and look at the Prefix column to see what `_path` url helpers are available.
+
 
 * [button_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-button_to) - very similar to `link_to` but may generate a form
 
@@ -365,7 +368,7 @@ link_to "Articles", articles_path, id: "news", class: "article"
 ```
 
 
-# form helpers
+# form builders
 
 Form helpers are one of the largest classes of view helpers that Rails provides.  Get to know these well.
 Rails form helpers help to manage the use of `id`, `name` and HTTP method for your forms.
@@ -391,6 +394,7 @@ In the above:
 
 * note how `:q` is sufficient to set which field the label is for and the `id` and `name` of the input.
   * You can predict this and use it for styling.
+
 
 
 More useful tags:
@@ -437,12 +441,120 @@ More useful tags:
 
 Many of the form tags can be tied to model instances to either set their data OR to be tied to the appropriate form POST.
 
+* `form_for` - is used to build a form for an active record object.
+
 ```erb
 <%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
   <%= f.text_field :title %>
   <%= f.text_area :body, size: "60x12" %>
   <%= f.submit "Create" %>
 <% end %>
+```
+
+```html
+<form accept-charset="UTF-8" action="/articles/create" method="post" class="nifty_form">
+  <input id="article_title" name="article[title]" type="text" />
+  <textarea id="article_body" name="article[body]" cols="60" rows="12"></textarea>
+  <input name="commit" type="submit" value="Create" />
+</form>
+```
+
+Inside a form builder you'll typically operate on the form-builder object.  That is the `f` in between the `form_for .... do` and `end`.
+
+* A number of the above listed methods have specialized form builder methods that operate within a form.
+
+* text_field
+
+```erb
+<%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.text_field :title %>
+```
+
+* text_area
+
+```erb
+<%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body, size: "60x12" %>
+```
+
+* select tag
+
+```erb
+<%= form_for @person do |f| %>
+  <%= f.select(:city_id) %>
+<% end %>
+```
+
+
+* dates
+
+```erb
+<%= form_for @person do |f| %>
+  <%= f.date_field :birthdate %>
+<% end %>
+```
+
+```html
+<form class="new_person" id="new_person" action="/people" accept-charset="UTF-8" method="post">
+  <input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="PHkWssZGvQ==">
+  <input type="date" name="person[birthdate]" id="person_birthdate">
+</form>
+```
+
+OR
+
+```erb
+<%= form_for @person do |f| %>
+  <%= f.date_select :birthdate %>
+<% end %>
+```
+
+```html
+<form class="new_person" id="new_person" action="/people" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="wfxWjMcmiPxojNAR//rCAVtJqAK7URyOya3Ub90bwAuKLdxixF7NtvuEYcDjhUU4VDDoG1qP+E8lwcRrFzbGhA==">
+  <select id="person_birthdate_1i" name="person[birthdate(1i)]">
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016" selected="selected">2016</option>
+    <option value="2017">2017</option>
+    <!-- trimmed -->
+  </select>
+  <select id="person_birthdate_2i" name="person[birthdate(2i)]">
+    <option value="1" selected="selected">January</option>
+    <option value="2">February</option>
+    <option value="3">March</option>
+    <option value="4">April</option>
+    <!-- trimmed -->
+  </select>
+  <select id="person_birthdate_3i" name="person[birthdate(3i)]">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <!-- trimmed -->
+    <option value="30">30</option>
+    <option value="31">31</option>
+  </select>
+</form>
+```
+
+
+## PUT, PATCH, DELETE
+
+Most browsers don't support PUT, PATCH & DELETE as form submission methods.  Rails however has a _work-around_ for this.  
+
+Rails adds a hidden form field and processes this on a POST request, internally changing the request type.  
+
+```erb
+form_tag(search_path, method: "patch")
+```
+
+```html
+<form accept-charset="UTF-8" action="/search" method="post">
+  <input name="_method" type="hidden" value="patch" />
+  <input name="utf8" type="hidden" value="&#x2713;" />
+  <input name="authenticity_token" type="hidden" value="f755bb0ed134b76c432144748a6d4b7a7ddf2b71" />
+  ...
+</form>
 ```
 
 
