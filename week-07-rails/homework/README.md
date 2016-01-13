@@ -17,14 +17,15 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
-<!--
+
 ## Day 2
 
 1. [Auth Lab](/week-07-rails/day-03-auth/dawn-auth)
-2. Bonus/Stretch
+2. [Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
+<!--
 ## Day 3
 
 1. Reading
