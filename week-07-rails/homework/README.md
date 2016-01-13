@@ -21,7 +21,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 ## Day 2
 
 1. [Auth Lab](/week-07-rails/day-03-auth/dawn-auth)
-2. [Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
+2. Read [Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
