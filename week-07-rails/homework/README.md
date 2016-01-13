@@ -29,6 +29,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 1. Read [Layouts & Rendering](http://guides.rubyonrails.org/layouts_and_rendering.html)
 1. Read the rest of [Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
+1. Read [Asset Pipeline](http://guides.rubyonrails.org/v3.2.13/asset_pipeline.html) sections 1 & 2.
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
