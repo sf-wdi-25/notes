@@ -238,7 +238,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Drills</td>
     <td><a href="https://github.com/sf-wdi-25/csv_challenge">CSV Challenge</a> (TG)</td>
     <td><a href="https://github.com/sf-wdi-25/csv_challenge">CSV Challenge</a> (TG)</td>
-    <td>Secret Keys (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/drills#day-3-secret-keys">Secret Keys </a>(JC)</td>
     <td>CSV Challenge II (NA)</td>
     <td>CSV Challenge II (NA)</td>
   </tr>
