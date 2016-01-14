@@ -36,8 +36,9 @@ Please use any remaining time to complete and review the exercises from dawn & d
 <!--
 ## Day 4
 
-1. Watch [Nested Model Form](http://railscasts.com/episodes/196-nested-model-form-part-1) Part 1 - Part 3
-2. Bonus/Stretch
+1. Watch [Nested Model Form](http://railscasts.com/episodes/196-nested-model-form-part-1) Part 1
+1. Read about [custom view helpers](http://www.rails-dev.com/custom-view-helpers-in-rails-4)
+2. Finish today's lab.
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
