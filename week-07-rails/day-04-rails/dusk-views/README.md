@@ -3,8 +3,8 @@
 
 - Describe how layouts, templates & views work together
 - Use partials for static content and rendering dynamic content
-- Be familiar with several basic view helper methods
-- Be familiar with rails form helpers
+- Use link_to
+- Work with rails form helpers
 
 # Layouts and Partials
 
@@ -292,9 +292,9 @@ And inside move the following from `sidebar.html.erb`:
 </footer>
 ```
 
-Now the main `sidebar.html.erb` file is back to a normal size, we just need to include the partials and the final result will then be the same than before.
+Now the main `sidebar.html.erb` file is back to a normal size, we just need to include the partials and the final result will then be the same as before.
 
-**Note:** Every partial needs to have an underscore as the first character - this way Rails knows that it is not a proper template but only a partial that will be included in a template.
+**Note:** Every partial filename needs to have an underscore as the first character - this way Rails knows that it is not a proper template but only a partial that will be included in a template.
 
 Let's now call the partials in the layout:
 
@@ -318,7 +318,7 @@ Rails will automatically look in the folder `app/views/application/` for a file 
 
 
 
-# basic view helpers
+# Basic View Helpers
 
 Rails provides a huge swath of helpers designed to make generating HTML and especially HTML related to your models more convenient.  They also reinforce the "rails-way" conventions by automatically setting html class and id attributes.  We won't cover all of them here so make sure [you do some reading](http://guides.rubyonrails.org/action_view_overview.html#overview-of-helpers-provided-by-action-view) [and maybe read the docs too](http://api.rubyonrails.org/classes/ActionView/Helpers.html).  Don't forget about [URLHelper](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to).
 
@@ -337,14 +337,15 @@ Renders:
   <td>Hello World!</td>
 </div>
 ```
+> Note how this automatically set a class and id.
 
 * `content_tag_for` is similar but can be used for other tags.
 
-## Using resources and assets
-
-* image_tag
+## Using Assets and URL Named Helpers
 
 In many cases production assets are not served from the same paths as assets in dev/test.  Using the helpers allows Rails to handle this _detail_ for you.
+
+* image_tag
 
 ```erb
 image_tag("icon.png") # => <img src="/assets/icon.png" alt="Icon" />
