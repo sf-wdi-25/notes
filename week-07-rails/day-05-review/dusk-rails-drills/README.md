@@ -11,7 +11,7 @@ Resources:
 
 * [rails generate](http://guides.rubyonrails.org/command_line.html#rails-generate)
 * [rails destroy](http://guides.rubyonrails.org/command_line.html#rails-destroy)
-* [wdi 21 github group](https://github.com/sf-wdi-21)
+* [wdi 25 github group](https://github.com/sf-wdi-25)
 * If you are not clear on how to edit a resource, take a look over this [section](http://guides.rubyonrails.org/getting_started.html#updating-articles) of the rails guides.
 * [Ffaker Gem](https://github.com/ffaker/ffaker) - for seeding the databse.
 
