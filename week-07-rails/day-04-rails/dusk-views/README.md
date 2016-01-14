@@ -368,7 +368,7 @@ link_to "Articles", articles_path, id: "news", class: "article"
 ```
 
 
-# form builders
+# form tag
 
 Form helpers are one of the largest classes of view helpers that Rails provides.  Get to know these well.
 Rails form helpers help to manage the use of `id`, `name` and HTTP method for your forms.
@@ -437,9 +437,17 @@ More useful tags:
 <input id="product_discount" max="100" min="1" name="product[discount]" type="range" />
 ```
 
-## Using form tags with model instances
+## FormBuilder - Using form tags with model instances
 
 Many of the form tags can be tied to model instances to either set their data OR to be tied to the appropriate form POST.
+
+It may be useful to note the difference between the [FormTagHelper](http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html) and [FormBuilderHelper](http://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html).  
+
+* FormBuilderHelper is intended to work with model objects and does a lot to help you pre-fill values.
+ * `form_for` is the main entry point for working with FormBuilderHelper.
+ * Many `_tag` methods have more specialized methods for use with `form_for`
+* FormTagHelper is more general
+ * most methods end in `_tag`
 
 * `form_for` - is used to build a form for an active record object.
 
@@ -461,7 +469,7 @@ Many of the form tags can be tied to model instances to either set their data OR
 
 Inside a form builder you'll typically operate on the form-builder object.  That is the `f` in between the `form_for .... do` and `end`.
 
-* A number of the above listed methods have specialized form builder methods that operate within a form.
+The symbol passed to most of these methods references the model attribute (column-name) to use.
 
 * text_field
 
@@ -537,6 +545,11 @@ OR
 </form>
 ```
 
+* hidden fields
+
+```rb
+hidden_field(:signup, :pass_confirm)
+```
 
 ## PUT, PATCH, DELETE
 
