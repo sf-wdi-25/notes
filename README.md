@@ -247,7 +247,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-07-rails/day-01-SQL-associations/dawn-intro-SQL">Intro SQL</a> (JC)</td>
     <td><a href="/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships">SQL Relationships</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - Auth (NA)</td>
-    <td>Asset Pipeline (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/asset_pipeline_poem">Asset Pipeline</a> (JC)</td>
     <td>Review (Team) / Git Flow (HS)</td>
   </tr>
   <tr>
