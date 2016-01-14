@@ -84,6 +84,8 @@ Open the posts controller and look at how each method renders the templates: som
 
 By default, Rails will render the layout `application.html.erb`, but sometimes, you want to render a template using a different layout.
 
+#### Example
+
 For instance, let's create a layout called `sidebar.html.erb`
 
 ```bash
@@ -132,6 +134,7 @@ render layout: "sidebar"
 
 This line will just tell Rails to use the same logic of template rendering, but instead of using the default `application.html.erb`, it will render the template inside `sidebar.html.erb`.
 
+
 ## Partials
 
 A best practice is to always keep every template as small as possible. A rule of thumb would be to keep templates shorter than about 50 lines.  This helps to improve readability.  We can use partials to do this as they allow us to take portions of the template and move them into separate files.  This is particularly useful when you have content that is repeated on more than one page associated with a controller.
@@ -144,7 +147,7 @@ A best practice is to always keep every template as small as possible. A rule of
 
 render partial in the current views directory named `_product.html.erb`
 ```erb
-<%= render "shared/footer" %>
+<%= render "product" %>
 ```
 
 render a partial in `shared/_footer.html.erb`
@@ -163,7 +166,7 @@ Pass a variable `product` to a partial to be used within the partial:
 Rails will automatically choose a partial that matches the model name if you pass it an instance of a model.  In the following it will look for an `_product.html.erb` file to render.
 
 ```erb
-<%= render @products %>
+<%= render @product %>
 ```
 
 Partials can make use of a layout:
@@ -171,13 +174,15 @@ Partials can make use of a layout:
 <%= render partial: "link_area", layout: "graybar" %>
 ```
 
-When a partial is called with a collection, the individual instances of the partial have access to the member of the collection being rendered via a variable named after the partial. In this case, the partial is _product, and within it you can refer to product to get the collection member that is being rendered.
+When a partial is called with a `:collection`, the individual instances of the partial have access to the member of the collection being rendered via a variable named after the partial. In this case, the partial is _product, and within it you can refer to product to get the collection member that is being rendered.
 
 ```erb
 <%= render partial: "product", collection: @products %>
 ```
 
 ### Using partials and layouts
+
+Within a layout the partial is inserted at the `<%= yield %>`
 
 If your website is structured like:
 ```
@@ -235,6 +240,11 @@ In the above case it would be very common to take the `form` out of both pages a
 # edit.html.erb
 -----  edit instructions text -----
 -----  render :form           -----
+
+# _form.html.erb
+-----  form                   -----
+-----  form                   -----
+-----  form                   -----
 ```
 
 Much DRYer!
