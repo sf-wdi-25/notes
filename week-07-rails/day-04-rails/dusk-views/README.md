@@ -366,7 +366,7 @@ image_tag("icon.png") # => <img src="/assets/icon.png" alt="Icon" />
 ```
 
 
-#### `[link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)`
+#### [`link_to`](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)
 Generates an `a` tag (anchor link).
 
 ```rb
@@ -383,7 +383,7 @@ link_to "Articles", articles_path, id: "news", class: "article"
 > Hint: run `rake routes` and look at the Prefix column to see what `_path` url helpers are available.
 
 
-#### `[button_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-button_to)`
+#### [`button_to`](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-button_to)
 Very similar to `link_to` but may generate a form
 
 ```rb
