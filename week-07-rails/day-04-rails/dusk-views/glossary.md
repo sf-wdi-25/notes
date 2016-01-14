@@ -1,6 +1,6 @@
 # Layouts and Partials
 
-#### `yield`
+#### [`yield`](http://guides.rubyonrails.org/layouts_and_rendering.html#understanding-yield)
 
 Yield is used within a **layout** to render the **view**.
 
@@ -15,7 +15,7 @@ Yield the view within a div.
 </div>
 ```
 
-#### `render`
+#### [`render`](http://guides.rubyonrails.org/layouts_and_rendering.html#using-render)
 
 Render the `_product.html.erb` partial
 
@@ -44,13 +44,13 @@ Render a partial in `_product.html.erb` and pass it a variable.
 
 # View helper methods
 
-#### Linking to assets
+## Linking to assets
 
-* `image_tag`
+#### [`image_tag`](http://apidock.com/rails/ActionView/Helpers/AssetTagHelper/image_tag)
 
 
-# Form Helper methods
-The follwing methods are used with [`form_for`](http://apidock.com/rails/ActionView/Helpers/FormHelper/form_for) to create a `<form>` element
+## Form Helper methods
+The following methods are used with [`form_for`](http://apidock.com/rails/ActionView/Helpers/FormHelper/form_for) to create a `<form>` element
 
 A form can be constructed for a specific model object by passing it directly.
 ```erb
