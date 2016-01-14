@@ -48,7 +48,6 @@ Rails will, _by default_, render the template that has the same name as the curr
 
 Let's take a look at a few different ways of calling render:
 
-> Note: Review and explain each of the render functions below.
 
 ```ruby
 render :edit
@@ -67,9 +66,15 @@ render file: "/path/to/rails/app/views/books/edit"
 render file: "/path/to/rails/app/views/books/edit.html.erb"
 ```
 
-## Integrating Layouts - Codealong (30 mins)
+# Layouts
+
+Layouts wrap views.  They are typically used for content that you want to appear on many/all pages on a site.  For example, every page needs the css and javascript files to be included, so we put that in the layout.  Similarly if you're using bootstrap you may have a `<div class='container'>` that you put all the content into.  We can put that `div` into the layout as well.  
+
+This helps keep our views DRY - we don't repeat common content in each file.
 
 Create a new Rails app "views_and_layouts" and scaffold the resource posts:
+
+## Integrating Layouts - Codealong
 
 ```bash
 rails new views_and_layouts
@@ -135,7 +140,7 @@ render layout: "sidebar"
 This line will just tell Rails to use the same logic of template rendering, but instead of using the default `application.html.erb`, it will render the template inside `sidebar.html.erb`.
 
 
-## Partials
+# Partials
 
 A best practice is to always keep every template as small as possible. A rule of thumb would be to keep templates shorter than about 50 lines.  This helps to improve readability.  We can use partials to do this as they allow us to take portions of the template and move them into separate files.  This is particularly useful when you have content that is repeated on more than one page associated with a controller.
 
@@ -145,12 +150,12 @@ A best practice is to always keep every template as small as possible. A rule of
 
 ### Calling partials
 
-render partial in the current views directory named `_product.html.erb`
+Render a partial in the current views directory named `_product.html.erb`
 ```erb
 <%= render "product" %>
 ```
 
-render a partial in `shared/_footer.html.erb`
+Render a partial in `shared/_footer.html.erb`
 ```erb
 <%= render "shared/footer" %>
 ```
@@ -604,6 +609,10 @@ form_tag(search_path, method: "patch")
   ...
 </form>
 ```
+
+## View Helpers Examples
+
+Check out [this demo app](https://github.com/tgaff/view_helpers_demo_app/blob/master/app/views/people/_form.html.erb)
 
 
 # Using unobtrusive JavaScript
