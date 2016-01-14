@@ -384,7 +384,7 @@ link_to "Articles", articles_path, id: "news", class: "article"
 Form helpers are one of the largest classes of view helpers that Rails provides.  Get to know these well.
 Rails form helpers help to manage the use of `id`, `name` and HTTP method for your forms.
 
-```rb
+```erb
 <%= form_tag("/search", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q) %>
@@ -479,8 +479,31 @@ It may be useful to note the difference between the [FormTagHelper](http://api.r
 ```
 
 Inside a form builder you'll typically operate on the form-builder object.  That is the `f` in between the `form_for .... do` and `end`.
+The symbol passed to most of these methods references the model attribute (column-name) to use.  
 
-The symbol passed to most of these methods references the model attribute (column-name) to use.
+The **name** attribute for form elements will be a combination of the model name and the symbol passed in the format `model[attribute]`.  That is:
+
+```erb
+<%= form_for @animal do |f| %>
+  <%= f.text_field :species %>
+```
+
+Will give you an input tag like:
+```html
+<input id="article_title" name="animal[species]" type="text" />
+```
+
+And importantly, these become the keys in the params hash the controller receives when the form is submitted.  The controller will receive:
+
+```rb
+params = { 'animal' => { 'species' => 'value of the input box when submitted' } }
+```
+
+You then write controller code like:
+
+```rb
+params.require(:animal).permit(:species)
+```
 
 * text_field
 
