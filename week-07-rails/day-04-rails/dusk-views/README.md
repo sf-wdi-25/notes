@@ -13,6 +13,7 @@ The following is used along with this lesson:
 * [view helpers demo app](https://github.com/tgaff/view_helpers_demo_app)
 * [Lab](https://github.com/sf-wdi-25/rails_partials_helpers)
 * [FormBuilder docs](http://apidock.com/rails/ActionView/Helpers/FormBuilder)
+* [Custom View Helpers](http://www.rails-dev.com/custom-view-helpers-in-rails-4)
 
 # Layouts and Partials
 
@@ -622,6 +623,13 @@ form_tag(search_path, method: "patch")
 
 Check out [this demo app](https://github.com/tgaff/view_helpers_demo_app/blob/master/app/views/people/_form.html.erb)
 
+
+## Writing your own custom View Helpers
+
+You can write your own [view helpers](http://www.rails-dev.com/custom-view-helpers-in-rails-4).
+
+* use this technique to remove code from views
+  * and DRY your views
 
 # Using unobtrusive JavaScript
 
