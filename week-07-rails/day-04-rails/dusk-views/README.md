@@ -6,6 +6,14 @@
 - Use link_to
 - Work with rails form helpers
 
+# External resources
+
+The following is used along with this lesson:
+* [Glossary](glossary.md)
+* [view helpers demo app](https://github.com/tgaff/view_helpers_demo_app)
+* [Lab](https://github.com/sf-wdi-25/rails_partials_helpers)
+* [FormBuilder docs](http://apidock.com/rails/ActionView/Helpers/FormBuilder)
+
 # Layouts and Partials
 
 * Layouts can be seen as the container for a view.  Each view is rendered within a container.  We can use these for common header/footer material.
@@ -70,7 +78,7 @@ render file: "/path/to/rails/app/views/books/edit.html.erb"
 
 Layouts wrap views.  They are typically used for content that you want to appear on many/all pages on a site.  For example, every page needs the css and javascript files to be included, so we put that in the layout.  Similarly if you're using bootstrap you may have a `<div class='container'>` that you put all the content into.  We can put that `div` into the layout as well.  
 
-This helps keep our views DRY - we don't repeat common content in each file.
+* This helps keep our views DRY - we don't repeat common content in each file.
 
 Create a new Rails app "views_and_layouts" and scaffold the resource posts:
 
