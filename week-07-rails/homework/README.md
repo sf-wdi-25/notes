@@ -33,15 +33,15 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
-<!--
 ## Day 4
 
 1. Watch [Nested Model Form](http://railscasts.com/episodes/196-nested-model-form-part-1) Part 1
 1. Read about [custom view helpers](http://www.rails-dev.com/custom-view-helpers-in-rails-4)
-2. Finish today's lab.
+2. Finish [today's lab](https://github.com/sf-wdi-25/rails_partials_helpers).
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
+<!--
 ## Day 5 - Weekend Homework
 
 1. Reading
