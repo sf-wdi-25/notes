@@ -173,7 +173,7 @@ There's also another checkbox method, `collection_check_boxes`
 * [f.select](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormBuilder/select)
 ```erb
 <%= form_for @post do |f| %>
-  <%= f.select :person_id, Person.all.collect { |p| [ p.name, p.id ] }, include_blank: true %>
+  <%= f.select :person_id, @people.collect { |p| [ p.name, p.id ] }, include_blank: true %>
   <%= f.submit %>
 <% end %>
 ```
