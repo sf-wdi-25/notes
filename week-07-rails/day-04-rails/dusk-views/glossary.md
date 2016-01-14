@@ -111,7 +111,8 @@ Adding a class and calling a javascript function on-click handler:
 ```
 
 
-#### [`f.text_field`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/text_field) - output: `<input type='text'>`
+#### [`f.text_field`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/text_field)
+Output: `<input type='text'>`
 
 Using the `first_name` attribute on a person object.
 ```erb
@@ -127,7 +128,8 @@ Specifying a size:
 <% end %>
 ```
 
-#### [`f.text_area`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/text_area) - output: `<textarea>`
+#### [`f.text_area`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/text_area)
+Output: `<textarea>`
 
 Generate 2 textareas with 20 columns and 3 rows.
 ```erb
@@ -141,7 +143,8 @@ Outputs:
 <textarea cols="20" rows="3" id="post_body" name="post[body]">
 ```
 
-#### [`f.check_box`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/check_box) - output: `<input type='checkbox'`
+#### [`f.check_box`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/check_box)
+Output: `<input type='checkbox'`
 
 > Note: there are some major caveats when using checkbox, please see the docs.
 
