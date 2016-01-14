@@ -336,7 +336,7 @@ Rails will automatically look in the folder `app/views/application/` for a file 
 
 Rails provides a huge swath of helpers designed to make generating HTML and especially HTML related to your models more convenient.  They also reinforce the "rails-way" conventions by automatically setting html class and id attributes.  We won't cover all of them here so make sure [you do some reading](http://guides.rubyonrails.org/action_view_overview.html#overview-of-helpers-provided-by-action-view) [and maybe read the docs too](http://api.rubyonrails.org/classes/ActionView/Helpers.html).  Don't forget about [URLHelper](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to).
 
-#### div_for
+#### `div_for`
 
 Generates a div that automatically assigns the id attribute to match the passed in object `id`.
 
@@ -366,7 +366,8 @@ image_tag("icon.png") # => <img src="/assets/icon.png" alt="Icon" />
 ```
 
 
-#### [link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to) - generates a link
+#### `[link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)`
+Generates an `a` tag (anchor link).
 
 ```rb
 link_to "Profile", profile_path(@profile)
