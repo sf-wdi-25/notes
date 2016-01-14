@@ -239,8 +239,8 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/csv_challenge">CSV Challenge</a> (TG)</td>
     <td><a href="https://github.com/sf-wdi-25/csv_challenge">CSV Challenge</a> (TG)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/drills#day-3-secret-keys">Secret Keys </a>(JC)</td>
-    <td>CSV Challenge II (NA)</td>
-    <td>CSV Challenge II (NA)</td>
+    <td>CSV Challenge (NA)</td>
+    <td>Review (team)</td>
   </tr>
   <tr>
     <td>Module1</td>
@@ -248,7 +248,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships">SQL Relationships</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - Auth (NA)</td>
     <td>Asset Pipeline (JC)</td>
-    <td>Review (Team)</td>
+    <td>Review (Team) / Git Flow (HS)</td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -256,7 +256,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-07-rails/day-02-SQL-relationships/dusk-sessions-cookies/README.md">Cookies & Sessions</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - N:N (NA)</td>
     <td>View Helpers & Partials (TG)</td>
-    <td>Weekend Lab - Muscle Memory (Team)</td>
+    <td>Outcomes (Neda) / Weekend Lab - Muscle Memory (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
