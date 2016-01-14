@@ -505,6 +505,8 @@ You then write controller code like:
 params.require(:animal).permit(:species)
 ```
 
+### More methods
+
 * text_field
 
 ```erb
@@ -516,7 +518,6 @@ params.require(:animal).permit(:species)
 
 ```erb
 <%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.text_field :title %>
   <%= f.text_area :body, size: "60x12" %>
 ```
 
@@ -605,7 +606,7 @@ form_tag(search_path, method: "patch")
 ```
 
 
-# using unobtrusive JavaScript
+# Using unobtrusive JavaScript
 
 A large number of the helpers available in Rails have an option to use "Unobtrusive JavaScript".  This allows them to take actions using HTTP methods outside of GET and POST and to perform certain actions more quickly by submitting via javascript.  The JS code for doing this is built-in for you.
 
