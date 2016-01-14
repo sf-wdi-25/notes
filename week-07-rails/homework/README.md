@@ -35,12 +35,11 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 ## Day 4
 
-1. Watch [Nested Model Form](http://railscasts.com/episodes/196-nested-model-form-part-1) Part 1
-1. Read about [custom view helpers](http://www.rails-dev.com/custom-view-helpers-in-rails-4)
-2. Finish [today's lab](https://github.com/sf-wdi-25/rails_partials_helpers).
+1. Please complete the [Week 7 Self-Assessment](https://github.com/sf-wdi-25/asset_pipeline_poem) and ask/upvote 3 questions on [Question Cookie](www.questioncookie.com/wdi-25-w7-review)
+1. Watch [Nested Model Form](http://railscasts.com/episodes/196-nested-model-form-part-1) Part 1, and read about [custom view helpers](http://www.rails-dev.com/custom-view-helpers-in-rails-4)
 3. Complete your multiplication, division, and subtraction methods from today's after lunch exercise. (Implement multiplication (*), division (/), and subtraction (-) using only the addition (+) operator.) We can discuss your solutions tomorrow!
 
-Please use any remaining time to complete and review the exercises from dawn & dusk.
+Please use any remaining time to complete and review the labs/exercises from dawn ([Asset Pipeline Poem](https://github.com/sf-wdi-25/asset_pipeline_poem)) & dusk ([Rails Partials & View Helpers](https://github.com/sf-wdi-25/rails_partials_helpers)).
 
 <!--
 ## Day 5 - Weekend Homework
