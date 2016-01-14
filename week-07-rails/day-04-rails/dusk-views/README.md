@@ -336,7 +336,7 @@ Rails will automatically look in the folder `app/views/application/` for a file 
 
 Rails provides a huge swath of helpers designed to make generating HTML and especially HTML related to your models more convenient.  They also reinforce the "rails-way" conventions by automatically setting html class and id attributes.  We won't cover all of them here so make sure [you do some reading](http://guides.rubyonrails.org/action_view_overview.html#overview-of-helpers-provided-by-action-view) [and maybe read the docs too](http://api.rubyonrails.org/classes/ActionView/Helpers.html).  Don't forget about [URLHelper](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to).
 
-## div_for
+#### div_for
 
 Generates a div that automatically assigns the id attribute to match the passed in object `id`.
 
@@ -357,17 +357,16 @@ Renders:
 
 ## Using Assets and URL Named Helpers
 
-In many cases production assets are not served from the same paths as assets in dev/test.  Using the helpers allows Rails to handle this _detail_ for you.
+In many cases production assets are not served from the same paths as assets in dev/test.  Using the helpers allows Rails to handle this _detail_ for you. There are also helpers for javascript and stylesheet assets
 
-* image_tag
+#### `image_tag`
 
 ```erb
 image_tag("icon.png") # => <img src="/assets/icon.png" alt="Icon" />
 ```
 
-* there are also helpers for javascript and stylesheet assets
 
-* [link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to) - generates a link
+#### [link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to) - generates a link
 
 ```rb
 link_to "Profile", profile_path(@profile)
@@ -383,7 +382,8 @@ link_to "Articles", articles_path, id: "news", class: "article"
 > Hint: run `rake routes` and look at the Prefix column to see what `_path` url helpers are available.
 
 
-* [button_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-button_to) - very similar to `link_to` but may generate a form
+#### `[button_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-button_to)`
+Very similar to `link_to` but may generate a form
 
 ```rb
 <%= button_to "New", action: "new" %>
@@ -393,7 +393,7 @@ link_to "Articles", articles_path, id: "news", class: "article"
 ```
 
 
-# form tag
+#### `form_tag`
 
 Form helpers are one of the largest classes of view helpers that Rails provides.  Get to know these well.
 Rails form helpers help to manage the use of `id`, `name` and HTTP method for your forms.
@@ -474,7 +474,8 @@ It may be useful to note the difference between the [FormTagHelper](http://api.r
 * FormTagHelper is more general
  * most methods end in `_tag`
 
-* `form_for` - is used to build a form for an active record object.
+#### `form_for`
+Used to build a form for an active record object.
 
 ```erb
 <%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
@@ -519,23 +520,23 @@ You then write controller code like:
 params.require(:animal).permit(:species)
 ```
 
-### More methods
+## More Form Methods
 
-* text_field
+#### `f.text_field`
 
 ```erb
 <%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
   <%= f.text_field :title %>
 ```
 
-* text_area
+#### `f.text_area`
 
 ```erb
 <%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
   <%= f.text_area :body, size: "60x12" %>
 ```
 
-* select tag
+#### `f.select`
 
 ```erb
 <%= form_for @person do |f| %>
@@ -544,7 +545,7 @@ params.require(:animal).permit(:species)
 ```
 
 
-* dates
+#### `f.date_field` & `f.date_select` tags
 
 ```erb
 <%= form_for @person do |f| %>
@@ -594,8 +595,8 @@ OR
 </form>
 ```
 
-* hidden fields
-
+#### `hidden_field` or `f.hidden_field`
+Creates an `input` tag with attribute `type='hidden'`.
 ```rb
 hidden_field(:signup, :pass_confirm)
 ```
