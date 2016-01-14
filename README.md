@@ -255,7 +255,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-07-rails/day-01-SQL-associations/dusk-migrations-associations">Migrations & Associations</a> (TG)</td>
     <td><a href="/week-07-rails/day-02-SQL-relationships/dusk-sessions-cookies/README.md">Cookies & Sessions</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - N:N (NA)</td>
-    <td>View Helpers & Partials (TG)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/week-07-rails/day-04-rails/dusk-views/"> View Helpers & Partials</a> (TG)</td>
     <td>Outcomes (Neda) / Weekend Lab - Muscle Memory (Team)</td>
   </tr>
   <tr>
@@ -263,7 +263,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL/joins.md">SQL Join Reading</a>, <a href="https://github.com/sf-wdi-25/breweries_models_and_migrations#more">More section of Migrations</a>, <a href="http://guides.rubyonrails.org/association_basics.html#why-associations-questionmark">Associations</a>, & <a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/README.md">Relationships</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-2">Auth Lab</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-3">Asset Pipeline / Helpers & Partials</a> (TG)</td>
-    <td>TBD</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-4">View Helpers Lab</a> (TG)</td>
     <td></td>
   </tr>
 </table>
