@@ -38,7 +38,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 1. Watch [Nested Model Form](http://railscasts.com/episodes/196-nested-model-form-part-1) Part 1
 1. Read about [custom view helpers](http://www.rails-dev.com/custom-view-helpers-in-rails-4)
 2. Finish [today's lab](https://github.com/sf-wdi-25/rails_partials_helpers).
-3. Complete your multiplication, division, and subtraction methods from today's after lunch exercise. (*Implement multiplication (\*), division (/), and subtraction (-) using only the addition (+) operator.*) We can discuss your solutions tomorrow!
+3. Complete your multiplication, division, and subtraction methods from today's after lunch exercise. (Implement multiplication (*), division (/), and subtraction (-) using only the addition (+) operator.) We can discuss your solutions tomorrow!
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
