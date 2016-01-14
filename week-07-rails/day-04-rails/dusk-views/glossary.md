@@ -1,6 +1,6 @@
 # Layouts and Partials
 
-* yield
+#### `yield`
 
 Yield is used within a **layout** to render the **view**.
 
@@ -15,7 +15,7 @@ Yield the view within a div.
 </div>
 ```
 
-* render
+#### `render`
 
 Render the `_product.html.erb` partial
 
@@ -42,18 +42,15 @@ Render a partial in `_product.html.erb` and pass it a variable.
 ```
 
 
-# view helper methods
+# View helper methods
 
-## linking to assets
+#### Linking to assets
 
-* image_tag
+* `image_tag`
 
 
-# forms
-
-## form_for - forms with model objects
-
-* [form_for](http://apidock.com/rails/ActionView/Helpers/FormHelper/form_for) - `<form>` element
+# Form Helper methods
+The follwing methods are used with [`form_for`](http://apidock.com/rails/ActionView/Helpers/FormHelper/form_for) to create a `<form>` element
 
 A form can be constructed for a specific model object by passing it directly.
 ```erb
@@ -100,7 +97,7 @@ Accessing associated resources.  In this case adding a new comment to a document
 ```
 
 
-* [f.submit](http://apidock.com/rails/ActionView/Helpers/FormBuilder/submit)
+#### [`f.submit`](http://apidock.com/rails/ActionView/Helpers/FormBuilder/submit)
 
 ```erb
 <%= form_for :person do |f| %>
@@ -114,7 +111,7 @@ Adding a class and calling a javascript function on-click handler:
 ```
 
 
-* [f.text_field](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/text_field) - output: `<input type='text'>`
+#### [`f.text_field`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/text_field) - output: `<input type='text'>`
 
 Using the `first_name` attribute on a person object.
 ```erb
@@ -130,7 +127,7 @@ Specifying a size:
 <% end %>
 ```
 
-* [f.text_area](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/text_area) - output: `<textarea>`
+#### [`f.text_area`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/text_area) - output: `<textarea>`
 
 Generate 2 textareas with 20 columns and 3 rows.
 ```erb
@@ -144,7 +141,7 @@ Outputs:
 <textarea cols="20" rows="3" id="post_body" name="post[body]">
 ```
 
-* [f.check_box](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/check_box) - output: `<input type='checkbox'`
+#### [`f.check_box`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormHelper/check_box) - output: `<input type='checkbox'`
 
 > Note: there are some major caveats when using checkbox, please see the docs.
 
@@ -160,7 +157,7 @@ Note that rails adds a secondary `hidden` field.  See docs for details.
 
 There's also another checkbox method, `collection_check_boxes`
 
-* [f.collection_check_boxes](http://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-collection_check_boxes)
+#### [`f.collection_check_boxes`](http://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-collection_check_boxes)
 
 ```erb
 <%= form_for @post do |f| %>
@@ -170,7 +167,7 @@ There's also another checkbox method, `collection_check_boxes`
 ```
 > Note: For a better explanation see the [method](http://api.rubyonrails.org/classes/ActionView/Helpers/FormOptionsHelper.html#method-i-collection_check_boxes) wrapped by this one.
 
-* [f.select](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormBuilder/select)
+#### [`f.select`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormBuilder/select)
 ```erb
 <%= form_for @post do |f| %>
   <%= f.select :person_id, @people.collect { |p| [ p.name, p.id ] }, include_blank: true %>
@@ -178,7 +175,7 @@ There's also another checkbox method, `collection_check_boxes`
 <% end %>
 ```
 
-* [f.date_select](http://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-date_select)
+#### [`f.date_select`](http://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-date_select)
 
 ```erb
 <%= form_for @person do |f| %>
@@ -187,7 +184,7 @@ There's also another checkbox method, `collection_check_boxes`
 <% end %>
 ```
 
-* [f.label](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormBuilder/label)
+#### [`f.label`](http://apidock.com/rails/v4.2.1/ActionView/Helpers/FormBuilder/label)
 
 ```erb
 <%= form_for :person do |f| %>
