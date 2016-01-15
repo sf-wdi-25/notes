@@ -248,7 +248,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships">SQL Relationships</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - Auth (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/asset_pipeline_poem">Asset Pipeline</a> (JC)</td>
-    <td>Review (Team) / Git Flow (HS)</td>
+    <td>Project planning with Rails (Team)</td>
   </tr>
   <tr>
     <td>Module2</td>
@@ -256,7 +256,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-07-rails/day-02-SQL-relationships/dusk-sessions-cookies/README.md">Cookies & Sessions</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - N:N (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/day-04-rails/dusk-views"> View Helpers & Partials</a> (TG)</td>
-    <td>Outcomes (Neda) / <a href="https://github.com/sf-wdi-25/notes/blob/master/how-tos/github-collaboration-workflow.md">Git workflow</a> (HS)</td>
+    <td>Outcomes (Neda) / <a href="https://github.com/sf-wdi-25/notes/blob/master/how-tos/github-collaboration-workflow.md">Git Flow</a> (HS)</td>
   </tr>
   <tr>
     <td>HW</td>
@@ -264,7 +264,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-2">Auth Lab</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-3">Asset Pipeline / Helpers & Partials</a> (TG)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-4">View Helpers Lab</a> (TG)</td>
-    <td><a href="https://github.com/sf-wdi-25/rails-drills-to-CRUD">Rails drills and CRUD app</a></td>
+    <td><a href="https://github.com/sf-wdi-25/rails-drills-to-CRUD">Rails drills and CRUD app</a> (TG)</td>
   </tr>
 </table>
 
