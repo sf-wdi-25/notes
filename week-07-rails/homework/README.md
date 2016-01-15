@@ -41,11 +41,9 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 Please use any remaining time to complete and review the labs/exercises from dawn ([Asset Pipeline Poem](https://github.com/sf-wdi-25/asset_pipeline_poem)) & dusk ([Rails Partials & View Helpers](https://github.com/sf-wdi-25/rails_partials_helpers)).
 
-<!--
+
 ## Day 5 - Weekend Homework
 
-1. Reading
-2. Weekend Lab
+1. [Rails drills and CRUD](https://github.com/sf-wdi-25/rails-drills-to-CRUD)
 
 Please use any remaining time to review exercises/drills from the week! And don't forget to sleep!
--->
