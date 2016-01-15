@@ -41,4 +41,5 @@ To counter rainbow tables, websites began using a technique called **salting** w
 *We can still do our part!  To make it extremely difficult for computers to guess your password, consider using 4 random words strung together.*  
 
 ### Day 4: CSV Challenge Part 2
-### Day 5: CSV Challenge Part 2
+
+### Day 5 Review - [Project Planning in Rails](project-planning-rails.md)
