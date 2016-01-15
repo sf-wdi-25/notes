@@ -240,7 +240,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/csv_challenge">CSV Challenge</a> (TG)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/drills#day-3-secret-keys">Secret Keys </a>(JC)</td>
     <td>CSV Challenge (NA)</td>
-    <td>[Rails Project Planning](/week-07-rails/drills/project-planning-rails.md) (team)</td>
+    <td><a href="/week-07-rails/drills/project-planning-rails.md">Rails Project Planning</a> (team)</td>
   </tr>
   <tr>
     <td>Module1</td>
