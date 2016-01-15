@@ -12,8 +12,8 @@ You have been approached by a client to build a website. Your client is interest
 1. VentAboutBooks: BookClubs, Members, Events
 1. ProperManagement: PropertyManagers, Properties, Tenants
 1. StoreCorp: Stores, Items, Employees
-1. NPODough: Nonprofit, Patrons, Donations
-1. GoTeam: SportsTeam, Players, Games
+1. NPODough: Nonprofits, Patrons, Donations
+1. GoTeam: SportsTeams, Players, Games
 1. Potlucky: Guests, Allergies, Potlucks
 1. Hipstersodes: Podcasts, Episodes, Listeners
 
@@ -28,33 +28,50 @@ What kind of relationships are there in your data? Draw a ERD diagram and databa
 Let's consider a feature to be a "vertical" or "full-stack" addition, from database table to html view.
 
 * What is your MVP?
-* How will you prioritize what needs to build first?
+* How will you prioritize what needs to be built first?
+    * If you had to launch in only 2 hours, what would be the hightest "value add" - the very first thing your users would want.
 
 > Make sure you consider your client's priorities!
 
+<img src="http://squarism.com/uploads/2014/11/agile_car.png" width=400>
+
 #### 3. Writing User Stories
-Let's consider a feature to be a "vertical" or "full-stack" addition, from database table to html view.
+Let's consider a feature to be a "vertical" or "full-stack" addition, from database table to html view. Each feature should be a logical grouping of roughly 3 user stories.
+
+- Feature 1
+    + User Story
+    + User Story
+    + User Story
+- Feature 2
+    + User Story
+- Feature 3
+    + User Story
+    + User Story
 
 Please write a complete set of "User Stories" for your highest priority feature, so that your developers can start coding.
 
 User Stories must be fine-grained and directly actionable. Each user story should being with "A user can..." followed by an action ("visit a...", "click on...", "type into...") and an outcome ("and see a list of students", "and be logged in").
 
 #### 4. What will your routes look like?
-With reference to the feature above, write out all of your RESTful routes. 
+With reference to your highest priority feature above, write out all of your RESTful routes. 
 
 * What endpoints will you need? (Think about CRUDing the resource!)
 * Do you need to add or update any user stories?
 
 #### 5. Build the feature
-Write out, by hand, the **rails commands** you want to use, and the files those commands create. _You must get approval for each step!_
+Write out, by hand, the **rails commands** and **terminal commands** you need to use, and the files those commands create. _You must get approval for each step!_
 
 Use a seperate piece of paper for each file you create / generate:
 * migrations
+* schema
 * models
-* routese
+* routes
 * controllers
 * views
 
+When you are finished I should be able to simulate visiting an endpoint, and be able to walk through each step of your code, from route to database to view.
+
 > Whiteboarding pro-tip: Use lots of vertical whitespace so that you can make changes to your code!
 
+**Make sure to ask an instructor to "run" your code!**
 <img src="https://media.giphy.com/media/vq4q4LqJv3Qcg/giphy.gif" widht=400>
