@@ -180,10 +180,10 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-<!--##Week 8  - Broad Topic
+##Week 8  - Broad Topic
 <table>
-	<tr>
-  	<th></th>
+  <tr>
+    <th></th>
     <th>Monday</th>
     <th>Tuesday</th>
     <th>Wednesday</th>
@@ -191,38 +191,22 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <th>Friday</th>
   </tr>
   <tr>
-    <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Mock Interviews</td>
+    <td>MLK</td>
+    <td>9:17-10:17</td>
+    <td>9:17-10:17</td>
+    <td>9:17-10:17</td>
+    <td>Vagabond</td>
   </tr>
   <tr>
-    <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>All Day</td>
+    <td>MLK</td>
+    <td>Intro Vagabond</td>
+    <td>Vagabond - 10:30 standup</td>
+    <td>Vagabond - 10:30 standup</td>
+    <td>Vagabond - 10:30 presentations</td>
   </tr>
-  <tr>
-    <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
-  </tr>
-  <tr>
-    <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td></td>
-  </tr>
-</table>-->
+</table>
 
 ## Week 7  - Rails
 <table>
