@@ -180,7 +180,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-##Week 8  - Broad Topic
+##Week 8  - Project Vagabond
 <table>
   <tr>
     <th></th>
@@ -201,7 +201,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>All Day</td>
     <td>MLK</td>
-    <td>Intro Vagabond</td>
+    <td><a href="https://github.com/sf-wdi-25/project-vagabond">Intro Vagabond</a></td>
     <td>Vagabond - 10:30 standup</td>
     <td>Vagabond - 10:30 standup</td>
     <td>Vagabond - 10:30 presentations</td>
