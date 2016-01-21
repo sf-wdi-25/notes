@@ -203,7 +203,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>MLK</td>
     <td><a href="https://github.com/sf-wdi-25/project-vagabond">Project Vagabond</a></td>
     <td>Vagabond</td>
-    <td>Vagabond / <a href="/how-tos/request-a-code-review.md">Heroku Deploy</a></td>
+    <td>Vagabond / <a href="/how-tos/deploy-rails-to-heroku.md">Heroku Deploy</a></td>
     <td>Presentations @ 1pm</td>
   </tr>
 </table>
