@@ -7,8 +7,10 @@
 | Test model methods using rspec-rails. |
 | Test controller actions using rspec-rails. |
 
-| Resources ||
-| :---- |
+## Resources
+
+| Resource | Description |
+| :-------- | ----------- |
 | [RSpec matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers) | Reference for RSpec |
 | [shoulda](https://github.com/thoughtbot/shoulda) | Magic for model specs |
 | [FactoryGirl](https://github.com/thoughtbot/factory_girl) | Factories let you build up objects quickly for your specs |
