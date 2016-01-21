@@ -9,10 +9,11 @@
 
 | Resources |
 | :---- |
-| [rspec matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers) |
-| [shoulda]() |
-| [FactoryGirl]() |
-| [better specs]() - a style-guide for RSpec |
+| [RSpec matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers) | Reference for RSpec |
+| [shoulda](https://github.com/thoughtbot/shoulda) | Magic for model specs |
+| [FactoryGirl](https://github.com/thoughtbot/factory_girl) | Factories let you build up objects quickly for your specs |
+| [Better Specs](http://betterspecs.org/) | A style-guide for RSpec |
+| [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) | Cleans out your database before each test. |
 
 
 ## rspec-rails
@@ -347,9 +348,9 @@ We could use a tool like <a href="https://github.com/jnicklas/capybara" target="
 
 ## Other Tools
 
-* [FactoryGirl]()
-* [shoulda]() - Make Rails model tests super easy.
-* [DatabaseCleaner]() - used to wipe the database before each test, not necessary on smaller apps as tests are rolledback
+* [FactoryGirl](https://github.com/thoughtbot/factory_girl)
+* [shoulda](https://github.com/thoughtbot/shoulda) - Make Rails model tests super easy.
+* [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) - used to wipe the database before each test, not necessary on smaller apps as tests are rolledback
 
 
 ## Challenges
