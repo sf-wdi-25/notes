@@ -196,15 +196,15 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>9:17-10:17</td>
     <td>9:17-10:17</td>
     <td>9:17-10:17</td>
-    <td>Vagabond</td>
+    <td>Feature Freeze!</td>
   </tr>
   <tr>
     <td>All Day</td>
     <td>MLK</td>
-    <td><a href="https://github.com/sf-wdi-25/project-vagabond">Intro Vagabond</a></td>
-    <td>Vagabond - 10:30 standup</td>
-    <td>Vagabond - 10:30 standup</td>
-    <td>Vagabond - 10:30 presentations</td>
+    <td><a href="https://github.com/sf-wdi-25/project-vagabond">Project Vagabond</a></td>
+    <td>Standups @ 10:30</td>
+    <td>Standups @ 10:30 / <a href="/how-tos/request-a-code-review.md">Heroku Deploy</a></td>
+    <td>Presentations @ 1pm</td>
   </tr>
 </table>
 
