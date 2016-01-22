@@ -122,7 +122,7 @@ Setting flash messages in the controller makes them available in our view, but d
 
 ## Why We Test
 
-<img src="http://i.giphy.com/tnBLhm4036fMA.gif">
+<img src="http://i.giphy.com/5xrkJe3IJKSze.gif">
 - save time when we create or update a project
 - provide a better user experience
 - create secure, functioning apps
