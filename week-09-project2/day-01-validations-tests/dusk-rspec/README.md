@@ -12,7 +12,7 @@
 | Resource | Description |
 | :-------- | ----------- |
 | [RSpec matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers) | Reference for RSpec |
-| [shoulda](https://github.com/thoughtbot/shoulda) | Magic for model specs |
+| [shoulda](http://matchers.shoulda.io/docs/v3.1.0/) | Magic for model specs |
 | [FactoryGirl](https://github.com/thoughtbot/factory_girl) | Factories let you build up objects quickly for your specs |
 | [Better Specs](http://betterspecs.org/) | A style-guide for RSpec |
 | [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) | Cleans out your database before each test. |
@@ -252,7 +252,7 @@ We can set up a `User` instance for testing purposes with `User.create` or we ca
   end
   ```
 
-> It's also possible to use FFaker to generate some data either for `User.create` or for FactoryGirl.  But FFaker can run into intermittent issues because it can produce duplicate data.  Therefore many people prefer to use FactoryGirl `sequence`
+> It's also possible to use FFaker to generate some data either for `User.create` or for FactoryGirl.  But FFaker can run into intermittent issues because it can produce duplicate data.  Therefore many people prefer to use FactoryGirl `sequence`.  
 
 Assuming we've already set `user` with first and last names, we can then test that the `full_name` method correctly calculates the full name:
 
@@ -273,6 +273,29 @@ Assuming we've already set `user` with first and last names, we can then test th
 
   end
   ```
+
+<!-- exclude if model validations not studied -->
+#### shoulda
+
+Previously you talked about model validations.  You'll probably want to test these.  The `shoulda` gem provides an easier way to write specs for common model validations.
+
+Validating that a Post is invalid without a title:
+
+```ruby
+    it "is invalid without a title" do
+      user = Post.new(description: 'foo')
+      expect(user.valid?).to be false
+    end
+  end
+
+```
+The same test written using shoulda:
+```ruby
+it { should validate_presence_of(:title) }
+```
+
+* shoulda also provides test helpers for controllers
+* See also [shoulda docs](http://matchers.shoulda.io/docs/v3.1.0/)
 
 ### Testing Controllers
 
@@ -346,11 +369,17 @@ To test authentication, we need to define some `@current_user` before each of ou
 
 We could use a tool like <a href="https://github.com/jnicklas/capybara" target="_blank">Capybara</a> to test client-side views and interactions (e.g. does clicking on "Logout" do what we expect?). We won't cover view testing today, though!
 
+## Maintaining tests
+
+It's extremely important to maintain tests (especially on master) and deal with test failures as soon as possible.  If tests are left to languish until there are many failures, your tests lose their value and are untrustworthy.  The investment your team made in testing is wasted.
+
+Intermittent test failures are the bain of many a developers life.  It's important to track these down too...they're usually caused by a poorly written test.
+
 ## Other Tools
 
 * [FactoryGirl](https://github.com/thoughtbot/factory_girl)
-* [shoulda](https://github.com/thoughtbot/shoulda) - Make Rails model tests super easy.
-* [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) - used to wipe the database before each test, not necessary on smaller apps as tests are rolledback
+* [shoulda](http://matchers.shoulda.io/docs/v3.1.0/) - Make Rails model tests super easy.
+* [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) - used to wipe the database before each test, not necessary on smaller apps as tests are rolled-back.
 
 <!--
 ## Challenges
