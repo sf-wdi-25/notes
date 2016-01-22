@@ -32,9 +32,7 @@ rspec-rails helps us implement the four-phase testing methodology (with setup, e
 RSpec.describe Pet, type: :model do
 
   # setup
-  let(:pet) do
-    Pet.create({name: "Morocco", age: 3})
-  end
+  let(:pet) { Pet.create({name: "Morocco", age: 3}) }
 
   describe "#is_cute?" do
     it "returns true" do
@@ -216,9 +214,9 @@ end
 
 * isolation
 * behavior
-* piece-by-piece
+* by component
 
-We try to test piece-by-piece, and we try to test pieces in isolation.  If we write our tests before our code our tests can help to push us to write good object-oriented code and to separate concerns.  
+We try to test each component or piece independently.  If we write our tests before our code our tests can help to push us to write good object-oriented code and to separate concerns.  
 Break tests into test files for each class.  And then groups of tests for each method in the class.  And then possibly into `context`s for specific conditions under which the method may be used.  (E.g. with valid or invalid data, with strings or integers, when x=true or x=false).  
 
 Isolate tests from each other.  One test should **never depend on another test** to change or prepare something.  Each test should be able to run on its own without the others.  
@@ -354,8 +352,9 @@ We could use a tool like <a href="https://github.com/jnicklas/capybara" target="
 * [shoulda](https://github.com/thoughtbot/shoulda) - Make Rails model tests super easy.
 * [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) - used to wipe the database before each test, not necessary on smaller apps as tests are rolledback
 
-
+<!--
 ## Challenges
 
 
 Fork and clone the <a href="https://github.com/sf-wdi-24/rspec_testing_app" target="_blank">rspec_testing app</a>. You will need to add the FFaker gem to your project to complete these exercises.
+-->
