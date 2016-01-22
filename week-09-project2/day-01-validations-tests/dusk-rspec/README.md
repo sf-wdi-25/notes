@@ -292,25 +292,25 @@ To test authentication, we need to define some `@current_user` before each of ou
     end
 
     describe "GET #index" do
-      it "should assign @articles" do
+      it "assigns @articles" do
         all_articles = Article.all
         get :index
         expect(assigns(:articles)).to eq(all_articles)
       end
 
-      it "should render the :index view" do
+      it "renders the :index view" do
         get :index
         expect(response).to render_template(:index)
       end
     end
 
     describe "GET #new" do
-      it "should assign @article" do
+      it "assigns @article" do
         get :new
         expect(assigns(:article)).to be_instance_of(Article)
       end
 
-      it "should render the :new view" do
+      it "renders the :new view" do
         get :new
         expect(response).to render_template(:new)
       end
@@ -318,13 +318,13 @@ To test authentication, we need to define some `@current_user` before each of ou
 
     describe "POST #create" do
       context "success" do
-        it "should add new article to current_user" do
+        it "adds new article to current_user" do
           articles_count = signed_in_user.articles.count
           post :create, article: {title: "blah", content: "blah"}
           expect(signed_in_user.articles.count).to eq(articles_count + 1)
         end
 
-        it "should redirect_to 'article_path' after successful create" do
+        it "redirects to 'article_path' after successful create" do
           post :create, article: {title: "blah", content: "blah"}
           expect(response.status).to be(302)
           expect(response.location).to match(/\/articles\/\d+/)
@@ -332,7 +332,7 @@ To test authentication, we need to define some `@current_user` before each of ou
       end
 
       context "failure" do
-        it "should redirect to 'new_article_path' when create fails" do
+        it "redirects to 'new_article_path' when create fails" do
           # create blank article (assumes validations are set up in article model for presence of title and content)
           post :create, article: { title: nil, content: nil}
           expect(response).to redirect_to(new_article_path)
