@@ -1,8 +1,8 @@
-#WDI SF 25
+# WDI SF 25
 
 How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code Review](/how-tos/request-a-code-review.md)
 
-<!--##Week 12  - Broad Topic
+<!--## Week 12  - Broad Topic
 <table>
 	<tr>
   	<th></th>
@@ -47,7 +47,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
 </table>
 -->
 
-<!--##Week 11  - Broad Topic
+<!--## Week 11  - Broad Topic
 <table>
 	<tr>
   	<th></th>
@@ -92,7 +92,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
 </table>-->
 
 
-<!--##Week 10  - Broad Topic
+<!--## Week 10  - Broad Topic
 <table>
 	<tr>
   	<th></th>
@@ -136,7 +136,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
 </table>-->
 
-<!--##Week 9  - Broad Topic
+## Week 9  - Broad Topic
 <table>
 	<tr>
   	<th></th>
@@ -148,39 +148,39 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Linked List (JC)</td>
+    <td>Linked List (JC)</td>
+    <td>Lightning Talks</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Validations & Flash Messages (JC)</td>
+    <td>Integration Testing w/ Capybara (TG)</td>
+    <td>Lightning Talks</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>RSpec Unit testing (TG)</td>
+    <td>Gem lightning Talks intro (NA)</td>
+    <td>Project 2 Approvals (tbd)</td>
+    <td>Project 2 (tbd)</td>
+    <td>Project 2 (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td>Testing (TG)</td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
-</table>-->
+</table>
 
-##Week 8  - Project Vagabond
+## Week 8  - Project Vagabond
 <table>
   <tr>
     <th></th>
