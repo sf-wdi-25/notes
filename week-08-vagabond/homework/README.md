@@ -412,11 +412,6 @@ RSpec.describe RecipesController, type: :controller do
 end
 ```
 
-## Deliverable
-- Picture you have a web app that allows people to order a hot breakfast to be delivered by quadcopter. This app has a BreakfastController that needs to be tested.
-- Use the RecipeController tests above as an example to write your own success and failure tests for you BreakfastController. Don't worry about running them, you will be running rspec tests tomorrow in class.
-- Follow normal submission procedures submit your code.
-
 ## Read the RSpec Rails Docs and one of the other readings below.
 
 * [RSpec Rails Docs](https://github.com/rspec/rspec-rails)
