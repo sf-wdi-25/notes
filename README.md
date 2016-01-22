@@ -135,11 +135,11 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td></td>
   </tr>
 </table>-->
-
-## Week 9  - Broad Topic
+<!--
+## Week 9  -  Project 2
 <table>
-	<tr>
-  	<th></th>
+<tr>
+    <th></th>
     <th>Monday</th>
     <th>Tuesday</th>
     <th>Wednesday</th>
@@ -179,7 +179,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td></td>
   </tr>
 </table>
-
+-->
 ## Week 8  - Project Vagabond
 <table>
   <tr>
