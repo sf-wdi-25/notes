@@ -184,8 +184,8 @@ Setting flash messages in the controller makes them available in our view, but d
 </body>
 ```
 
-## Review: RSpec Setup
-Let's quickly review how to setup RSpec and work with it.  Let's imagine we have a rails app for handling recipes; how can we switch over to using RSpec and test our code?
+## RSpec Setup
+Let's quickly look at how to setup RSpec and work with it.  Let's imagine we have a rails app for handling recipes; how can we switch over to using RSpec and test our code?
 
 1. Add `rspec-rails` to your `Gemfile` in the development and test groups. We'll also go ahead and add <a href="https://github.com/ffaker/ffaker" target="_blank">ffaker</a> and <a href="https://github.com/thoughtbot/factory_girl_rails" target="_blank">factory_girl_rails</a>:
 
@@ -237,7 +237,8 @@ Let's quickly review how to setup RSpec and work with it.  Let's imagine we have
 
 ## Controller Specs
 
-Our goal is to write request specs for the `new` and `create` controller actions. It helps to first write out in plain English what exactly we'd like to test for each action.
+Our goal is to write request specs for the `new` and `create` controller actions.
+It helps to first write out in plain English what exactly we'd like to test for each action.
 
 ### Testing `new`
 
@@ -259,15 +260,15 @@ RSpec.describe RecipesController, type: :controller do
       get :new
     end
 
-    it "should respond with 200 success" do
+    it "responds with 200 success" do
       expect(response.status).to be(200)
     end
 
-    it "should assign @recipe" do
+    it "assigns @recipe" do
       expect(assigns(:recipe)).to be_instance_of(Recipe)
     end
 
-    it "should render the :new view" do
+    it "renders the :new view" do
       expect(response).to render_template(:new)
     end
   end
@@ -277,12 +278,9 @@ end
 
 If we run our tests for `new` now, they're going to fail. This is because accessing `new` depends on having a `current_user`, since users must be logged in to see the view to create a new recipe. Our tests don't have any concept of `current_user` yet, so let's fix that. We could do something like the below, where we create and log in  `current_user` before each test:
 
-```ruby
-#
-# spec/controllers/recipes_controller_spec.rb
-#
-require 'rails_helper'
+We could use FFaker for this:
 
+```ruby
 RSpec.describe RecipesController, type: :controller do
   before do
     user_params = Hash.new
@@ -306,29 +304,24 @@ This will work, but it's not very DRY, since we may need to repeat the same logi
 
 ### Factory Setup
 
-1. Create a new folder in your `spec` directory called `factories`. Each factory should have its own file within the `factories` folder. We'll be creating a `user` factory in this example, so your folder structure should look like this:
+Factory Girl is a handy gem for this.
 
-  ```
-  | spec
-    | factories
-      - user.rb
-  ```
+1. Fist [install it]().
 
-2. Inside the `user` factory, we'll move over some of the logic from our spec file used to create a new user:
-
-  ```ruby
-  #
-  # spec/factories/user.rb
-  #
-  FactoryGirl.define do
-    factory :user do
-      first_name Faker::Name.first_name
-      last_name Faker::Name.last_name
-      email Faker::Internet.email
-      password Faker::Lorem.words(2).join
-    end
-  end
-  ```
+```ruby
+#
+# spec/factories/user.rb
+#
+FactoryGirl.define do
+ factory :user do
+   sequence(:email) { |n| "test#{n}@example.com" }
+   password "testtest"
+   first_name 'Jon'
+   last_name 'Snow'
+   confirmed_at { Time.now }
+ end
+end
+```
 
 3. In our controller spec, we can refactor our `current_user` logic to use the factory instead:
 
@@ -339,6 +332,7 @@ This will work, but it's not very DRY, since we may need to repeat the same logi
   require 'rails_helper'
 
   RSpec.describe RecipesController, type: :controller do
+
     before do
       # create and log in current_user
       current_user = FactoryGirl.create(:user)
@@ -371,39 +365,40 @@ RSpec.describe RecipesController, type: :controller do
   ...
 
   describe "#create" do
-    context "success" do
+    context "on success" do
+      let!(:recipes_count) { Recipe.count }
+
       before do
-        @recipes_count = Recipe.count
         post :create, recipe: {name: "Kale Salad", instructions: "Toss kale with apples and walnuts."}
       end
 
-      it "should add new recipe" do
-        expect(Recipe.count).to eq(@recipes_count + 1)
+      it "adds new recipe" do
+        expect(Recipe.count).to eq(recipes_count + 1)
       end
 
-      it "should respond with 302 found" do
+      it "responds with 302 found" do
         expect(response.status).to be(302)
       end
 
-      it "should redirect_to 'recipe_path'" do
+      it "redirects to 'recipe_path'" do
         expect(response.location).to match(/\/recipes\/\d+/)
       end
     end
 
-    context "failure" do
+    context "on failure" do
       before do
         post :create, recipe: {name: nil, instructions: nil}
       end
 
-      it "should respond with 302 found" do
+      it "responds with 302 found" do
         expect(response.status).to be(302)
       end
 
-      it "should redirect to 'new_recipe_path'" do
+      it "redirects to 'new_recipe_path'" do
         expect(response).to redirect_to(new_recipe_path)
       end
 
-      it "should flash an error message" do
+      it "has a flash error message" do
         expect(flash[:error]).to be_present
       end
     end
