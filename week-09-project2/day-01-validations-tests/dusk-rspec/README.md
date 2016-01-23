@@ -13,7 +13,7 @@
 | :-------- | ----------- |
 | [RSpec matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers) | Reference for RSpec |
 | [shoulda](http://matchers.shoulda.io/docs/v3.1.0/) | Magic for model specs |
-| [FactoryGirl](https://github.com/thoughtbot/factory_girl) | Factories let you build up objects quickly for your specs |
+| [FactoryGirl](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md) | Factories let you build up objects quickly for your specs |
 | [Better Specs](http://betterspecs.org/) | A style-guide for RSpec |
 | [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) | Cleans out your database before each test. |
 
@@ -377,7 +377,7 @@ Intermittent test failures are the bain of many a developers life.  It's importa
 
 ## Other Tools
 
-* [FactoryGirl](https://github.com/thoughtbot/factory_girl)
+* [FactoryGirl](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md)
 * [shoulda](http://matchers.shoulda.io/docs/v3.1.0/) - Make Rails model tests super easy.
 * [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) - used to wipe the database before each test, not necessary on smaller apps as tests are rolled-back.
 
