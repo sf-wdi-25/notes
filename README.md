@@ -135,11 +135,11 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td></td>
   </tr>
 </table>-->
-
-## Week 9  - Broad Topic
+<!--
+## Week 9  -  Project 2
 <table>
-	<tr>
-  	<th></th>
+<tr>
+    <th></th>
     <th>Monday</th>
     <th>Tuesday</th>
     <th>Wednesday</th>
@@ -179,7 +179,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td></td>
   </tr>
 </table>
-
+-->
 ## Week 8  - Project Vagabond
 <table>
   <tr>
@@ -191,20 +191,20 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <th>Friday</th>
   </tr>
   <tr>
-    <td>Mock Interviews</td>
+    <td>Morning</td>
     <td>MLK</td>
-    <td>9:17-10:17</td>
-    <td>9:17-10:17</td>
-    <td>9:17-10:17</td>
-    <td>Vagabond</td>
+    <td>Mock Interviews / Standups @ 10:30</td>
+    <td>Mock Interviews / Standups @ 10:30</td>
+    <td>Mock Interviews / Standups @ 10:30</td>
+    <td>Feature Freeze!</td>
   </tr>
   <tr>
     <td>All Day</td>
     <td>MLK</td>
-    <td><a href="https://github.com/sf-wdi-25/project-vagabond">Intro Vagabond</a></td>
-    <td>Vagabond - 10:30 standup</td>
-    <td>Vagabond - 10:30 standup</td>
-    <td>Vagabond - 10:30 presentations</td>
+    <td><a href="https://github.com/sf-wdi-25/project-vagabond">Project Vagabond</a></td>
+    <td>Vagabond</td>
+    <td>Vagabond / <a href="/how-tos/deploy-rails-to-heroku.md">Heroku Deploy</a></td>
+    <td>Presentations @ 1pm</td>
   </tr>
 </table>
 
