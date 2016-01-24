@@ -307,7 +307,7 @@ This will work, but it's not very DRY, since we may need to repeat the same logi
 
 Factory Girl is a handy gem for this.
 
-1. Fist [install it]().
+1. First [install it](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md).
 
 ```ruby
 #
