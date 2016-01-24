@@ -135,7 +135,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td></td>
   </tr>
 </table>-->
-<!--
+
 ## Week 9  -  Project 2
 <table>
 <tr>
@@ -172,14 +172,14 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>HW</td>
-    <td>Testing (TG)</td>
+    <td>Testing Lab (TG)</td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
 </table>
--->
+
 ## Week 8  - Project Vagabond
 <table>
   <tr>
