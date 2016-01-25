@@ -14,7 +14,6 @@
 | [RSpec matchers](https://www.relishapp.com/rspec/rspec-expectations/v/3-0/docs/built-in-matchers) | Reference for RSpec |
 | [shoulda](http://matchers.shoulda.io/docs/v3.1.0/) | Magic for model specs |
 | [FactoryGirl](https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md) | Factories let you build up objects quickly for your specs |
-| [Better Specs](http://betterspecs.org/) | A style-guide for RSpec |
 | [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) | Cleans out your database before each test. |
 
 
@@ -154,7 +153,7 @@ A test should consist of:
 
 1. Exercise: Any code inside the test-block itself that makes a change to the object under test prior to validating that it behaves properly.
 
-1. Validation: Finally validating that the Object Under Test has behaved in the expected way.  This usually uses `expect`.
+1. Validation: Finally validating that the Object Under Test has behaved in the expected way.  This usually involves using `expect`.
 
 1. Tear-down: Cleaning up after the test.  Usually this is handled for you by RSpec and may include using DatabaseCleaner to wipe the testing database.
 
@@ -174,7 +173,7 @@ A test should consist of:
   * These are reset when each test starts!
 * Use `before` to set more complex pre-test steps.
   * before blocks can use variables defined in `let`
-`let`, `subject`, `before` and `after` blocks are all run for each test.  Values in them are reset for each test.   
+* `let!`, `subject`, `before` and `after` blocks are all run for each test.  Values in them are reset for each test.   
 
 #### Definition & Exercise
 
@@ -198,7 +197,7 @@ This is where we make **assertions** about the **object under test** and its beh
    expect(cat.hungry?).to be false
 ```
 * In general test one and only one thing per test.  
-  * However that may mean using more than one `expect`.
+  * However that can sometimes mean using more than one `expect`.
 
 #### Tear down
 
@@ -216,7 +215,7 @@ end
 * behavior
 * by component
 
-We try to test each component or piece independently.  If we write our tests before our code our tests can help to push us to write good object-oriented code and to separate concerns.  
+We try to test each component or piece independently.  Code written following good object-oriented practices and with concerns well separated is far easier to test.  So, if we write our tests before our code our tests can help to push us to write good object-oriented code and to separate concerns.  
 Break tests into test files for each class.  And then groups of tests for each method in the class.  And then possibly into `context`s for specific conditions under which the method may be used.  (E.g. with valid or invalid data, with strings or integers, when x=true or x=false).  
 
 Isolate tests from each other.  One test should **never depend on another test** to change or prepare something.  Each test should be able to run on its own without the others.  
@@ -252,7 +251,7 @@ We can set up a `User` instance for testing purposes with `User.create` or we ca
   end
   ```
 
-> It's also possible to use FFaker to generate some data either for `User.create` or for FactoryGirl.  But FFaker can run into intermittent issues because it can produce duplicate data.  Therefore many people prefer to use FactoryGirl `sequence`.  
+> It's also possible to use FFaker to generate some data either for `User.create` or for FactoryGirl.  But FFaker can run into intermittent issues because it can produce duplicate data or results you may not expect.  Therefore many people prefer to use FactoryGirl `sequence`.  
 
 Assuming we've already set `user` with first and last names, we can then test that the `full_name` method correctly calculates the full name:
 
@@ -277,7 +276,7 @@ Assuming we've already set `user` with first and last names, we can then test th
 <!-- exclude if model validations not studied -->
 #### shoulda
 
-Previously you talked about model validations.  You'll probably want to test these.  The `shoulda` gem provides an easier way to write specs for common model validations.
+Previously we talked about model validations.  You'll probably want to test these.  The `shoulda` gem provides an easier way to write specs for common model validations.
 
 Validating that a Post is invalid without a title:
 
@@ -289,17 +288,18 @@ Validating that a Post is invalid without a title:
   end
 
 ```
-The same test written using shoulda:
+
+The same test as above written using shoulda:
 ```ruby
 it { should validate_presence_of(:title) }
 ```
 
 * shoulda also provides test helpers for controllers
-* See also [shoulda docs](http://matchers.shoulda.io/docs/v3.1.0/)
+* See the [shoulda docs](http://matchers.shoulda.io/docs/v3.1.0/)
 
 ### Testing Controllers
 
-To test authentication, we need to define some `@current_user` before each of our tests run. The last line in this `before do` block --   `allow_any_instance_of(...` -- creates a "stub" (fake) `current_user` instance method for the ApplicationController and sets it up as a getter that only ever returns the `@current_user` we made with ffaker.
+To test authentication, we need to define a `current_user` before each of our tests run. The last line in this `before do` block --   `allow_any_instance_of(...` -- creates a "stub" (fake) `current_user` instance method for the ApplicationController and sets it up as a getter that only ever returns the `@current_user` we made with ffaker.
 
   ```ruby
   #
@@ -311,6 +311,7 @@ To test authentication, we need to define some `@current_user` before each of ou
     let(:signed_in_user) { FactoryGirl.create(:user) }
 
     before do
+      # stub a method on ApplicationController
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(signed_in_user)
     end
 
@@ -371,9 +372,9 @@ We could use a tool like <a href="https://github.com/jnicklas/capybara" target="
 
 ## Maintaining tests
 
-It's extremely important to maintain tests (especially on master) and deal with test failures as soon as possible.  If tests are left to languish until there are many failures, your tests lose their value and are untrustworthy.  The investment your team made in testing is wasted.
+It's extremely important to maintain tests (especially on the master branch) and deal with test failures as soon as possible.  If tests are left to languish until there are many failures, your tests lose their value and become untrustworthy.  The investment your team made in testing is wasted.
 
-Intermittent test failures are the bain of many a developers life.  It's important to track these down too...they're usually caused by a poorly written test.
+Intermittent test failures are the bane of many a developers life.  It's important to track these down too...they're usually caused by a poorly written test.
 
 ## Other Tools
 
