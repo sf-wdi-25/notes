@@ -148,7 +148,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Linked List (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/drills">Linked List</a> (JC)</td>
     <td>Linked List (JC)</td>
     <td>Lightning Talks</td>
     <td></td>
