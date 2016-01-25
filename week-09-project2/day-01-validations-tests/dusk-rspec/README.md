@@ -382,9 +382,7 @@ Intermittent test failures are the bane of many a developers life.  It's importa
 * [shoulda](http://matchers.shoulda.io/docs/v3.1.0/) - Make Rails model tests super easy.
 * [DatabaseCleaner](https://github.com/DatabaseCleaner/database_cleaner) - used to wipe the database before each test, not necessary on smaller apps as tests are rolled-back.
 
-<!--
 ## Challenges
 
 
-Fork and clone the <a href="https://github.com/sf-wdi-24/rspec_testing_app" target="_blank">rspec_testing app</a>. You will need to add the FFaker gem to your project to complete these exercises.
--->
+Fork and clone the <a href="https://github.com/sf-wdi-25/testing_inventory" target="_blank">rspec_testing app</a>. Follow the instructions there.
