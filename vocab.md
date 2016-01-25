@@ -244,6 +244,15 @@
 * kanban board
 * sprint
 
+#### Week 9
+* stacktrace
+* TDD
+* unit test
+* integration test
+* FactoryGirl
+* shoulda
+* Capybara
+
 #### Week 10
 * Angularjs
   * directive
