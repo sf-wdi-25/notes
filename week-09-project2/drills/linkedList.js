@@ -24,7 +24,7 @@ List.prototype = {
 
     /*
         Method: print
-        Traverse the list. For each node, append thte current node's data to
+        Traverse the list. For each node, append the current node's data to
         a master list of all data, including head and tail
     */
     print: function() {
@@ -53,12 +53,12 @@ List.prototype = {
            current = current.next;
        }
          return i;
-    // },
+    },
 
 
     /*
         Method: exists
-        Traverse the list. If a Node with the data passed in exists, then return
+        Traverse the list. If a Node with the passed-in data exists, then return
         true. If not, return false
     */
     exists: function(data) {
@@ -76,7 +76,7 @@ List.prototype = {
 
     /*
         Method: indexOf
-        Traverse the list. If a Node with the data passed is found, return an
+        Traverse the list. If a Node with the passed-in data is found, return an
          index (integer) of that Node's location.
     */
     indexOf: function(data) {
@@ -86,7 +86,7 @@ List.prototype = {
     /*
         Method: dataFrom
         Traverse the list to the ith position and return the corresponding data.
-              */
+    */
     dataFrom: function(i) {
         // Enter code here!
     },
