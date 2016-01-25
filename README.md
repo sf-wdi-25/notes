@@ -156,7 +156,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Validations & Flash Messages (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/flash_validator">Validations & Flash Messages</a> (JC)</td>
     <td>Integration Testing w/ Capybara (TG)</td>
     <td>Lightning Talks</td>
     <td>Project 2</td>
