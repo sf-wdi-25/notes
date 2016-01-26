@@ -20,7 +20,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 <!--
 ## Day 2
 
-1. Reading
+1. [Parting review on testing in rails](https://robots.thoughtbot.com/how-we-test-rails-applications)
 2. Bonus/Stretch
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
