@@ -94,19 +94,35 @@ end
 
 ### Asserting
 
-* `expect(page).to have_selector('table tr')`
+* `expect(page).to have_selector('#success')`
 * `expect(page).to have_content('foo')` # testing for text on the page
+* `expect(page.find('.error')). to have_content('Please fill in email')`
 * `expect(page).to have_no_css('.error')`
+
+
+### Emulating a real user
+
+Keep in mind that Capybara is designed to emulate a real person using the browser (just much faster).  That means it:
+
+* doesn't effect the javascript on the page
+  * (although if you absolutely have to, there is a way)
+* it doesn't let you interact with any elements that a user couldn't
+  * hidden elements can't be clicked!
+  * elements behind other elements can't be found
+  * assertions against hidden elements will FAIL!
+    * workaround
+
+As you write your tests, try to write them to do things the way a user would.
 
 ## Who does this?
 
 Many developers following TDD or BDD patterns write integration tests for every feature they work on.
 
-Many teams have SQA (Software Quality Assurance) or Test Engineers that write a large amount of test code.
+Many teams have SQA (Software Quality Assurance) or Test Engineers that write a large amount of test code.  They fill a very important role in software development teams.
 
 ## Cucumber
 
-Another popular tool used for acceptance (and BDD) testing is Cucumber.  This tool is truly designed for BDD and allows you to write test scripts in natural language.  Each sentence is matched to a block of code.  This means you can write tests, together with your (non-technical) clients.
+Another popular tool used for acceptance (and BDD) testing is Cucumber.  This tool is truly designed for BDD and allows you to write test scripts in natural language.  Each _sentence_ is matched to a block of test-code.  This means you can write tests, together with your (non-technical) clients.
 
 Example:
 
