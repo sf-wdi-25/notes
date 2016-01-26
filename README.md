@@ -172,7 +172,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>HW</td>
-    <td>Testing Lab (TG)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/homework/README.md">Testing Lab</a> (TG)</td>
     <td></td>
     <td></td>
     <td></td>
