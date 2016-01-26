@@ -165,7 +165,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/day-01-validations-tests/dusk-rspec">RSpec Unit testing</a> (TG)</td>
-    <td>Gem lightning Talks intro (NA)</td>
+    <td>Gem Lightning Talk <a href="https://gist.github.com/nathanallen/c491bde4d07b9a96fceb">Topics</a> (NA)</td>
     <td>Project 2 Approvals (tbd)</td>
     <td>Project 2 (tbd)</td>
     <td>Project 2 (Team)</td>
