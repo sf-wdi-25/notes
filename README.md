@@ -149,7 +149,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Drills</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/drills">Linked List</a> (JC)</td>
-    <td>Linked List (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/drills">Linked List</a> (JC)</td>
     <td>Lightning Talks</td>
     <td></td>
     <td></td>
@@ -157,7 +157,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module1</td>
     <td><a href="https://github.com/sf-wdi-25/flash_validator">Validations & Flash Messages</a> (JC)</td>
-    <td>Integration Testing w/ Capybara (TG)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/day-02-tests/dawn-integration-testing">Integration Testing w/ Capybara</a> (TG)</td>
     <td>Lightning Talks</td>
     <td>Project 2</td>
     <td>Project 2</td>
