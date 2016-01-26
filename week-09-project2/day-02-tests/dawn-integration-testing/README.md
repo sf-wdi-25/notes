@@ -1,4 +1,4 @@
-# Integration / Acceptance testing with Selenium
+# Integration / Acceptance testing with Selenium & Capybara
 
 
 | Objectives |
