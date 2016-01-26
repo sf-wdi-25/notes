@@ -1,12 +1,21 @@
 # Integration / Acceptance testing with Selenium
 
+
+| Objectives |
+| :---- |
+| Explain the difference between unit and integration tests |
+| Learn about the role of integration testing in a rails app |
+| Write feature specs using Capybara |
+
+
 ## Integration vs. Unit tests
 
 In unit testing we focus on isolating each component (classes, models, etc) and testing it with as few other components as possible.  
 
-In integration testing we focus on the interactions between different components and verify they work together as expected.  
+In integration testing we focus on the interactions between different components and verify they work together as expected.  Rather than testing individual components we're testing the interface between them; or you could say we're testing the _system_ rather than the component.
+
 In the rails world "integration specs" are generally full-stack tests performed by controlling a browser to interact with your pages.
-They exercise models, views, controllers and any other components of your app.  
+They exercise models, views, controllers and any other components of your app.  Rather than isolating components we verify they all work together.  When we write these **acceptance tests** we behave just like a user of our app; clicking buttons & links, filling forms and reading text from the page.
 
 ## RSpec feature specs
 
@@ -19,9 +28,9 @@ or with an acceptance test style syntax with: `feature`, `scenario`, `background
 
 ## Capybara & Selenium
 
-Capybara is a ruby gem used to drive any number of types of browser.  
-It can be used with a number of _fake_ browsers (drivers) such as phantomJS, or the default rack-driver.
-Or it can be used with real browsers like firefox or chrome using Selenium.  
+Capybara is a ruby gem used for writing acceptance tests.  It uses Selenium or other _drivers_ to browse a site just like a user would.  
+It can be used with a number of _fake_ browsers (drivers) such as phantomJS, or the default rack-driver.  (_faster but less realistic_)
+Or it can be used with real browsers like firefox or chrome using Selenium.  (_slower but more realistic_)
 You can even use selenium to control android and iOS testing.  
 
 Capybara adds some very nice ruby sugar around selenium and makes it much easier to use.
@@ -113,6 +122,25 @@ Keep in mind that Capybara is designed to emulate a real person using the browse
     * workaround
 
 As you write your tests, try to write them to do things the way a user would.
+
+## View Specs & JS
+
+Previously we looked at _model specs_ and _controller specs_, now we're looking at feature specs.  
+
+_But, what about views?_
+
+The amount of testing that should be done has always been a subject of debate.  Some developers insist that you should write unit tests for every possible component of the system. (with good reason) But others feel that having integration tests that cover some components is fine.
+
+In rails our views should generally have far more HTML than Ruby.  That means they should be relatively un-complicated.  In fact, if you need more logic in your views you should probably be putting it in helpers (or presenters) and writing tests for those.
+
+So in the end, some developers do not write view specs; instead they rely on integration tests for their simple views.  It's a choice your team should make together.
+
+_But, what if I have a lot of javascript on my pages?_
+
+Test this javascript using:
+1) Unit tests: A javascript testing framework like _jasmine_, _mocha/chai_, _qunit_, or _konacha_.
+2) Integration tests: The built-in waiting ability of Capybara means that it works quite well for testing pages with javascript.
+
 
 ## Who does this?
 
