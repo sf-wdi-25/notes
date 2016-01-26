@@ -282,8 +282,8 @@ Validating that a Post is invalid without a title:
 
 ```ruby
     it "is invalid without a title" do
-      user = Post.new(description: 'foo')
-      expect(user.valid?).to be false
+      post = Post.new(description: 'foo')
+      expect(post.valid?).to be false
     end
   end
 
