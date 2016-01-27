@@ -159,7 +159,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/flash_validator">Validations & Flash Messages</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/day-02-tests/dawn-integration-testing">Integration Testing w/ Capybara</a> (TG)</td>
     <td>Lightning Talks</td>
-    <td>Project 2</td>
+    <td>Project 2 - <a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/lightning-pitch.md" Lightning Pitch</a></td>
     <td>Project 2</td>
   </tr>
   <tr>
