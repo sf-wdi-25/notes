@@ -52,7 +52,7 @@ For the second project, you will use your knowledge of front-end and back-end we
 
 * Link to Heroku hosted project, with all core technical requirements and three flexible technical requirements complete.
 * Link to source code on GitHub.
-* A `readme.md` file with the following:
+* A `README.md` file with the following:
   * Description: Short paragraph (2-3 sentences) "elevator pitch" describing what your project does
   * Wireframes and user stories
   * Link to Heroku hosted project
