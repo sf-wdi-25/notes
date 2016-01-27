@@ -137,33 +137,33 @@ If you want to push yourself and learn something new, optionally consider doing 
 
 ###### Who are my group members and assigned instructor?
 
-#### Group 1 - Instructor
+#### Group 1 - Tourist Hot || Not
 
-* Student
-* Student
-* Student
-* Student
+* Rich
+* Nathan
+* Is
+* Breon
 
-#### Group 2 - Instructor
+#### Group 2 - Skill Share
 
-* Student
-* Student
-* Student
-* Student
+* Kehontas
+* Alex
+* Kayvon
+* Noah
 
-#### Group 3 - Instructor
+#### Group 3 - Stock Index Breakdown
 
-* Student
-* Student
-* Student
-* Student
+* Matt
+* Colbert
+* Reva
+* Doug
 
-#### Group 4 - Instructor
+#### Group 4 - Geocache Adventure
 
-* Student
-* Student
-* Student
-* Student
+* Thomas
+* Danny
+* Daniel
+* Joe
 
 ---
 
