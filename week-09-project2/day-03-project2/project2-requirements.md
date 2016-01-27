@@ -29,7 +29,7 @@ For the second project, you will use your knowledge of front-end and back-end we
 * Integrate topics learned and experience gained in the course so far.
 * Showcase your abilities to potential employers, friends, family, and community members.
 
-**You will be working in groups of 3-4 for this project.**
+**You will be working in groups of 4 for this project.**
 
 ---
 
@@ -118,9 +118,9 @@ If you want to push yourself and learn something new, optionally consider doing 
 
 ###### When is it due?
 
-* **Friday, January 8th, 9:17am** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
+* **Thursday, January 28th, 9:17am** - [Project planning deliverables](#project-planning-deliverables) due! Before beginning work on your project, your idea, project scope, and other planning deliverables must be approved by an instructor.
 
-* **Friday, January 15th, 10:00am** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
+* **Wednesday, February 3rd, 1:30pm** - [Completed project deliverables](#completed-project-deliverables) due and presentations!
 
 ---
 
@@ -129,7 +129,7 @@ If you want to push yourself and learn something new, optionally consider doing 
 ###### How do we turn in the project?
 
 * As you make code changes, **frequently commit and push to GitHub**.
-* To turn in your project, please add the links to your project on GitHub and Heroku to <a href="https://docs.google.com/spreadsheets/d/1JgI0BPQBc0CncnFZFQ8tdSGLmL69u9dzdEiFMUY_nP4/edit?usp=sharing" target="_blank">this spreadsheet</a>.
+* To turn in your project, please add the links to your project on GitHub and Heroku to <a href="https://comparo.herokuapp.com/pages/56a92255bbf73c1100dd9427" target="_blank">this site</a>.
 
 ---
 
@@ -137,31 +137,33 @@ If you want to push yourself and learn something new, optionally consider doing 
 
 ###### Who are my group members and assigned instructor?
 
-#### Watson - Ben
+#### Group 1 - Instructor
 
-* Stanley
-* Victoria
-* Adam
+* Student
+* Student
+* Student
+* Student
 
-#### Knock-Knock - Cameron
+#### Group 2 - Instructor
 
-* Dave
-* Trung
-* Carlos
+* Student
+* Student
+* Student
+* Student
 
-#### Pokemon Game - Erik
+#### Group 3 - Instructor
 
-* Steven
-* Eddy
-* Alan
-* John
+* Student
+* Student
+* Student
+* Student
 
-#### Toy Trading - Zoe
+#### Group 4 - Instructor
 
-* Michael
-* Cynthia
-* Zohar
-* André
+* Student
+* Student
+* Student
+* Student
 
 ---
 
@@ -169,7 +171,7 @@ If you want to push yourself and learn something new, optionally consider doing 
 
 ###### What should we cover during our presentation?
 
-Each group will present their project on **Friday, January 15th** starting at **10:00am**. Please follow these guidelines:
+Each group will present their project on **Wendesday, February 3rdth** starting at **1:30pm**. Please follow these guidelines:
 
 * Your presentation should include the **motivation** for building this project and a **demo** of the core functionality.
 * **Maximum 20 minutes.**
