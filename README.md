@@ -159,14 +159,14 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/flash_validator">Validations & Flash Messages</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/day-02-tests/dawn-integration-testing">Integration Testing w/ Capybara</a> (TG)</td>
     <td>Lightning Talks</td>
-    <td>Project 2 - <a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/lightning-pitch.md">Lightning Pitch</a></a></td>
+    <td>Project 2</td>
     <td>Project 2</td>
   </tr>
   <tr>
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/day-01-validations-tests/dusk-rspec">RSpec Unit testing</a> (TG)</td>
     <td>Gem Lightning Talk <a href="https://gist.github.com/nathanallen/c491bde4d07b9a96fceb">Topics</a> (NA)</td>
-    <td>Project 2 Approvals (tbd)</td>
+    <td>Project 2 <a href=" - <a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/lightning-pitch.md">Elevator pitches</a> & Approvals (tbd)</td>
     <td>Project 2 (tbd)</td>
     <td>Project 2 (Team)</td>
   </tr>
@@ -174,7 +174,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>HW</td>
     <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/homework/README.md">Testing Lab</a> (TG)</td>
     <td></td>
-    <td></td>
+    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/project2-requirements.md">Project 2 Requirements</a></td>
     <td></td>
     <td></td>
   </tr>
