@@ -42,7 +42,7 @@ For the second project, you will use your knowledge of front-end and back-end we
 **You must review the following with your instructional team BEFORE you start to code.**
 
 * **Scope:** What are you planning to build? What do you reasonably think you can implement in the time period?
-* **User Stories:** Who is your user? What features will your app have? Set up your project and user stories in <a href="https://trello.com" target="_blank">Trello</a>.
+* **User Stories:** Who is your user? What features will your app have? Set up your project and user stories in <a href="https://trello.com" target="_blank">Trello</a> or in some other organized format.
 * **Wireframes:** Sketch out what your core pages will look like and how they will work. Consider making a *paper prototype* to demonstrate and/or test key user interactions.
 * **Data Models:** Draw out the models and any associations for your project in an entity relationship diagram (ERD).
 * **Milestones:** Outline the milestones/sprints for your group.
@@ -88,7 +88,7 @@ For the second project, you will use your knowledge of front-end and back-end we
 
 * **User Login** Make sure you have authentication *and* authorization.
 * **AJAX** Use AJAX to communicate with the server without reloading the page when appropriate.
-* **External APIs** Use HTTParty or an external API's gem to integrate third-party data into your app.
+* **External APIs** Use HTTParty or a third-party API back-end gem to integrate third-party data into your app.
 * **Paperclip** Upload files with Paperclip.
 * **User-Friendly URLs:** Make pretty URLs that don't expose database IDs.
 
