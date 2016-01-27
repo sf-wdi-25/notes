@@ -171,7 +171,7 @@ If you want to push yourself and learn something new, optionally consider doing 
 
 ###### What should we cover during our presentation?
 
-Each group will present their project on **Wendesday, February 3rdth** starting at **1:30pm**. Please follow these guidelines:
+Each group will present their project on **Wendesday, February 3rd** starting at **1:30pm**. Please follow these guidelines:
 
 * Your presentation should include the **motivation** for building this project and a **demo** of the core functionality.
 * **Maximum 20 minutes.**
