@@ -191,4 +191,4 @@ Each group will present their project on **Wendesday, February 3rd** starting at
 
 ###### How will we get feedback from instructors?
 
-See the [feedback doc](./feedback.md) for details.
+See the [feedback doc](./project2-feedback.md.md) for details.
