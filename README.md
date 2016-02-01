@@ -92,10 +92,9 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
 </table>-->
 
 
-<!--## Week 10  - Broad Topic
-<table>
-	<tr>
-  	<th></th>
+## Week 10  - Project 2
+<table><tr>
+    <th></th>
     <th>Monday</th>
     <th>Tuesday</th>
     <th>Wednesday</th>
@@ -103,38 +102,23 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <th>Friday</th>
   </tr>
   <tr>
-    <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Primary</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td>Project 2</td>
+    <td> ? ? ? </td>
+    <td>Mature Rails Lab (NA)</td>
   </tr>
   <tr>
-    <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
-  </tr>
-  <tr>
-    <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
-  </tr>
-  <tr>
-    <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td>Other topics</td>
+    <td><a href="https://github.com/sf-wdi-25/rails-debugging">Rails debugging</a> (TG) - 1:30</td>
+    <td>Sandi Metz Rules (NA)</td>
     <td></td>
+    <td></td>
+    <td>Mature Rails Lab (NA)</td>
   </tr>
-</table>-->
+
+</table>
 
 ## Week 9  -  Project 2
 <table>
