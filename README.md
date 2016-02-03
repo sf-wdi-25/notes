@@ -106,15 +106,15 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Project 2</td>
     <td>Project 2</td>
     <td>Project 2</td>
-    <td> ? ? ? </td>
+    <td>Project 2 Presentations</td>
     <td>Mature Rails Lab (NA)</td>
   </tr>
   <tr>
     <td>Other topics</td>
     <td><a href="https://github.com/sf-wdi-25/rails-debugging">Rails debugging</a> (TG) - 1:30</td>
     <td>Sandi Metz Rules (NA)</td>
-    <td></td>
-    <td></td>
+    <td>Project 2</td>
+    <td> ? ? ? </td>
     <td>Mature Rails Lab (NA)</td>
   </tr>
 
