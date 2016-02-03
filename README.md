@@ -106,7 +106,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Project 2</td>
     <td>Project 2</td>
     <td>Project 2</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/project2-requirements.md">Project 2 Presentations</a></td>
+    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/project2-requirements.md">Project 2 Presentations</a> 10:30 </td>
     <td>Mature Rails Lab (NA)</td>
   </tr>
   <tr>
