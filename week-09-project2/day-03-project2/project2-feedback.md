@@ -10,4 +10,4 @@
 
 * **Problem Solving**: Are you able to defend why you implemented your solution in a certain way? Can you demonstrate that you thought through alternative implementations? *(Note that this part of your feedback evaluation will take place during your one-on-one code review with your instructors, after you've completed the project.)*
 
-You'll be receiving written feedback from your instructors as well has having a one-on-one meeting to go over the feedback and your code. Each of the criteria above will be evaluated as either **does not meet expectations**, **meets expectations**, or **exceeds expectations**.
+You'll be receiving written feedback from your instructors.  The criteria above will be evaluated as either **does not meet expectations**, **meets expectations**, or **exceeds expectations**.
