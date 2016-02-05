@@ -8,6 +8,6 @@
 
 * **Code Quality**: Did you follow code style guidance and best practices covered in class, such as spacing, modularity, and semantic naming? Did you comment your code?
 
-* **Problem Solving**: Are you able to defend why you implemented your solution in a certain way? Can you demonstrate that you thought through alternative implementations? *(Note that this part of your feedback evaluation will take place during your one-on-one code review with your instructors, after you've completed the project.)*
+* **Problem Solving**: Are you able to defend why you implemented your solution in a certain way? Can you demonstrate that you thought through alternative implementations? 
 
 You'll be receiving written feedback from your instructors.  The criteria above will be evaluated as either **does not meet expectations**, **meets expectations**, or **exceeds expectations**.
