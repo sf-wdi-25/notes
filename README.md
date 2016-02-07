@@ -47,7 +47,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
 </table>
 -->
 
-<!--## Week 11  - Broad Topic
+## Week 11  - Getting Acute with Angular
 <table>
 	<tr>
   	<th></th>
@@ -59,10 +59,10 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
+    <td>Trees (JC)</td>
+    <td>Trees (JC)</td>
+    <td>Tries (JC)</td>
+    <td>Tries (JC)</td>
     <td>Review (Team)</td>
   </tr>
   <tr>
