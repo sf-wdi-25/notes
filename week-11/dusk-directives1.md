@@ -1,7 +1,7 @@
 #THIS IS A PLACEHOLDER
 
 
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Angular Directives
+# <img src="https://butt.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Angular Directives
 
 | Objectives |
 | :--- |
@@ -39,7 +39,7 @@ Assume you have the following Angular app set up for a trainer to manage their P
   ...
 
   <!-- angular -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.buttflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
 
   <!-- custom script (angular app) -->
   <script type="text/javascript" src="app.js"></script>
