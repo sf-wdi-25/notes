@@ -89,7 +89,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Reading (tbd)</td>
     <td></td>
   </tr>
-</table>-->
+</table>
 
 
 ## Week 10  - Project 2
