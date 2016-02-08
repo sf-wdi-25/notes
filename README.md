@@ -59,10 +59,10 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Trees (JC)</td>
-    <td>Trees (JC)</td>
-    <td>Tries (JC)</td>
-    <td>Tries (JC)</td>
+    <td><ahref="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/drills/README.md">Trees (JC)</a></td>
+    <td><ahref="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/drills/README.md">Trees (JC)</a></td>
+    <td><ahref="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/drills/README.md">Tries (JC)</a></td>
+    <td><ahref="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/drills/README.md">Tries (JC)</a></td>
     <td>Review (Team)</td>
   </tr>
   <tr>
