@@ -67,26 +67,26 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Intro Angular(NA)</td>
+    <td>Hangman Lab (TG)</td>
+    <td>$http (NA)</td>
+    <td>Routing with ui-router (TG)</td>
+    <td>MEAN Lab (JC/TG)</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>Angular Directives (JC)</td>
+    <td>Promise Patterns (NA)</td>
+    <td>ngResource (JC)</td>
+    <td>MEAN stack intro (JC)</td>
+    <td>P3 Prototype Lab (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
 </table>
