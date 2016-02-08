@@ -75,7 +75,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Module2</td>
-    <td>[Angular Directives](https://github.com/sf-wdi-25/angular_directives_lab) (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/angular_directives_lab">Angular Directives</a> (JC)</td>
     <td>Promise Patterns (NA)</td>
     <td>ngResource (JC)</td>
     <td>MEAN stack intro (JC)</td>
