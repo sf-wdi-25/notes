@@ -6,14 +6,14 @@ If you have any remaining time, please complete/review the exercises from dawn a
 
 Please refer to the [Instructions for Submitting Homework](/how-tos/homework-submission.md).
 
-<!--
+
 ## Day 1
 
 1. Reading
-2. Bonus/Stretch
+2. [Angular Movie Lab](https://github.com/sf-wdi-25/angular-movie-lab)
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
-
+<!--
 ## Day 2
 
 1. Reading
