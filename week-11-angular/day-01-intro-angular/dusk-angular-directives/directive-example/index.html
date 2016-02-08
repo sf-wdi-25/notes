@@ -12,18 +12,18 @@
     <script type="text/javascript" src="app.js"></script>
 
   </head>
-  <body data-ng-controller="PokemonCtrl as pokemon">
+  <body data-ng-controller="pokemonCtrl as pc">
 
-    <h2>Trainer: {{pokemon.trainer.name || "Ash"}}</h2>
+    <h2>Trainer: {{pc.trainer.name || "Ash"}}</h2>
 
     <span>Enter your name:</span>
-    <input type="text" ng-model="pokemon.trainer.name">
+    <input type="text" ng-model="pc.trainer.name">
 
     <span>Search Pok&#233;mon:</span>
     <input type="text" data-ng-model="searchPokemon">
 
-    <div data-ng-repeat="poke in pokemon.pokemonList | orderBy:'nDex' | filter:searchPokemon">
-      <p>{{poke.name}}</p>
+    <div data-ng-repeat="pokemon in pc.pokemonList | orderBy:'id' | filter:searchPokemon">
+      <p>{{pokemon.name}}</p>
     </div>
 
   </body>

@@ -2,9 +2,9 @@
 
 angular
   .module('pokemonApp', [])
-  .controller('PokemonCtrl', PokemonCtrl);
+  .controller('pokemonController', pokemonController);
 
-  function PokemonCtrl () {
+  function pokemonController () {
 
     var vm = this;
 
@@ -14,27 +14,27 @@ angular
 
     vm.pokemonList = [
       {
-        nDex: 25,
+        id: 25,
         name: 'Pikachu',
         type: 'Electric'
       },
       {
-        nDex: 10,
+        id: 10,
         name: 'Caterpie',
         type: 'Bug'
       },
       {
-        nDex: 39,
+        id: 39,
         name: 'Jigglypuff',
         type: 'Fairy'
       },
       {
-        nDex: 94,
+        id: 94,
         name: 'Gengar',
         type: 'Ghost'
       },
       {
-        nDex: 143,
+        id: 143,
         name: 'Snorlax',
         type: 'Normal'
       }

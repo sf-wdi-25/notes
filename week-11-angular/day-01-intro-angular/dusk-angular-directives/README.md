@@ -45,7 +45,7 @@ Assume you have the following Angular app set up for a trainer to manage their P
 	<script type="text/javascript" src="app.js"></script>
 	
   </head>
-  <body data-ng-controller="PokemonCtrl as pokemon">
+  <body data-ng-controller="pokemonController as pc">
 	
 	  ...
 	
@@ -60,35 +60,35 @@ And here is the JavaScript code that initializes your Angular app and adds the c
 
 angular
   .module('pokemonApp', [])
-  .controller('PokemonCtrl', PokemonCtrl);
+  .controller('pokemonController', pokemonController);
   
-  function PokemonCtrl () {
+  function pokemonController () {
 	
   	var vm = this;
 
     vm.pokemonList = [
       {
-        nDex: 25,
+        id: 25,
         name: 'Pikachu',
         type: 'Electric'
       },
       {
-        nDex: 10,
+        id: 10,
         name: 'Caterpie',
         type: 'Bug'
       },
       {
-        nDex: 39,
+        id: 39,
         name: 'Jigglypuff',
         type: 'Fairy'
       },
       {
-        nDex: 94,
+        id: 94,
         name: 'Gengar',
         type: 'Ghost'
       },
       {
-        nDex: 143,
+        id: 143,
         name: 'Snorlax',
         type: 'Normal'
       }
@@ -103,19 +103,19 @@ You want the user to be able to input their name in a form field so that the app
 ```html
 <!-- index.html -->
 
-<body data-ng-controller="PokemonCtrl as pokemon">
+<body data-ng-controller="pokemonController as pc">
 
-  <h2>Trainer: {{pokemon.trainer.name}}</h2>
+  <h2>Trainer: {{pc.trainer.name}}</h2>
 
   <span>Enter your name:</span>
-  <input type="text" data-ng-model="pokemon.trainer.name">
+  <input type="text" data-ng-model="pc.trainer.name">
 
 </body>
 ```
 
-This "binds" the value of `pokemon.trainer.name` between the form input and the `h2` tag. Whenever the user types something in the form, the `h2` tag's text will automatically update.
+This "binds" the value of `pc.trainer.name` between the form input and the `h2` tag. Whenever the user types something in the form, the `h2` tag's text will automatically update.
 
-Using `ngModel` with `pokemon.trainer.name` adds a `trainer` object to `vm`. If you were to inspect `vm` using the debugger, it would look something like this:
+Using `ngModel` with `pc.trainer.name` adds a `trainer` object to `vm`. If you were to inspect `vm` using the debugger, it would look something like this:
 
 ```js
 vm= {
@@ -126,19 +126,19 @@ vm= {
 ```
 
 What if you wanted to set a default value for the trainer's name so that when the page loads, it's set to "Ash"?
-
+r
 You can set a default value in the Angular templating parameters:
 
 
 ```html
 <!-- index.html -->
 
-<body data-ng-controller="PokemonCtrl as pokemon">
+<body data-ng-controller="pokemonController as pc">
 
-  <h2>Trainer: {{pokemon.trainer.name || "Ash"}}</h2>
+  <h2>Trainer: {{pc.trainer.name || "Ash"}}</h2>
 
   <span>Enter your name:</span>
-  <input type="text" ng-model="pokemon.trainer.name">
+  <input type="text" ng-model="pc.trainer.name">
 
 </body>
 ```
@@ -150,9 +150,9 @@ Or directly on `vm` in the controller:
 
 angular
   .module('pokemonApp', [])
-  .controller('PokemonCtrl', PokemonCtrl);
+  .controller('pokemonController', pokemonController);
 
-function PokemonCtrl () {
+function pokemonController () {
   
   var vm = this;
   
@@ -162,7 +162,7 @@ function PokemonCtrl () {
 
   vm.pokemonList = [
     {
-      nDex: 25,
+      id: 25,
       name: 'Pikachu',
       type: 'Electric'
     },
@@ -180,10 +180,10 @@ You can use `ngRepeat` to iterate through the collection of Pokémon and display
 ```html
 <!-- index.html -->
 
-<body data-ng-controller="PokemonCtrl as pokemon">
+<body data-ng-controller="pokemonController as pc">
 
-  <div data-ng-repeat="poke in pokemon.pokemonList">
-    <p>{{poke.name}}</p>
+  <div data-ng-repeat="pokemon in pc.pokemonList">
+    <p>{{pokemon.name}}</p>
   </div>
 
 </body>
@@ -193,32 +193,32 @@ You can use `ngRepeat` to iterate through the collection of Pokémon and display
 
 In addition to directives, Angular also has built-in  <a href="https://docs.angularjs.org/api/ng/filter" target="_blank">filter components</a> that format data for displaying it to the user.
 
-You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy" target="_blank">orderBy</a> filter to sort the Pokémon by nDex number:
+You can use the <a href="https://docs.angularjs.org/api/ng/filter/orderBy" target="_blank">orderBy</a> filter to sort the Pokémon by id number:
 
 ```html
 <!-- index.html -->
 
-<body data-ng-controller="PokemonCtrl as pokemon">
+<body data-ng-controller="pokemonController as pc">
 
-  <div data-ng-repeat="poke in pokemon.pokemonList | orderBy:'nDex'">
+  <div data-ng-repeat="poke in pc.pokemonList | orderBy:'id'">
     <p>{{poke.name}}</p>
   </div>
 
 </body>
 ```
 
-You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter" target="_blank">filter</a> filter to allow users to search the list of Pokémon by typing any Pokémon attribute (name, nDex, etc.). Notice the use of `ng-model` to bind the value of the search field to the filter on the collection.
+You can use the <a href="https://docs.angularjs.org/api/ng/filter/filter" target="_blank">filter</a> filter to allow users to search the list of Pokémon by typing any Pokémon attribute (name, id, etc.). Notice the use of `ng-model` to bind the value of the search field to the filter on the collection.
 
 ```html
 <!-- index.html -->
 
-<body data-ng-controller="PokemonCtrl as pokemon">
+<body data-ng-controller="pokemonController as pc">
 
   <span>Search Pok&#233;mon:</span>
   <input type="text" data-ng-model="searchPokemon">
 
-  <div data-ng-repeat="poke in pokemon.pokemonList | orderBy:'nDex' | filter:searchPokemon">
-    <p>{{poke.name}}</p>
+  <div data-ng-repeat="pokemon in pc.pokemonList | orderBy:'id' | filter:searchPokemon">
+    <p>{{pc.name}}</p>
   </div>
 
 </body>
