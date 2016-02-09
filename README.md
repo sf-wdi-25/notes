@@ -68,7 +68,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module1</td>
     <td><a href="/week-11-angular/day-01-intro-angular/dawn-intro-angular">Intro Angular</a> (NA)</td>
-    <td>Hangman Lab (TG)</td>
+    <td><a href="https://github.com/sf-wdi-25/angular_hangman_lab">Hangman Lab</a> (TG)</td>
     <td>$http (NA)</td>
     <td>Routing with ui-router (TG)</td>
     <td>MEAN Lab (JC/TG)</td>
