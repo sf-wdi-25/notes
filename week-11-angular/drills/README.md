@@ -135,11 +135,11 @@ BinarySearchTree.prototype.push = function(val){
 <details>
 <summary>BinarySearchTree Push Solution</summary> 
 ```javascript
-BinarySearchTree.prototype.push = function(val){
+BinarySearchTree.prototype.push = function(data){
    var root = this.root;
 
    if(!root){
-      this.root = new Node(val);
+      this.root = new Node(data);
       return;
    }
 
@@ -147,9 +147,9 @@ BinarySearchTree.prototype.push = function(val){
    var newNode = new Node(val); 
 
    while(currentNode){
-      if(val < currentNode.value){
+      if(val < currentNode.data){
           if(!currentNode.left){
-             currentNode.left = newNode;
+             currentNode.left = data;
              break;
           }
           else{
