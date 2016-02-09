@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Drills
  
-### Day 1: Trees!
+# Day 1: Trees!
 
 ## Graphs
 
@@ -100,8 +100,100 @@ Also assume a `trie` data structure that allows you to:
 
   ![phone keypad with letters](https://parentsof10.files.wordpress.com/2013/03/phone-keypad-picture-application.png)
 
+
+# Day 2: Let's make some Trees!
+
+Today is the day you make your own Binary Search Tree in Javascript!  We'll provide you with some rough starter code and you can fill out the methods below.
+
+```javascript
+
+/* Binary Search Tree Constructor */
+function BinarySearchTree(){
+  this.root = null;
+}
+/* Node Constructor */
+function Node(data){
+  this.data = data;
+  this.left = null;
+  this.right = null;
+}
+
+```
+
+Create a push method that will properly insert a new node into your BinarySearchTree
+
+```javascript
+BinarySearchTree.prototype.push = function(val){
+
+ /* Enter excellent code here */
+
+}
+
+```
+
+
+<details>
+<summary>BinarySearchTree Push Solution</summary> 
+```javascript
+BinarySearchTree.prototype.push = function(val){
+   var root = this.root;
+
+   if(!root){
+      this.root = new Node(val);
+      return;
+   }
+
+   var currentNode = root;
+   var newNode = new Node(val); 
+
+   while(currentNode){
+      if(val < currentNode.value){
+          if(!currentNode.left){
+             currentNode.left = newNode;
+             break;
+          }
+          else{
+             currentNode = currentNode.left;
+        }
+     }
+     else{
+         if(!currentNode.right){
+            currentNode.right = newNode;
+            break;
+         }
+         else{
+            currentNode = currentNode.right;
+         }
+     }
+  }
+
+}
+```
+</details>
+
+
+Create a method to return the depth of your BinarySearchTree
+
+```javascript
+BinarySearchTree.prototype.depth = function(val){
+
+ /* Enter excellent code here */
+ 
+}
+
+```
+
+Create a method to print out a binarySearchTree in a fancy manner
+
+```javascript
+BinarySearchTree.prototype.print = function(val){
+
+ /* Enter excellent code here */
+
+}
+
+```
 <!--
-### Day 2: Topic
 ### Day 3: Topic
 ### Day 4: Topic
  -->
