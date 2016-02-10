@@ -17,7 +17,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 ## Day 2
 
 1. Continue with the Hangman Lab
-2. [Let's explore owls with Bower!](https://github.com/sf-wdi-25/bower-power-hour)
+2. [Let's explore owls with Bower!](https://github.com/sf-wdi-25/bower-power-hour)  
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
 <!--
