@@ -19,7 +19,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 1. Continue with the Hangman Lab
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
-
+<!--
 ## Day 3
 
 1. Reading
