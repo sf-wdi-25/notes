@@ -209,7 +209,7 @@ Notice the node `c`. It has three children.  Node `t` below `c` also has three c
 
 
 
-##Day01: Challenge: Let's try a trie!
+##Day 3 Pt. 1: Challenge: Let's try a trie!
 
 Let's spend the first day trying to handroll our own Trie data structure.  For a gentle start, we will attempt to create a Trie that will store the words from above: 
 
