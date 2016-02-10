@@ -200,7 +200,8 @@ A Trie is a data structure that will store Strings in an extremely efficient man
 
 The Trie structure resembles a tree, in that there is a `root` (beginning) that branches & branches & branches out to leaves (end.) Each branch or node is a `child` of the node above it.  Appropriately, each node that has a `child` is called a `parent`.  The root node has no parent. Leaf nodes have no children.
 
-![A simple Trie Diagram](http://meandmark.com/blog/wp-content/uploads/2012/07/TrieExampleCropped.png)
+![A simple Trie Diagram](http://meandmark.com/blog/wp-content/uploads/2012/07/TrieExampleCropped.png)  
+
 *Above: A simple Trie diagram that stores the following words: ace, aced, aces, acre, acres, act, acted, acting, & acts*
 
  Storing words in this manner makes searching for strings extremely fast; the worst case scenario for finding the word is the word's length.  Some Tries also 'smoosh' their words together when they only have one `child` node. Image the diagram above, only with a single element with the letters `res` below `c` for the word *acre* or `ing` below `t` for the word *acting*.  For simplicity, we will only work with nodes that contain only single letters.
