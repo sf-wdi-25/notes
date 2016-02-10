@@ -20,14 +20,12 @@ Please use any remaining time to complete and review the exercises from dawn & d
 2. [Let's explore owls with Bower!](https://github.com/sf-wdi-25/bower-power-hour)  
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
-<!--
 ## Day 3
 
-1. Reading
-2. Bonus/Stretch
+1. Reading - [UI-Routers](https://gist.github.com/justincastilla/eafe807081f07da2b55e)
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
-
+<!--
 ## Day 4
 
 1. Reading
