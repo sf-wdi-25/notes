@@ -50,6 +50,25 @@ Remember that the interwebs is many clients querying many servers. We've done a 
 ![request](http://i.imgur.com/YXgj8.png)  
 
 
+## Route Design
+
+Remember to always make "RESTful" routes. RESTful routes are the most popular modern convention for designing resource paths for nested data. Here is an example of an application that has routes for `Store` and `Item` models:
+
+### RESTful Routing
+
+| **HTTP Verb** | **Path** | **Description** |
+|---|---|---|
+| GET | /store | Get all stores |
+| POST | /store | Create a store |
+| GET | /store/:id | Get a store |
+| DELETE | /store/:id | Delete a store |
+| GET | /store/:store_id/items | Get all items from a store |
+| POST | /store/:store_id/items | Create an item for a store |
+| GET | /store/:store_id/items/:item_id | Get an item from a store |
+| DELETE | /store/:store_id/items/:item_id | Delete an item from a store |
+
+*In routes, avoid nesting resources deeper than shown above.*
+
 ### What is MongoDB?
 
 `MongoDB` is a no-SQL database. `Mongoose` is a library or "wrapper" that gives us a bunch of convenience methods for working with MongoDB records (kind of like jQuery's convenience methods for manipulating the DOM). Generally we will not be interacting _directly_ with MongoDB, instead we'll be working with `mongoose`.
@@ -100,4 +119,54 @@ Here's how you would set up an Express application with a "Todo" model (so we ca
   ```
 </details>
 
+## Embedded Data Example: To-Do Lists
+
+Imagine you have a database of todo `Lists`, each with many `Todos`. Since todos only belong to one list, you could use embedded data to store todos inside the list they belong to. If you needed to update or delete a todo, you would first need to find the associated list, then the todo to update or delete.
+
+```js
+// List model
+
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema,
+    // require Todo model
+    Todo = require('./todo');
+
+var ListSchema = new Schema({
+  name: String,
+  // embed todos in list
+  todos: [TodoSchema]
+});
+
+var List = mongoose.model('List', ListSchema);
+module.exports = List;
+```
+
+```js
+// Todo model
+
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
+
+var TodoSchema = new Schema({
+  text: String,
+  completed: Boolean
+});
+
+var Todo = mongoose.model('Todo', TodoSchema);
+module.exports = Todo;
+```
+
+
+
 Head over to [Tunely](https://github.com/sf-wdi-25/tunely/tree/solutions_sprint_6) in its final form so we can walk down memory lane.
+
+## Documents to review
+
+[Express Review](https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-03-intro-express/dawn-express)
+[Express Review Pt. 2](https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-03-intro-express/dusk-express)
+[MongoDB Introduction](https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/day-01-mongo/dawn-mongo)
+[Embedded Documents in MongoDB](https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/day-01-mongo/dusk-schemas_and_embedding)
+
+
+
+
