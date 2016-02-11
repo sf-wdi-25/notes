@@ -70,15 +70,15 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-11-angular/day-01-intro-angular/dawn-intro-angular">Intro Angular</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/angular_hangman_lab">Hangman Lab</a> (TG)</td>
     <td><a href="https://github.com/sf-wdi-25/angular-resource-lab">ngResource</a> (JC)</td>
-    <td>Routing with ui-router (TG)</td>
-    <td>MEAN Lab (JC/TG)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-11-angular/day-04-MEAN/dawn-ui-router">Routing with ui-router</a> (TG)</td>
+    <td><a href="https://github.com/sf-wdi-25/mean_todo">MEAN Lab</a> (JC/TG)</td>
   </tr>
   <tr>
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-25/angular_directives_lab">Angular Directives</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/api_dashboard_lab">Promise Patterns</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/angular_book_app">Book App</a> (JC)</td>
-    <td>MEAN stack intro (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/mean_todo">MEAN stack intro</a> (JC)</td>
     <td>P3 Prototype Lab (Team)</td>
   </tr>
   <tr>
