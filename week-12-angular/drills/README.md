@@ -208,29 +208,7 @@
 
 1. Configure your Angular routes in `app.js` to hook everything up:
 
-```js
-/*
-* app/assets/javascripts/app.js
-*/
 
-app.config(['$routeProvider', '$locationProvider',
-  function ($routeProvider, $locationProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'home.html',
-        controller: 'HomeCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
-  }
-]);
-```
 ```js
 config.$inject = ['$stateProvider', '$urlRouterProvider']; // minification protection
 function config($stateProvider, $urlRouterProvider) {
@@ -245,7 +223,7 @@ function config($stateProvider, $urlRouterProvider) {
 
 }
 
-
+```
 
 2. Configure your controller with some test data, so you can check to see if the route, template, and controller are properly connected:
 
