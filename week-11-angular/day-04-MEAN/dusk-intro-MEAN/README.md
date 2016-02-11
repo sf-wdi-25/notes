@@ -160,6 +160,8 @@ module.exports = Todo;
 
 Head over to [Tunely](https://github.com/sf-wdi-25/tunely/tree/solutions_sprint_6) in its final form so we can walk down memory lane.
 
+You are now ready.  [Let us make MEAN!](https://github.com/sf-wdi-25/mean_todo)
+
 ## Documents to review
 
 [Express Review](https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-03-intro-express/dawn-express)  
