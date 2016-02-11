@@ -162,9 +162,12 @@ Head over to [Tunely](https://github.com/sf-wdi-25/tunely/tree/solutions_sprint_
 
 ## Documents to review
 
-[Express Review](https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-03-intro-express/dawn-express)
-[Express Review Pt. 2](https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-03-intro-express/dusk-express)
-[MongoDB Introduction](https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/day-01-mongo/dawn-mongo)
+[Express Review](https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-03-intro-express/dawn-express)  
+
+[Express Review Pt. 2](https://github.com/sf-wdi-25/notes/tree/master/week-03-ajax-json-express/day-03-intro-express/dusk-express)  
+
+[MongoDB Introduction](https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/day-01-mongo/dawn-mongo)  
+
 [Embedded Documents in MongoDB](https://github.com/sf-wdi-25/notes/tree/master/week-04-mongo-database/day-01-mongo/dusk-schemas_and_embedding)
 
 
