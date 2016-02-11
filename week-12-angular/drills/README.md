@@ -145,13 +145,13 @@
 
 5. Configure your Angular app in `app.js`:
 
- ```js
- /*
+  ```js
+  /*
   * app/assets/javascripts/app.js
   */
 
- var app = angular.module('SampleApp', ['ui.router']);
- ```
+  var app = angular.module('SampleApp', ['ui.router']);
+  ```
 
 #### Adding Templates
 
@@ -159,28 +159,28 @@
 
  Require the gem in your `Gemfile`:
 
- ```ruby
- #
- # Gemfile
- #
+  ```ruby
+  #
+  # Gemfile
+  #
 
- gem 'angular-rails-templates', '~> 0.1.5'
- ```
+  gem 'angular-rails-templates', '~> 0.1.5'
+  ```
 
  **Note:** Version `0.1.5` is necessary to avoid conflicts with the latest version of `sprockets`.
 
 2. Require `angular-rails-templates` in `application.js`, as well as the path to your Angular templates (which you'll create in the next step):
 
  ```js
- /*
+  /*
   * app/assets/javascripts/application.js
   */
 
- //= require angular.min
- //= require angular-route.min
- //= require angular-rails-templates
- //= require_tree ../templates
- //= require app
+  //= require angular.min
+  //= require angular-route.min
+  //= require angular-rails-templates
+  //= require_tree ../templates
+  //= require app
  ```
 
  **Note:** Make sure you require your templates AFTER your Angular files and BEFORE `app.js`.
@@ -237,11 +237,11 @@ function config($stateProvider, $urlRouterProvider) {
   // for any unmatched URL redirect to /
   $urlRouterProvider.otherwise("/");
 
-   $stateProvider
-    .state('home', {
-      url: "/",
-      templateUrl: 'home.html'
-    });
+  $stateProvider
+  .state('home', {
+    url: "/",
+    templateUrl: 'home.html'
+  });
 
 }
 
@@ -249,43 +249,43 @@ function config($stateProvider, $urlRouterProvider) {
 
 2. Configure your controller with some test data, so you can check to see if the route, template, and controller are properly connected:
 
- ```js
- /*
+  ```js
+  /*
   * app/assets/javascripts/app.js
   */
 
- app.controller('HomeCtrl', ['$scope', function ($scope) {
-   $scope.homeTest = "Welcome to the homepage!";
- }]);
- ```
+  app.controller('HomeCtrl', ['$scope', function ($scope) {
+    $scope.homeTest = "Welcome to the homepage!";
+  }]);
+  ```
 
 #### Miscellaneous Setup
 
 1. Since Rails has extra security around submitting forms, there's some setup involved in the `ApplicationController` to allow your Angular app to submit data to the server:
 
- ```ruby
- #
- # app/controllers/application_controller.rb
- #
+  ```ruby
+  #
+  # app/controllers/application_controller.rb
+  #
 
- class ApplicationController < ActionController::Base
-   # Prevent CSRF attacks by raising an exception.
-   # For APIs, you may want to use :null_session instead.
-   protect_from_forgery
-   after_filter :set_csrf_cookie_for_ng
+  class ApplicationController < ActionController::Base
+    # Prevent CSRF attacks by raising an exception.
+    # For APIs, you may want to use :null_session instead.
+    protect_from_forgery
+    after_filter :set_csrf_cookie_for_ng
 
-   protected
+    protected
      def verified_request?
        super || valid_authenticity_token?(session, request.headers['X-XSRF-TOKEN'])
      end
 
-   private
+    private
      def set_csrf_cookie_for_ng
        cookies['XSRF-TOKEN'] = form_authenticity_token if protect_against_forgery?
      end
 
- end
- ```
+  end
+  ```
 
 #### CRUD
 
@@ -293,30 +293,30 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 
 1. CRUD routes for your resource:
 
- ```ruby
- #
- # config/routes.rb
- #
+```ruby
+#
+# config/routes.rb
+#
 
- Rails.application.routes.draw do
-   root 'site#index'
+Rails.application.routes.draw do
+  root 'site#index'
 
-   namespace :api, defaults: { format: :json } do
-     resources :todos, except: [:new, :edit]
-   end
+  namespace :api, defaults: { format: :json } do
+    resources :todos, except: [:new, :edit]
+  end
 
-   get '*path', to: 'site#index'
- end
- ```
+  get '*path', to: 'site#index'
+end
+```
 
 2. A controller with CRUD actions that renders JSON:
 
- ```ruby
- #
- # app/controllers/api/todos_controller.rb
- #
+  ```ruby
+  #
+  # app/controllers/api/todos_controller.rb
+  #
 
- class Api::TodosController < ApplicationController
+  class Api::TodosController < ApplicationController
    def index
      @todos = Todo.all.order("created_at DESC")
      render json: @todos
@@ -331,14 +331,14 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
      end
    end
 
-   ...
+  ...
 
    private
      def todo_params
        params.require(:todo).permit(:title, :description, :done)
      end
 
- end
+  end
  ```
 
 3. The Angular `$http` or `$resource` service to interact with your JSON API endpoints. See the module on <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-03/module-02" target="_blank">http and ng-resource</a> for reference. Instead of calling an external API, you're now querying your own application's server.
