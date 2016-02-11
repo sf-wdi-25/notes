@@ -140,3 +140,4 @@ Let's do this [ui-router lab!](https://github.com/sf-wdi-25/angular-ui-router-la
 * ui-router [sample app](http://angular-ui.github.io/ui-router/sample/#/)
 * [SO: difference between ngRoute and ui-router](http://stackoverflow.com/questions/21023763/angularjs-difference-between-angular-route-and-angular-ui-router)
 * [article with more visual explanations](http://www.funnyant.com/angularjs-ui-router/)
+* [cool demo](http://ui-router.github.io/sample-app/#/contacts/mkinney/edit)
