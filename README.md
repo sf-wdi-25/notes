@@ -78,7 +78,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/angular_directives_lab">Angular Directives</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/api_dashboard_lab">Promise Patterns</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/angular_book_app">Book App</a> (JC)</td>
-    <td><a https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/day-04-MEAN/dusk-intro-MEAN/README.md">MEAN stack intro</a> (JC)</td>
+    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/day-04-MEAN/dusk-intro-MEAN/README.md">MEAN stack intro</a> (JC)</td>
     <td>P3 Prototype Lab (Team)</td>
   </tr>
   <tr>
