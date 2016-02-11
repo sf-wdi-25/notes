@@ -257,5 +257,9 @@
 * Angularjs
   * directive
 * framework
-
--->
+* application/x-www-form-urlencoded
+* application/json
+* $http
+* ngResource
+* ui-router
+* $stateProvider
