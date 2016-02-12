@@ -9,8 +9,7 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 ## Day 1
 
-1. Reading
-2. [Angular Movie Lab](https://github.com/sf-wdi-25/angular-movie-lab)
+1. [Angular Movie Lab](https://github.com/sf-wdi-25/angular-movie-lab)
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 

@@ -59,10 +59,10 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td><ahref="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/drills/README.md">Trees (JC)</a></td>
-    <td><ahref="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/drills/README.md">Trees (JC)</a></td>
-    <td><ahref="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/drills/README.md">Tries (JC)</a></td>
-    <td><ahref="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/drills/README.md">Tries (JC)</a></td>
+    <td><ahref="/week-11-angular/drills/README.md">Trees (JC)</a></td>
+    <td><ahref="/week-11-angular/drills/README.md">Trees (JC)</a></td>
+    <td><ahref="/week-11-angular/drills/README.md">Tries (JC)</a></td>
+    <td><ahref="/week-11-angular/drills/README.md">Tries (JC)</a></td>
     <td>Review (Team)</td>
   </tr>
   <tr>
@@ -78,15 +78,15 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/angular_directives_lab">Angular Directives</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/api_dashboard_lab">Promise Patterns</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/angular_book_app">Book App</a> (JC)</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-11-angular/day-04-MEAN/dusk-intro-MEAN/README.md">MEAN stack intro</a> (JC)</td>
+    <td><a href="/week-11-angular/day-04-MEAN/dusk-intro-MEAN/README.md">MEAN stack intro</a> (JC)</td>
     <td>P3 Prototype Lab (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><a href="/week-07-rails/homework">Movie Lab</a></td>
+    <td><a href="/week-07-rails/homework">Hangman & Bower</a></td>
+    <td><a href="/week-07-rails/homework">FE Routing</a></td>
+    <td>MEAN todo</td>
     <td></td>
   </tr>
 </table>
@@ -106,8 +106,8 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Project 2</td>
     <td>Project 2</td>
     <td>Project 2</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/project2-requirements.md">Project 2 Presentations</a> 10:30 </td>
-    <td>Mature Rails Lab (NA)</td>
+    <td><a href="/week-09-project2/day-03-project2/project2-requirements.md">Project 2 Presentations</a> 10:30 </td>
+    <td><a href="https://github.com/sf-wdi-25/publify_debugging_lab">Mature Rails Lab</a> (NA)</td>
   </tr>
   <tr>
     <td>Other topics</td>
@@ -115,7 +115,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Sandi Metz Rules (NA)</td>
     <td>Project 2</td>
     <td> ? ? ? </td>
-    <td>Mature Rails Lab (NA)</td>
+    <td><a href="https://github.com/sf-wdi-25/publify_debugging_lab">Mature Rails Lab</a> (NA)</td>
   </tr>
 
 </table>
@@ -150,15 +150,15 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Module2</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-09-project2/day-01-validations-tests/dusk-rspec">RSpec Unit testing</a> (TG)</td>
     <td>Gem Lightning Talk <a href="https://gist.github.com/nathanallen/c491bde4d07b9a96fceb">Topics</a> (NA)</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/lightning-pitch.md">Project 2 Elevator pitches</a> & Approvals (team)</td>
+    <td><a href="/week-09-project2/day-03-project2/lightning-pitch.md">Project 2 Elevator pitches</a> & Approvals (team)</td>
     <td>Project 2 (tbd)</td>
     <td>Project 2 (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/homework/README.md">Testing Lab</a> (TG)</td>
+    <td><a href="/week-09-project2/homework/README.md">Testing Lab</a> (TG)</td>
     <td></td>
-    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-09-project2/day-03-project2/project2-requirements.md">Project 2 Requirements</a></td>
+    <td><a href="/week-09-project2/day-03-project2/project2-requirements.md">Project 2 Requirements</a></td>
     <td></td>
     <td></td>
   </tr>
@@ -188,7 +188,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/project-vagabond">Project Vagabond</a></td>
     <td>Vagabond</td>
     <td>Vagabond / <a href="/how-tos/deploy-rails-to-heroku.md">Heroku Deploy</a></td>
-    <td>Presentations @ 1pm - <a href="https://github.com/sf-wdi-25/notes/blob/master/week-08-vagabond/homework/README.md">Homework</a></td>
+    <td>Presentations @ 1pm - <a href="/week-08-vagabond/homework/README.md">Homework</a></td>
   </tr>
 </table>
 
@@ -224,11 +224,11 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="/week-07-rails/day-02-SQL-relationships/dusk-sessions-cookies/README.md">Cookies & Sessions</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/public_library_app">Library App</a> - N:N (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/day-04-rails/dusk-views"> View Helpers & Partials</a> (TG)</td>
-    <td>Outcomes (Neda) / <a href="https://github.com/sf-wdi-25/notes/blob/master/how-tos/github-collaboration-workflow.md">Git Flow</a> (HS)</td>
+    <td>Outcomes (Neda) / <a href="/how-tos/github-collaboration-workflow.md">Git Flow</a> (HS)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-01-SQL-associations/dawn-intro-SQL/joins.md">SQL Join Reading</a>, <a href="https://github.com/sf-wdi-25/breweries_models_and_migrations#more">More section of Migrations</a>, <a href="http://guides.rubyonrails.org/association_basics.html#why-associations-questionmark">Associations</a>, & <a href="https://github.com/sf-wdi-25/notes/blob/master/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/README.md">Relationships</a> (JC)</td>
+    <td><a href="/week-07-rails/day-01-SQL-associations/dawn-intro-SQL/joins.md">SQL Join Reading</a>, <a href="https://github.com/sf-wdi-25/breweries_models_and_migrations#more">More section of Migrations</a>, <a href="http://guides.rubyonrails.org/association_basics.html#why-associations-questionmark">Associations</a>, & <a href="/week-07-rails/day-02-SQL-relationships/dawn-SQL-relationships/README.md">Relationships</a> (JC)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-2">Auth Lab</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-3">Asset Pipeline / Helpers & Partials</a> (TG)</td>
     <td><a href="https://github.com/sf-wdi-25/notes/tree/master/week-07-rails/homework#day-4">View Helpers Lab</a> (TG)</td>
