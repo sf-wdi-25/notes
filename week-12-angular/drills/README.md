@@ -8,7 +8,7 @@
 
 1. Create a new Rails application with a Postgres database:
 
- ```zsh
+ ```bash
  ➜  rails new rails_angular_sample -Td postgresql
  ➜  cd rails_angular_sample
  ➜  rake db:create
@@ -52,10 +52,10 @@
    <%= stylesheet_link_tag :application, media: :all %>
 
    <!-- angular -->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
 
-   <!-- ngRoute -->
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+   <!-- ui-router -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 
    <%= javascript_include_tag :application %>
 
@@ -67,14 +67,13 @@
  </html>
  ```
 
-2. Another option is to download the files for Angular and `ngRoute` and include them in the asset pipeline.  These would go into `vendor`.
+2. Another option is to download the files for Angular and `ui-router` and include them in the asset pipeline.  These would go into `vendor`.
 
  To download via CURL in the Terminal:
 
- ```zsh
- ➜  curl https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js > vendor/assets/javascripts/angular.min.js
- ➜  curl
- https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js > vendor/assets/javascripts/angular-ui-router.min.js
+ ```bash
+ ➜  curl https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js > vendor/assets/javascripts/angular.js
+ ➜  curl https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js > vendor/assets/javascripts/angular-ui-router.js
  ```
 
  And require in `application.js`:
@@ -84,8 +83,8 @@
   * app/assets/javascripts/application.js
   */
 
- //= require angular.min
- //= require angular-ui-router.min
+ //= require angular
+ //= require angular-ui-router
  ```
 
 #### Configuring Your Angular App
@@ -93,15 +92,15 @@
 1. Create a new JavaScript file `app/assets/javascripts/app.js`. This is where you'll put the initial logic for your Angular app.
   * Once you get more than one controller, you should break this up into files like `wine.controller.js`, `wine.factory.js`, `painters.controller.js`.
 
-2. Whether or not you're using the asset pipeline for Angular and `ngRoute`, make sure to require your newly created `app.js` in `application.js` after angular:
+2. Whether or not you're using the asset pipeline for Angular and `ui-router`, make sure to require your newly created `app.js` in `application.js` after angular:
 
  ```js
  /*
   * app/assets/javascripts/application.js
   */
 
- //= require angular.min
- //= require angular-ui-router.min
+ //= require angular
+ //= require angular-ui-router
  //= require app
  ```
 
@@ -128,7 +127,7 @@
  </html>
  ```
 
-4. Add the `ng-view` directive inside the `<body>` tag in `app/views/site/index.html.erb`:
+4. Add the `ui-view` directive inside the `<body>` tag in `app/views/site/index.html.erb`:
 
  ```html
  <!-- app/views/site/index.html.erb -->
@@ -137,7 +136,7 @@
    <nav class="navbar navbar-default">
      ...
    </nav>
-   <div data-ng-view></div>
+   <div data-ui-view></div>
  </body>
  ```
 
@@ -150,7 +149,7 @@
   * app/assets/javascripts/app.js
   */
 
-  var app = angular.module('SampleApp', ['ui.router']);
+  angular.module('SampleApp', ['ui.router']);
   ```
 
 #### Adding Templates
@@ -176,8 +175,8 @@
   * app/assets/javascripts/application.js
   */
 
-  //= require angular.min
-  //= require angular-route.min
+  //= require angular
+  //= require angular-ui-router
   //= require angular-rails-templates
   //= require_tree ../templates
   //= require app
@@ -201,29 +200,33 @@
   * app/assets/javascripts/app.js
   */
 
- var app = angular.module('sampleApp', ['ngRoute', 'templates']);
+ angular.module('sampleApp', ['ui.router', 'templates']);
  ```
+
+> Note at this stage, you haven't added anything to display your template.  Its content will NOT be displayed yet.
 
 #### Configuring Angular Routes
 
 1. Configure your Angular routes in `app.js` to hook everything up:
 
 
-```js
-config.$inject = ['$stateProvider', '$urlRouterProvider']; // minification protection
-function config($stateProvider, $urlRouterProvider) {
-  // for any unmatched URL redirect to /
-  $urlRouterProvider.otherwise("/");
+  ```js
+  config.$inject = ['$stateProvider', '$urlRouterProvider']; // minification protection
+  function config(   $stateProvider,   $urlRouterProvider ) {
+    // for any unmatched URL redirect to /
+    $urlRouterProvider.otherwise("/");
 
-  $stateProvider
-  .state('home', {
-    url: "/",
-    templateUrl: 'home.html'
-  });
+    $stateProvider
+    .state('home', {
+      url: "/",
+      templateUrl: 'home.html',
+      controller: 'HomeController',
+      controllerAs: 'home'
+    });
 
-}
+  }
 
-```
+  ```
 
 2. Configure your controller with some test data, so you can check to see if the route, template, and controller are properly connected:
 
@@ -232,10 +235,17 @@ function config($stateProvider, $urlRouterProvider) {
   * app/assets/javascripts/app.js
   */
 
-  app.controller('HomeCtrl', ['$scope', function ($scope) {
-    $scope.homeTest = "Welcome to the homepage!";
-  }]);
+  .controller('HomeController', HomeController);
+
+
+  function HomeController () {
+    var vm = this;
+    console.log("Hi, I'm the HomeController");
+    vm.homeTest = "Welcome to the homepage!";
+  }
   ```
+
+3. On your own, add a little content to your template to test the controller and router.  Test it and make sure content from your HomeController is rendered before continuing.
 
 #### Miscellaneous Setup
 
@@ -271,21 +281,21 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 
 1. CRUD routes for your resource:
 
-```ruby
-#
-# config/routes.rb
-#
+  ```ruby
+  #
+  # config/routes.rb
+  #
 
-Rails.application.routes.draw do
-  root 'site#index'
+  Rails.application.routes.draw do
+    root 'site#index'
 
-  namespace :api, defaults: { format: :json } do
-    resources :todos, except: [:new, :edit]
+    namespace :api, defaults: { format: :json } do
+      resources :todos, except: [:new, :edit]
+    end
+
+    get '*path', to: 'site#index'
   end
-
-  get '*path', to: 'site#index'
-end
-```
+  ```
 
 2. A controller with CRUD actions that renders JSON:
 
@@ -318,6 +328,8 @@ end
 
   end
  ```
+
+ > Note that the above uses the API namespace.  You should put it in `app/controllers/api`
 
 3. The Angular `$http` or `$resource` service to interact with your JSON API endpoints. See the module on <a href="https://github.com/sf-wdi-24/modules/tree/master/week-10-angular/day-03/module-02" target="_blank">http and ng-resource</a> for reference. Instead of calling an external API, you're now querying your own application's server.
 
