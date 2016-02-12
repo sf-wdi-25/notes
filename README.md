@@ -79,14 +79,14 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td><a href="https://github.com/sf-wdi-25/api_dashboard_lab">Promise Patterns</a> (NA)</td>
     <td><a href="https://github.com/sf-wdi-25/angular_book_app">Book App</a> (JC)</td>
     <td><a href="/week-11-angular/day-04-MEAN/dusk-intro-MEAN/README.md">MEAN stack intro</a> (JC)</td>
-    <td>P3 Prototype Lab (Team)</td>
+    <td><a href="https://github.com/sf-wdi-25/rapid-prototype-weekend-lab">Prototype Lab</a> (Team)</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td><a href="/week-07-rails/homework">Movie Lab</a></td>
-    <td><a href="/week-07-rails/homework">Hangman & Bower</a></td>
-    <td><a href="/week-07-rails/homework">FE Routing</a></td>
-    <td>MEAN todo</td>
+    <td><a href="/week-11-angular/homework">Movie Lab</a></td>
+    <td><a href="/week-11-angular/homework">Hangman & Bower</a></td>
+    <td><a href="/week-11-angular/homework">FE Routing</a></td>
+    <td>MEAN todo cntd.</td>
     <td></td>
   </tr>
 </table>
