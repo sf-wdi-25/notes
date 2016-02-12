@@ -24,18 +24,14 @@ Please use any remaining time to complete and review the exercises from dawn & d
 1. Reading - [UI-Routers](https://gist.github.com/justincastilla/eafe807081f07da2b55e)
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
-<!--
+
 ## Day 4
 
-1. Reading
-2. Friday Review Prep
-
-Please use any remaining time to complete and review the exercises from dawn & dusk.
+1. Continue working on the [MEAN TODO](https://github.com/sf-wdi-25/mean_todo) lab.
 
 ## Day 5 - Weekend Homework
 
-1. Reading
-2. Weekend Lab
-
-Please use any remaining time to review exercises/drills from the week! And don't forget to sleep!
--->
+1. Continue working on & extending your MEAN stack application.
+    - You might even consider starting from scratch again!
+1. Start thinking about your final project.
+    - We encourage you to do a "rapid prototype" (or more than one!), using whatever stack you want.

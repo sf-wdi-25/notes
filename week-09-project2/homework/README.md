@@ -17,7 +17,7 @@ Please refer to the [Instructions for Submitting Homework](/how-tos/homework-sub
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
-<!--
+
 ## Day 2
 
 1. Read a [brief introduction to helpers](http://mixandgo.com/blog/the-beginner-s-guide-to-rails-helpers)
@@ -25,6 +25,7 @@ Please use any remaining time to complete and review the exercises from dawn & d
 
 Please use any remaining time to complete and review the exercises from dawn & dusk.
 
+<!--
 ## Day 3
 
 1. Reading
