@@ -270,6 +270,8 @@
 
   end
   ```
+  
+  > There is also [a gem](https://github.com/jsanders/angular_rails_csrf) available to do this for you!
 
 #### CRUD
 
