@@ -2,7 +2,7 @@
 
 How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code Review](/how-tos/request-a-code-review.md)
 
-<!--## Week 12  - Broad Topic
+## Week 12  - Angular Continued
 <table>
 	<tr>
   	<th></th>
@@ -14,38 +14,38 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   </tr>
   <tr>
     <td>Drills</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Drill (tbd)</td>
-    <td>Review (Team)</td>
+    <td><img src="https://simpsonswiki.com/w/images/thumb/1/19/Tapped_Out_George_Washington_Icon.png/95px-Tapped_Out_George_Washington_Icon.png"></img></td>
+    <td>Rangular (TG)</td>
+    <td>Project 3 intro (team)</td>
+    <td>Project 3 </td>
+    <td>Project 3 </td>
   </tr>
   <tr>
     <td>Module1</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Review (Team)</td>
+    <td>Presidents' day</td>
+    <td>SPA Auth (NA)</td>
+    <td>Project 3</td>
+    <td>Project 3</td>
+    <td>Project 3</td>
   </tr>
   <tr>
     <td>Module2</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Topic (tbd)</td>
-    <td>Weekend Lab (Team)</td>
+    <td>No class</td>
+    <td>JWT (NA)</td>
+    <td>Project 3 Approvals</td>
+    <td>Project 3</td>
+    <td>Project 3</td>
   </tr>
   <tr>
     <td>HW</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
-    <td>Reading (tbd)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
 </table>
--->
+
 
 ## Week 11  - Getting Acute with Angular
 <table>
