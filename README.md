@@ -15,7 +15,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Drills</td>
     <td><img src="https://simpsonswiki.com/w/images/thumb/1/19/Tapped_Out_George_Washington_Icon.png/95px-Tapped_Out_George_Washington_Icon.png"></img></td>
-    <td>Rangular (TG)</td>
+    <td>Prototype Review (JC)</td>
     <td>Project 3 intro (team)</td>
     <td>Project 3 </td>
     <td>Project 3 </td>
@@ -23,7 +23,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module1</td>
     <td>Presidents' day</td>
-    <td>SPA Auth (NA)</td>
+    <td><a href="/week-12-angular/day-02-angular-auth/dawn-SPA-auth/">SPA Auth & JWTs</a> (NA)</td>
     <td>Project 3</td>
     <td>Project 3</td>
     <td>Project 3</td>
@@ -31,7 +31,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module2</td>
     <td>No class</td>
-    <td>JWT (NA)</td>
+    <td><a href=""/week-12-angular/day-02-angular-auth/dusk-rails-angular/"">Rangular</a> (TG)</td>
     <td>Project 3 Approvals</td>
     <td>Project 3</td>
     <td>Project 3</td>
