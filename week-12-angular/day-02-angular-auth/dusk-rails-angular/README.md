@@ -338,3 +338,5 @@ Now that your Angular app is all set up, it's time to CRUD a resource! You'll ne
 1. Build a JSON API and CRUD one resource (`todos` are always a good start). Test your API routes on Postman.
 
 2. Use Angular `$http` or `$resource` to query your API endpoints from the client side to implement full CRUD in your single-page app.
+
+> Note: to use ngResource remember to: 1) download the angular-resource.js file into vendor, 2) require it in `application.js`, 3) list it in the angular dependencies array of your app declaration and 4) inject it into your factory.
