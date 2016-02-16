@@ -31,7 +31,7 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
   <tr>
     <td>Module2</td>
     <td>No class</td>
-    <td><a href=""/week-12-angular/day-02-angular-auth/dusk-rails-angular/"">Rangular</a> (TG)</td>
+    <td><a href="/week-12-angular/day-02-angular-auth/dusk-rails-angular/">Rangular</a> (TG)</td>
     <td>Project 3 Approvals</td>
     <td>Project 3</td>
     <td>Project 3</td>
