@@ -16,25 +16,26 @@ How To: [Submit Homework](/how-tos/homework-submission.md) ● [Request a Code R
     <td>Drills</td>
     <td><img src="https://simpsonswiki.com/w/images/thumb/1/19/Tapped_Out_George_Washington_Icon.png/95px-Tapped_Out_George_Washington_Icon.png"></img></td>
     <td>Prototype Review (JC)</td>
-    <td>Project 3 intro (team)</td>
-    <td>Project 3 </td>
-    <td>Project 3 </td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3 intro </a> (team)</td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3</a> </td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3</a> </td>
   </tr>
   <tr>
     <td>Module1</td>
     <td>Presidents' day</td>
     <td><a href="/week-12-angular/day-02-angular-auth/dawn-SPA-auth/">SPA Auth & JWTs</a> (NA)</td>
-    <td>Project 3</td>
-    <td>Project 3</td>
-    <td>Project 3</td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3</a> </td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3</a> </td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3</a> </td>
   </tr>
   <tr>
     <td>Module2</td>
     <td>No class</td>
     <td><a href="/week-12-angular/day-02-angular-auth/dusk-rails-angular/">Rangular</a> (TG)</td>
-    <td>Project 3 Approvals</td>
-    <td>Project 3</td>
-    <td>Project 3</td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3 Approvals</a> </td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3</a> </td>
+    <td><a href= "https://github.com/sf-wdi-25/project-03">Project 3</a> </td>
+
   </tr>
   <tr>
     <td>HW</td>
