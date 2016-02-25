@@ -126,7 +126,7 @@
    * [new branch]      master -> master
   ```
 
-2. **This is a common point for people to run into errors.** The most common error that happens here is your assets failing to compile. **If you have errors, try this possible solution:**
+2. **This is a common point for people to run into errors.** The most common error that happens here is your assets failing to compile. **If you have errors with ASSET COMPILATION, try this possible solution:**
 
   * From the Terminal, precompile your assets:
 
