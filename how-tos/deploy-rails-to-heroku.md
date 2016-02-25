@@ -126,23 +126,8 @@
    * [new branch]      master -> master
   ```
 
-2. **This is a common point for people to run into errors.** The most common error that happens here is your assets failing to compile. **If you have errors with ASSET COMPILATION, try this possible solution:**
+2. **This is a common point for people to run into errors.** The most common error that happens here is your assets failing to compile. **If you have errors with ASSET COMPILATION**, see the asset complication instructions below.
 
-  * From the Terminal, precompile your assets:
-
-    ```zsh
-    ➜  rake assets:precompile
-    ```
-
-  * Add and commit new changes, then try pushing to Heroku again:
-
-    ```zsh
-    ➜  git status
-    ➜  git add -A
-    ➜  git commit -m "precompiling assets"
-    ➜  git push origin master
-    ➜  git push heroku master
-    ```
 
 3. Your deployed app has a separate database from your development environment. To set up your Heroku database, run your migrations in production:
 
@@ -193,6 +178,27 @@ Hopefully your app works on Heroku, however, you may see a sad page that looks l
   ➜  heroku config:unset MY_API_KEY
   Unsetting MY_API_KEY and restarting myapp... done, v13
   ```
+
+### Asset Compilation Issues
+
+**If you have errors with ASSET COMPILATION, try this possible solution**
+
+  * From the Terminal, precompile your assets:
+
+    ```zsh
+    ➜  rake assets:precompile
+    ```
+
+  * Add and commit new changes, then try pushing to Heroku again:
+
+    ```zsh
+    ➜  git status
+    ➜  git add -A
+    ➜  git commit -m "precompiling assets"
+    ➜  git push origin master
+    ➜  git push heroku master
+    ```
+
 
 ## Heroku Doc References
 
