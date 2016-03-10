@@ -256,7 +256,7 @@ Functions are able to receive and return boolean values.  Functions that return 
 > This will let the programmer know that the return value of the function will be a boolean value.  It also increases the readiblity of the code.
 
 ### Function with boolean value as a parameter
-```
+```javascript
 // outputs a statement based on boolean value
 function hasCheezburger( answer ) ){
     if (answer === true) {
@@ -270,7 +270,7 @@ hasCheezeburger(answer); // Can I haz ur Cheezburger?
 ```
 
 ### Function with boolean return value
-```
+```javascript
 // checks if number is greater or less than 5
 function isGreaterThanFive( number ){
     if( number > 5 ) {
@@ -290,7 +290,7 @@ The above function has two return statements.  Since both are within an `if / el
 
 ### Function with both boolean parameter and return values
 
-```
+```javascript
 // return opposite boolean value of parameter received
 function completelyDisagree( bool ) {
     if (bool === true) {
@@ -313,7 +313,7 @@ console.log( doYouAgree ); // false
 
 Function recursion is the act of a function calling itself within its own code.  Traditionally, *recursive* functions require at least one parameter passed in.  Each time a function calls iself, the value of the parameter is changed to produce a desired effect.
 
-```
+```javascript
 /* Display all numbers from num to 0 on the screen */
 function countDown(num){
     /* Base Case */
