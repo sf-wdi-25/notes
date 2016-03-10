@@ -89,7 +89,7 @@ Functions can take multiple paramters.  Each parameter must be separated from an
         console.log( a - b );
     }
 ```
-``` javascript
+``` javascript  
     // Multiply two integers
     function multiply( a, b) {
         console.log( a  *  b);
@@ -257,33 +257,32 @@ Functions are able to receive and return boolean values.  Functions that return 
 
 ### Function with boolean value as a parameter
 ```
-    // outputs a statement based on boolean value
-    function hasCheezburger( answer ) ){
-        if (answer === true) {
-            console.log("Can I haz ur Cheezburger?");
-        } else {
-            console.log("Y no Cheezburger?");
-        }
+// outputs a statement based on boolean value
+function hasCheezburger( answer ) ){
+    if (answer === true) {
+        console.log("Can I haz ur Cheezburger?");
+    } else {
+        console.log("Y no Cheezburger?");
     }
-    var answer = true;
-    hasCheezeburger(answer); // Can I haz ur Cheezburger?
-
+}
+var answer = true;
+hasCheezeburger(answer); // Can I haz ur Cheezburger?
 ```
 
 ### Function with boolean return value
 ```
-    // checks if number is greater or less than 5
-    function isGreaterThanFive( number ){
-        if( number > 5 ) {
-            return true;
-        } else {
-            return false;
-        } 
-    }
-    
-    var number = 3;
-    var result = isGreaterThanFive(number);
-    console.log(result); // false; 
+// checks if number is greater or less than 5
+function isGreaterThanFive( number ){
+    if( number > 5 ) {
+        return true;
+    } else {
+        return false;
+    } 
+}
+
+var number = 3;
+var result = isGreaterThanFive(number);
+console.log(result); // false; 
 ```
 The above function has two return statements.  Since both are within an `if / else ` statement, only one will apply to the condition.  Once a return statement is executed the function ends.  This ensures that only one return statement can be executed per function.  
 
@@ -292,18 +291,18 @@ The above function has two return statements.  Since both are within an `if / el
 ### Function with both boolean parameter and return values
 
 ```
-    // return opposite boolean value of parameter received
-    function completelyDisagree( bool ) {
-        if (bool === true) {
-            return false;
-        } else {
-            return true;
-        }
+// return opposite boolean value of parameter received
+function completelyDisagree( bool ) {
+    if (bool === true) {
+        return false;
+    } else {
+        return true;
     }
+}
     
-    var iAmRight = true;
-    var doYouAgree = completelyDisagree( iAmRight );
-    console.log( doYouAgree ); // false
+var iAmRight = true;
+var doYouAgree = completelyDisagree( iAmRight );
+console.log( doYouAgree ); // false
 ```
 
 
