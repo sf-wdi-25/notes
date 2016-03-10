@@ -12,9 +12,9 @@ We encourage you to request at least 3 code reviews during your time as a studen
 
 1. Push your project to github.
 2. Add your instructor/reviewer as a collaborator (*Settings > Collaborators & Teams > Add Collaborator*).
+    + jlopker - Juliana
     + justincastilla - Justin
     + nathanallen - Nathan
-    + tgaff - Travis
 3. To request the review, simply send a message to your instructor using Slack with a link to your project
     + Please also take a moment to describe what you're doing, and indicate any areas of concern / code you want us to pay particular attention to.
 
