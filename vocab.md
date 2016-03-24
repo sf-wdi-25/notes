@@ -94,7 +94,8 @@
 * client
 * server
 * input validation
-<!-- ####Week 3 --> <!--  week 2 was only 2 days for WDI25 :-/ -->
+
+<!-- week 3 - for 25 week 2 was short -->
 * Express
 * HTTP
 * Resource path
